@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon | 블랙홀 사진 갤러리</title>
+    <!-- Tailwind CSS 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 구글 폰트 (명조체 계열) 로드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nanum Myeongjo', 'serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        deepspace: '#000000',
+                        starlight: '#f3f4f6',
+                        neonpurple: '#8A2BE2',
+                    },
+                    boxShadow: {
+                        'neon': '0 0 15px rgba(138, 43, 226, 0.7), 0 0 30px rgba(138, 43, 226, 0.4)',
+                        'neon-hover': '0 0 25px rgba(138, 43, 226, 1), 0 0 50px rgba(138, 43, 226, 0.6)',
+                        'card-glow': '0 4px 20px rgba(138, 43, 226, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #f3f4f6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(138, 43, 226, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(138, 43, 226, 0.05) 0%, transparent 40%);
+        }
+
+        /* 텍스트 네온 글로우 */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.4);
+        }
+
+        /* 화면 전환용 클래스 */
+        .page {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+            width: 100%;
+            min-height: 100vh;
+        }
+        .page.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        /* 사진 카드 호버 효과 */
+        .gallery-card {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(5px);
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(138, 43, 226, 0.6);
+            border-color: rgba(138, 43, 226, 0.8);
+        }
+        .gallery-image-container {
+            overflow: hidden;
+        }
+        .gallery-image {
+            transition: transform 0.6s ease;
+        }
+        .gallery-card:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        /* 모달 공통 애니메이션 */
+        .custom-modal {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .custom-modal.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .modal-content-box {
+            transform: scale(0.95);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .custom-modal.show .modal-content-box {
+            transform: scale(1);
+        }
+        
+        /* 커스텀 스크롤바 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(138, 43, 226, 0.5);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(138, 43, 226, 0.8);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen relative font-sans flex flex-col">
+
+    <!-- 상단 글로벌 네비게이션 바 -->
+    <nav class="sticky top-0 z-40 w-full bg-black/80 backdrop-blur-md border-b border-neonpurple/30 px-6 py-3.5 flex justify-between items-center">
+        <div class="flex items-center space-x-3 cursor-pointer" onclick="goToHome()">
+            <div class="w-3 h-3 rounded-full bg-neonpurple shadow-neon animate-pulse"></div>
+            <span class="font-serif font-bold tracking-widest text-lg text-white hover:text-neonpurple transition-colors">EVENT HORIZON</span>
+        </div>
+        <div class="flex items-center space-x-4 text-sm" id="auth-nav-area">
+            <!-- 자바스크립트로 로그인 여부에 따라 동적 렌더링 -->
+        </div>
+    </nav>
+
+    <!-- 화면 1: 메인 화면 (Home) -->
+    <main id="home-page" class="page active flex-col items-center justify-center relative z-10 px-4 flex-1">
+        <div class="text-center max-w-3xl mx-auto py-12">
+            <div class="inline-block px-3 py-1 mb-6 border border-neonpurple/40 rounded-full text-xs tracking-widest text-gray-300 bg-neonpurple/10">
+                DEEP SPACE OBSERVATORY & FORUM
+            </div>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-wider text-glow text-starlight">
+                Event Horizon
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 font-light tracking-widest leading-relaxed">
+                빛조차 탈출할 수 없는 절대적인 경계.<br>
+                관측 기록을 공유하고, 자유롭게 토론하며, 최신 우주 연구와 뉴스를 브리핑으로 만나보세요.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center items-center">
+                <button onclick="goToGallery('photos')" class="px-8 py-3.5 border border-neonpurple text-starlight font-bold tracking-widest uppercase transition-all duration-300 shadow-neon hover:shadow-neon-hover bg-neonpurple/20 hover:bg-neonpurple rounded-md">
+                    🌌 관측 갤러리 탐사
+                </button>
+                <button onclick="goToGallery('forum')" class="px-8 py-3.5 border border-gray-700 hover:border-neonpurple text-gray-300 hover:text-white font-bold tracking-widest uppercase transition-all duration-300 bg-black/60 rounded-md">
+                    📜 심연의 자유게시판
+                </button>
+                <button onclick="goToGallery('briefing')" class="px-8 py-3.5 border border-neonpurple/70 text-purple-100 font-bold tracking-widest uppercase transition-all duration-300 shadow-neon hover:shadow-neon-hover bg-neonpurple/20 hover:bg-neonpurple rounded-md">
+                    🚀 우주 브리핑
+                </button>
+            </div>
+
+            <p class="mt-5 text-xs md:text-sm text-gray-500 tracking-wider">
+                우주 브리핑에서는 매시간 중요한 우주·천문학 기사와 논문을 최대 2건씩 한국어로 소개합니다.
+            </p>
+        </div>
+        
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neonpurple rounded-full mix-blend-screen filter blur-[130px] opacity-10 pointer-events-none z-[-1]"></div>
+    </main>
+
+    <!-- 화면 2: 통합 게시판 허브 (사진 갤러리 + 자유게시판) -->
+    <section id="gallery-page" class="page flex-col py-10 px-4 md:px-8 max-w-7xl mx-auto relative z-10 flex-1">
+        
+        <!-- 헤더 및 탭 메뉴 -->
+        <header class="mb-10 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-neonpurple/30 pb-6 gap-6">
+            <div>
+                <button onclick="goToHome()" class="text-neonpurple hover:text-white transition-colors mb-3 flex items-center text-xs tracking-widest uppercase">
+                    <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    경계 메인으로
+                </button>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-glow" id="hub-title">The Void Archive</h2>
+                <p class="text-gray-400 mt-2 text-sm tracking-widest" id="hub-desc">심연의 관측 데이터와 대원들의 토론 공간</p>
+            </div>
+            
+            <!-- 탭 전환 버튼 -->
+            <div class="flex bg-black/70 p-1 border border-neonpurple/40 rounded-lg">
+                <button id="tab-btn-photos" onclick="switchHubTab('photos')" class="px-5 py-2 rounded text-sm font-bold transition-all bg-neonpurple text-white shadow-neon">
+                    🌌 사진 갤러리
+                </button>
+                <button id="tab-btn-forum" onclick="switchHubTab('forum')" class="px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white">
+                    📜 자유게시판
+                </button>
+                <button id="tab-btn-briefing" onclick="switchHubTab('briefing')" class="px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white">
+                    🚀 우주 브리핑
+                </button>
+            </div>
+        </header>
+
+        <!-- 탭 1: 사진 갤러리 영역 -->
+        <div id="tab-content-photos" class="space-y-10">
+            <!-- 업로드 상자 -->
+            <div class="bg-black/60 border border-neonpurple/40 p-6 rounded-lg shadow-card-glow backdrop-blur-sm">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-bold text-neonpurple flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-neonpurple inline-block mr-2"></span>새로운 관측 사진 전송
+                    </h3>
+                    <span id="upload-perm-notice" class="text-xs text-gray-400">※ 회원만 전송 가능합니다</span>
+                </div>
+                <form id="upload-form" class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+                    <div class="md:col-span-4">
+                        <label for="post-title" class="block text-xs text-gray-400 mb-1">관측 대상 명칭</label>
+                        <input type="text" id="post-title" required placeholder="예: M87 사건의 지평선 편광" 
+                               class="w-full bg-zinc-900/80 border border-gray-700 focus:border-neonpurple text-white px-3 py-2 rounded text-sm outline-none transition-colors">
+                    </div>
+                    <div class="md:col-span-5">
+                        <label for="post-image" class="block text-xs text-gray-400 mb-1">시각 자료 (이미지)</label>
+                        <input type="file" id="post-image" accept="image/*" required 
+                               class="w-full text-xs text-gray-300">
+                    </div>
+                    <div class="md:col-span-3">
+                        <button type="submit" id="photo-submit-btn" class="w-full py-2 bg-neonpurple/30 border border-neonpurple text-white rounded hover:bg-neonpurple transition-all shadow-neon font-bold text-sm tracking-wider">
+                            우주로 전송
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 사진 갤러리 그리드 -->
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 동적으로 채워짐 -->
+            </div>
+        </div>
+
+        <!-- 탭 2: 자유게시판 영역 -->
+        <div id="tab-content-forum" class="hidden space-y-8">
+            <div class="flex justify-between items-center bg-black/40 border border-gray-800 p-4 rounded-lg">
+                <div>
+                    <h3 class="text-lg font-bold text-white">사건의 지평선 토론 광장</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">상대성이론, 양자역학, 시공간 왜곡에 관한 자유로운 탐구</p>
+                </div>
+                <button onclick="checkAuthAndOpenForumModal()" class="px-5 py-2 bg-neonpurple text-white text-sm font-bold rounded shadow-neon hover:bg-neonpurple/80 transition-all">
+                    ✏️ 새 글 작성하기
+                </button>
+            </div>
+
+            <!-- 게시글 목록 테이블 -->
+            <div class="bg-black/60 border border-neonpurple/30 rounded-lg overflow-hidden backdrop-blur-sm">
+                <table class="w-full text-left text-sm text-gray-300">
+                    <thead class="bg-zinc-900/90 text-xs uppercase tracking-wider text-gray-400 border-b border-gray-800">
+                        <tr>
+                            <th scope="col" class="px-6 py-3.5 w-16 text-center">번호</th>
+                            <th scope="col" class="px-6 py-3.5">제목</th>
+                            <th scope="col" class="px-6 py-3.5 w-32">작성 대원</th>
+                            <th scope="col" class="px-6 py-3.5 w-32 text-center">관측일</th>
+                        </tr>
+                    </thead>
+                    <tbody id="forum-table-body" class="divide-y divide-gray-800/60">
+                        <!-- 동적으로 채워짐 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 탭 3: 자동 우주 브리핑 영역 -->
+        <div id="tab-content-briefing" class="hidden space-y-8">
+            <div class="bg-black/50 border border-neonpurple/30 p-5 rounded-lg shadow-card-glow">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">🚀 자동 우주 브리핑</h3>
+                        <p class="text-xs text-gray-400 mt-1">중요한 우주·천문학 논문과 기사를 한국어로 정리합니다. 향후 자동화 연결 시 1시간마다 최대 2개가 게시됩니다.</p>
+                    </div>
+                    <span class="inline-flex items-center gap-2 text-xs text-neonpurple border border-neonpurple/40 bg-neonpurple/10 px-3 py-1.5 rounded-full whitespace-nowrap">
+                        <span class="w-2 h-2 rounded-full bg-neonpurple animate-pulse"></span> AUTO BRIEFING
+                    </span>
+                </div>
+            </div>
+
+            <div id="briefing-list" class="space-y-5">
+                <!-- 현재는 예시 게시글입니다. 다음 단계에서 자동 수집 데이터와 연결합니다. -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 모달 1: 이미지 확대 라이트박스 -->
+    <div id="lightbox" class="custom-modal fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onclick="closeLightbox(event)">
+        <button class="absolute top-6 right-6 text-white hover:text-neonpurple transition-colors p-2" onclick="closeLightbox(event, true)">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="modal-content-box relative max-w-5xl max-h-[90vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="확대된 우주 사진" class="max-w-full max-h-[80vh] object-contain rounded shadow-[0_0_50px_rgba(138,43,226,0.3)]">
+            <div class="mt-4 text-center">
+                <p id="lightbox-title" class="text-xl md:text-2xl font-serif text-glow text-white"></p>
+                <p id="lightbox-author" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 2: 로그인 및 회원가입 모달 -->
+    <div id="auth-modal" class="custom-modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+        <div class="modal-content-box bg-zinc-950 border border-neonpurple/50 w-full max-w-md p-7 rounded-xl shadow-[0_0_30px_rgba(138,43,226,0.3)] relative">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white" onclick="closeAuthModal()">✕</button>
+            
+            <div class="flex border-b border-gray-800 mb-6">
+                <button id="auth-tab-login" onclick="switchAuthTab('login')" class="flex-1 pb-3 text-sm font-bold border-b-2 border-neonpurple text-white">로그인</button>
+                <button id="auth-tab-signup" onclick="switchAuthTab('signup')" class="flex-1 pb-3 text-sm font-bold border-b-2 border-transparent text-gray-500 hover:text-gray-300">신규 대원 등록</button>
+            </div>
+
+            <!-- 로그인 폼 -->
+            <form id="login-form" class="space-y-4" onsubmit="handleLogin(event)">
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">대원 ID</label>
+                    <input type="text" id="login-id" required placeholder="아이디 입력 (관리자: admin)" class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">비밀번호</label>
+                    <input type="password" id="login-pw" required placeholder="비밀번호 입력 (관리자: admin123)" class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none">
+                </div>
+                <div id="login-error" class="text-xs text-red-400 hidden">아이디 또는 비밀번호가 일치하지 않습니다.</div>
+                <button type="submit" class="w-full py-2.5 bg-neonpurple text-white font-bold rounded text-sm shadow-neon hover:bg-neonpurple/90 transition-all">
+                    심연으로 접속
+                </button>
+            </form>
+
+            <!-- 회원가입 폼 -->
+            <form id="signup-form" class="space-y-4 hidden" onsubmit="handleSignup(event)">
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">희망 대원 ID</label>
+                    <input type="text" id="signup-id" required placeholder="4자 이상 입력" class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">대원 호출명 (닉네임)</label>
+                    <input type="text" id="signup-name" required placeholder="예: 시공간방랑자" class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">비밀번호</label>
+                    <input type="password" id="signup-pw" required placeholder="6자 이상 입력" class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none">
+                </div>
+                <div id="signup-error" class="text-xs text-red-400 hidden"></div>
+                <button type="submit" class="w-full py-2.5 bg-neonpurple text-white font-bold rounded text-sm shadow-neon hover:bg-neonpurple/90 transition-all">
+                    탐사 대원 등록 완료
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 모달 3: 관리자 회원 관리 대시보드 모달 -->
+    <div id="admin-modal" class="custom-modal fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4">
+        <div class="modal-content-box bg-zinc-950 border border-red-500/50 w-full max-w-3xl p-6 rounded-xl shadow-[0_0_35px_rgba(239,68,68,0.3)] relative max-h-[85vh] flex flex-col">
+            <div class="flex justify-between items-center pb-4 border-b border-gray-800">
+                <div>
+                    <h3 class="text-xl font-bold text-red-400 flex items-center">
+                        <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-500 mr-2 animate-ping"></span>
+                        관측 사령부 대원 관리 시스템 (Admin)
+                    </h3>
+                    <p class="text-xs text-gray-400 mt-1">등록된 모든 탐사 대원의 권한 조정 및 강제 퇴역 처리</p>
+                </div>
+                <button class="text-gray-400 hover:text-white text-lg p-1" onclick="closeAdminModal()">✕</button>
+            </div>
+
+            <div class="overflow-y-auto flex-1 my-4">
+                <table class="w-full text-left text-xs text-gray-300">
+                    <thead class="bg-zinc-900 text-gray-400 uppercase border-b border-gray-800 sticky top-0">
+                        <tr>
+                            <th class="p-3">대원 ID</th>
+                            <th class="p-3">호출명</th>
+                            <th class="p-3">가입 일자</th>
+                            <th class="p-3">현재 등급</th>
+                            <th class="p-3 text-center">명령 조치</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-user-table" class="divide-y divide-gray-800/70">
+                        <!-- 자바스크립트로 렌더링 -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pt-3 border-t border-gray-800 text-right">
+                <button onclick="closeAdminModal()" class="px-5 py-1.5 bg-gray-800 hover:bg-gray-700 text-xs text-white rounded">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 4: 자유게시판 글쓰기 모달 -->
+    <div id="forum-modal" class="custom-modal fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4">
+        <div class="modal-content-box bg-zinc-950 border border-neonpurple/50 w-full max-w-xl p-6 rounded-xl shadow-card-glow relative">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white" onclick="closeForumModal()">✕</button>
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                <span class="w-2 h-2 rounded-full bg-neonpurple mr-2"></span>새로운 관측 소견 기록 (글쓰기)
+            </h3>
+            <form onsubmit="handleCreateForumPost(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">제목</label>
+                    <input type="text" id="forum-input-title" required placeholder="심연의 현상에 대한 주제를 입력하십시오" class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs text-gray-400 mb-1">본문 소견</label>
+                    <textarea id="forum-input-content" rows="6" required placeholder="관측 결과나 이론적 고찰을 상세히 기록하십시오..." class="w-full bg-zinc-900 border border-gray-700 rounded px-3 py-2 text-sm text-white focus:border-neonpurple outline-none resize-none"></textarea>
+                </div>
+                <div class="flex justify-end gap-2 pt-2">
+                    <button type="button" onclick="closeForumModal()" class="px-4 py-2 border border-gray-700 text-gray-400 rounded text-xs hover:text-white">취소</button>
+                    <button type="submit" class="px-5 py-2 bg-neonpurple text-white text-xs font-bold rounded shadow-neon hover:bg-neonpurple/90">기록 게시</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 모달 5: 자유게시판 글 상세 조회 모달 -->
+    <div id="post-view-modal" class="custom-modal fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4">
+        <div class="modal-content-box bg-zinc-950 border border-neonpurple/40 w-full max-w-2xl p-6 rounded-xl shadow-card-glow relative flex flex-col max-h-[85vh]">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white" onclick="closePostViewModal()">✕</button>
+            <div class="border-b border-gray-800 pb-4 mb-4">
+                <span id="view-post-badge" class="inline-block px-2 py-0.5 bg-neonpurple/20 text-neonpurple border border-neonpurple/40 text-[11px] rounded mb-2">기록 열람</span>
+                <h3 id="view-post-title" class="text-xl font-bold text-white mb-2 font-serif"></h3>
+                <div class="flex justify-between text-xs text-gray-400">
+                    <span id="view-post-author"></span>
+                    <span id="view-post-date"></span>
+                </div>
+            </div>
+            <div id="view-post-content" class="text-sm text-gray-200 leading-relaxed overflow-y-auto whitespace-pre-wrap flex-1 my-2 pr-2"></div>
+            <div class="pt-4 border-t border-gray-800 flex justify-between items-center">
+                <span id="view-post-delete-area"></span>
+                <button onclick="closePostViewModal()" class="px-4 py-1.5 bg-zinc-800 text-gray-300 text-xs rounded hover:bg-zinc-700">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 상태 알림 토스트 (알림창 대체) -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 px-5 py-3 rounded-lg text-sm font-bold border shadow-lg transition-all duration-300 transform translate-y-20 opacity-0 pointer-events-none"></div>
+
+    <script>
+        // ----------------------------------------------------
+        // [1] 가상 데이터베이스 상태 관리
+        // ----------------------------------------------------
+        const state = {
+            // 회원 데이터 (초기 관리자 계정 탑재)
+            users: [
+                { id: 'admin', name: '총괄 관측관', role: 'admin', joined: '2026-01-01', password: 'admin123' },
+                { id: 'astronomer', name: '칼세이건', role: 'member', joined: '2026-02-14', password: 'password123' },
+                { id: 'hawking', name: '호킹연구원', role: 'member', joined: '2026-03-01', password: 'password123' },
+            ],
+            // 현재 로그인된 유저 세션 (null이면 비로그인)
+            currentUser: null,
+            // 관측 사진 데이터 (3개 기본 탑재)
+            photos: [
+                {
+                    id: 1,
+                    title: '성운 속의 심연 (Messier 87)',
+                    url: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2048&auto=format&fit=crop',
+                    author: '총괄 관측관',
+                    authorId: 'admin',
+                    date: '2026-03-10'
+                },
+                {
+                    id: 2,
+                    title: '빛이 휘어지는 중력 렌즈 현상',
+                    url: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=2048&auto=format&fit=crop',
+                    author: '칼세이건',
+                    authorId: 'astronomer',
+                    date: '2026-03-12'
+                },
+                {
+                    id: 3,
+                    title: '사건의 지평선: 절대적 암흑과 강착원반',
+                    url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2048&auto=format&fit=crop',
+                    author: '호킹연구원',
+                    authorId: 'hawking',
+                    date: '2026-03-14'
+                }
+            ],
+            // 자유게시판 게시글 데이터
+            posts: [
+                {
+                    id: 1,
+                    title: '호킹 복사와 정보 역설에 대한 새로운 가설',
+                    content: '블랙홀의 사건의 지평선에서 양자 요동에 의해 한 입자는 빨려 들어가고 한 입자는 방출될 때, 증발하는 블랙홀 내부의 정보는 양자 얽힘을 통해 영구 보존될 수 있을까요?',
+                    author: '호킹연구원',
+                    authorId: 'hawking',
+                    date: '2026-03-15'
+                },
+                {
+                    id: 2,
+                    title: '초거대 블랙홀 궁수자리 A*의 질량 측정치 공유',
+                    content: '우리 은하 중심에 위치한 초대질량 블랙홀의 관측 결과, 태양 질량의 약 430만 배에 달하는 중력장이 주위 S-별들의 공전 궤도를 극적으로 휘게 만들고 있습니다.',
+                    author: '칼세이건',
+                    authorId: 'astronomer',
+                    date: '2026-03-18'
+                }
+            ],
+            // 자동 우주 브리핑 예시 데이터 (다음 단계에서 외부 데이터 파일로 교체 예정)
+            briefings: [
+                {
+                    id: 1,
+                    title: '우주 브리핑 예시: 최신 천문학 소식을 이곳에 표시합니다',
+                    summary: '이 영역은 자동 업데이트 게시판이 어떻게 보일지 미리 확인하기 위한 예시입니다. 다음 단계에서 실제 기사와 논문을 수집하는 자동화 기능에 연결할 수 있습니다.',
+                    source: 'EVENT HORIZON',
+                    type: '안내',
+                    url: '#',
+                    date: '2026-10-04 00:00'
+                },
+                {
+                    id: 2,
+                    title: '1시간마다 중요한 소식 최대 2개 자동 게시',
+                    summary: '향후 GitHub Actions와 OpenAI API를 연결하면 우주·천문학 분야의 주요 기사와 논문을 선별하고, 한국어로 요약해 이 게시판에 자동으로 추가할 수 있습니다.',
+                    source: '자동화 예정',
+                    type: '시스템',
+                    url: '#',
+                    date: '2026-10-04 00:00'
+                }
+            ],
+            currentTab: 'photos' // 'photos' | 'forum' | 'briefing'
+        };
+
+        // 토스트 알림 헬퍼
+        function showToast(message, type = 'purple') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            if (type === 'red') {
+                toast.className = 'fixed bottom-6 right-6 z-50 px-5 py-3 rounded-lg text-sm font-bold border border-red-500 bg-red-950/90 text-red-200 shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-300 transform translate-y-0 opacity-100';
+            } else {
+                toast.className = 'fixed bottom-6 right-6 z-50 px-5 py-3 rounded-lg text-sm font-bold border border-neonpurple bg-zinc-950/90 text-purple-200 shadow-neon transition-all duration-300 transform translate-y-0 opacity-100';
+            }
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // ----------------------------------------------------
+        // [2] 인증 UI 렌더링 및 세션 처리
+        // ----------------------------------------------------
+        function renderAuthBar() {
+            const container = document.getElementById('auth-nav-area');
+            const notice = document.getElementById('upload-perm-notice');
+
+            if (state.currentUser) {
+                const isAdmin = state.currentUser.role === 'admin';
+                notice.textContent = `현재 대원: ${state.currentUser.name} (${state.currentUser.role.toUpperCase()})`;
+                notice.classList.add('text-neonpurple');
+                notice.classList.remove('text-gray-400');
+
+                container.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xs text-gray-300">
+                            <span class="text-neonpurple font-bold">${state.currentUser.name}</span> 대원
+                            ${isAdmin ? '<span class="ml-1 px-1.5 py-0.5 bg-red-600/30 border border-red-500 text-[10px] text-red-300 rounded font-mono">ADMIN</span>' : ''}
+                        </span>
+                        ${isAdmin ? `
+                            <button onclick="openAdminModal()" class="px-2.5 py-1 text-xs bg-red-900/40 border border-red-500/80 text-red-300 rounded hover:bg-red-900/80 transition-colors">
+                                대원 관리
+                            </button>
+                        ` : ''}
+                        <button onclick="handleLogout()" class="px-3 py-1 text-xs border border-gray-700 text-gray-400 hover:text-white rounded transition-colors">
+                            로그아웃
+                        </button>
+                    </div>
+                `;
+            } else {
+                notice.textContent = '※ 사진 및 글 게시는 로그인 대원만 가능합니다';
+                notice.classList.remove('text-neonpurple');
+                notice.classList.add('text-gray-400');
+
+                container.innerHTML = `
+                    <button onclick="openAuthModal('login')" class="px-3 py-1 text-xs border border-neonpurple text-starlight rounded hover:bg-neonpurple/30 transition-all">
+                        로그인
+                    </button>
+                    <button onclick="openAuthModal('signup')" class="px-3 py-1 text-xs bg-neonpurple text-white rounded shadow-neon hover:bg-neonpurple/80 transition-all">
+                        대원 가입
+                    </button>
+                `;
+            }
+        }
+
+        // 인증 모달 제어
+        const authModal = document.getElementById('auth-modal');
+        function openAuthModal(mode = 'login') {
+            authModal.classList.add('show');
+            switchAuthTab(mode);
+        }
+        function closeAuthModal() {
+            authModal.classList.remove('show');
+            document.getElementById('login-error').classList.add('hidden');
+            document.getElementById('signup-error').classList.add('hidden');
+        }
+        function switchAuthTab(mode) {
+            const loginTab = document.getElementById('auth-tab-login');
+            const signupTab = document.getElementById('auth-tab-signup');
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+
+            if (mode === 'login') {
+                loginTab.className = 'flex-1 pb-3 text-sm font-bold border-b-2 border-neonpurple text-white';
+                signupTab.className = 'flex-1 pb-3 text-sm font-bold border-b-2 border-transparent text-gray-500 hover:text-gray-300';
+                loginForm.classList.remove('hidden');
+                signupForm.classList.add('hidden');
+            } else {
+                signupTab.className = 'flex-1 pb-3 text-sm font-bold border-b-2 border-neonpurple text-white';
+                loginTab.className = 'flex-1 pb-3 text-sm font-bold border-b-2 border-transparent text-gray-500 hover:text-gray-300';
+                signupForm.classList.remove('hidden');
+                loginForm.classList.add('hidden');
+            }
+        }
+
+        function handleLogin(e) {
+            e.preventDefault();
+            const id = document.getElementById('login-id').value.trim();
+            const pw = document.getElementById('login-pw').value;
+            const errorEl = document.getElementById('login-error');
+
+            const found = state.users.find(u => u.id === id && u.password === pw);
+            if (found) {
+                state.currentUser = found;
+                closeAuthModal();
+                renderAuthBar();
+                showToast(`환영합니다, ${found.name} 대원님.`);
+                document.getElementById('login-form').reset();
+            } else {
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        function handleSignup(e) {
+            e.preventDefault();
+            const id = document.getElementById('signup-id').value.trim();
+            const name = document.getElementById('signup-name').value.trim();
+            const pw = document.getElementById('signup-pw').value;
+            const errorEl = document.getElementById('signup-error');
+
+            if (state.users.some(u => u.id === id)) {
+                errorEl.textContent = '이미 등록된 대원 ID입니다.';
+                errorEl.classList.remove('hidden');
+                return;
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+            const newUser = { id, name, role: 'member', joined: today, password: pw };
+            state.users.push(newUser);
+            state.currentUser = newUser;
+            closeAuthModal();
+            renderAuthBar();
+            showToast(`대원 등록 완료! 환영합니다, ${name} 대원.`);
+            document.getElementById('signup-form').reset();
+        }
+
+        function handleLogout() {
+            state.currentUser = null;
+            renderAuthBar();
+            showToast('경계 네트워크에서 로그아웃되었습니다.');
+        }
+
+        // ----------------------------------------------------
+        // [3] 관리자 회원 관리 로직
+        // ----------------------------------------------------
+        const adminModal = document.getElementById('admin-modal');
+        function openAdminModal() {
+            if (!state.currentUser || state.currentUser.role !== 'admin') {
+                showToast('접근 권한이 없습니다 (관리자 전용)', 'red');
+                return;
+            }
+            renderAdminUserTable();
+            adminModal.classList.add('show');
+        }
+        function closeAdminModal() {
+            adminModal.classList.remove('show');
+        }
+
+        function renderAdminUserTable() {
+            const tbody = document.getElementById('admin-user-table');
+            tbody.innerHTML = '';
+
+            state.users.forEach(user => {
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-zinc-900/60 transition-colors';
+                const isSelf = state.currentUser.id === user.id;
+
+                tr.innerHTML = `
+                    <td class="p-3 font-mono font-bold ${user.role === 'admin' ? 'text-red-400' : 'text-gray-200'}">${user.id}</td>
+                    <td class="p-3">${user.name}</td>
+                    <td class="p-3 text-gray-400">${user.joined}</td>
+                    <td class="p-3">
+                        <span class="px-2 py-0.5 rounded text-[11px] ${user.role === 'admin' ? 'bg-red-950 text-red-400 border border-red-800' : 'bg-zinc-800 text-gray-300'}">
+                            ${user.role.toUpperCase()}
+                        </span>
+                    </td>
+                    <td class="p-3 text-center space-x-1.5">
+                        ${isSelf ? '<span class="text-gray-500 text-[11px]">(본인 계정)</span>' : `
+                            <button onclick="toggleUserRole('${user.id}')" class="px-2 py-1 bg-zinc-800 hover:bg-zinc-700 text-gray-300 rounded text-[11px] transition-colors">
+                                ${user.role === 'admin' ? '일반으로 강등' : '관리자로 승격'}
+                            </button>
+                            <button onclick="deleteUser('${user.id}')" class="px-2 py-1 bg-red-900/50 hover:bg-red-800 border border-red-700 text-red-200 rounded text-[11px] transition-colors">
+                                퇴역(삭제)
+                            </button>
+                        `}
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function toggleUserRole(userId) {
+            const user = state.users.find(u => u.id === userId);
+            if (user) {
+                user.role = user.role === 'admin' ? 'member' : 'admin';
+                renderAdminUserTable();
+                showToast(`${user.name} 님의 권한이 ${user.role.toUpperCase()}로 변경되었습니다.`);
+            }
+        }
+
+        function deleteUser(userId) {
+            state.users = state.users.filter(u => u.id !== userId);
+            renderAdminUserTable();
+            showToast(`대원 (${userId})이 시스템에서 제명되었습니다.`, 'red');
+        }
+
+        // ----------------------------------------------------
+        // [4] 사진 갤러리 렌더링 & 업로드 로직
+        // ----------------------------------------------------
+        function renderGallery() {
+            const grid = document.getElementById('gallery-grid');
+            grid.innerHTML = '';
+
+            state.photos.forEach(photo => {
+                const article = document.createElement('article');
+                article.className = 'gallery-card rounded-lg overflow-hidden cursor-pointer';
+                article.onclick = () => openLightbox(photo.url, photo.title, photo.author);
+
+                article.innerHTML = `
+                    <div class="gallery-image-container h-64 w-full bg-zinc-900">
+                        <img src="${photo.url}" alt="${photo.title}" class="gallery-image w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs text-neonpurple font-mono">DEEP-SKY</span>
+                            <span class="text-[11px] text-gray-500">${photo.date}</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-1 text-white group-hover:text-neonpurple transition-colors">${photo.title}</h3>
+                        <p class="text-xs text-gray-400">관측 대원: <span class="text-gray-200">${photo.author}</span></p>
+                    </div>
+                `;
+                grid.appendChild(article);
+            });
+        }
+
+        // 업로드 폼 핸들러
+        document.getElementById('upload-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            if (!state.currentUser) {
+                showToast('사진을 전송하려면 먼저 대원 로그인을 진행해 주세요.', 'red');
+                openAuthModal('login');
+                return;
+            }
+
+            const title = document.getElementById('post-title').value.trim();
+            const file = document.getElementById('post-image').files[0];
+
+            if (title && file) {
+                const imageUrl = URL.createObjectURL(file);
+                const today = new Date().toISOString().split('T')[0];
+
+                const newPhoto = {
+                    id: Date.now(),
+                    title: title,
+                    url: imageUrl,
+                    author: state.currentUser.name,
+                    authorId: state.currentUser.id,
+                    date: today
+                };
+
+                state.photos.unshift(newPhoto);
+                renderGallery();
+                this.reset();
+                showToast(`'${title}' 관측 자료가 등록되었습니다!`);
+            }
+        });
+
+        // 라이트박스 확대 모달
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxAuthor = document.getElementById('lightbox-author');
+
+        function openLightbox(imgSrc, title, author) {
+            lightboxImg.src = imgSrc;
+            lightboxTitle.textContent = title;
+            lightboxAuthor.textContent = `관측 기록자: ${author || '미상의 대원'}`;
+            lightbox.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event, forceClose = false) {
+            if (forceClose || event.target === lightbox) {
+                lightbox.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // ----------------------------------------------------
+        // [5] 자유게시판 렌더링 및 상세 보기 로직
+        // ----------------------------------------------------
+        function renderForum() {
+            const tbody = document.getElementById('forum-table-body');
+            tbody.innerHTML = '';
+
+            state.posts.forEach((post, index) => {
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-zinc-900/60 cursor-pointer transition-colors';
+                tr.onclick = () => openPostView(post.id);
+
+                tr.innerHTML = `
+                    <td class="px-6 py-4 text-center text-xs font-mono text-gray-500">${state.posts.length - index}</td>
+                    <td class="px-6 py-4 font-bold text-white hover:text-neonpurple transition-colors">${post.title}</td>
+                    <td class="px-6 py-4 text-xs text-gray-300">${post.author}</td>
+                    <td class="px-6 py-4 text-center text-xs text-gray-500">${post.date}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function checkAuthAndOpenForumModal() {
+            if (!state.currentUser) {
+                showToast('게시글을 작성하려면 먼저 대원 로그인을 진행해 주세요.', 'red');
+                openAuthModal('login');
+                return;
+            }
+            document.getElementById('forum-modal').classList.add('show');
+        }
+
+        function closeForumModal() {
+            document.getElementById('forum-modal').classList.remove('show');
+        }
+
+        function handleCreateForumPost(e) {
+            e.preventDefault();
+            const title = document.getElementById('forum-input-title').value.trim();
+            const content = document.getElementById('forum-input-content').value.trim();
+
+            if (title && content) {
+                const today = new Date().toISOString().split('T')[0];
+                const newPost = {
+                    id: Date.now(),
+                    title,
+                    content,
+                    author: state.currentUser.name,
+                    authorId: state.currentUser.id,
+                    date: today
+                };
+
+                state.posts.unshift(newPost);
+                renderForum();
+                closeForumModal();
+                document.getElementById('forum-input-title').value = '';
+                document.getElementById('forum-input-content').value = '';
+                showToast('새로운 관측 소견이 게시판에 기록되었습니다.');
+            }
+        }
+
+        // 게시글 상세 열람
+        const postViewModal = document.getElementById('post-view-modal');
+        function openPostView(postId) {
+            const post = state.posts.find(p => p.id === postId);
+            if (!post) return;
+
+            document.getElementById('view-post-title').textContent = post.title;
+            document.getElementById('view-post-author').textContent = `기록 대원: ${post.author}`;
+            document.getElementById('view-post-date').textContent = `관측일: ${post.date}`;
+            document.getElementById('view-post-content').textContent = post.content;
+
+            const deleteArea = document.getElementById('view-post-delete-area');
+            const canDelete = state.currentUser && (state.currentUser.role === 'admin' || state.currentUser.id === post.authorId);
+
+            if (canDelete) {
+                deleteArea.innerHTML = `
+                    <button onclick="handleDeletePost(${post.id})" class="px-3 py-1 bg-red-950/70 border border-red-700 text-red-300 text-xs rounded hover:bg-red-900 transition-colors">
+                        기록 파기(삭제)
+                    </button>
+                `;
+            } else {
+                deleteArea.innerHTML = '';
+            }
+
+            postViewModal.classList.add('show');
+        }
+
+        function closePostViewModal() {
+            postViewModal.classList.remove('show');
+        }
+
+        function handleDeletePost(postId) {
+            state.posts = state.posts.filter(p => p.id !== postId);
+            renderForum();
+            closePostViewModal();
+            showToast('게시글이 성공적으로 삭제되었습니다.', 'red');
+        }
+
+        // ----------------------------------------------------
+        // [6] 자동 우주 브리핑 렌더링
+        // ----------------------------------------------------
+        function renderBriefings() {
+            const list = document.getElementById('briefing-list');
+            if (!list) return;
+            list.innerHTML = '';
+
+            state.briefings.forEach(item => {
+                const article = document.createElement('article');
+                article.className = 'bg-black/60 border border-neonpurple/25 hover:border-neonpurple/70 rounded-lg p-5 transition-all shadow-card-glow';
+
+                const safeLink = item.url && item.url !== '#';
+                article.innerHTML = `
+                    <div class="flex flex-wrap items-center gap-2 mb-3 text-[11px]">
+                        <span class="px-2 py-0.5 rounded bg-neonpurple/15 border border-neonpurple/30 text-neonpurple">${item.type}</span>
+                        <span class="text-gray-500">${item.source}</span>
+                        <span class="text-gray-600">•</span>
+                        <span class="text-gray-500">${item.date}</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white font-serif mb-3">${item.title}</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">${item.summary}</p>
+                    ${safeLink ? `<div class="mt-4"><a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-xs text-neonpurple hover:text-white transition-colors">원문 보기 →</a></div>` : ''}
+                `;
+                list.appendChild(article);
+            });
+        }
+
+        // ----------------------------------------------------
+        // [7] SPA 화면 및 탭 전환 제어
+        // ----------------------------------------------------
+        const homePage = document.getElementById('home-page');
+        const galleryPage = document.getElementById('gallery-page');
+
+        function goToGallery(initialTab = 'photos') {
+            homePage.style.opacity = '0';
+            setTimeout(() => {
+                homePage.classList.remove('active');
+                galleryPage.classList.add('active');
+                switchHubTab(initialTab);
+                setTimeout(() => {
+                    galleryPage.style.opacity = '1';
+                }, 50);
+            }, 600);
+        }
+
+        function goToHome() {
+            galleryPage.style.opacity = '0';
+            setTimeout(() => {
+                galleryPage.classList.remove('active');
+                homePage.classList.add('active');
+                setTimeout(() => {
+                    homePage.style.opacity = '1';
+                }, 50);
+            }, 600);
+        }
+
+        function switchHubTab(tabName) {
+            state.currentTab = tabName;
+            const btnPhotos = document.getElementById('tab-btn-photos');
+            const btnForum = document.getElementById('tab-btn-forum');
+            const btnBriefing = document.getElementById('tab-btn-briefing');
+            const contentPhotos = document.getElementById('tab-content-photos');
+            const contentForum = document.getElementById('tab-content-forum');
+            const contentBriefing = document.getElementById('tab-content-briefing');
+            const hubTitle = document.getElementById('hub-title');
+            const hubDesc = document.getElementById('hub-desc');
+
+            const activeClass = 'px-5 py-2 rounded text-sm font-bold transition-all bg-neonpurple text-white shadow-neon';
+            const inactiveClass = 'px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white';
+
+            btnPhotos.className = inactiveClass;
+            btnForum.className = inactiveClass;
+            btnBriefing.className = inactiveClass;
+            contentPhotos.classList.add('hidden');
+            contentForum.classList.add('hidden');
+            contentBriefing.classList.add('hidden');
+
+            if (tabName === 'photos') {
+                btnPhotos.className = activeClass;
+                contentPhotos.classList.remove('hidden');
+                hubTitle.textContent = 'The Void Gallery';
+                hubDesc.textContent = '관측된 심연의 시각적 기록들';
+            } else if (tabName === 'forum') {
+                btnForum.className = activeClass;
+                contentForum.classList.remove('hidden');
+                hubTitle.textContent = 'The Void Forum';
+                hubDesc.textContent = '사건의 지평선 너머를 탐구하는 대원 토론 광장';
+            } else {
+                btnBriefing.className = activeClass;
+                contentBriefing.classList.remove('hidden');
+                hubTitle.textContent = 'Cosmic Intelligence Briefing';
+                hubDesc.textContent = '중요한 우주·천문학 연구와 뉴스를 한국어로 정리한 자동 브리핑';
+            }
+        }
+
+        // 초기 시작 시 렌더링
+        window.addEventListener('DOMContentLoaded', () => {
+            renderAuthBar();
+            renderGallery();
+            renderForum();
+            renderBriefings();
+        });
+    </script>
+</body>
+</html>
