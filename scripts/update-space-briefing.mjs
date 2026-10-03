@@ -145,6 +145,8 @@ if (!response.ok) {
 }
 
 const result = await response.json();
+const searchCalls = (result.output ?? []).filter(item => item.type === 'web_search_call').length;
+console.log(`API usage: ${JSON.stringify({ model: 'gpt-6-luna', usage: result.usage ?? null, web_search_calls: searchCalls })}`);
 const outputText = result.output_text ?? result.output
   ?.flatMap((item) => item.content ?? [])
   ?.filter((c) => c.type === "output_text")
@@ -205,3 +207,5 @@ await fs.writeFile(DATA_FILE, JSON.stringify(next, null, 2) + "\n", "utf8");
 
 console.log(`완료: 우주 브리핑 ${newPosts.length}건 추가`);
 for (const post of newPosts) console.log(`- ${post.title} (${post.source})`);
+
+
