@@ -1,2 +1,13 @@
-[]
-
+[
+  {
+    "id": "ai-82920",
+    "slot": "82920",
+    "title": "시간의 파도",
+    "url": "./assets/creative/cosmic-82920.webp",
+    "author": "AI 창작",
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-03T18:15:23.138Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low"
+  }
+]
