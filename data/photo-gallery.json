@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-0203043",
+    "slot": "photos-82920",
+    "nasaId": "0203043",
+    "title": "Space Science",
+    "url": "https://images-assets.nasa.gov/image/0203043/0203043~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "MSFC",
+    "sourceUrl": "https://images.nasa.gov/details/0203043",
+    "publishedAt": "2026-10-03T19:52:16.895Z"
+  },
+  {
     "id": "nasa-PIA16606",
     "slot": "photos-82920",
     "nasaId": "PIA16606",
