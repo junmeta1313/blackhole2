@@ -1,11 +1,15 @@
-name: Hourly Space Briefing
+name: Daily Space Briefing
 
 on:
   schedule:
-    # 매시간 17분, 한국 시간 기준. 정각 혼잡을 피하기 위해 17분으로 설정.
-    - cron: "17 * * * *"
-      timezone: "Asia/Seoul"
+    # UTC 00:17 = 09:17 KST, once per day.
+    - cron: "17 0 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update-space-briefing.py
+      - .github/workflows/space-briefing.yml
 
 permissions:
   contents: write
@@ -24,13 +28,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Node.js 설정
-        uses: actions/setup-node@v4
+      - name: Python 설정
+        uses: actions/setup-python@v5
         with:
-          node-version: "22"
+          python-version: "3.12"
+
+      - name: Test feed selection and daily limits
+        run: python -m unittest discover -s scripts -p 'test_space_briefing.py'
+
+      - name: Verify official feeds without AI charges
+        if: github.event_name == 'push'
+        run: python scripts/update-space-briefing.py --dry-run
 
       - name: 우주 기사/논문 2건 생성
-        run: node scripts/update-space-briefing.mjs
+        run: python scripts/update-space-briefing.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
@@ -43,8 +54,7 @@ jobs:
             echo "변경사항 없음"
             exit 0
           fi
-          git commit -m "chore: update hourly space briefing"
+          git commit -m "chore: publish daily space briefing"
           git pull --rebase origin main
           git push
-
 

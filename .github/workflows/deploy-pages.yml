@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   workflow_run:
-    workflows: [Automatic Space Galleries, Hourly Space Briefing]
+    workflows: [Automatic Space Galleries, Daily Space Briefing]
     types: [completed]
     branches: [main]
   workflow_dispatch:
@@ -41,4 +41,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
