@@ -1,0 +1,66 @@
+name: Automatic Space Galleries
+
+on:
+  schedule:
+    # UTC: daily at 23:37 = 08:37 KST.
+    - cron: '37 23 * * *'
+    # UTC: 21,03,09,15 = 06,12,18,00 KST.
+    - cron: '37 3,9,15,21 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [all, photos, creative]
+        default: all
+  push:
+    branches: [main]
+    paths:
+      - scripts/update-galleries.mjs
+      - .github/workflows/galleries.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-content-updates
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Daily NASA photo
+        id: photos
+        if: github.event_name == 'push' || github.event.schedule == '37 23 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'creative')
+        continue-on-error: true
+        run: node scripts/update-galleries.mjs photos
+      - name: Six-hour AI creation
+        id: creative
+        if: github.event_name == 'push' || github.event.schedule == '37 3,9,15,21 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'photos')
+        continue-on-error: true
+        run: node scripts/update-galleries.mjs creative
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Commit available posts
+        if: always()
+        run: |
+          git config user.name "Event Horizon Gallery Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/photo-gallery.json data/creative-gallery.json
+          if [ -d assets/creative ]; then git add assets/creative; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: publish automatic space galleries"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Report API failures
+        if: steps.photos.outcome == 'failure' || steps.creative.outcome == 'failure'
+        run: exit 1
+

@@ -9,7 +9,7 @@
     <!-- 구글 폰트 (명조체 계열) 로드 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -35,6 +35,13 @@
     </script>
 
     <style>
+        #hub-title { overflow-wrap: anywhere; }
+        #tab-content-briefing { max-width: 760px; width: 100%; margin-inline: auto; font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif; letter-spacing: 0; }
+        #briefing-list .briefing-title { font-family: inherit; font-size: calc(20px + 2pt); line-height: 1.5; overflow-wrap: anywhere; }
+        #briefing-list .briefing-summary { font-size: calc(14px + 2pt); line-height: 1.95; word-break: keep-all; overflow-wrap: anywhere; }
+        #briefing-list .briefing-meta { font-size: calc(11px + 2pt); color: #b8b8c4; }
+        #briefing-list .briefing-link { font-size: calc(12px + 2pt); }
+        #briefing-list .briefing-original { font-size: calc(11px + 2pt); color: #a1a1aa; overflow-wrap: anywhere; }
         body {
             background-color: #000000;
             color: #f3f4f6;
@@ -181,13 +188,14 @@
             </div>
             
             <!-- 탭 전환 버튼 -->
-            <div class="flex bg-black/70 p-1 border border-neonpurple/40 rounded-lg">
+            <div class="grid grid-cols-2 lg:flex w-full lg:w-auto shrink-0 bg-black/70 p-1 border border-neonpurple/40 rounded-lg">
                 <button id="tab-btn-photos" onclick="switchHubTab('photos')" class="px-5 py-2 rounded text-sm font-bold transition-all bg-neonpurple text-white shadow-neon">
                     🌌 사진 갤러리
                 </button>
                 <button id="tab-btn-forum" onclick="switchHubTab('forum')" class="px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white">
                     📜 자유게시판
                 </button>
+                <button id="tab-btn-creative" onclick="switchHubTab('creative')" class="px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white">창작 갤러리</button>
                 <button id="tab-btn-briefing" onclick="switchHubTab('briefing')" class="px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white">
                     🚀 우주 브리핑
                 </button>
@@ -265,7 +273,7 @@
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <div>
                         <h3 class="text-lg font-bold text-white">🚀 자동 우주 브리핑</h3>
-                        <p class="text-xs text-gray-400 mt-1">중요한 우주·천문학 논문과 기사를 한국어로 정리합니다. 향후 자동화 연결 시 1시간마다 최대 2개가 게시됩니다.</p>
+                        <p class="text-xs text-gray-400 mt-1">중요한 우주·천문학 논문과 기사를 매시간 최대 2건씩 한국어로 정리합니다.</p>
                     </div>
                     <span class="inline-flex items-center gap-2 text-xs text-neonpurple border border-neonpurple/40 bg-neonpurple/10 px-3 py-1.5 rounded-full whitespace-nowrap">
                         <span class="w-2 h-2 rounded-full bg-neonpurple animate-pulse"></span> AUTO BRIEFING
@@ -276,6 +284,9 @@
             <div id="briefing-list" class="space-y-5">
                 <!-- 현재는 예시 게시글입니다. 다음 단계에서 자동 수집 데이터와 연결합니다. -->
             </div>
+        </div>
+        <div id="tab-content-creative" class="hidden">
+            <div id="creative-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
     </section>
 
@@ -486,6 +497,8 @@
             ],
             // 자동 우주 브리핑 데이터는 data/space-briefing.json에서 불러옵니다.
             briefings: [],
+            automaticPhotos: [],
+            creations: [],
             currentTab: 'photos' // 'photos' | 'forum' | 'briefing'
         };
 
@@ -697,26 +710,59 @@
             const grid = document.getElementById('gallery-grid');
             grid.innerHTML = '';
 
-            state.photos.forEach(photo => {
+            [...state.automaticPhotos, ...state.photos].forEach(photo => {
                 const article = document.createElement('article');
                 article.className = 'gallery-card rounded-lg overflow-hidden cursor-pointer';
                 article.onclick = () => openLightbox(photo.url, photo.title, photo.author);
 
                 article.innerHTML = `
                     <div class="gallery-image-container h-64 w-full bg-zinc-900">
-                        <img src="${photo.url}" alt="${photo.title}" class="gallery-image w-full h-full object-cover">
+                        <img src="${escapeHtml(photo.url)}" alt="${escapeHtml(photo.title)}" loading="lazy" class="gallery-image w-full h-full object-cover">
                     </div>
                     <div class="p-5">
                         <div class="flex justify-between items-center mb-1">
                             <span class="text-xs text-neonpurple font-mono">DEEP-SKY</span>
-                            <span class="text-[11px] text-gray-500">${photo.date}</span>
+                            <span class="text-[11px] text-gray-500">${escapeHtml(photo.date)}</span>
                         </div>
-                        <h3 class="text-lg font-bold mb-1 text-white group-hover:text-neonpurple transition-colors">${photo.title}</h3>
-                        <p class="text-xs text-gray-400">관측 대원: <span class="text-gray-200">${photo.author}</span></p>
+                        <h3 class="text-lg font-bold mb-1 text-white group-hover:text-neonpurple transition-colors">${escapeHtml(photo.title)}</h3>
+                        <p class="text-xs text-gray-400">관측 대원: <span class="text-gray-200">${escapeHtml(photo.author)}</span></p>
+                        ${photo.sourceUrl && /^https:\/\//.test(photo.sourceUrl) ? `<a href="${escapeHtml(photo.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-sm text-purple-200" onclick="event.stopPropagation()">출처 · ${escapeHtml(photo.credit || 'NASA')}</a>` : ''}
                     </div>
                 `;
                 grid.appendChild(article);
             });
+        }
+
+        function renderCreations() {
+            const grid = document.getElementById('creative-grid');
+            grid.innerHTML = '';
+            if (!state.creations.length) {
+                grid.innerHTML = '<p class="col-span-full py-12 text-center text-gray-400">첫 창작 이미지를 준비하고 있습니다.</p>';
+            }
+            state.creations.forEach(photo => {
+                const article = document.createElement('article');
+                article.className = 'gallery-card rounded-lg overflow-hidden cursor-pointer';
+                article.onclick = () => openLightbox(photo.url, photo.title, 'AI 창작');
+                article.innerHTML = `<div class="gallery-image-container aspect-square bg-zinc-900"><img src="${escapeHtml(photo.url)}" alt="${escapeHtml(photo.title)}" loading="lazy" class="gallery-image w-full h-full object-cover"></div><div class="p-5"><p class="text-xs text-purple-200 mb-2">AI 창작 · ${escapeHtml(photo.date)}</p><h3 class="text-lg font-bold text-white">${escapeHtml(photo.title)}</h3></div>`;
+                grid.appendChild(article);
+            });
+        }
+
+        async function loadGalleryFeed(file, key, render) {
+            try {
+                const response = await fetch(`./data/${file}.json?v=${Date.now()}`, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                if (!Array.isArray(data)) throw new Error('Invalid gallery feed');
+                state[key] = data.filter(item => typeof item.url === 'string' && (/^https:\/\//.test(item.url) || /^\.\/assets\/creative\/[\w-]+\.webp$/.test(item.url)));
+            } catch (error) {
+                console.error('갤러리를 불러오지 못했습니다:', error);
+                if (key === 'creations') {
+                    document.getElementById('creative-grid').innerHTML = '<p class="col-span-full py-12 text-center text-gray-400">이미지를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</p>';
+                    return;
+                }
+            }
+            render();
         }
 
         // 업로드 폼 핸들러
@@ -910,16 +956,16 @@
                 const safeLink = typeof item.url === 'string' && /^https?:\/\//i.test(item.url);
 
                 article.innerHTML = `
-                    <div class="flex flex-wrap items-center gap-2 mb-3 text-[11px]">
+                    <div class="briefing-meta flex flex-wrap items-center gap-2 mb-3">
                         <span class="px-2 py-0.5 rounded bg-neonpurple/15 border border-neonpurple/30 text-neonpurple">${type}</span>
-                        <span class="text-gray-500">${source}</span>
+                        <span>${source}</span>
                         <span class="text-gray-600">•</span>
-                        <span class="text-gray-500">${date}</span>
+                        <span>${date}</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white font-serif mb-2">${title}</h3>
-                    ${originalTitle ? `<p class="text-[11px] text-gray-600 mb-3">원제: ${originalTitle}</p>` : ''}
-                    <p class="text-sm text-gray-300 leading-relaxed whitespace-pre-line">${summary}</p>
-                    ${safeLink ? `<div class="mt-4"><a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-xs text-neonpurple hover:text-white transition-colors">원문 보기 →</a></div>` : ''}
+                    <h3 class="briefing-title font-bold text-white mb-2">${title}</h3>
+                    ${originalTitle ? `<p class="briefing-original mb-3">원제: ${originalTitle}</p>` : ''}
+                    <p class="briefing-summary text-gray-300 whitespace-pre-line">${summary}</p>
+                    ${safeLink ? `<div class="mt-4"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" class="briefing-link text-purple-200 hover:text-white transition-colors">원문 보기 →</a></div>` : ''}
                 `;
                 list.appendChild(article);
             });
@@ -973,9 +1019,11 @@
             const btnPhotos = document.getElementById('tab-btn-photos');
             const btnForum = document.getElementById('tab-btn-forum');
             const btnBriefing = document.getElementById('tab-btn-briefing');
+            const btnCreative = document.getElementById('tab-btn-creative');
             const contentPhotos = document.getElementById('tab-content-photos');
             const contentForum = document.getElementById('tab-content-forum');
             const contentBriefing = document.getElementById('tab-content-briefing');
+            const contentCreative = document.getElementById('tab-content-creative');
             const hubTitle = document.getElementById('hub-title');
             const hubDesc = document.getElementById('hub-desc');
 
@@ -985,9 +1033,11 @@
             btnPhotos.className = inactiveClass;
             btnForum.className = inactiveClass;
             btnBriefing.className = inactiveClass;
+            btnCreative.className = inactiveClass;
             contentPhotos.classList.add('hidden');
             contentForum.classList.add('hidden');
             contentBriefing.classList.add('hidden');
+            contentCreative.classList.add('hidden');
 
             if (tabName === 'photos') {
                 btnPhotos.className = activeClass;
@@ -999,6 +1049,11 @@
                 contentForum.classList.remove('hidden');
                 hubTitle.textContent = 'The Void Forum';
                 hubDesc.textContent = '사건의 지평선 너머를 탐구하는 대원 토론 광장';
+            } else if (tabName === 'creative') {
+                btnCreative.className = activeClass;
+                contentCreative.classList.remove('hidden');
+                hubTitle.textContent = 'Cosmic Dream Gallery';
+                hubDesc.textContent = '상상으로 펼치는 신비한 우주';
             } else {
                 btnBriefing.className = activeClass;
                 contentBriefing.classList.remove('hidden');
@@ -1013,7 +1068,11 @@
             renderGallery();
             renderForum();
             loadBriefings();
+            renderCreations();
+            loadGalleryFeed('photo-gallery', 'automaticPhotos', renderGallery);
+            loadGalleryFeed('creative-gallery', 'creations', renderCreations);
         });
     </script>
 </body>
 </html>
+

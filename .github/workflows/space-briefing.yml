@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: hourly-space-briefing
+  group: repository-content-updates
   cancel-in-progress: false
 
 jobs:
@@ -44,4 +44,7 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update hourly space briefing"
+          git pull --rebase origin main
           git push
+
+
