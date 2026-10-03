@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA16606",
+    "slot": "photos-82920",
+    "nasaId": "PIA16606",
+    "title": "Sizzling Remains of a Dead Star",
+    "url": "https://images-assets.nasa.gov/image/PIA16606/PIA16606~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "NASA/JPL-Caltech/DSS",
+    "sourceUrl": "https://images.nasa.gov/details/PIA16606",
+    "publishedAt": "2026-10-03T19:33:03.790Z"
+  },
+  {
     "id": "nasa-PIA11748",
     "nasaId": "PIA11748",
     "title": "Supernova Remnant in 3-D",
@@ -11,4 +23,3 @@
     "publishedAt": "2026-10-03T18:11:41.733Z"
   }
 ]
-
