@@ -2,8 +2,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { randomInt } from 'node:crypto';
+import '../assets/cosmic-lore.js';
 
 const SIX_HOURS = 6 * 60 * 60 * 1000;
+const FOUR_HOURS = 4 * 60 * 60 * 1000;
 const KST_OFFSET = 9 * 60 * 60 * 1000;
 const subjects = [
   ['별빛의 요람', 'a luminous nebula with newborn stars'],
@@ -38,8 +40,9 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const file = path.join(root, 'data', `${mode === 'photos' ? 'photo' : 'creative'}-gallery.json`);
   const posts = await readFeed(file);
   const date = new Date(now.getTime() + KST_OFFSET).toISOString().slice(0, 10);
-  const slot = String(Math.floor((now.getTime() + KST_OFFSET) / SIX_HOURS));
-  if (posts.some(post => mode === 'photos' ? post.date === date : post.slot === slot)) {
+  const interval = mode === 'photos' ? SIX_HOURS : FOUR_HOURS;
+  const slot = `${mode}-${Math.floor((now.getTime() + KST_OFFSET) / interval)}`;
+  if (posts.some(post => post.slot === slot || (post.publishedAt && Math.floor((new Date(post.publishedAt).getTime() + KST_OFFSET) / interval) === Math.floor((now.getTime() + KST_OFFSET) / interval)))) {
     console.log(`${mode}: already published for this period`);
     return false;
   }
@@ -75,7 +78,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
       const imageUrl = assets.find(url => /~medium\.(jpg|png)$/i.test(url)) || assets.find(url => /~orig\.(jpg|png)$/i.test(url)) || image.href;
       const imageResponse = await request(imageUrl, { method: 'HEAD', signal: AbortSignal.timeout(30000) });
       if (!imageResponse.ok || !imageResponse.headers.get('content-type')?.startsWith('image/')) continue;
-      await saveFeed(file, [{ id: `nasa-${data.nasa_id}`, nasaId: data.nasa_id, title: data.title, url: imageUrl, author: 'NASA 이미지 라이브러리', date, credit: data.photographer || data.secondary_creator || data.center || 'NASA', sourceUrl: `https://images.nasa.gov/details/${encodeURIComponent(data.nasa_id)}`, publishedAt: now.toISOString() }, ...posts]);
+      await saveFeed(file, [{ id: `nasa-${data.nasa_id}`, slot, nasaId: data.nasa_id, title: data.title, url: imageUrl, author: 'NASA 이미지 라이브러리', date, credit: data.photographer || data.secondary_creator || data.center || 'NASA', sourceUrl: `https://images.nasa.gov/details/${encodeURIComponent(data.nasa_id)}`, publishedAt: now.toISOString() }, ...posts]);
       console.log('photos: published one NASA image (no AI tokens)');
       return true;
     }
@@ -84,8 +87,9 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
 
   if (!apiKey) throw new Error('OPENAI_API_KEY is required in GitHub Actions secrets');
   const [title, subject] = subjects[randomInt(subjects.length)];
-  const prompt = `Mysterious cosmic art: ${subject}. Detailed starlight, vivid natural colors, no text.`;
-  // One request per six-hour period; no automatic paid retries or text model calls.
+  const mood = ['iridescent dust', 'impossible luminous geometry', 'crystalline star trails', 'delicate rainbow filaments'][randomInt(4)];
+  const prompt = `Mysterious, strange, beautiful cosmic art: ${subject}, ${mood}. Vivid colors, no text.`;
+  // One request per four-hour period; descriptions use local fiction, not paid text calls.
   const response = await request('https://api.openai.com/v1/images/generations', {
     method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
@@ -101,7 +105,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const imagePath = `assets/creative/cosmic-${slot}.webp`;
   await fs.mkdir(path.join(root, 'assets', 'creative'), { recursive: true });
   await fs.writeFile(path.join(root, imagePath), bytes);
-  await saveFeed(file, [{ id: `ai-${slot}`, slot, title, url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
+  await saveFeed(file, [{ id: `ai-${slot}`, slot, title, description: globalThis.cosmicLore(title, slot), url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
   console.log(`creative: published one image; usage=${JSON.stringify(result.usage || {})}`);
   return true;
 }
@@ -109,4 +113,3 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   await updateGallery(process.argv[2]);
 }
-

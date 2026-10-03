@@ -12,7 +12,7 @@ async function fixture(t) {
   return root;
 }
 
-test('NASA daily publication respects KST date, skips duplicates and needs no OpenAI key', async t => {
+test('NASA six-hour publication respects KST slots and needs no OpenAI key', async t => {
   const root = await fixture(t);
   let calls = 0;
   const request = async (url, options) => {
@@ -20,7 +20,7 @@ test('NASA daily publication respects KST date, skips duplicates and needs no Op
     if (options.method === 'HEAD') return new Response(null, { headers: { 'content-type': 'image/jpeg' } });
     if (String(url).includes('/asset/')) return Response.json({ collection: { items: [{ href: 'https://images-assets.nasa.gov/image/test~medium.jpg' }] } });
     assert.match(String(url), /^https:\/\/images-api.nasa.gov\/search/);
-    return Response.json({ collection: { items: [{ data: [{ nasa_id: 'test-nebula', title: 'Nebula' }], links: [{ href: 'https://images-assets.nasa.gov/image/test.jpg', render: 'image' }] }] } });
+    return Response.json({ collection: { items: [{ data: [{ nasa_id: `test-nebula-${calls}`, title: 'Nebula' }], links: [{ href: 'https://images-assets.nasa.gov/image/test.jpg', render: 'image' }] }] } });
   };
   const now = new Date('2026-10-03T23:37:00Z');
   assert.equal(await updateGallery('photos', { root, now, request, apiKey: '' }), true);
@@ -28,6 +28,8 @@ test('NASA daily publication respects KST date, skips duplicates and needs no Op
   assert.equal(posts[0].date, '2026-10-04');
   assert.equal(await updateGallery('photos', { root, now, request }), false);
   assert.equal(calls, 3);
+  assert.equal(await updateGallery('photos', { root, now: new Date('2026-10-04T03:37:00Z'), request, apiKey: '' }), true);
+  assert.equal(calls, 6);
 });
 
 test('AI uses the exact model, smallest square, low quality and one request per KST slot', async t => {
@@ -40,14 +42,17 @@ test('AI uses the exact model, smallest square, low quality and one request per 
     assert.equal(body.quality, 'low');
     assert.equal(body.size, '816x816');
     assert.equal(body.n, 1);
-    assert.ok(body.prompt.length < 180);
+    assert.ok(body.prompt.length < 220);
     return Response.json({ data: [{ b64_json: Buffer.from('RIFF0000WEBPtest').toString('base64') }] });
   };
   const options = { root, request, apiKey: 'test-only', now: new Date('2026-10-03T21:37:00Z') };
   assert.equal(await updateGallery('creative', options), true);
-  assert.equal(await updateGallery('creative', { ...options, now: new Date('2026-10-04T02:59:00Z') }), false);
-  assert.equal(await updateGallery('creative', { ...options, now: new Date('2026-10-04T03:37:00Z') }), true);
+  assert.equal(await updateGallery('creative', { ...options, now: new Date('2026-10-03T22:59:00Z') }), false);
+  assert.equal(await updateGallery('creative', { ...options, now: new Date('2026-10-03T23:37:00Z') }), true);
   assert.equal(calls, 2);
+  const posts = JSON.parse(await fs.readFile(path.join(root, 'data/creative-gallery.json')));
+  assert.match(posts[0].description, /광년/);
+  assert.match(posts[0].description, /가상의 관측/);
 });
 
 test('API failure preserves existing posts and never retries the paid request', async t => {
@@ -62,12 +67,19 @@ test('API failure preserves existing posts and never retries the paid request', 
   assert.equal(await fs.readFile(file, 'utf8'), existing);
 });
 
+test('old six-hour creative posts migrate using their publication timestamp', async t => {
+  const root = await fixture(t);
+  await fs.mkdir(path.join(root, 'data'));
+  await fs.writeFile(path.join(root, 'data/creative-gallery.json'), JSON.stringify([{ slot: 'old-format', publishedAt: '2026-10-03T21:37:00Z' }]));
+  assert.equal(await updateGallery('creative', { root, now: new Date('2026-10-03T22:00:00Z'), request: () => { throw new Error('Must not call API'); } }), false);
+});
+
 test('page scripts parse and all gallery tab targets exist', async () => {
   const html = await fs.readFile(new URL('../index.html', import.meta.url), 'utf8');
   for (const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
-  for (const tab of ['photos', 'creative', 'forum', 'briefing']) {
+  for (const asset of ['community.js', 'cosmic-lore.js']) new vm.Script(await fs.readFile(new URL(`../assets/${asset}`, import.meta.url), 'utf8'));
+  for (const tab of ['photos', 'creative', 'forum', 'briefing', 'book', 'dog']) {
     assert.ok(html.includes(`id="tab-btn-${tab}"`));
     assert.ok(html.includes(`id="tab-content-${tab}"`));
   }
 });
-

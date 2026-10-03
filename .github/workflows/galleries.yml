@@ -2,10 +2,10 @@ name: Automatic Space Galleries
 
 on:
   schedule:
-    # UTC: daily at 23:37 = 08:37 KST.
-    - cron: '37 23 * * *'
-    # UTC: 21,03,09,15 = 06,12,18,00 KST.
+    # NASA: KST 00:37, 06:37, 12:37, 18:37.
     - cron: '37 3,9,15,21 * * *'
+    # Creative: KST 00:37, 04:37, 08:37, 12:37, 16:37, 20:37.
+    - cron: '37 3,7,11,15,19,23 * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -16,6 +16,7 @@ on:
     branches: [main]
     paths:
       - scripts/update-galleries.mjs
+      - assets/cosmic-lore.js
       - .github/workflows/galleries.yml
 
 permissions:
@@ -37,14 +38,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Daily NASA photo
+      - name: Test gallery periods and fiction
+        run: node --test scripts/update-galleries.test.mjs
+      - name: Six-hour NASA photo
         id: photos
-        if: github.event_name == 'push' || github.event.schedule == '37 23 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'creative')
+        if: github.event_name == 'push' || github.event.schedule == '37 3,9,15,21 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'creative')
         continue-on-error: true
         run: node scripts/update-galleries.mjs photos
-      - name: Six-hour AI creation
+      - name: Four-hour AI creation
         id: creative
-        if: github.event_name == 'push' || github.event.schedule == '37 3,9,15,21 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'photos')
+        if: github.event_name == 'push' || github.event.schedule == '37 3,7,11,15,19,23 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'photos')
         continue-on-error: true
         run: node scripts/update-galleries.mjs creative
         env:
@@ -63,4 +66,3 @@ jobs:
       - name: Report API failures
         if: steps.photos.outcome == 'failure' || steps.creative.outcome == 'failure'
         run: exit 1
-
