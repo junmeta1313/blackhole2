@@ -2,7 +2,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { randomInt, randomUUID } from 'node:crypto';
-import '../assets/cosmic-lore.js';
 import '../assets/cosmic-scenes.js';
 
 const SIX_HOURS = 6 * 60 * 60 * 1000;
@@ -15,8 +14,7 @@ export function selectCreativeScene(posts, pick = randomInt) {
   const scenes = globalThis.cosmicScenes.filter(scene => scene.category === category);
   const fresh = scenes.filter(scene => !posts.slice(0, 8).some(post => post.sceneKey === scene.key));
   const eligible = fresh.length ? fresh : scenes;
-  const forms = globalThis.cosmicLoreForms.filter(form => !posts.slice(0, 2).some(post => post.storyForm === form));
-  return { ...eligible[pick(eligible.length)], storyForm: forms[pick(forms.length)] };
+  return { ...eligible[pick(eligible.length)] };
 }
 
 export function creativePrompt(scene) {
@@ -112,7 +110,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const imagePath = `assets/creative/cosmic-${generationId}.webp`;
   await fs.mkdir(path.join(root, 'assets', 'creative'), { recursive: true });
   await fs.writeFile(path.join(root, imagePath), bytes);
-  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, storyForm: scene.storyForm, loreVersion: 2, description: globalThis.cosmicLore(title, generationId, scene), url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
+  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, descriptionSource: 'pending', url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
   console.log(`creative: published one image; usage=${JSON.stringify(result.usage || {})}`);
   return true;
 }

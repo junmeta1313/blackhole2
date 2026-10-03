@@ -9,16 +9,17 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Manual test: always publish new images (creative incurs API costs)'
+        description: 'New images: all/photos/creative. Missing stories only: descriptions. AI calls incur costs.'
         type: choice
-        options: [all, photos, creative]
+        options: [all, photos, creative, descriptions]
         default: all
   push:
     branches: [main]
     paths:
       - scripts/update-galleries.mjs
       - scripts/update-galleries.test.mjs
-      - assets/cosmic-lore.js
+      - scripts/describe-creations.mjs
+      - scripts/describe-creations.test.mjs
       - assets/cosmic-scenes.js
       - .github/workflows/galleries.yml
 
@@ -32,7 +33,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,17 +43,24 @@ jobs:
         with:
           node-version: '22'
       - name: Test gallery periods and fiction
-        run: node --test scripts/update-galleries.test.mjs
+        run: node --test scripts/update-galleries.test.mjs scripts/describe-creations.test.mjs
       - name: Six-hour NASA photo
         id: photos
-        if: github.event_name == 'push' || github.event.schedule == '37 3,9,15,21 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'creative')
+        if: github.event_name == 'push' || github.event.schedule == '37 3,9,15,21 * * *' || (github.event_name == 'workflow_dispatch' && (inputs.mode == 'all' || inputs.mode == 'photos'))
         continue-on-error: true
         run: node scripts/update-galleries.mjs photos ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
       - name: Four-hour AI creation
         id: creative
-        if: github.event_name == 'push' || github.event.schedule == '37 3,7,11,15,19,23 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'photos')
+        if: github.event_name == 'push' || github.event.schedule == '37 3,7,11,15,19,23 * * *' || (github.event_name == 'workflow_dispatch' && (inputs.mode == 'all' || inputs.mode == 'creative'))
         continue-on-error: true
         run: node scripts/update-galleries.mjs creative ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Write original stories from actual images
+        id: descriptions
+        if: always() && (github.event_name == 'push' || github.event.schedule == '37 3,7,11,15,19,23 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'photos'))
+        continue-on-error: true
+        run: node scripts/describe-creations.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - name: Commit available posts
@@ -67,5 +75,5 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
       - name: Report API failures
-        if: steps.photos.outcome == 'failure' || steps.creative.outcome == 'failure'
+        if: steps.photos.outcome == 'failure' || steps.creative.outcome == 'failure' || steps.descriptions.outcome == 'failure'
         run: exit 1
