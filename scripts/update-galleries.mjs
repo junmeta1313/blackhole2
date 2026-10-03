@@ -3,20 +3,25 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { randomInt, randomUUID } from 'node:crypto';
 import '../assets/cosmic-lore.js';
+import '../assets/cosmic-scenes.js';
 
 const SIX_HOURS = 6 * 60 * 60 * 1000;
 const FOUR_HOURS = 4 * 60 * 60 * 1000;
 const KST_OFFSET = 9 * 60 * 60 * 1000;
-const subjects = [
-  ['별빛의 요람', 'a luminous nebula with newborn stars'],
-  ['고요한 은하', 'a spiral galaxy above a distant alien ocean'],
-  ['심연의 빛', 'a black hole with a glowing accretion disk'],
-  ['얼음 행성의 새벽', 'an icy exoplanet with rings and two moons'],
-  ['우주의 정원', 'colorful interstellar dust and distant star clusters'],
-  ['보랏빛 지평선', 'a violet nebula beyond a rocky alien horizon'],
-  ['별의 잔향', 'a supernova remnant with luminous filaments'],
-  ['시간의 파도', 'a gravitational lens around a distant galaxy']
-];
+export function selectCreativeScene(posts, pick = randomInt) {
+  const recent = posts.slice(0, 3).map(post => post.category);
+  const categories = [...new Set(globalThis.cosmicScenes.map(scene => scene.category))].filter(category => !recent.includes(category));
+  const category = categories[pick(categories.length)];
+  const scenes = globalThis.cosmicScenes.filter(scene => scene.category === category);
+  const fresh = scenes.filter(scene => !posts.slice(0, 8).some(post => post.sceneKey === scene.key));
+  const eligible = fresh.length ? fresh : scenes;
+  const forms = globalThis.cosmicLoreForms.filter(form => !posts.slice(0, 2).some(post => post.storyForm === form));
+  return { ...eligible[pick(eligible.length)], storyForm: forms[pick(forms.length)] };
+}
+
+export function creativePrompt(scene) {
+  return `Unseen but plausible space photograph: ${scene.image}. Restrained natural colors, realistic exposure, subtle detail, physically coherent lighting and scale. Quiet documentary composition, sparse stars where appropriate. No rainbow glow, magic geometry, oversized celestial objects, fantasy painting, dramatic lens flare or text. Artificial structures are speculative engineering, not magic.`;
+}
 
 async function readFeed(file) {
   try {
@@ -87,9 +92,9 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   }
 
   if (!apiKey) throw new Error('OPENAI_API_KEY is required in GitHub Actions secrets');
-  const [title, subject] = subjects[randomInt(subjects.length)];
-  const mood = ['iridescent dust', 'impossible luminous geometry', 'crystalline star trails', 'delicate rainbow filaments'][randomInt(4)];
-  const prompt = `Mysterious, strange, beautiful cosmic art: ${subject}, ${mood}. Vivid colors, no text.`;
+  const scene = selectCreativeScene(posts);
+  const title = scene.title;
+  const prompt = creativePrompt(scene);
   // Scheduled runs are slot-limited; manual tests make one fresh paid request.
   const response = await request('https://api.openai.com/v1/images/generations', {
     method: 'POST',
@@ -107,7 +112,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const imagePath = `assets/creative/cosmic-${generationId}.webp`;
   await fs.mkdir(path.join(root, 'assets', 'creative'), { recursive: true });
   await fs.writeFile(path.join(root, imagePath), bytes);
-  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, description: globalThis.cosmicLore(title, generationId), url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
+  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, storyForm: scene.storyForm, loreVersion: 2, description: globalThis.cosmicLore(title, generationId, scene), url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
   console.log(`creative: published one image; usage=${JSON.stringify(result.usage || {})}`);
   return true;
 }

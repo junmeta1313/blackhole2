@@ -19,6 +19,7 @@ on:
       - scripts/update-galleries.mjs
       - scripts/update-galleries.test.mjs
       - assets/cosmic-lore.js
+      - assets/cosmic-scenes.js
       - .github/workflows/galleries.yml
 
 permissions:

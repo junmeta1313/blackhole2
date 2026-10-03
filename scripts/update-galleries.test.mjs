@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import vm from 'node:vm';
-import { updateGallery } from './update-galleries.mjs';
+import { updateGallery, selectCreativeScene, creativePrompt } from './update-galleries.mjs';
 
 async function fixture(t) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), 'cosmic-gallery-'));
@@ -47,7 +47,8 @@ test('AI uses the exact model, smallest square, low quality and one request per 
     assert.equal(body.quality, 'low');
     assert.equal(body.size, '816x816');
     assert.equal(body.n, 1);
-    assert.ok(body.prompt.length < 220);
+    assert.ok(body.prompt.length < 650);
+    assert.match(body.prompt, /Restrained natural colors/);
     return Response.json({ data: [{ b64_json: Buffer.from('RIFF0000WEBPtest').toString('base64') }] });
   };
   const options = { root, request, apiKey: 'test-only', now: new Date('2026-10-03T21:37:00Z') };
@@ -58,6 +59,7 @@ test('AI uses the exact model, smallest square, low quality and one request per 
   const posts = JSON.parse(await fs.readFile(path.join(root, 'data/creative-gallery.json')));
   assert.match(posts[0].description, /광년/);
   assert.match(posts[0].description, /가상의 관측/);
+  assert.ok(posts[0].description.length > 650);
   assert.equal(await updateGallery('creative', { ...options, force: true }), true);
   assert.equal(await updateGallery('creative', { ...options, force: true }), true);
   assert.equal(calls, 4);
@@ -90,9 +92,39 @@ test('old six-hour creative posts migrate using their publication timestamp', as
 test('page scripts parse and all gallery tab targets exist', async () => {
   const html = await fs.readFile(new URL('../index.html', import.meta.url), 'utf8');
   for (const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
-  for (const asset of ['community.js', 'cosmic-lore.js']) new vm.Script(await fs.readFile(new URL(`../assets/${asset}`, import.meta.url), 'utf8'));
+  for (const asset of ['community.js', 'cosmic-lore.js', 'cosmic-scenes.js']) new vm.Script(await fs.readFile(new URL(`../assets/${asset}`, import.meta.url), 'utf8'));
   for (const tab of ['photos', 'creative', 'forum', 'briefing', 'book', 'dog']) {
     assert.ok(html.includes(`id="tab-btn-${tab}"`));
     assert.ok(html.includes(`id="tab-content-${tab}"`));
   }
+});
+
+test('scene selection avoids the last three categories and last two writing forms', () => {
+  const history = [];
+  for (let i = 0; i < 40; i++) {
+    const scene = selectCreativeScene(history, max => i % max);
+    assert.ok(!history.slice(0, 3).some(post => post.category === scene.category));
+    assert.ok(!history.slice(0, 2).some(post => post.storyForm === scene.storyForm));
+    assert.ok(!history.slice(0, 8).some(post => post.sceneKey === scene.key));
+    assert.ok(creativePrompt(scene).length < 650);
+    history.unshift(scene);
+  }
+  assert.equal(new Set(globalThis.cosmicScenes.map(scene => scene.category)).size, 8);
+});
+
+test('all story forms are long, stable, distinct and match their subject', () => {
+  const stories = new Set();
+  for (const scene of globalThis.cosmicScenes) {
+    for (const storyForm of globalThis.cosmicLoreForms) {
+      const context = { ...scene, storyForm };
+      const story = globalThis.cosmicLore(scene.title, scene.key, context);
+      assert.equal(story, globalThis.cosmicLore(scene.title, scene.key, context));
+      assert.ok(story.length > 650);
+      assert.equal(story.split('\n\n').length, 4);
+      assert.ok(story.includes(scene.detail));
+      assert.ok(!stories.has(story));
+      stories.add(story);
+    }
+  }
+  assert.equal(stories.size, 96);
 });

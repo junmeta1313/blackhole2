@@ -354,7 +354,7 @@
             </div>
             <div id="lightbox-story" hidden class="max-w-2xl mt-6 border-t border-purple-300/30 pt-5 text-left">
                 <p class="text-sm text-amber-200 mb-3">가상의 관측 이야기 · 실제 천문학적 사실이 아닙니다.</p>
-                <p id="lightbox-description" class="text-gray-300 text-base leading-8"></p>
+                <p id="lightbox-description" class="text-gray-300 text-base leading-8 whitespace-pre-line"></p>
             </div>
         </div>
     </div>
@@ -797,7 +797,7 @@
             state.creations.forEach(photo => {
                 const article = document.createElement('article');
                 article.className = 'gallery-card rounded-lg overflow-hidden cursor-pointer';
-                article.onclick = () => openLightbox(photo.url, photo.title, 'AI 창작', photo.description || cosmicLore(photo.title, photo.id));
+                article.onclick = () => openLightbox(photo.url, photo.title, 'AI 창작', photo.loreVersion >= 2 && photo.description ? photo.description : cosmicLore(photo.title, photo.id, photo));
                 article.innerHTML = `<div class="gallery-image-container aspect-square bg-zinc-900"><img src="${escapeHtml(photo.url)}" alt="${escapeHtml(photo.title)}" loading="lazy" class="gallery-image w-full h-full object-cover"></div><div class="p-5"><p class="text-xs text-purple-200 mb-2">AI 창작 · ${escapeHtml(photo.date)}</p><h3 class="text-lg font-bold text-white">${escapeHtml(photo.title)}</h3></div>`;
                 grid.appendChild(article);
             });
@@ -1144,7 +1144,7 @@
             loadGalleryFeed('creative-gallery', 'creations', renderCreations);
         });
     </script>
-    <script src="./assets/cosmic-lore.js"></script>
+    <script src="./assets/cosmic-lore.js?v=2"></script>
     <script src="./assets/community.js"></script>
 </body>
 </html>
