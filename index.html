@@ -484,27 +484,8 @@
                     date: '2026-03-18'
                 }
             ],
-            // 자동 우주 브리핑 예시 데이터 (다음 단계에서 외부 데이터 파일로 교체 예정)
-            briefings: [
-                {
-                    id: 1,
-                    title: '우주 브리핑 예시: 최신 천문학 소식을 이곳에 표시합니다',
-                    summary: '이 영역은 자동 업데이트 게시판이 어떻게 보일지 미리 확인하기 위한 예시입니다. 다음 단계에서 실제 기사와 논문을 수집하는 자동화 기능에 연결할 수 있습니다.',
-                    source: 'EVENT HORIZON',
-                    type: '안내',
-                    url: '#',
-                    date: '2026-10-04 00:00'
-                },
-                {
-                    id: 2,
-                    title: '1시간마다 중요한 소식 최대 2개 자동 게시',
-                    summary: '향후 GitHub Actions와 OpenAI API를 연결하면 우주·천문학 분야의 주요 기사와 논문을 선별하고, 한국어로 요약해 이 게시판에 자동으로 추가할 수 있습니다.',
-                    source: '자동화 예정',
-                    type: '시스템',
-                    url: '#',
-                    date: '2026-10-04 00:00'
-                }
-            ],
+            // 자동 우주 브리핑 데이터는 data/space-briefing.json에서 불러옵니다.
+            briefings: [],
             currentTab: 'photos' // 'photos' | 'forum' | 'briefing'
         };
 
@@ -893,29 +874,69 @@
         // ----------------------------------------------------
         // [6] 자동 우주 브리핑 렌더링
         // ----------------------------------------------------
+        function escapeHtml(value = '') {
+            return String(value)
+                .replaceAll('&', '&amp;')
+                .replaceAll('<', '&lt;')
+                .replaceAll('>', '&gt;')
+                .replaceAll('"', '&quot;')
+                .replaceAll("'", '&#039;');
+        }
+
         function renderBriefings() {
             const list = document.getElementById('briefing-list');
             if (!list) return;
             list.innerHTML = '';
 
+            if (!state.briefings.length) {
+                list.innerHTML = `
+                    <div class="bg-black/50 border border-gray-800 rounded-lg p-6 text-center">
+                        <p class="text-gray-400 text-sm">아직 자동 브리핑이 없습니다.</p>
+                        <p class="text-gray-600 text-xs mt-2">GitHub Actions가 실행되면 매시간 새로운 우주 소식 2건이 여기에 추가됩니다.</p>
+                    </div>`;
+                return;
+            }
+
             state.briefings.forEach(item => {
                 const article = document.createElement('article');
                 article.className = 'bg-black/60 border border-neonpurple/25 hover:border-neonpurple/70 rounded-lg p-5 transition-all shadow-card-glow';
 
-                const safeLink = item.url && item.url !== '#';
+                const title = escapeHtml(item.title);
+                const summary = escapeHtml(item.summary);
+                const source = escapeHtml(item.source);
+                const type = escapeHtml(item.type);
+                const date = escapeHtml(item.date);
+                const originalTitle = item.originalTitle ? escapeHtml(item.originalTitle) : '';
+                const safeLink = typeof item.url === 'string' && /^https?:\/\//i.test(item.url);
+
                 article.innerHTML = `
                     <div class="flex flex-wrap items-center gap-2 mb-3 text-[11px]">
-                        <span class="px-2 py-0.5 rounded bg-neonpurple/15 border border-neonpurple/30 text-neonpurple">${item.type}</span>
-                        <span class="text-gray-500">${item.source}</span>
+                        <span class="px-2 py-0.5 rounded bg-neonpurple/15 border border-neonpurple/30 text-neonpurple">${type}</span>
+                        <span class="text-gray-500">${source}</span>
                         <span class="text-gray-600">•</span>
-                        <span class="text-gray-500">${item.date}</span>
+                        <span class="text-gray-500">${date}</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white font-serif mb-3">${item.title}</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">${item.summary}</p>
+                    <h3 class="text-xl font-bold text-white font-serif mb-2">${title}</h3>
+                    ${originalTitle ? `<p class="text-[11px] text-gray-600 mb-3">원제: ${originalTitle}</p>` : ''}
+                    <p class="text-sm text-gray-300 leading-relaxed whitespace-pre-line">${summary}</p>
                     ${safeLink ? `<div class="mt-4"><a href="${item.url}" target="_blank" rel="noopener noreferrer" class="text-xs text-neonpurple hover:text-white transition-colors">원문 보기 →</a></div>` : ''}
                 `;
                 list.appendChild(article);
             });
+        }
+
+        async function loadBriefings() {
+            try {
+                // 캐시 방지를 위해 현재 시간을 쿼리에 붙입니다.
+                const response = await fetch(`./data/space-briefing.json?v=${Date.now()}`, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                state.briefings = Array.isArray(data) ? data : [];
+            } catch (error) {
+                console.error('우주 브리핑을 불러오지 못했습니다:', error);
+                state.briefings = [];
+            }
+            renderBriefings();
         }
 
         // ----------------------------------------------------
@@ -991,7 +1012,7 @@
             renderAuthBar();
             renderGallery();
             renderForum();
-            renderBriefings();
+            loadBriefings();
         });
     </script>
 </body>
