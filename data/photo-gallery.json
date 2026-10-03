@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-KSC-2012-3162",
+    "slot": "photos-82920",
+    "nasaId": "KSC-2012-3162",
+    "title": "KSC-2012-3162",
+    "url": "https://images-assets.nasa.gov/image/KSC-2012-3162/KSC-2012-3162~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "KSC",
+    "sourceUrl": "https://images.nasa.gov/details/KSC-2012-3162",
+    "publishedAt": "2026-10-03T20:03:34.168Z"
+  },
+  {
     "id": "nasa-0203043",
     "slot": "photos-82920",
     "nasaId": "0203043",
