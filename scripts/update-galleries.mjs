@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { randomInt } from 'node:crypto';
+import { randomInt, randomUUID } from 'node:crypto';
 import '../assets/cosmic-lore.js';
 
 const SIX_HOURS = 6 * 60 * 60 * 1000;
@@ -35,17 +35,18 @@ async function saveFeed(file, posts) {
   await fs.rename(`${file}.tmp`, file);
 }
 
-export async function updateGallery(mode, { now = new Date(), root = process.cwd(), request = fetch, apiKey = process.env.OPENAI_API_KEY } = {}) {
+export async function updateGallery(mode, { now = new Date(), root = process.cwd(), request = fetch, apiKey = process.env.OPENAI_API_KEY, force = false } = {}) {
   if (!['photos', 'creative'].includes(mode)) throw new Error('Mode must be photos or creative');
   const file = path.join(root, 'data', `${mode === 'photos' ? 'photo' : 'creative'}-gallery.json`);
   const posts = await readFeed(file);
   const date = new Date(now.getTime() + KST_OFFSET).toISOString().slice(0, 10);
   const interval = mode === 'photos' ? SIX_HOURS : FOUR_HOURS;
   const slot = `${mode}-${Math.floor((now.getTime() + KST_OFFSET) / interval)}`;
-  if (posts.some(post => post.slot === slot || (post.publishedAt && Math.floor((new Date(post.publishedAt).getTime() + KST_OFFSET) / interval) === Math.floor((now.getTime() + KST_OFFSET) / interval)))) {
+  if (!force && posts.some(post => post.slot === slot || (post.publishedAt && Math.floor((new Date(post.publishedAt).getTime() + KST_OFFSET) / interval) === Math.floor((now.getTime() + KST_OFFSET) / interval)))) {
     console.log(`${mode}: already published for this period`);
     return false;
   }
+  if (force) console.log(`${mode}: manual test run; bypassing publication period limit`);
 
   if (mode === 'photos') {
     const terms = ['nebula', 'galaxy', 'black hole', 'star cluster', 'Saturn', 'supernova'];
@@ -89,7 +90,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const [title, subject] = subjects[randomInt(subjects.length)];
   const mood = ['iridescent dust', 'impossible luminous geometry', 'crystalline star trails', 'delicate rainbow filaments'][randomInt(4)];
   const prompt = `Mysterious, strange, beautiful cosmic art: ${subject}, ${mood}. Vivid colors, no text.`;
-  // One request per four-hour period; descriptions use local fiction, not paid text calls.
+  // Scheduled runs are slot-limited; manual tests make one fresh paid request.
   const response = await request('https://api.openai.com/v1/images/generations', {
     method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
@@ -102,14 +103,15 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   if (typeof encoded !== 'string' || !encoded) throw new Error('Image API returned no image');
   const bytes = Buffer.from(encoded, 'base64');
   if (bytes.toString('ascii', 0, 4) !== 'RIFF' || bytes.toString('ascii', 8, 12) !== 'WEBP') throw new Error('Invalid WebP response');
-  const imagePath = `assets/creative/cosmic-${slot}.webp`;
+  const generationId = `${slot}-${randomUUID()}`;
+  const imagePath = `assets/creative/cosmic-${generationId}.webp`;
   await fs.mkdir(path.join(root, 'assets', 'creative'), { recursive: true });
   await fs.writeFile(path.join(root, imagePath), bytes);
-  await saveFeed(file, [{ id: `ai-${slot}`, slot, title, description: globalThis.cosmicLore(title, slot), url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
+  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, description: globalThis.cosmicLore(title, generationId), url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
   console.log(`creative: published one image; usage=${JSON.stringify(result.usage || {})}`);
   return true;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
-  await updateGallery(process.argv[2]);
+  await updateGallery(process.argv[2], { force: process.argv.includes('--force') });
 }

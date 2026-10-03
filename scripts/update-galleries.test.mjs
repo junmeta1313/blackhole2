@@ -30,6 +30,11 @@ test('NASA six-hour publication respects KST slots and needs no OpenAI key', asy
   assert.equal(calls, 3);
   assert.equal(await updateGallery('photos', { root, now: new Date('2026-10-04T03:37:00Z'), request, apiKey: '' }), true);
   assert.equal(calls, 6);
+  assert.equal(await updateGallery('photos', { root, now, request, apiKey: '', force: true }), true);
+  assert.equal(calls, 9);
+  const refreshed = JSON.parse(await fs.readFile(path.join(root, 'data/photo-gallery.json')));
+  assert.equal(refreshed.length, 3);
+  assert.equal(new Set(refreshed.map(post => post.nasaId)).size, 3);
 });
 
 test('AI uses the exact model, smallest square, low quality and one request per KST slot', async t => {
@@ -53,6 +58,14 @@ test('AI uses the exact model, smallest square, low quality and one request per 
   const posts = JSON.parse(await fs.readFile(path.join(root, 'data/creative-gallery.json')));
   assert.match(posts[0].description, /광년/);
   assert.match(posts[0].description, /가상의 관측/);
+  assert.equal(await updateGallery('creative', { ...options, force: true }), true);
+  assert.equal(await updateGallery('creative', { ...options, force: true }), true);
+  assert.equal(calls, 4);
+  const refreshed = JSON.parse(await fs.readFile(path.join(root, 'data/creative-gallery.json')));
+  assert.equal(refreshed.length, 4);
+  assert.equal(new Set(refreshed.map(post => post.id)).size, 4);
+  assert.equal(new Set(refreshed.map(post => post.url)).size, 4);
+  for (const post of refreshed) assert.ok((await fs.stat(path.join(root, post.url))).size > 0);
 });
 
 test('API failure preserves existing posts and never retries the paid request', async t => {
