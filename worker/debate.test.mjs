@@ -86,3 +86,24 @@ test('Gemini errors reveal only HTTP status and a known reason, never provider m
  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:1}),e,{fetch:async()=>Response.json({error:{status:'NOT_FOUND',message:'sensitive-api-key-secret'}},{status:404})});
  const body=await r.json();assert.equal(r.status,502);assert.match(body.error,/Gemini HTTP 404 · NOT_FOUND/);assert.ok(!body.error.includes('sensitive'));
 });
+test('Gemini precondition failures distinguish region and billing without exposing raw errors or retrying',async t=>{
+ const e=fixture(t),deps={fetch:fake([])};
+ const session=await(await handle(req('/debates/start',start),e,deps)).json();
+ await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps);
+ const cases=[
+  ['Gemini API free tier is not available in your country. Please enable billing.', 'free_tier_region', /무료 API/],
+  ['User location is not supported for the API use.', 'region', /Cloudflare 서버/],
+  ['Billing is not enabled for this project.', 'billing', /결제 상태/],
+  ['Unknown precondition involving sensitive-api-key-secret.', undefined, /이용 조건/]
+ ];
+ let calls=0;
+ for(const [message,reason,hint] of cases){
+  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:1}),e,{fetch:async()=>{
+   calls++;return Response.json({error:{status:'FAILED_PRECONDITION',message:message+' sensitive-api-key-secret'}},{status:400});
+  }});
+  const body=await r.json();assert.equal(r.status,502);assert.equal(body.reason,reason);assert.match(body.error,hint);assert.ok(!body.error.includes('sensitive'));
+ }
+ assert.equal(calls,cases.length);
+ const synced=await(await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps)).json();
+ assert.equal(synced.debate.turns.length,1);assert.equal(synced.debate.turns[0].speaker,'openai');
+});
