@@ -49,7 +49,7 @@ jobs:
         with:
           node-version: '22'
       - name: Test gallery periods and fiction
-        run: node --test worker/index.test.mjs scripts/cosmic-generator.test.mjs scripts/update-galleries.test.mjs scripts/describe-creations.test.mjs
+        run: node --test worker/*.test.mjs scripts/cosmic-generator.test.mjs scripts/update-galleries.test.mjs scripts/describe-creations.test.mjs
       - name: Six-hour NASA photo
         id: photos
         if: github.event_name == 'push' || github.event.schedule == '37 3,9,15,21 * * *' || (github.event_name == 'workflow_dispatch' && (inputs.mode == 'all' || inputs.mode == 'photos'))

@@ -142,6 +142,20 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(138, 43, 226, 0.8);
         }
+        .debate-fields {display:grid;gap:14px;padding:20px;border:1px solid #5b387c;border-radius:12px;background:#141018;}
+        .debate-fields label {display:grid;gap:6px;font-size:14px;color:#d8cce9;}
+        .debate-fields input,.debate-fields textarea,.debate-fields select {width:100%;background:#211c27;color:#fff;border:1px solid #61536e;border-radius:6px;padding:10px;}
+        .debate-action {padding:10px 18px;border-radius:7px;background:#62328c;color:white;}
+        .debate-fields:disabled {opacity:.6;}
+        #debate-chat {display:flex;flex-direction:column;gap:18px;max-height:650px;overflow:auto;padding:12px 0;}
+        .debate-bubble {max-width:88%;padding:16px;border-radius:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:15px;line-height:1.85;}
+        .debate-bubble strong {display:block;font-size:12px;margin-bottom:8px;}
+        .debate-openai {align-self:flex-start;background:#17382f;border:1px solid #326452;}
+        .debate-gemini {align-self:flex-end;background:#312147;border:1px solid #654d88;}
+        #debate-summary {padding:20px;border:1px solid #605173;border-radius:10px;margin-top:20px;}
+        #debate-summary h4 {color:#c8acef;font-weight:bold;margin:12px 0 8px;}
+        #debate-summary p {white-space:pre-wrap;line-height:1.9;font-size:14px;}
+        .debate-post {display:block;width:100%;text-align:left;padding:14px;border-bottom:1px solid #433a50;overflow-wrap:anywhere;}
     </style>
 </head>
 <body class="antialiased min-h-screen relative font-sans flex flex-col">
@@ -189,6 +203,7 @@
             <div class="flex justify-center gap-8 mt-6 text-sm">
                 <button onclick="goToGallery('book')" class="text-emerald-200 hover:text-white py-2">Book · 우주 서가</button>
                 <button onclick="goToGallery('dog')" class="text-amber-200 hover:text-white py-2">Dog · 잠깐 쉬기</button>
+                <button onclick="goToGallery('debate')" class="text-purple-200 hover:text-white py-2">AI 토론 · 두 관점의 대화</button>
             </div>
             <p class="mt-5 text-xs md:text-sm text-gray-500 tracking-wider">
                 우주 브리핑에서는 매일 중요한 우주·천문학 기사와 논문을 최대 2건씩 한국어로 소개합니다.
@@ -225,6 +240,7 @@
                     🚀 우주 브리핑
                 </button>
                 <button id="tab-btn-book" onclick="switchHubTab('book')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">Book</button>
+                <button id="tab-btn-debate" onclick="switchHubTab('debate')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">AI 토론</button>
                 <button id="tab-btn-dog" onclick="switchHubTab('dog')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">Dog</button>
             </div>
         </header>
@@ -338,6 +354,28 @@
             <div id="dog-stage"><img id="dog-image" hidden alt="랜덤 강아지 사진"><div id="dog-status" role="status" aria-live="polite">오늘은 어떤 친구를 만날까요?</div></div>
             <button id="dog-random" class="mt-5 px-6 py-3 border border-amber-300/60 text-amber-200 rounded hover:bg-amber-900/30 disabled:opacity-40">랜덤 강아지</button>
             <p class="text-xs text-gray-500 mt-4"><a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">사진 제공 · Dog CEO</a></p>
+        </div>
+        <div id="tab-content-debate" class="hidden w-full max-w-4xl mx-auto">
+            <h3 class="text-xl text-purple-200 font-bold mb-3">AI 토론 게시판</h3>
+            <p class="text-sm text-gray-400 mb-5">두 AI가 다른 입장에서 토론합니다. 발언은 실제 사실 검증 결과가 아닐 수 있습니다. 총 횟수는 양측 발언을 합한 수이며, 완료된 대화와 요약은 공개 게시글로 저장됩니다. 진행 중에는 페이지를 열어두세요.</p>
+            <form id="debate-form">
+                <fieldset id="debate-fields" class="debate-fields">
+                    <label>토론 비밀번호<input id="debate-password" type="password" required maxlength="100" autocomplete="off"></label>
+                    <label>토론 주제<input id="debate-topic" required maxlength="300" placeholder="예: 인류는 화성 정착에 우선 투자해야 하는가?"></label>
+                    <label>ChatGPT 입장<textarea id="debate-openai-position" required maxlength="800" rows="2" placeholder="찬성 또는 반대의 구체적인 입장"></textarea></label>
+                    <label>Gemini 입장<textarea id="debate-gemini-position" required maxlength="800" rows="2" placeholder="상대 AI와 다른 입장"></textarea></label>
+                    <label>총 발언 횟수<select id="debate-turns"></select></label>
+                    <button type="submit" class="debate-action">토론 시작</button>
+                </fieldset>
+            </form>
+            <p id="debate-status" role="status" aria-live="polite" class="text-sm text-purple-200 my-4">비밀번호를 입력하면 토론을 시작할 수 있습니다. AI 호출 비용이 발생합니다.</p>
+            <button id="debate-resume" hidden type="button" class="debate-action">계속하기 · 추가 호출</button>
+            <h3 id="debate-view-title" class="text-lg font-bold mt-5"></h3>
+            <p id="debate-positions" class="text-sm text-gray-400 whitespace-pre-line my-3"></p>
+            <div id="debate-chat" role="log" aria-live="polite"></div>
+            <div id="debate-summary" hidden></div>
+            <h3 class="text-lg font-bold mt-8 mb-3">완료된 토론</h3>
+            <div id="debate-posts"></div>
         </div>
     </section>
 
@@ -1084,9 +1122,17 @@
 
         function switchHubTab(tabName) {
             state.currentTab = tabName;
-            for (const name of ['photos', 'forum', 'briefing', 'creative', 'book', 'dog']) {
+            for (const name of ['photos', 'forum', 'briefing', 'creative', 'book', 'dog', 'debate']) {
                 document.getElementById(`tab-btn-${name}`).className = 'px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white';
                 document.getElementById(`tab-content-${name}`).classList.add('hidden');
+            }
+            if (tabName === 'debate') {
+                document.getElementById('tab-btn-debate').className = 'px-5 py-2 rounded text-sm font-bold bg-neonpurple text-white';
+                document.getElementById('tab-content-debate').classList.remove('hidden');
+                document.getElementById('hub-title').textContent = 'AI Debate';
+                document.getElementById('hub-desc').textContent = 'ChatGPT와 Gemini가 주고받는 두 관점의 토론';
+                window.loadDebateBoard?.();
+                return;
             }
             if (tabName === 'book' || tabName === 'dog') {
                 document.getElementById(`tab-btn-${tabName}`).className = 'px-5 py-2 rounded text-sm font-bold transition-all bg-neonpurple text-white shadow-neon';
@@ -1154,5 +1200,6 @@
     </script>
     <script src="./assets/community.js"></script>
     <script type="module" src="./assets/site-ai.js"></script>
+    <script src="./assets/debate.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+import { debateRoutes } from './debate.mjs';
 const FEED = 'https://raw.githubusercontent.com/junmeta1313/blackhole2/main/data/space-briefing.json';
 const DEFAULT_ORIGIN = 'https://junmeta1313.github.io';
 export const MODEL = 'gpt-6-luna';
@@ -58,6 +59,7 @@ export async function handle(request, env, deps = {}) {
   if (request.headers.get('Origin') && request.headers.get('Origin') !== origin) return json({ error: '허용되지 않은 사이트입니다.' }, 403);
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
   const path = new URL(request.url).pathname;
+  if (path === '/debates' || path.startsWith('/debates/')) return debateRoutes(request, env, json, deps);
   if (request.method === 'GET' && path === '/health') {
     if (!env.DB || !env.OPENAI_API_KEY) return json({ ready: false }, 503);
     try { await env.DB.prepare('SELECT last_request FROM rate_limits LIMIT 1').first(); }

@@ -12,7 +12,7 @@ API 키를 홈페이지 또는 GitHub 파일에 넣지 마세요.
 4. Worker Settings → Variables and Secrets:
    - 기존 **OPENAI_API_KEY** Secret 유지.
    - **ALLOWED_ORIGIN** 일반 변수: `https://junmeta1313.github.io`
-5. Edit code에서 `index.mjs` 전체로 교체하고 Deploy.
+5. Edit code에서 `deploy.js` 전체로 교체하고 Deploy. 기존 브리핑과 AI 토론 코드를 포함합니다.
 6. Worker 주소 뒤에 `/health`를 붙여 접속.
    `{"ready":true,"version":1,...}`이면 DB/필수 설정 연결이 완료된 상태입니다.
    이는 OpenAI 모델 권한·결제·실제 답변 성공까지 검증하는 것은 아닙니다.
@@ -59,3 +59,5 @@ npx wrangler deploy
 ```
 
 비밀값은 프롬프트 입력만 사용하고 파일에 저장하지 않습니다.
+
+AI 토론 추가 설정은 `DEBATE_SETUP.md`를 참고하세요.
