@@ -59,13 +59,13 @@ export async function handle(request, env, deps = {}) {
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
   const path = new URL(request.url).pathname;
   if (request.method === 'GET' && path === '/health') {
-    if (!env.DB || !env.OPENAI_API_KEY || !env.IP_HASH_SECRET) return json({ ready: false }, 503);
+    if (!env.DB || !env.OPENAI_API_KEY) return json({ ready: false }, 503);
     try { await env.DB.prepare('SELECT last_request FROM rate_limits LIMIT 1').first(); }
     catch { return json({ ready: false }, 503); }
     return json({ ready: true, version: 1, model: MODEL, rateLimitSeconds: 60 });
   }
   if (request.method !== 'POST' || path !== '/') return json({ error: '질문은 POST로 보내주세요.' }, 405);
-  if (!env.DB || !env.OPENAI_API_KEY || !env.IP_HASH_SECRET) return json({ error: '질문 서버 설정이 아직 완료되지 않았습니다.' }, 503);
+  if (!env.DB || !env.OPENAI_API_KEY) return json({ error: '질문 서버 설정이 아직 완료되지 않았습니다.' }, 503);
   try {
     const bodyText = await readBounded(request, 20001);
     if (new TextEncoder().encode(bodyText).length > 20000) return json({ error: '질문이 너무 큽니다.' }, 413);
@@ -75,13 +75,10 @@ export async function handle(request, env, deps = {}) {
     const history = (Array.isArray(body.history) ? body.history : []).slice(-6).filter(m => m && ['user', 'assistant'].includes(m.role) && typeof m.content === 'string').map(m => ({ role: m.role, content: m.content.slice(0, m.role === 'user' ? 1000 : 500) }));
     const ip = request.headers.get('CF-Connecting-IP');
     if (!ip) return json({ error: '접속 주소를 확인할 수 없습니다.' }, 400);
-    const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(env.IP_HASH_SECRET), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
-    const signature = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(ip));
-    const hash = Array.from(new Uint8Array(signature), b => b.toString(16).padStart(2, '0')).join('');
     // One atomic claim, shared across all articles and simultaneous requests.
-    const claimed = await env.DB.prepare('INSERT INTO rate_limits(ip_hash, last_request) VALUES (?, ?) ON CONFLICT(ip_hash) DO UPDATE SET last_request = excluded.last_request WHERE rate_limits.last_request <= ? RETURNING last_request').bind(hash, now, now - 60000).first();
+    const claimed = await env.DB.prepare('INSERT INTO rate_limits(ip_hash, last_request) VALUES (?, ?) ON CONFLICT(ip_hash) DO UPDATE SET last_request = excluded.last_request WHERE rate_limits.last_request <= ? RETURNING last_request').bind(ip, now, now - 60000).first();
     if (!claimed) {
-      const previous = await env.DB.prepare('SELECT last_request FROM rate_limits WHERE ip_hash = ?').bind(hash).first();
+      const previous = await env.DB.prepare('SELECT last_request FROM rate_limits WHERE ip_hash = ?').bind(ip).first();
       const retryAfter = Math.max(1, Math.ceil((60000 - (now - (previous?.last_request || now))) / 1000));
       return json({ error: `모든 브리핑을 합쳐 1분에 한 번 질문할 수 있습니다. ${retryAfter}초 후 다시 시도하세요.`, retryAfter }, 429, { 'Retry-After': String(retryAfter) });
     }

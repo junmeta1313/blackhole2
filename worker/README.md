@@ -11,8 +11,6 @@ API 키를 홈페이지 또는 GitHub 파일에 넣지 마세요.
    바인딩 추가. 변수 이름은 **DB**, 데이터베이스는 위에서 만든 DB 선택.
 4. Worker Settings → Variables and Secrets:
    - 기존 **OPENAI_API_KEY** Secret 유지.
-   - **IP_HASH_SECRET**을 새 Secret으로 추가. 최소 32자의 임의 문자열 사용.
-     비밀값은 공개 코드나 채팅에 붙이지 마세요.
    - **ALLOWED_ORIGIN** 일반 변수: `https://junmeta1313.github.io`
 5. Edit code에서 `index.mjs` 전체로 교체하고 Deploy.
 6. Worker 주소 뒤에 `/health`를 붙여 접속.
@@ -34,8 +32,9 @@ Cloudflare 설정에 접근할 권한이 이 작업 환경에는 없어서 위 �
   브리핑과 검색으로 답합니다. 사이트 정책/리다이렉트 때문에 원문 미확보 가능.
 - 최근 대화 최대 6개 메시지만 전달. 대화는 브라우저 메모리 외 저장하지 않습니다.
   요청은 OpenAI에 전달됩니다. store false는 플랫폼의 별도 보존 정책과 구분됩니다.
-- HMAC 처리한 IP와 마지막 요청 시각만 D1에 저장. 공개 IP를 공유하는 회사/가족은
-  60초 제한도 공유합니다. 원시 IP, 질문, 답변은 DB에 저장하지 않습니다.
+- 실제 IP와 마지막 요청 시각만 D1에 저장. 추가 IP_HASH_SECRET은 필요 없습니다. 공개 IP를 공유하는 회사/가족은
+  60초 제한도 공유합니다. 질문과 답변은 DB에 저장하지 않습니다.
+  기존 DB와 호환되도록 컬럼명 ip_hash는 유지하지만 이 컬럼에는 실제 IP가 들어갑니다.
 - DB의 조건부 UPSERT가 동시에 들어온 요청을 원자적으로 제한합니다.
   실패한 AI 요청도 60초 제한에 포함되고 유료 자동 재시도는 없습니다.
 - 요청 Origin 검사는 브라우저 연결 범위를 제한하며 사용자 인증은 아닙니다.
@@ -56,7 +55,6 @@ Cloudflare 설정에 접근할 권한이 이 작업 환경에는 없어서 위 �
 npx wrangler d1 execute briefing-rate-limits --remote --file=worker/schema.sql
 cd worker
 npx wrangler secret put OPENAI_API_KEY
-npx wrangler secret put IP_HASH_SECRET
 npx wrangler deploy
 ```
 
