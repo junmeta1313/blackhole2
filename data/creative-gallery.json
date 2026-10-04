@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124386-00afda31-164a-4ee6-98e8-67b978561342",
+    "slot": "creative-124386",
+    "title": "불꽃머리 성운의 멈춘 꼬리",
+    "category": "A13",
+    "sceneKey": "A13-B7-C6-D3-E4-F6",
+    "generationSelection": {
+      "A": 13,
+      "B": 7,
+      "C": 6,
+      "D": 3,
+      "E": 4,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA13. 항성풍 충돌 Bow Shock\n- 하나의 빠르게 이동하는 별 또는 항성계\n- 전방에 거대한 활 모양 충격파\n- 별 자체보다 충격파가 시각적으로 중요\n- 비대칭 구조\n\n색상 톤 / 관측 후처리:\nB7. 암적색 + 구리빛\n- 무겁고 오래된 우주 구조 느낌\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 694,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 694
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 865
+    },
+    "generationCost": {
+      "usd": 0.0086,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124386-00afda31-164a-4ee6-98e8-67b978561342.webp",
+    "author": "AI 창작",
+    "date": "2026-10-05",
+    "publishedAt": "2026-10-04T15:30:05.420Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성풍 충돌 Bow Shock",
+    "description": "남쪽 하늘의 작은개자리와 외뿔소자리 경계에서 확인된 천체는 관측 목록번호 KX-7314, 별칭 ‘불꽃머리 성운’이다. 화면에는 검붉은 성간 배경과 흩어진 주황빛 별들 사이로, 오른편의 밝은 점을 감싸는 거대한 가스 활이 드러난다. 가느다란 섬유들이 겹쳐 만든 곡선은 점의 왼쪽에서 시작해 넓게 부풀었다가 오른쪽으로 되감기듯 모이고, 중심에서 왼쪽으로는 희미하고 고르지 않은 꼬리가 이어진다. 사진만으로 이 구조의 실제 크기나 거리를 정할 수는 없다. 후속 시차 관측으로 약 2,400광년 거리에 놓인 것으로 추정했으며, 분광 자료와 거리 모형을 결합하면 활의 폭은 약 11광년이다. 이 수치는 한 장의 영상에서 직접 잰 값이 아니라 여러 관측을 합친 추정치다.\n\n밝은 점은 KX-7314의 고온 항성 후보로 분류되지만, 그 정체만으로 주변 가스의 모양이 모두 설명되지는 않는다. 가상의 관측 장비 ‘아르덴 적외선 분광기’가 6년에 걸쳐 얻은 자료에서, 활의 가장 밝은 부분은 예상되는 항성풍 충격 경계보다 약 0.7광년 바깥에 머무는 듯 보였다. 서로 다른 두 파장대의 위치 측정도 같은 방향으로 어긋났다. 연구진은 이 반복되는 경계의 불일치를 ‘외곽 정지선 현상(Stillarc Offset)’이라 이름 붙였다. 측정 오차를 줄인 뒤에도 신호는 남았지만, 추가 자료만으로 그 원인을 특정할 수는 없었다.\n\n우리가 보는 빛은 약 2,400년 전 이곳을 떠났다. 지금의 성운이 같은 활 모양을 유지하는지, 밝은 점이 어디로 움직였는지는 아직 알 수 없다. 관측이 확인한 것은 어긋난 경계가 실제 자료에 남아 있다는 사실까지다. 그 사이의 시간은 어떤 설명보다 길고, 밤하늘의 주황빛 곡선은 물리학이 아직 따라잡지 못한 질문을 조용히 붙들고 있다.",
+    "visibleFeatures": [
+      "검붉고 어두운 우주 배경에 주황빛 별들이 드문드문 흩어져 있다.",
+      "화면 오른쪽 중앙의 밝은 점을 감싸며 가느다란 주황색 가스 구조가 큰 활 모양으로 휘어 있다.",
+      "밝은 점에서 왼쪽으로 희미하고 불규칙한 가스 꼬리가 길게 뻗어 있으며, 주변에는 얼룩진 성운 물질이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 676,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2981
+    },
+    "descriptionCost": {
+      "usd": 0.00062605,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-04T15:30:14.796Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124384-eecd9df2-5a2c-4227-816b-ae474a42e6d7",
     "slot": "creative-124384",
     "title": "고리의 빈 중심, 아르켄 렌즈 군집",
