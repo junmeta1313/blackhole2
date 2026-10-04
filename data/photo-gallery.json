@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA04225",
+    "slot": "photos-82923",
+    "nasaId": "PIA04225",
+    "title": "N44C nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA04225/PIA04225~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "NASA and the Hubble Heritage Team STScI/AURA Acknowledgment: D. Garnett University of Arizona",
+    "sourceUrl": "https://images.nasa.gov/details/PIA04225",
+    "publishedAt": "2026-10-04T10:03:33.645Z"
+  },
+  {
     "id": "nasa-PIA15413",
     "slot": "photos-82922",
     "nasaId": "PIA15413",
