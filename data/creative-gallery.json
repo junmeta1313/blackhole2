@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124386-6ecad9a3-1d46-418e-8de2-08bbde2e0c3f",
+    "slot": "creative-124386",
+    "title": "청록빛 장벽에 남은 고요한 간격",
+    "category": "A10",
+    "sceneKey": "A10-B5-C2-D5-E7-F5",
+    "generationSelection": {
+      "A": 10,
+      "B": 5,
+      "C": 2,
+      "D": 5,
+      "E": 7,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA10. 거대한 먼지 기둥\n- 길게 뻗은 분자운/먼지 구조\n- 표면 질감과 가장자리의 희미한 발광\n- 세로 또는 대각선 형태에 적합\n- 구조 전체 또는 일부 확대 가능\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC2. 세로 구조 강조\n- 세로 방향의 흐름이나 기둥 강조\n\n현실성 강도:\nD5. 과학적 경계선의 미지 현상\n- 완전히 불가능해 보이지 않음\n- 상당히 낯설고 설명하기 어려움\n- 판타지로 넘어가지는 않음\n\n관측 거리 / 화면 점유율:\nE7. 프레임 외부 연장\n- 구조가 화면 밖까지 이어져 전체 형태가 보이지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 776,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 776
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 947
+    },
+    "generationCost": {
+      "usd": 0.00901,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124386-6ecad9a3-1d46-418e-8de2-08bbde2e0c3f.webp",
+    "author": "AI 창작",
+    "date": "2026-10-05",
+    "publishedAt": "2026-10-04T18:46:16.201Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "거대한 먼지 기둥",
+    "description": "남쪽 하늘의 용골자리 성운 복합체 가장자리에서, 관측 목록 KRN-7316으로 분류된 짙은 먼지 기둥이 포착됐다. 가상의 후속 거리 측정은 이 영역을 약 6,200광년 떨어진 곳에 둔다. 화면 중앙을 비스듬히 가르는 검은 구조는 아래쪽에서 넓게 솟아오른 뒤 위로 갈수록 좁고 굴곡진 기둥으로 이어진다. 그 가장자리를 따라 금빛 이온화 가스가 가느다랗게 빛나고, 청록색 성운은 그 뒤편과 바깥쪽으로 희미하게 번진다. 별빛이 드문 어두운 배경과 맞물린 이 대비는 거대한 가스 구름의 표면을 입체적으로 드러낸다.\n\n기둥의 폭은 약 9광년, 화면에 길게 이어진 구조는 약 34광년으로 추정된다. 이는 한 장의 영상에서 직접 잰 값이 아니라, 가상의 거리 자료와 분광 관측을 결합해 산출한 규모다. 중심부의 불규칙한 검은 골짜기에서는 먼지가 배경빛을 흡수하고, 경계의 이온화된 수소가 별 형성 지역의 복잡한 윤곽을 만든다. 다만 적외선 장비 ‘미르카 분광기’가 11개월 간격의 관측에서 발견한 것은 이 익숙한 설명만으로는 정리되지 않았다. 기둥의 동쪽 가장자리에 놓인 세 개의 좁은 발광 매듭이 서로 약 0.7년 간격으로 밝아졌다가, 주변 가스의 변화 없이 거의 같은 세기로 돌아왔다. 반복 측정에서 밝기 차는 4% 이내였으며, 원인은 확인되지 않았다.\n\n연구진은 이 기록을 ‘세 매듭 동조 현상(Triad Knot Synchrony)’이라 이름 붙였다. 빛은 지금 우리 눈에 닿기까지 약 6,200년을 건너왔다. 그러므로 이 기둥은 오래전의 모습이며, 그곳의 현재를 이 사진은 말해주지 않는다. 관측은 반복되는 밝기 변화의 존재까지만 확인했을 뿐, 그것이 가스의 숨은 운동인지 아직 모르는 과정인지는 밝혀내지 못했다. 금빛 경계와 검은 골짜기 사이에는 설명보다 오래된 시간이 놓여 있다. 우리가 붙든 것은 그 시간의 한 조각뿐이다.",
+    "visibleFeatures": [
+      "화면 중앙을 비스듬히 가로지르는 길고 울퉁불퉁한 암흑 먼지 기둥이 여러 갈래로 솟아 있다.",
+      "기둥의 가장자리는 황금빛으로 밝게 빛나고, 주변에는 청록색의 확산 성운이 감돈다.",
+      "어두운 배경 곳곳에 밝기와 색이 다른 작은 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 702,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3007
+    },
+    "descriptionCost": {
+      "usd": 0.00063905,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-04T18:46:25.586Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124386-00afda31-164a-4ee6-98e8-67b978561342",
     "slot": "creative-124386",
     "title": "불꽃머리 성운의 멈춘 꼬리",

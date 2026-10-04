@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA23646",
+    "slot": "photos-82924",
+    "nasaId": "PIA23646",
+    "title": "Tarantula Nebula Spitzer 2-Color Image",
+    "url": "https://images-assets.nasa.gov/image/PIA23646/PIA23646~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-05",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA23646",
+    "publishedAt": "2026-10-04T18:46:15.086Z"
+  },
+  {
     "id": "nasa-PIA14731",
     "slot": "photos-82924",
     "nasaId": "PIA14731",
