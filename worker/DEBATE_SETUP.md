@@ -26,12 +26,12 @@
 ## 모델과 비용
 
 - OpenAI: gpt-6-luna, 표준 처리, reasoning low, verbosity low, 검색 도구 없음.
-- Google: gemini-2.5-flash-lite, thinkingBudget 0.
+- Google: gemini-3.5-flash-lite, thinkingLevel LOW.
 - 발언 횟수 + Gemini 요약 1회의 API 호출 비용이 발생합니다. 이미 완료된 기록을
   다시 열 때 AI 호출은 없습니다.
-- Gemini 공식 문서에 2.5 모델 신규 프로젝트 접근 제한 안내가 있습니다.
-  키의 프로젝트에 해당 모델 사용 권한이 없으면 실행이 실패할 수 있습니다.
-  모델을 임의로 바꾸지 않았습니다. https://ai.google.dev/gemini-api/docs/models
+- 사용자 요청으로 Gemini 3.5 Flash-Lite와 낮은 사고 수준을 적용합니다.
+  https://ai.google.dev/gemini-api/docs/models
+  https://ai.google.dev/api/generate-content#ThinkingConfig
 - IP당 시작 시도는 10초에 한 번, 서버 전체 활성 토론은 한 번에 하나입니다.
   발언은 하나씩 원자적 lease로 잠가 중복 요청을 차단합니다.
 - 각 발언을 실제 400~600자로 검증합니다. 길이 오류나 API 실패 시 자동 유료

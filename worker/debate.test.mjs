@@ -19,9 +19,10 @@ function fake(log,short=false) { return async (url,init)=>{
     assert.equal(b.model,'gpt-6-luna');assert.equal(b.store,false);assert.equal(b.tools,undefined);
     return Response.json({status:'completed',output_text:short?'짧음':'관'.repeat(450),usage:{input_tokens:100,output_tokens:200}});
   }
-  assert.ok(String(url).includes('gemini-2.5-flash-lite:generateContent'));
+  assert.ok(String(url).includes('gemini-3.5-flash-lite:generateContent'));
   assert.equal(init.headers['x-goog-api-key'],'test-google');
-  assert.equal(b.generationConfig.thinkingConfig.thinkingBudget,0);
+  assert.equal(b.generationConfig.thinkingConfig.thinkingLevel,'LOW');
+  assert.equal(b.generationConfig.thinkingConfig.thinkingBudget,undefined);
   return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:b.generationConfig.responseMimeType?JSON.stringify({openai:'찬성 측 핵심 주장',gemini:'반대 측 핵심 주장'}):'측'.repeat(450)}]}}],usageMetadata:{totalTokenCount:200}});
 }; }
 test('password is required on server and invalid starts never call paid APIs',async t=>{
