@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { estimateCost } from './ai-cost.mjs';
 import { randomInt, randomUUID } from 'node:crypto';
 import { selectCreativeScene, creativePrompt } from './cosmic-generator.mjs';
 export { selectCreativeScene, creativePrompt } from './cosmic-generator.mjs';
@@ -99,7 +100,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const imagePath = `assets/creative/cosmic-${generationId}.webp`;
   await fs.mkdir(path.join(root, 'assets', 'creative'), { recursive: true });
   await fs.writeFile(path.join(root, imagePath), bytes);
-  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, generationSelection: scene.selection, generationPrompt: prompt, generationVersion: 1, descriptionSource: 'pending', url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
+  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, generationSelection: scene.selection, generationPrompt: prompt, generationVersion: 1, generationUsage: result.usage || null, generationCost: estimateCost('gpt-image-2.5-flare', result.usage), descriptionSource: 'pending', url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
   console.log(`creative: published one image; usage=${JSON.stringify(result.usage || {})}`);
   return true;
 }

@@ -1,3 +1,4 @@
+import { estimateCost } from './ai-cost.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -62,7 +63,7 @@ export async function describePendingCreations({ root = process.cwd(), request =
     if (!/^\.\/assets\/creative\/[\w-]+\.webp$/.test(post.url)) throw new Error('Only repository creative images can be described');
     const bytes = await fs.readFile(path.join(root, post.url));
     const story = await describeImage(bytes, { request, apiKey });
-    Object.assign(post, { originalTitle: post.originalTitle || post.title, title: story.title, description: story.description, visibleFeatures: story.visibleFeatures, descriptionSource: 'vision-ai', descriptionModel: 'gpt-6-luna', descriptionUsage: story.usage, descriptionCreatedAt: now.toISOString(), loreVersion: 3 });
+    Object.assign(post, { originalTitle: post.originalTitle || post.title, title: story.title, description: story.description, visibleFeatures: story.visibleFeatures, descriptionSource: 'vision-ai', descriptionModel: 'gpt-6-luna', descriptionUsage: story.usage, descriptionCost: estimateCost('gpt-6-luna', story.usage), descriptionCreatedAt: now.toISOString(), loreVersion: 3 });
     delete post.storyForm;
     const temporary = `${file}.tmp`;
     await fs.writeFile(temporary, `${JSON.stringify(posts, null, 2)}\n`);
