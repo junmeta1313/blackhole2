@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA13108",
+    "slot": "photos-82922",
+    "nasaId": "PIA13108",
+    "title": "Menkhib and the California Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA13108/PIA13108~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA13108",
+    "publishedAt": "2026-10-04T04:39:20.518Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e002086",
     "slot": "photos-82921",
     "nasaId": "GSFC_20171208_Archive_e002086",
