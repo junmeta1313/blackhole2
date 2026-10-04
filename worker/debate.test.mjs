@@ -78,3 +78,10 @@ test('twelve-turn option produces six turns per side and only one summary',async
  }
  assert.equal(log.length,13);
 });
+test('Gemini errors reveal only HTTP status and a known reason, never provider messages or keys',async t=>{
+ const e=fixture(t),deps={fetch:fake([])};
+ const session=await(await handle(req('/debates/start',start),e,deps)).json();
+ await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps);
+ const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:1}),e,{fetch:async()=>Response.json({error:{status:'NOT_FOUND',message:'sensitive-api-key-secret'}},{status:404})});
+ const body=await r.json();assert.equal(r.status,502);assert.match(body.error,/Gemini HTTP 404 · NOT_FOUND/);assert.ok(!body.error.includes('sensitive'));
+});

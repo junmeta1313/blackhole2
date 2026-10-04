@@ -15,7 +15,15 @@ async function gemini(env, payload, request) {
   const response = await request(`https://generativelanguage.googleapis.com/v1beta/models/${DEBATE_GEMINI_MODEL}:generateContent`, {
     method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': env.GEMINI_API_KEY }, body: JSON.stringify(payload), signal: AbortSignal.timeout(60000)
   });
-  if (!response.ok) throw new Error('gemini');
+  if (!response.ok) {
+    let status = '';
+    try {
+      const data = await response.json();
+      const allowed = ['INVALID_ARGUMENT', 'UNAUTHENTICATED', 'PERMISSION_DENIED', 'NOT_FOUND', 'RESOURCE_EXHAUSTED', 'FAILED_PRECONDITION', 'UNAVAILABLE', 'INTERNAL'];
+      if (allowed.includes(data.error?.status)) status = ` · ${data.error.status}`;
+    } catch { /* Never expose raw provider errors or credentials. */ }
+    throw new Error(`Gemini HTTP ${response.status}${status}`);
+  }
   const data = await response.json();
   const candidate = data.candidates?.[0];
   if (candidate?.finishReason !== 'STOP') throw new Error('incomplete');
@@ -30,7 +38,7 @@ export async function generateTurn(record, turns, env, request = fetch) {
       method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${env.OPENAI_API_KEY}` },
       body: JSON.stringify({ model: DEBATE_OPENAI_MODEL, service_tier: 'default', store: false, reasoning: { effort: 'low' }, text: { verbosity: 'low' }, max_output_tokens: 1800, instructions: debatingRules, input: prompt }), signal: AbortSignal.timeout(60000)
     });
-    if (!response.ok) throw new Error('openai');
+    if (!response.ok) throw new Error(`OpenAI HTTP ${response.status}`);
     const data = await response.json();
     if (data.status !== 'completed') throw new Error('incomplete');
     result = { text: data.output_text || (data.output || []).flatMap(i => i.content || []).filter(c => c.type === 'output_text').map(c => c.text).join(''), usage: data.usage || null };
@@ -120,6 +128,7 @@ export async function debateRoutes(request, env, json, deps = {}) {
       return json({ completed: true, debate: { ...publicRecord(row), status: 'completed', summary } });
     } catch (error) {
       await env.DB.prepare('UPDATE debates SET lease_until = 0 WHERE id = ? AND lease_until = ?').bind(row.id, lease).run();
+      if (/^(Gemini|OpenAI) HTTP \d{3}( · [A-Z_]+)?$/.test(error.message)) return json({ error: `${error.message}. API 키·모델 사용 권한·할당량을 확인해주세요. 기존 발언은 보존됩니다.` }, 502);
       return json({ error: error.message === 'length' ? '발언이 400~600자 조건을 충족하지 못했습니다. 자동 재호출 없이 일시정지했습니다.' : 'AI 응답 생성에 실패했습니다. 모델 권한·API 사용 한도를 확인하세요. 기존 발언은 보존됩니다.' }, 502);
     }
   } catch (error) {
