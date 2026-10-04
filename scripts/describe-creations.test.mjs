@@ -30,6 +30,13 @@ test('request attaches actual image bytes, disables reasoning and contains no fi
   assert.equal(payload.reasoning.effort, 'none');
   assert.equal(payload.max_output_tokens, 2400);
   assert.equal(payload.tools, undefined);
+  assert.match(payload.instructions, /가상의 천문 관측 설명문/);
+  assert.match(payload.instructions, /공백 포함 약 800~1,000자/);
+  assert.match(payload.instructions, /수치와 관측 기록을 최소 하나/);
+  assert.match(payload.instructions, /마지막 2~4문장/);
+  assert.match(payload.instructions, /원인은 아직 밝혀지지 않았다는 열린 결말/);
+  assert.match(payload.instructions, /본문에서 가상이라는 안내를 반복하지 않는다/);
+  assert.doesNotMatch(payload.instructions, /700-1200|science-fiction story|standard discovery-date-distance opening/);
   const result = await describeImage(image, { apiKey: 'test', request: async (url, options) => { assert.equal(url, 'https://api.openai.com/v1/responses'); assert.deepEqual(JSON.parse(options.body), payload); return completed(); } });
   assert.equal(result.description, story.description);
 });
