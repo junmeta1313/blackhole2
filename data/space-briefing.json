@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791098876708-1",
+    "title": "DESI DR1 전력 스펙트럼·비스펙트럼 공동 우주론 분석",
+    "originalTitle": "Cosmological inference from a joint DESI DR1 full-shape power spectrum and bispectrum analysis",
+    "summary": "이 논문은 DESI DR1 은하·퀘이사 자료를 이용해 전력 스펙트럼과 비스펙트럼을 함께 분석합니다.\n비스펙트럼 단극자는 개별 추적자 분석에서 암흑물질 밀도 제약을 9~18% 개선했습니다.\n물질 요동 진폭 제약은 8~20% 개선됐으며, 전체 추적자를 결합하면 개선 폭은 각각 6%, 4%였습니다.\n암흑에너지 모형에서는 비스펙트럼의 효과가 작았고, 허용 영역은 사전분포 범위에 민감했습니다.\n이 결과는 동료 심사가 확인되지 않은 arXiv 사전 공개 논문이며, 사중극자 시험은 첫 LRG 구간에 한정됐습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.01836",
+    "publishedAt": "2026-10-01",
+    "date": "2026-10-04 16:27",
+    "createdAt": "2026-10-04T07:27:56.708366+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791098876708-2",
+    "title": "NASA, 차기 비행 책임자 지원 접수 시작",
+    "originalTitle": "NASA Opens Applications for Next Class of Flight Directors",
+    "summary": "NASA는 휴스턴 존슨우주센터에서 유인 우주비행 임무를 이끌 비행 책임자를 모집합니다.\n지원 기간은 10월 12일까지이며, 미국 시민권자와 관련 분야 학사 학위 및 상당한 실무 경력이 필요합니다.\n비행 책임자는 국제우주정거장과 아르테미스 임무 등을 실시간으로 지휘하고 위험을 관리합니다.\n미션 컨트롤 비행 관제사 경력은 지원 필수 조건이 아니며, 선발자는 전문 교육을 받습니다.\nNASA는 연말까지 선발 결과를 발표할 예정이며, 공고에는 향후 화성 유인 임무도 역할 범위로 제시됐습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/news-release/nasa-opens-applications-for-next-class-of-flight-directors",
+    "publishedAt": "2026-10-02",
+    "date": "2026-10-04 16:27",
+    "createdAt": "2026-10-04T07:27:56.708366+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791098812143-1",
     "title": "은하 중심부 쌍성의 중력 새총 효과가 큰 감마선 폭발 오프셋을 만들 수 있을까",
     "originalTitle": "Slingshot on compact binaries in the nuclear region of galaxies as the origin of large offset gamma-ray bursts",
