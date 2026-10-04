@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA17834",
+    "slot": "photos-82922",
+    "nasaId": "PIA17834",
+    "title": "Storm of Stars in the Trifid Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA17834/PIA17834~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA17834",
+    "publishedAt": "2026-10-04T07:07:41.167Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e001464",
     "slot": "photos-82922",
     "nasaId": "GSFC_20171208_Archive_e001464",
