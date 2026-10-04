@@ -5,6 +5,11 @@ on:
     # UTC 00:17 = 09:17 KST, once per day.
     - cron: "17 0 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Bypass daily limit and add new stories (AI charges apply; duplicates excluded)'
+        type: boolean
+        default: true
   push:
     branches: [main]
     paths:
@@ -41,7 +46,7 @@ jobs:
         run: python scripts/update-space-briefing.py --dry-run
 
       - name: 우주 기사/논문 2건 생성
-        run: python scripts/update-space-briefing.py
+        run: python scripts/update-space-briefing.py ${{ github.event_name == 'workflow_dispatch' && inputs.force && '--force' || '' }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
@@ -57,4 +62,3 @@ jobs:
           git commit -m "chore: publish daily space briefing"
           git pull --rebase origin main
           git push
-

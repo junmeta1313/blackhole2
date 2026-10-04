@@ -213,7 +213,7 @@ def make_posts(selected, summaries, now):
     return posts
 
 
-def run(root=ROOT, now=None, dry_run=False, get=get_url, summarizer=summarize):
+def run(root=ROOT, now=None, dry_run=False, get=get_url, summarizer=summarize, force=False):
     now = now or dt.datetime.now(dt.timezone.utc)
     file = root / 'data' / 'space-briefing.json'
     existing = json.loads(file.read_text(encoding='utf-8')) if file.exists() else []
@@ -221,10 +221,12 @@ def run(root=ROOT, now=None, dry_run=False, get=get_url, summarizer=summarize):
         raise ValueError('Existing briefing feed must be an array')
     today = now.astimezone(KST).date().isoformat()
     published_today = sum(posted_on(item, today) for item in existing)
-    remaining = max(0, 2 - published_today)
+    remaining = 2 if force else max(0, 2 - published_today)
     if not remaining and not dry_run:
         print('Today already has two posts; skipped without any API call')
         return 0
+    if force:
+        print('Manual run: bypassing daily publication limit; source deduplication remains enabled')
     candidates = collect(get)
     selected = select_candidates(candidates, existing, now, limit=remaining or 2)
     # Fetch only selected news pages; arXiv abstracts already contain the source text.
@@ -260,4 +262,6 @@ def run(root=ROOT, now=None, dry_run=False, get=get_url, summarizer=summarize):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dry-run', action='store_true')
-    run(dry_run=parser.parse_args().dry_run)
+    parser.add_argument('--force', action='store_true', help='Bypass daily limit; keep source deduplication')
+    args = parser.parse_args()
+    run(dry_run=args.dry_run, force=args.force)

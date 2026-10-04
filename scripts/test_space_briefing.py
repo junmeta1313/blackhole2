@@ -82,6 +82,44 @@ class BriefingTests(unittest.TestCase):
                 self.assertEqual(b.run(root, NOW, summarizer=summaries), 1)
                 self.assertEqual(len(json.loads(file.read_text(encoding='utf-8'))), 2)
 
+    def test_force_adds_new_stories_but_never_duplicates_or_recharges_old_sources(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            calls = []
+            def summarize(items, key):
+                calls.append([item['url'] for item in items])
+                return summaries(items, key)
+            with patch.dict(os.environ, {'OPENAI_API_KEY': 'test'}):
+                with patch.object(b, 'collect', return_value=[story(), story('ESA', 2)]):
+                    self.assertEqual(b.run(root, NOW, summarizer=summarize), 2)
+                file = root / 'data/space-briefing.json'
+                original = json.loads(file.read_text(encoding='utf-8'))
+                candidates = [story(), story('ESA', 2), story(number=3), story('ESA', 99)]
+                with patch.object(b, 'collect', return_value=candidates):
+                    self.assertEqual(b.run(root, NOW, summarizer=summarize, force=True), 2)
+                    posts = json.loads(file.read_text(encoding='utf-8'))
+                    self.assertEqual(posts[2:], original)
+                    self.assertEqual(len({post['url'] for post in posts}), 4)
+                    self.assertEqual(b.run(root, NOW, summarizer=summarize, force=True), 0)
+                    self.assertEqual(file.read_text(encoding='utf-8'), json.dumps(posts, ensure_ascii=False, indent=2) + '\n')
+                    self.assertEqual(b.run(root, NOW, summarizer=summarize), 0)
+                self.assertEqual(len(calls), 2)
+                self.assertTrue(set(calls[0]).isdisjoint(calls[1]))
+
+    def test_force_failure_preserves_full_daily_feed_without_retry(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'data').mkdir()
+            file = root / 'data/space-briefing.json'
+            original = json.dumps([{'title': '기존 글', 'url': f'https://www.nasa.gov/old-{i}', 'date': '2026-10-04 08:00'} for i in range(2)])
+            file.write_text(original, encoding='utf-8')
+            with patch.object(b, 'collect', return_value=[story(), story('ESA', 2)]), patch.dict(os.environ, {'OPENAI_API_KEY': 'test'}):
+                with patch.object(b, 'summarize', side_effect=RuntimeError('API failed')) as summarize:
+                    with self.assertRaisesRegex(RuntimeError, 'API failed'):
+                        b.run(root, NOW, summarizer=summarize, force=True)
+                    summarize.assert_called_once()
+            self.assertEqual(file.read_text(encoding='utf-8'), original)
+
     def test_failed_summary_preserves_data(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
