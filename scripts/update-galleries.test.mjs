@@ -40,15 +40,17 @@ test('NASA six-hour publication respects KST slots and needs no OpenAI key', asy
 test('AI uses the exact model, smallest square, low quality and one request per KST slot', async t => {
   const root = await fixture(t);
   let calls = 0;
+  const prompts = [];
   const request = async (url, options) => {
     calls++;
     const body = JSON.parse(options.body);
+    prompts.push(body.prompt);
     assert.equal(body.model, 'gpt-image-2.5-flare');
     assert.equal(body.quality, 'low');
     assert.equal(body.size, '816x816');
     assert.equal(body.n, 1);
-    assert.ok(body.prompt.length < 650);
-    assert.match(body.prompt, /Restrained natural colors/);
+    assert.match(body.prompt, /하나의 주된 천문학적 대상 또는 시스템/);
+    for (const group of 'ABCDEF') assert.equal([...body.prompt.matchAll(new RegExp(`^${group}\\d+\\.`, 'gm'))].length, 1);
     return Response.json({ data: [{ b64_json: Buffer.from('RIFF0000WEBPtest').toString('base64') }] });
   };
   const options = { root, request, apiKey: 'test-only', now: new Date('2026-10-03T21:37:00Z') };
@@ -59,6 +61,11 @@ test('AI uses the exact model, smallest square, low quality and one request per 
   const posts = JSON.parse(await fs.readFile(path.join(root, 'data/creative-gallery.json')));
   assert.equal(posts[0].descriptionSource, 'pending');
   assert.equal(posts[0].description, undefined);
+  assert.equal(posts[0].generationPrompt, prompts[1]);
+  for (const [g, n] of Object.entries(posts[0].generationSelection)) assert.ok(posts[0].generationPrompt.includes(`${g}${n}.`));
+  assert.equal(posts[0].generationVersion, 1);
+  assert.deepEqual(Object.keys(posts[0].generationSelection), [...'ABCDEF']);
+  assert.match(posts[0].generationPrompt, /816×816/);
   assert.equal(await updateGallery('creative', { ...options, force: true }), true);
   assert.equal(await updateGallery('creative', { ...options, force: true }), true);
   assert.equal(calls, 4);
@@ -99,15 +106,13 @@ test('page scripts parse and all gallery tab targets exist', async () => {
   }
 });
 
-test('scene selection avoids the last three categories', () => {
+test('scene selection avoids recent subjects and stores reproducible combination keys', () => {
   const history = [];
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 80; i++) {
     const scene = selectCreativeScene(history, max => i % max);
-    assert.ok(!history.slice(0, 3).some(post => post.category === scene.category));
-    assert.ok(!history.slice(0, 8).some(post => post.sceneKey === scene.key));
-    assert.ok(creativePrompt(scene).length < 650);
-    history.unshift(scene);
+    assert.ok(!history.slice(0, 3).some(post => post.generationSelection.A === scene.selection.A));
+    assert.equal(scene.key, Object.entries(scene.selection).map(([g, n]) => `${g}${n}`).join('-'));
+    assert.ok(creativePrompt(scene).includes(scene.title));
+    history.unshift({ generationSelection: scene.selection });
   }
-  assert.equal(new Set(globalThis.cosmicScenes.map(scene => scene.category)).size, 8);
 });
-

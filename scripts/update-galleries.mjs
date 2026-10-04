@@ -2,24 +2,12 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { randomInt, randomUUID } from 'node:crypto';
-import '../assets/cosmic-scenes.js';
+import { selectCreativeScene, creativePrompt } from './cosmic-generator.mjs';
+export { selectCreativeScene, creativePrompt } from './cosmic-generator.mjs';
 
 const SIX_HOURS = 6 * 60 * 60 * 1000;
 const FOUR_HOURS = 4 * 60 * 60 * 1000;
 const KST_OFFSET = 9 * 60 * 60 * 1000;
-export function selectCreativeScene(posts, pick = randomInt) {
-  const recent = posts.slice(0, 3).map(post => post.category);
-  const categories = [...new Set(globalThis.cosmicScenes.map(scene => scene.category))].filter(category => !recent.includes(category));
-  const category = categories[pick(categories.length)];
-  const scenes = globalThis.cosmicScenes.filter(scene => scene.category === category);
-  const fresh = scenes.filter(scene => !posts.slice(0, 8).some(post => post.sceneKey === scene.key));
-  const eligible = fresh.length ? fresh : scenes;
-  return { ...eligible[pick(eligible.length)] };
-}
-
-export function creativePrompt(scene) {
-  return `Unseen but plausible space photograph: ${scene.image}. Restrained natural colors, realistic exposure, subtle detail, physically coherent lighting and scale. Quiet documentary composition, sparse stars where appropriate. No rainbow glow, magic geometry, oversized celestial objects, fantasy painting, dramatic lens flare or text. Artificial structures are speculative engineering, not magic.`;
-}
 
 async function readFeed(file) {
   try {
@@ -93,6 +81,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const scene = selectCreativeScene(posts);
   const title = scene.title;
   const prompt = creativePrompt(scene);
+  console.log(`creative: selected ${scene.key} before image API call`);
   // Scheduled runs are slot-limited; manual tests make one fresh paid request.
   const response = await request('https://api.openai.com/v1/images/generations', {
     method: 'POST',
@@ -110,7 +99,7 @@ export async function updateGallery(mode, { now = new Date(), root = process.cwd
   const imagePath = `assets/creative/cosmic-${generationId}.webp`;
   await fs.mkdir(path.join(root, 'assets', 'creative'), { recursive: true });
   await fs.writeFile(path.join(root, imagePath), bytes);
-  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, descriptionSource: 'pending', url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
+  await saveFeed(file, [{ id: `ai-${generationId}`, slot, title, category: scene.category, sceneKey: scene.key, generationSelection: scene.selection, generationPrompt: prompt, generationVersion: 1, descriptionSource: 'pending', url: `./${imagePath}`, author: 'AI 창작', date, publishedAt: now.toISOString(), model: 'gpt-image-2.5-flare', quality: 'low' }, ...posts]);
   console.log(`creative: published one image; usage=${JSON.stringify(result.usage || {})}`);
   return true;
 }
