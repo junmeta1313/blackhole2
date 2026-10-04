@@ -1,5 +1,41 @@
 [
   {
+    "id": "ai-creative-124382-e284a51d-7d95-4d79-9434-98f291e5f6b7",
+    "slot": "creative-124382",
+    "title": "두 빛 사이의 항로",
+    "category": "star",
+    "sceneKey": "binary-eclipse",
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124382-e284a51d-7d95-4d79-9434-98f291e5f6b7.webp",
+    "author": "AI 창작",
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-04T02:51:05.623Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "두 태양의 짧은 밤",
+    "description": "별들이 드문 밤하늘 한가운데, 두 개의 둥근 빛이 나란히 떠 있었다. 왼쪽 빛은 오른쪽보다 조금 더 밝았다. 항해사 유나는 그 차이를 매일 기록했지만, 둘은 조금도 가까워지거나 멀어지지 않는 듯 보였다. 마치 누군가 검은 바다 위에 등대 두 개를 박아 둔 것 같았다.\n\n그녀가 탄 소형선은 고장 난 항법 장치를 끌고 귀환 중이었다. 연료는 사흘치, 통신은 침묵. 그때 선체 아래에서 오래된 자동수신기가 깨어났다. 잡음 사이로 어린아이의 목소리가 들렸다. “밝은 쪽을 따라오지 마세요. 그건 미끼예요.”\n\n유나는 숨을 죽였다. 목소리는 80년 전 실종된 탐사선의 기록에 실린 선장의 딸과 똑같았다. 아이는 두 빛 사이의 어두운 틈을 가리키듯, 그곳에서 짧고 규칙적인 신호를 보냈다. 유나는 밝은 천체를 향하던 진로를 꺾었다. 별 하나도 없는 검은 틈으로 들어서자, 항법 장치가 갑자기 살아났다. 그곳에는 오래전 탐사선이 남긴 중계기가 떠 있었다. 두 빛은 그 중계기가 만든 가짜 표지였고, 희미한 신호만이 진짜 귀환길을 가리켰다.\n\n구조선이 도착했을 때 수신기에는 마지막 음성이 남아 있었다. “이제 내 차례가 끝났어요.” 유나는 밤하늘을 돌아보았다. 두 빛은 여전히 나란했지만, 그 사이의 어둠은 더는 텅 빈 곳처럼 보이지 않았다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 작은 별들이 듬성듬성 흩어져 있다.",
+      "화면 중앙 부근에 밝은 둥근 천체 두 개가 나란히 보인다.",
+      "두 천체는 서로 가까우며, 왼쪽 것이 조금 더 밝다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 1069,
+      "input_tokens_details": {
+        "cache_write_tokens": 1066,
+        "cached_tokens": 0
+      },
+      "output_tokens": 511,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1580
+    },
+    "descriptionCreatedAt": "2026-10-04T02:51:11.474Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124381-f247284a-ab84-497f-aa93-8cd97c949322",
     "slot": "creative-124381",
     "title": "붉은 가장자리의 목소리",
