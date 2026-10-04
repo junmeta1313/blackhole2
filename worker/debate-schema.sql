@@ -4,7 +4,8 @@ CREATE TABLE IF NOT EXISTS debates (
   topic TEXT NOT NULL,
   openai_position TEXT NOT NULL,
   gemini_position TEXT NOT NULL,
-  total_turns INTEGER NOT NULL CHECK(total_turns BETWEEN 6 AND 12),
+  -- Storage keeps legacy 9–12-turn records; the API limits new starts to 4–8.
+  total_turns INTEGER NOT NULL CHECK(total_turns BETWEEN 4 AND 12),
   turns_json TEXT NOT NULL DEFAULT '[]',
   summary_json TEXT,
   status TEXT NOT NULL DEFAULT 'running',

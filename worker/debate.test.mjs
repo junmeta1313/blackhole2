@@ -4,11 +4,23 @@ import fs from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { handle } from './index.mjs';
 import { validateTurn, debatePrompt } from './debate.mjs';
-function fixture(t) {
+function fixture(t, legacy = false) {
   const sqlite = new DatabaseSync(':memory:');
-  sqlite.exec(fs.readFileSync(new URL('./debate-schema.sql',import.meta.url),'utf8'));
+  const schema = fs.readFileSync(new URL('./debate-schema.sql',import.meta.url),'utf8');
+  sqlite.exec(legacy ? schema.replace('CHECK(total_turns BETWEEN 4 AND 12)', 'CHECK(total_turns BETWEEN 6 AND 12)') : schema);
   t.after(()=>sqlite.close());
-  const DB = { prepare(sql) { return { bind(...args) { return { async first() { return sqlite.prepare(sql).get(...args) || null; }, async run() { return sqlite.prepare(sql).run(...args); } }; }, async first() { return sqlite.prepare(sql).get() || null; }, async all() { return { results: sqlite.prepare(sql).all() }; } }; } };
+  const DB = {
+    prepare(sql) {
+      return { sql, args: [], bind(...args) {
+        return { sql, args, async first() { return sqlite.prepare(sql).get(...args) || null; }, async run() { return sqlite.prepare(sql).run(...args); } };
+      }, async first() { return sqlite.prepare(sql).get() || null; }, async run() { return sqlite.prepare(sql).run(); }, async all() { return { results: sqlite.prepare(sql).all() }; } };
+    },
+    async batch(statements) {
+      sqlite.exec('BEGIN');
+      try { const results = statements.map(s => sqlite.prepare(s.sql).run(...s.args)); sqlite.exec('COMMIT'); return results; }
+      catch (error) { sqlite.exec('ROLLBACK'); throw error; }
+    }
+  };
   return { DB, OPENAI_API_KEY:'test-openai',GEMINI_API_KEY:'test-google',DEBATE_PASSWORD:'test-password' };
 }
 const req=(path,body,ip='1.2.3.4')=>new Request('https://worker.test'+path,body?{method:'POST',headers:{Origin:'https://junmeta1313.github.io','CF-Connecting-IP':ip,'Content-Type':'application/json'},body:JSON.stringify(body)}:{});
@@ -34,7 +46,7 @@ test('password is required on server and invalid starts never call paid APIs',as
  const e=fixture(t);let calls=0;const deps={now:Date.now(),fetch:()=>{calls++;throw Error('no');}};
  assert.equal((await handle(req('/debates/start',{...start,password:'wrong'}),e,deps)).status,401);
  assert.equal((await handle(req('/debates/start',start),e,deps)).status,429);
- assert.equal((await handle(req('/debates/start',{...start,totalTurns:13},'9.8.7.6'),e,deps)).status,400);
+ assert.equal((await handle(req('/debates/start',{...start,totalTurns:9},'9.8.7.6'),e,deps)).status,400);
  assert.equal(calls,0);
  assert.equal((await handle(req('/debates/health'),e)).status,200);
 });
@@ -58,8 +70,9 @@ test('six alternating turns plus one Gemini summary persist as a publicly readab
  await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:6}),e,deps);assert.equal(log.length,7);
 });
 test('independent starts are allowed while concurrent requests for one turn cannot duplicate paid work',async t=>{
- const e=fixture(t);const result=await Promise.all([handle(req('/debates/start',start,'ip-a'),e),handle(req('/debates/start',start,'ip-b'),e)]);
+ const e=fixture(t,true);const result=await Promise.all([handle(req('/debates/start',start,'ip-a'),e),handle(req('/debates/start',start,'ip-b'),e)]);
  assert.deepEqual(result.map(r=>r.status).sort(),[200,200]);
+ assert.equal((await e.DB.prepare('SELECT count(*) AS count FROM debates').first()).count,2);
  const session=await result.find(r=>r.status===200).json();let release;const blocker=new Promise(r=>{release=r;});let calls=0;
  const deps={fetch:async (...args)=>{calls++;await blocker;return fake([])(...args);}};
  const first=handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps);
@@ -86,16 +99,56 @@ test('shorter replies gain paragraph breaks without changing their argument',()=
  assert.ok(Array.from(formatted).length>=300 && Array.from(formatted).length<=450);
  assert.match(debatePrompt({topic:'topic',openai_position:'pro',gemini_position:'con'},[],'openai'),/300~450자/);
 });
-test('twelve-turn option produces six turns per side and only one summary',async t=>{
+test('eight-turn option produces four turns per side and only one summary',async t=>{
  const e=fixture(t),log=[],deps={fetch:fake(log)};
- const session=await (await handle(req('/debates/start',{...start,totalTurns:12}),e,deps)).json();
- for(let n=0;n<=12;n++){
+ const session=await (await handle(req('/debates/start',{...start,totalTurns:8}),e,deps)).json();
+ for(let n=0;n<=8;n++){
   const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps);
   assert.equal(r.status,200);
-  if(n===12){assert.equal((await r.json()).summaryReady,true);
-   const d=await(await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps)).json();assert.equal(d.completed,true);assert.equal(d.debate.turns.filter(x=>x.speaker==='openai').length,6);assert.equal(d.debate.turns.filter(x=>x.speaker==='gemini').length,6);}
+  if(n===8){assert.equal((await r.json()).summaryReady,true);
+   const d=await(await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps)).json();assert.equal(d.completed,true);assert.equal(d.debate.turns.filter(x=>x.speaker==='openai').length,4);assert.equal(d.debate.turns.filter(x=>x.speaker==='gemini').length,4);}
  }
- assert.equal(log.length,13);
+ assert.equal(log.length,9);
+});
+test('four-turn minimum completes with two replies per side; other ranges are rejected without AI calls',async t=>{
+ const e=fixture(t),log=[],deps={fetch:fake(log)};
+ for(const [i,totalTurns] of [3,9,12,4.5,'4'].entries()) {
+  assert.equal((await handle(req('/debates/start',{...start,totalTurns},'bad-'+i),e,deps)).status,400);
+ }
+ assert.equal(log.length,0);
+ const session=await(await handle(req('/debates/start',{...start,totalTurns:4},'four'),e,deps)).json();
+ for(let n=0;n<=4;n++) assert.equal((await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps)).status,200);
+ const result=await(await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps)).json();
+ assert.equal(result.debate.turns.length,4);
+ assert.equal(result.debate.turns.filter(t=>t.speaker==='openai').length,2);
+ assert.equal(result.debate.turns.filter(t=>t.speaker==='gemini').length,2);
+ assert.equal(log.length,5);
+});
+async function legacyRecord(e) {
+ await e.DB.prepare("INSERT INTO debates(id, token, topic, openai_position, gemini_position, total_turns, turns_json, summary_json, status, turn_count, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)").bind('legacy-twelve','legacy-token','기존 12회 토론','찬성','반대',12,JSON.stringify(Array.from({length:12},(_,i)=>({speaker:i%2?'gemini':'openai',text:'기존 발언'}))),JSON.stringify({openai:'기존 요약',gemini:'기존 요약'}),'completed',12,1,2).run();
+ return e.DB.prepare("SELECT * FROM debates WHERE id = 'legacy-twelve'").first();
+}
+test('legacy database automatically accepts four turns while preserving archived records and indexes',async t=>{
+ const e=fixture(t,true);const before=await legacyRecord(e);
+ await e.DB.prepare('CREATE INDEX debates_topic ON debates(topic)').run();
+ const r=await handle(req('/debates/start',{...start,totalTurns:4}),e);
+ assert.equal(r.status,200);
+ assert.deepEqual(await e.DB.prepare("SELECT * FROM debates WHERE id = 'legacy-twelve'").first(),before);
+ const row=await e.DB.prepare("SELECT sql FROM sqlite_master WHERE name = 'debates'").first();assert.match(row.sql,/BETWEEN 4 AND 12/);
+ assert.ok(await e.DB.prepare("SELECT sql FROM sqlite_master WHERE name = 'debates_public'").first());
+ assert.ok(await e.DB.prepare("SELECT sql FROM sqlite_master WHERE name = 'debates_topic'").first());
+ const archived=await(await handle(req('/debates/legacy-twelve'),e)).json();assert.equal(archived.debate.turns.length,12);
+ assert.equal((await(await handle(req('/debates'),e)).json()).debates.length,1);
+});
+test('failed legacy migration rolls back the table replacement and retains every existing record',async t=>{
+ const e=fixture(t,true);const before=await legacyRecord(e);const batch=e.DB.batch.bind(e.DB);
+ e.DB.batch=statements=>batch([...statements.slice(0,3),e.DB.prepare('INSERT INTO intentionally_missing_table VALUES (1)')]);
+ assert.equal((await handle(req('/debates/start',{...start,totalTurns:4}),e)).status,503);
+ assert.deepEqual(await e.DB.prepare("SELECT * FROM debates WHERE id = 'legacy-twelve'").first(),before);
+ assert.match((await e.DB.prepare("SELECT sql FROM sqlite_master WHERE name = 'debates'").first()).sql,/BETWEEN 6 AND 12/);
+ assert.equal(await e.DB.prepare("SELECT sql FROM sqlite_master WHERE name = 'debates_turn_range_v2'").first(),null);
+ e.DB.batch=batch;
+ assert.equal((await handle(req('/debates/start',{...start,totalTurns:4},'retry-ip'),e)).status,200);
 });
 test('authenticated cancellation clears unfinished records, skips summaries, and does not block new starts',async t=>{
  const e=fixture(t),log=[],deps={fetch:fake(log)};

@@ -145,7 +145,7 @@
       }
     } catch { forgetCancellation(); }
     const select = el('debate-turns');
-    for (let n = 6; n <= 12; n++) { const option = document.createElement('option'); option.value = String(n); option.textContent = `${n}회 (ChatGPT ${Math.ceil(n / 2)} / Gemini ${Math.floor(n / 2)})`; select.append(option); }
+    for (let n = 4; n <= 8; n++) { const option = document.createElement('option'); option.value = String(n); option.textContent = `${n}회 (ChatGPT ${Math.ceil(n / 2)} / Gemini ${Math.floor(n / 2)})`; select.append(option); }
     el('debate-form').onsubmit = async event => {
       event.preventDefault(); if (active || running) return;
       el('debate-fields').disabled = true; setStatus('비밀번호와 서버 연결을 확인하고 있습니다…');

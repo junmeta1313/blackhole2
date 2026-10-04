@@ -91,6 +91,23 @@ export async function summarizeDebate(record, turns, env, request = fetch) {
   return { openai: summary.openai.trim(), gemini: summary.gemini.trim(), model: DEBATE_GEMINI_MODEL, usage: result.usage };
 }
 const publicRecord = row => ({ id: row.id, topic: row.topic, openaiPosition: row.openai_position, geminiPosition: row.gemini_position, totalTurns: row.total_turns, turns: JSON.parse(row.turns_json), summary: row.summary_json ? JSON.parse(row.summary_json) : null, status: row.status, createdAt: row.created_at });
+async function ensureDebateTurnRange(DB) {
+  const table = await DB.prepare("SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'debates'").first();
+  const legacyCheck = /CHECK\s*\(\s*total_turns\s+BETWEEN\s+6\s+AND\s+12\s*\)/i;
+  if (!table?.sql || !legacyCheck.test(table.sql)) return;
+  // Retain the upper storage bound for old 9–12-turn records. New starts are
+  // restricted to 4–8 below. D1 batch is atomic: failed migrations roll back.
+  const create = table.sql.replace(/^CREATE TABLE(?: IF NOT EXISTS)?\s+(?:"debates"|`debates`|\[debates\]|debates)\s*/i, 'CREATE TABLE IF NOT EXISTS debates_turn_range_v2 ')
+    .replace(legacyCheck, 'CHECK(total_turns BETWEEN 4 AND 12)');
+  const objects = await DB.prepare("SELECT sql FROM sqlite_master WHERE tbl_name = 'debates' AND type IN ('index', 'trigger') AND sql IS NOT NULL").all();
+  await DB.batch([
+    DB.prepare(create),
+    DB.prepare('INSERT INTO debates_turn_range_v2 SELECT * FROM debates'),
+    DB.prepare('DROP TABLE debates'),
+    DB.prepare('ALTER TABLE debates_turn_range_v2 RENAME TO debates'),
+    ...objects.results.map(object => DB.prepare(object.sql))
+  ]);
+}
 export async function debateRoutes(request, env, json, deps = {}) {
   const path = new URL(request.url).pathname;
   const now = deps.now ?? Date.now();
@@ -130,7 +147,8 @@ export async function debateRoutes(request, env, json, deps = {}) {
       const topic = typeof body.topic === 'string' ? body.topic.trim() : '';
       const openai = typeof body.openaiPosition === 'string' ? body.openaiPosition.trim() : '';
       const google = typeof body.geminiPosition === 'string' ? body.geminiPosition.trim() : '';
-      if (!topic || topic.length > 300 || !openai || openai.length > 800 || !google || google.length > 800 || !Number.isInteger(body.totalTurns) || body.totalTurns < 6 || body.totalTurns > 12) return json({ error: '주제·양측 입장과 6~12회 발언을 입력하세요.' }, 400);
+      if (!topic || topic.length > 300 || !openai || openai.length > 800 || !google || google.length > 800 || !Number.isInteger(body.totalTurns) || body.totalTurns < 4 || body.totalTurns > 8) return json({ error: '주제·양측 입장과 4~8회 발언을 입력하세요.' }, 400);
+      await ensureDebateTurnRange(env.DB);
       // A lost tab's cancellation request must never block a new debate.
       const id = crypto.randomUUID(), token = crypto.randomUUID() + crypto.randomUUID();
       await env.DB.prepare('INSERT INTO debates(id, token, topic, openai_position, gemini_position, total_turns, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)').bind(id, token, topic, openai, google, body.totalTurns, now, now).run();
