@@ -1,6 +1,20 @@
 (() => {
   const API = 'https://quiet-recipe-f7be.kuji5757.workers.dev';
-  let active = null, running = false;
+  const cancellationKey = 'debate-pending-cancellation';
+  let active = null, running = false, departed = false, pageGeneration = 0;
+  function rememberCancellation(session) {
+    try { sessionStorage.setItem(cancellationKey, JSON.stringify({ id: session.id, token: session.token })); } catch { /* Beacon still works without storage. */ }
+  }
+  function forgetCancellation() {
+    try { sessionStorage.removeItem(cancellationKey); } catch { /* Storage may be disabled. */ }
+  }
+  function cancelOnExit(session) {
+    const url = API + `/debates/${session.id}/cancel`;
+    const body = JSON.stringify({ token: session.token });
+    // text/plain permits a cross-origin beacon without an unload-time preflight.
+    if (navigator.sendBeacon?.(url, new Blob([body], { type: 'text/plain' }))) return;
+    fetch(url, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body, keepalive: true }).catch(() => {});
+  }
   const el = id => document.getElementById(id);
   async function request(path, body) {
     const response = await fetch(API + path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(80000) } : { cache: 'no-store', signal: AbortSignal.timeout(10000) });
@@ -53,38 +67,57 @@
   }
   async function advance() {
     if (!active || running) return;
+    const session = active;
     running = true; el('debate-fields').disabled = true; el('debate-resume').hidden = true;
     try {
       while (active) {
         const summarizing = active.turns.length >= active.totalTurns;
         const speaker = active.turns.length % 2 === 0 ? 'ChatGPT' : 'Gemini';
         setStatus(summarizing ? 'Gemini가 양측 주장 요약을 정리하고 있습니다…' : `${speaker} · 반박 준비중.... (${active.turns.length + 1}/${active.totalTurns})`);
-        const data = await request(`/debates/${active.id}/turn`, { token: active.token, expectedTurn: active.turns.length });
+        let data = await request(`/debates/${session.id}/turn`, { token: session.token, expectedTurn: session.turns.length });
+        if (active !== session) return;
+        if (data.summaryReady) {
+          data = await request(`/debates/${session.id}/publish`, { token: session.token });
+          if (active !== session) return;
+        }
         if (data.completed) {
           renderTurns(data.debate.turns); renderSummary(data.debate.summary);
-          active = null; setStatus('토론이 완료되어 게시글로 저장됐습니다.'); await loadList(); break;
+          active = null; forgetCancellation(); setStatus('토론이 완료되어 게시글로 저장됐습니다.'); await loadList(); break;
         }
         if (data.synced) active.turns = data.debate.turns;
         else active.turns.push(data.turn);
         renderTurns(active.turns);
       }
     } catch (error) {
+      if (active !== session) return;
       setStatus(`${error.message} 기존 발언은 유지됩니다. 계속하기를 누르면 추가 API 비용이 발생할 수 있습니다.`);
       el('debate-resume').hidden = !active;
     } finally { running = false; el('debate-fields').disabled = !!active; }
   }
   window.loadDebateBoard = loadList;
   window.addEventListener('DOMContentLoaded', () => {
+    // Recover only enough information to cancel a lost page, never to resume it.
+    try {
+      const previous = JSON.parse(sessionStorage.getItem(cancellationKey) || 'null');
+      if (previous?.id && previous?.token) {
+        request(`/debates/${previous.id}/cancel`, { token: previous.token }).then(() => {
+          if (sessionStorage.getItem(cancellationKey) === JSON.stringify(previous)) forgetCancellation();
+        }).catch(() => {});
+      }
+    } catch { forgetCancellation(); }
     const select = el('debate-turns');
     for (let n = 6; n <= 12; n++) { const option = document.createElement('option'); option.value = String(n); option.textContent = `${n}회 (ChatGPT ${Math.ceil(n / 2)} / Gemini ${Math.floor(n / 2)})`; select.append(option); }
     el('debate-form').onsubmit = async event => {
       event.preventDefault(); if (active || running) return;
       el('debate-fields').disabled = true; setStatus('비밀번호와 서버 연결을 확인하고 있습니다…');
+      const startedOnPage = pageGeneration;
       try {
         const topic = el('debate-topic').value.trim();
         const totalTurns = Number(select.value);
         const data = await request('/debates/start', { password: el('debate-password').value, topic, totalTurns, openaiPosition: el('debate-openai-position').value.trim(), geminiPosition: el('debate-gemini-position').value.trim() });
+        if (departed || startedOnPage !== pageGeneration) { rememberCancellation(data); cancelOnExit(data); return; }
         active = { ...data, topic, totalTurns, turns: [] };
+        rememberCancellation(active);
         el('debate-password').value = '';
         el('debate-view-title').textContent = topic;
         el('debate-positions').textContent = `ChatGPT: ${el('debate-openai-position').value}\nGemini: ${el('debate-gemini-position').value}`;
@@ -94,5 +127,14 @@
     el('debate-resume').onclick = advance;
     loadList();
   });
-  window.addEventListener('beforeunload', event => { if (active) { event.preventDefault(); event.returnValue = ''; } });
+  window.addEventListener('pagehide', () => {
+    departed = true; pageGeneration++;
+    if (!active) return;
+    const session = active; active = null;
+    cancelOnExit(session);
+    renderTurns([]); renderSummary(null);
+    el('debate-resume').hidden = true; el('debate-fields').disabled = false;
+    setStatus('페이지를 나가 진행 중인 토론이 종료됐습니다. 게시글로 저장되지 않습니다.');
+  });
+  window.addEventListener('pageshow', () => { departed = false; });
 })();

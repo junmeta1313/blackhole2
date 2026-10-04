@@ -91,7 +91,7 @@ export async function debateRoutes(request, env, json, deps = {}) {
       const rows = await env.DB.prepare("SELECT id, topic, total_turns, created_at FROM debates WHERE status = 'completed' ORDER BY created_at DESC LIMIT 50").all();
       return json({ debates: rows.results.map(r => ({ id: r.id, topic: r.topic, totalTurns: r.total_turns, createdAt: r.created_at })) });
     }
-    const match = path.match(/^\/debates\/([\w-]+)(\/turn)?$/);
+    const match = path.match(/^\/debates\/([\w-]+)(\/(?:turn|cancel|publish))?$/);
     if (request.method === 'GET' && match && !match[2]) {
       const row = await env.DB.prepare("SELECT * FROM debates WHERE id = ? AND status = 'completed'").bind(match[1]).first();
       return row ? json({ debate: publicRecord(row) }) : json({ error: '게시글을 찾지 못했습니다.' }, 404);
@@ -115,19 +115,27 @@ export async function debateRoutes(request, env, json, deps = {}) {
       const openai = typeof body.openaiPosition === 'string' ? body.openaiPosition.trim() : '';
       const google = typeof body.geminiPosition === 'string' ? body.geminiPosition.trim() : '';
       if (!topic || topic.length > 300 || !openai || openai.length > 800 || !google || google.length > 800 || !Number.isInteger(body.totalTurns) || body.totalTurns < 6 || body.totalTurns > 12) return json({ error: '주제·양측 입장과 6~12회 발언을 입력하세요.' }, 400);
-      // One running debate per account; stale unfinished sessions no longer block.
-      const existing = await env.DB.prepare("SELECT id FROM debates WHERE status = 'running' AND updated_at > ? LIMIT 1").bind(now - 30 * 60000).first();
-      if (existing) return json({ error: '진행 중인 토론이 있습니다. 완료 후 시작하세요.' }, 409);
+      // A lost tab's cancellation request must never block a new debate.
       const id = crypto.randomUUID(), token = crypto.randomUUID() + crypto.randomUUID();
-      const started = await env.DB.prepare("INSERT INTO debates(id, token, topic, openai_position, gemini_position, total_turns, created_at, updated_at) SELECT ?, ?, ?, ?, ?, ?, ?, ? WHERE NOT EXISTS (SELECT 1 FROM debates WHERE status = 'running' AND updated_at > ?) RETURNING id").bind(id, token, topic, openai, google, body.totalTurns, now, now, now - 30 * 60000).first();
-      if (!started) return json({ error: '진행 중인 토론이 있습니다. 완료 후 시작하세요.' }, 409);
+      await env.DB.prepare('INSERT INTO debates(id, token, topic, openai_position, gemini_position, total_turns, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)').bind(id, token, topic, openai, google, body.totalTurns, now, now).run();
       return json({ id, token });
     }
     if (!match || !match[2]) return json({ error: '주소가 올바르지 않습니다.' }, 404);
     const row = await env.DB.prepare('SELECT * FROM debates WHERE id = ? AND token = ?').bind(match[1], typeof body.token === 'string' ? body.token : '').first();
     if (!row) return json({ error: '토론 실행 권한이 없습니다.' }, 401);
+    if (match[2] === '/cancel') {
+      await env.DB.prepare("UPDATE debates SET status = 'cancelled', turns_json = '[]', summary_json = NULL, turn_count = 0, lease_until = 0, updated_at = ? WHERE id = ? AND status = 'running'").bind(now, row.id).run();
+      return json({ cancelled: row.status !== 'completed' });
+    }
     if (row.status === 'completed') return json({ debate: publicRecord(row), completed: true });
     if (row.status !== 'running' || now - row.updated_at > 30 * 60000 || now - row.created_at > 2 * 60 * 60000) return json({ error: '실행 시간이 만료됐습니다. 새 토론을 시작하세요.' }, 410);
+    if (match[2] === '/publish') {
+      if (!row.summary_json || row.turn_count !== row.total_turns) return json({ error: '토론과 요약이 아직 완료되지 않았습니다.' }, 409);
+      const published = await env.DB.prepare("UPDATE debates SET status = 'completed', updated_at = ? WHERE id = ? AND status = 'running' AND summary_json IS NOT NULL RETURNING id").bind(now, row.id).first();
+      if (!published) return json({ error: '종료된 토론입니다.' }, 410);
+      return json({ completed: true, debate: { ...publicRecord(row), status: 'completed' } });
+    }
+    if (row.summary_json) return json({ summaryReady: true });
     if (body.expectedTurn !== row.turn_count) return json({ debate: publicRecord(row), synced: true });
     const lease = now + 90000;
     const claimed = await env.DB.prepare("UPDATE debates SET lease_until = ?, updated_at = ? WHERE id = ? AND lease_until <= ? AND turn_count = ? AND status = 'running' RETURNING id").bind(lease, now, row.id, now, row.turn_count).first();
@@ -137,12 +145,15 @@ export async function debateRoutes(request, env, json, deps = {}) {
       if (row.turn_count < row.total_turns) {
         const turn = await generateTurn(row, turns, env, fetcher);
         turns.push({ ...turn, number: turns.length + 1 });
-        await env.DB.prepare('UPDATE debates SET turns_json = ?, turn_count = ?, lease_until = 0, updated_at = ? WHERE id = ? AND lease_until = ?').bind(JSON.stringify(turns), turns.length, Date.now(), row.id, lease).run();
+        const saved = await env.DB.prepare("UPDATE debates SET turns_json = ?, turn_count = ?, lease_until = 0, updated_at = ? WHERE id = ? AND lease_until = ? AND status = 'running' RETURNING id").bind(JSON.stringify(turns), turns.length, Date.now(), row.id, lease).first();
+        if (!saved) return json({ error: '종료된 토론입니다.' }, 410);
         return json({ turn, turnCount: turns.length, completed: false });
       }
       const summary = await summarizeDebate(row, turns, env, fetcher);
-      await env.DB.prepare("UPDATE debates SET summary_json = ?, status = 'completed', lease_until = 0, updated_at = ? WHERE id = ? AND lease_until = ?").bind(JSON.stringify(summary), Date.now(), row.id, lease).run();
-      return json({ completed: true, debate: { ...publicRecord(row), status: 'completed', summary } });
+      const saved = await env.DB.prepare("UPDATE debates SET summary_json = ?, lease_until = 0, updated_at = ? WHERE id = ? AND lease_until = ? AND status = 'running' RETURNING id").bind(JSON.stringify(summary), Date.now(), row.id, lease).first();
+      if (!saved) return json({ error: '종료된 토론입니다.' }, 410);
+      // Only the still-open page can acknowledge and publish the finished result.
+      return json({ summaryReady: true });
     } catch (error) {
       await env.DB.prepare('UPDATE debates SET lease_until = 0 WHERE id = ? AND lease_until = ?').bind(row.id, lease).run();
       if (/^(Gemini|OpenAI) HTTP \d{3}( · [A-Z_]+)?$/.test(error.message)) {

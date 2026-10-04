@@ -42,16 +42,19 @@ test('six alternating turns plus one Gemini summary persist as a publicly readab
   const d=await r.json();assert.equal(d.turn.speaker,n%2?'gemini':'openai');assert.equal(d.turn.text.length,450);
  }
  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:6}),e,deps);
- const d=await r.json();assert.equal(d.completed,true);assert.equal(d.debate.turns.length,6);assert.equal(d.debate.summary.gemini,'반대 측 핵심 주장');
+ assert.equal((await r.json()).summaryReady,true);
+ assert.equal((await(await handle(req('/debates'),e)).json()).debates.length,0);
+ const d=await(await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps)).json();
+ assert.equal(d.completed,true);assert.equal(d.debate.turns.length,6);assert.equal(d.debate.summary.gemini,'반대 측 핵심 주장');
  assert.equal(log.length,7);assert.equal(log.filter(x=>String(x.url).includes('openai')).length,3);
  assert.equal(log.filter(x=>String(x.url).includes('googleapis')).length,4);
  const record=await (await handle(req(`/debates/${session.id}`),e)).json();assert.equal(record.debate.turns.length,6);assert.equal(record.debate.token,undefined);
  const list=await (await handle(req('/debates'),e)).json();assert.equal(list.debates.length,1);
  await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:6}),e,deps);assert.equal(log.length,7);
 });
-test('concurrent start and turn claims cannot create duplicate active work',async t=>{
+test('independent starts are allowed while concurrent requests for one turn cannot duplicate paid work',async t=>{
  const e=fixture(t);const result=await Promise.all([handle(req('/debates/start',start,'ip-a'),e),handle(req('/debates/start',start,'ip-b'),e)]);
- assert.deepEqual(result.map(r=>r.status).sort(),[200,409]);
+ assert.deepEqual(result.map(r=>r.status).sort(),[200,200]);
  const session=await result.find(r=>r.status===200).json();let release;const blocker=new Promise(r=>{release=r;});let calls=0;
  const deps={fetch:async (...args)=>{calls++;await blocker;return fake([])(...args);}};
  const first=handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps);
@@ -75,9 +78,50 @@ test('twelve-turn option produces six turns per side and only one summary',async
  for(let n=0;n<=12;n++){
   const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps);
   assert.equal(r.status,200);
-  if(n===12){const d=await r.json();assert.equal(d.completed,true);assert.equal(d.debate.turns.filter(x=>x.speaker==='openai').length,6);assert.equal(d.debate.turns.filter(x=>x.speaker==='gemini').length,6);}
+  if(n===12){assert.equal((await r.json()).summaryReady,true);
+   const d=await(await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps)).json();assert.equal(d.completed,true);assert.equal(d.debate.turns.filter(x=>x.speaker==='openai').length,6);assert.equal(d.debate.turns.filter(x=>x.speaker==='gemini').length,6);}
  }
  assert.equal(log.length,13);
+});
+test('authenticated cancellation clears unfinished records, skips summaries, and does not block new starts',async t=>{
+ const e=fixture(t),log=[],deps={fetch:fake(log)};
+ const session=await(await handle(req('/debates/start',start),e,deps)).json();
+ await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps);
+ assert.equal((await handle(req(`/debates/${session.id}/cancel`,{token:'wrong'}),e,deps)).status,401);
+ const cancellation=()=>handle(req(`/debates/${session.id}/cancel`,{token:session.token}),e,deps);
+ assert.equal((await cancellation()).status,200);assert.equal((await cancellation()).status,200);
+ assert.equal((await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:1}),e,deps)).status,410);
+ assert.equal((await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps)).status,410);
+ assert.equal((await handle(req(`/debates/${session.id}`),e)).status,404);
+ const row=await e.DB.prepare('SELECT * FROM debates WHERE id = ?').bind(session.id).first();
+ assert.equal(row.status,'cancelled');assert.equal(row.turns_json,'[]');assert.equal(row.summary_json,null);
+ assert.equal(log.length,1);
+ assert.equal((await handle(req('/debates/start',start,'new-ip'),e,deps)).status,200);
+});
+test('cancellation during an in-flight turn or summary prevents late writes and publication',async t=>{
+ for(const summarizing of [false,true]){
+  const e=fixture(t),deps={fetch:fake([])};
+  const session=await(await handle(req('/debates/start',start),e,deps)).json();
+  if(summarizing)for(let n=0;n<6;n++)await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps);
+  let release,entered;const started=new Promise(r=>{entered=r;});const blocker=new Promise(r=>{release=r;});let calls=0;
+  const pending=handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:summarizing?6:0}),e,{fetch:async(...args)=>{calls++;entered();await blocker;return fake([])(...args);}});
+  await started;
+  assert.equal((await handle(req(`/debates/${session.id}/cancel`,{token:session.token}),e)).status,200);
+  release();assert.equal((await pending).status,410);assert.equal(calls,1);
+  const row=await e.DB.prepare('SELECT * FROM debates WHERE id = ?').bind(session.id).first();
+  assert.equal(row.status,'cancelled');assert.equal(row.turns_json,'[]');assert.equal(row.summary_json,null);
+  assert.equal((await(await handle(req('/debates'),e)).json()).debates.length,0);
+ }
+});
+test('an unacknowledged summary is private and cancellable, completed posts survive exit',async t=>{
+ const e=fixture(t),log=[],deps={fetch:fake(log)};
+ const session=await(await handle(req('/debates/start',start),e,deps)).json();
+ for(let n=0;n<=6;n++)await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps);
+ assert.equal((await handle(req(`/debates/${session.id}`),e)).status,404);
+ await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:6}),e,deps);assert.equal(log.length,7);
+ await handle(req(`/debates/${session.id}/publish`,{token:session.token}),e,deps);
+ await handle(req(`/debates/${session.id}/cancel`,{token:session.token}),e,deps);
+ assert.equal((await handle(req(`/debates/${session.id}`),e)).status,200);assert.equal(log.length,7);
 });
 test('Gemini errors reveal only HTTP status and a known reason, never provider messages or keys',async t=>{
  const e=fixture(t),deps={fetch:fake([])};
