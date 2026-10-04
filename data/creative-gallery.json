@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124387-5aa41b18-5887-4061-ac3e-253024bd38c4",
+    "slot": "creative-124387",
+    "title": "청백색 필라멘트의 고요한 맥박",
+    "category": "A14",
+    "sceneKey": "A14-B6-C6-D1-E10-F6",
+    "generationSelection": {
+      "A": 14,
+      "B": 6,
+      "C": 6,
+      "D": 1,
+      "E": 10,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA14. 활동은하핵의 좁은 플라즈마 제트\n- 은하 전체를 보여주는 장면 금지\n- 활동은하핵 일부와 좁은 제트가 주제\n- 제트가 프레임 밖까지 이어져도 됨\n- 흔한 나선은하 이미지로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB6. 청백색 + 은회색\n- 차가운 고에너지 또는 항성 관측 느낌\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD1. 실제 현재 천문 관측 수준\n- 과장 최소화\n- 매우 현실적인 구조와 색\n\n관측 거리 / 화면 점유율:\nE10. 방향성 흐름 강조\n- 제트, 필라멘트, 충격파 등 방향성을 가진 구조에 사용\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 722,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 722
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 893
+    },
+    "generationCost": {
+      "usd": 0.00874,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124387-5aa41b18-5887-4061-ac3e-253024bd38c4.webp",
+    "author": "AI 창작",
+    "date": "2026-10-05",
+    "publishedAt": "2026-10-04T22:30:45.857Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "활동은하핵의 좁은 플라즈마 제트",
+    "description": "남쪽 바다뱀자리 경계의 희미한 은하군에서, 관측 식별번호 KX-7316으로 기록된 발광체가 처음 분류되었다. 가상의 심우주 장비 ‘누리안 배열망원경’으로 얻은 이 영상에서 눈에 먼저 들어오는 것은 왼쪽 중앙의 눈부신 핵과, 그곳에서 오른쪽 아래로 뻗어 화면을 가로지르는 청백색 제트다. 주변에는 가는 실처럼 흐린 가스가 얽혀 있고, 제트는 몇몇 구간에서 매듭처럼 밝아진다. 사진 자체는 구조의 모양을 보여줄 뿐 거리나 크기를 재지는 않는다. 후속 적색편이 분석을 바탕으로 연구진은 이 천체를 약 46억 광년 떨어진 활동은하로 해석했고, 제트의 투영 길이는 약 32만 광년으로 추정했다. 따라서 이 빛은 지구에 오기까지 약 46억 년을 건너왔다.\n\n중심핵에서 시작된 가느다란 선은 처음엔 매끄럽지만, 바깥쪽으로 갈수록 밝은 매듭과 희미한 안개가 번갈아 나타난다. 핵의 반대편에도 흐린 물질 흐름이 보이나, 한쪽 제트의 선명함에 비해 유난히 희미하다. 바로 이 비대칭을 조사하던 분광 추적에서, 제트의 밝은 매듭 네 곳이 서로 다른 거리에도 불구하고 11.8일 간격으로 미세하게 밝아지는 기록이 반복됐다. 광행 시간과 제트의 흐름을 보정한 뒤에도 신호의 위상은 맞지 않았다. 연구진은 이를 ‘청맥 동조 잔차(Cerulean Thread Residual)’라 부른다. 이름은 관측값을 묶기 위한 표지일 뿐, 원인을 설명하지는 않는다.\n\n이 영상에 담긴 모습은 수십억 년 전 출발한 빛이다. 지금 그 은하에서 어떤 변화가 일어나는지는 이 한 장으로 알 수 없다. 확인된 것은 필라멘트의 존재와, 설명되지 않는 동조 신호뿐이다. 검은 배경을 다시 들여다보면, 우리가 붙인 이름보다 오래된 질문 하나가 빛의 매듭 사이에 남아 있다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 작은 별과 흐릿한 은하들이 드문드문 흩어져 있다.",
+      "화면 왼쪽 중앙의 매우 밝은 핵에서 가느다란 청백색 빛줄기가 오른쪽 아래로 길게 뻗는다.",
+      "빛줄기 주변에는 매듭처럼 밝아지는 구간과 희미한 안개형 필라멘트가 이어지고, 핵의 왼쪽 위로도 흐린 구조가 뻗어 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 673,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2978
+    },
+    "descriptionCost": {
+      "usd": 0.00062455,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-04T22:30:54.219Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124386-6ecad9a3-1d46-418e-8de2-08bbde2e0c3f",
     "slot": "creative-124386",
     "title": "청록빛 장벽에 남은 고요한 간격",
