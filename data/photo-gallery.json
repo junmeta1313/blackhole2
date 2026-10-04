@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA21474",
+    "slot": "photos-82922",
+    "nasaId": "PIA21474",
+    "title": "Crab Nebula from Five Observatories",
+    "url": "https://images-assets.nasa.gov/image/PIA21474/PIA21474~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-04",
+    "credit": "NASA, ESA, G. Dubner IAFE, CONICET-University of Buenos Aires et al.; A. Loll et al.; T. Temim et al.; F. Seward et al.; VLA/NRAO/AUI/NSF; Chandra/CXC; Spitzer/JPL-Caltech; XMM-Newton/ESA; and Hubble/STScI",
+    "sourceUrl": "https://images.nasa.gov/details/PIA21474",
+    "publishedAt": "2026-10-04T07:02:23.295Z"
+  },
+  {
     "id": "nasa-PIA13108",
     "slot": "photos-82922",
     "nasaId": "PIA13108",
