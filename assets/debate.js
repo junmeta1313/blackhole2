@@ -1,6 +1,7 @@
 (() => {
   const API = 'https://quiet-recipe-f7be.kuji5757.workers.dev';
   const cancellationKey = 'debate-pending-cancellation';
+  const replyDelayMs = 7000;
   let active = null, running = false, departed = false, pageGeneration = 0;
   function rememberCancellation(session) {
     try { sessionStorage.setItem(cancellationKey, JSON.stringify({ id: session.id, token: session.token })); } catch { /* Beacon still works without storage. */ }
@@ -22,8 +23,27 @@
     if (!response.ok) throw new Error(typeof data.error === 'string' ? data.error : '서버 연결을 확인해주세요.');
     return data;
   }
-  function setStatus(text) { el('debate-status').textContent = text; }
-  function renderTurns(turns) {
+  function setStatus(text, preparing = false) {
+    el('debate-status').textContent = text;
+    el('debate-status').classList.toggle('is-preparing', preparing);
+  }
+  function showTyping(speaker) {
+    const typing = el('debate-typing');
+    typing.className = speaker === 'ChatGPT' ? 'debate-openai' : 'debate-gemini';
+    typing.querySelector('span').textContent = `${speaker} · 입력중....`;
+    typing.hidden = false;
+  }
+  function hideTyping() { el('debate-typing').hidden = true; }
+  function renderPositions(openai, gemini) {
+    const box = el('debate-positions'); box.replaceChildren();
+    for (const [label, text, side] of [['ChatGPT 입장', openai, 'openai'], ['Gemini 입장', gemini, 'gemini']]) {
+      const card = document.createElement('article'); card.className = `debate-position debate-${side}`;
+      const heading = document.createElement('strong'); heading.textContent = label;
+      const body = document.createElement('p'); body.textContent = text;
+      card.append(heading, body); box.append(card);
+    }
+  }
+  function renderTurns(turns, focusLatest = true) {
     const chat = el('debate-chat'); chat.replaceChildren();
     for (const [i, turn] of turns.entries()) {
       const bubble = document.createElement('article');
@@ -32,7 +52,17 @@
       const text = document.createElement('p'); text.textContent = turn.text;
       bubble.append(name, text); chat.append(bubble);
     }
-    chat.scrollTop = chat.scrollHeight;
+    if (focusLatest && turns.length) {
+      const latest = chat.lastElementChild;
+      const previousLine = turns.length > 1 ? 64 : 0;
+      // Space below short messages lets their beginning reach the top of the log.
+      const spacer = document.createElement('div'); spacer.className = 'debate-chat-spacer';
+      spacer.setAttribute('aria-hidden', 'true');
+      spacer.style.height = `${Math.max(0, chat.clientHeight - latest.offsetHeight - previousLine)}px`;
+      chat.append(spacer);
+      const top = latest.getBoundingClientRect().top - chat.getBoundingClientRect().top + chat.scrollTop;
+      chat.scrollTop = Math.max(0, top - previousLine);
+    } else chat.scrollTop = 0;
   }
   function renderSummary(summary) {
     const box = el('debate-summary'); box.replaceChildren(); box.hidden = !summary;
@@ -57,8 +87,8 @@
           try {
             const { debate } = await request(`/debates/${record.id}`);
             el('debate-view-title').textContent = debate.topic;
-            el('debate-positions').textContent = `ChatGPT: ${debate.openaiPosition}\nGemini: ${debate.geminiPosition}`;
-            renderTurns(debate.turns); renderSummary(debate.summary); setStatus('저장된 토론 기록입니다.');
+            renderPositions(debate.openaiPosition, debate.geminiPosition);
+            renderTurns(debate.turns, false); renderSummary(debate.summary); setStatus('저장된 토론 기록입니다.');
           } catch (error) { setStatus(error.message); }
         };
         list.append(button);
@@ -73,9 +103,17 @@
       while (active) {
         const summarizing = active.turns.length >= active.totalTurns;
         const speaker = active.turns.length % 2 === 0 ? 'ChatGPT' : 'Gemini';
-        setStatus(summarizing ? 'Gemini가 양측 주장 요약을 정리하고 있습니다…' : `${speaker} · 반박 준비중.... (${active.turns.length + 1}/${active.totalTurns})`);
-        let data = await request(`/debates/${session.id}/turn`, { token: session.token, expectedTurn: session.turns.length });
+        setStatus(summarizing ? 'Gemini가 양측 주장 요약을 정리하고 있습니다…' : `${speaker} · 반박 준비중입니다... (${active.turns.length + 1}/${active.totalTurns})`, true);
+        if (!summarizing) showTyping(speaker);
+        else hideTyping();
+        // Start the API call immediately; hold each completed reply until seven
+        // seconds have elapsed. Slow API calls keep the indicator visible longer.
+        let [data] = await Promise.all([
+          request(`/debates/${session.id}/turn`, { token: session.token, expectedTurn: session.turns.length }),
+          new Promise(resolve => setTimeout(resolve, summarizing ? 0 : replyDelayMs))
+        ]);
         if (active !== session) return;
+        hideTyping();
         if (data.summaryReady) {
           data = await request(`/debates/${session.id}/publish`, { token: session.token });
           if (active !== session) return;
@@ -90,6 +128,7 @@
       }
     } catch (error) {
       if (active !== session) return;
+      hideTyping();
       setStatus(`${error.message} 기존 발언은 유지됩니다. 계속하기를 누르면 추가 API 비용이 발생할 수 있습니다.`);
       el('debate-resume').hidden = !active;
     } finally { running = false; el('debate-fields').disabled = !!active; }
@@ -120,8 +159,10 @@
         rememberCancellation(active);
         el('debate-password').value = '';
         el('debate-view-title').textContent = topic;
-        el('debate-positions').textContent = `ChatGPT: ${el('debate-openai-position').value}\nGemini: ${el('debate-gemini-position').value}`;
-        renderTurns([]); renderSummary(null); await advance();
+        renderPositions(el('debate-openai-position').value, el('debate-gemini-position').value);
+        renderTurns([]); renderSummary(null);
+        el('debate-status').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        await advance();
       } catch (error) { setStatus(error.message); el('debate-fields').disabled = false; }
     };
     el('debate-resume').onclick = advance;
@@ -132,6 +173,7 @@
     if (!active) return;
     const session = active; active = null;
     cancelOnExit(session);
+    hideTyping();
     renderTurns([]); renderSummary(null);
     el('debate-resume').hidden = true; el('debate-fields').disabled = false;
     setStatus('페이지를 나가 진행 중인 토론이 종료됐습니다. 게시글로 저장되지 않습니다.');

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { handle } from './index.mjs';
-import { validateTurn } from './debate.mjs';
+import { validateTurn, debatePrompt } from './debate.mjs';
 function fixture(t) {
   const sqlite = new DatabaseSync(':memory:');
   sqlite.exec(fs.readFileSync(new URL('./debate-schema.sql',import.meta.url),'utf8'));
@@ -17,13 +17,18 @@ function fake(log,short=false) { return async (url,init)=>{
   const b=JSON.parse(init.body);log.push({url,b});
   if(String(url).includes('openai')) {
     assert.equal(b.model,'gpt-6-luna');assert.equal(b.store,false);assert.equal(b.tools,undefined);
-    return Response.json({status:'completed',output_text:short?'짧음':'관'.repeat(450),usage:{input_tokens:100,output_tokens:200}});
+    assert.match(b.instructions,/300~450자/);assert.match(b.instructions,/빈 줄/);assert.match(b.instructions,/가벼운 비꼼/);
+    return Response.json({status:'completed',output_text:short?'짧음':'관'.repeat(350),usage:{input_tokens:100,output_tokens:200}});
   }
   assert.ok(String(url).includes('gemini-3.5-flash-lite:generateContent'));
   assert.equal(init.headers['x-goog-api-key'],'test-google');
   assert.equal(b.generationConfig.thinkingConfig.thinkingLevel,'LOW');
   assert.equal(b.generationConfig.thinkingConfig.thinkingBudget,undefined);
-  return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:b.generationConfig.responseMimeType?JSON.stringify({openai:'찬성 측 핵심 주장',gemini:'반대 측 핵심 주장'}):'측'.repeat(450)}]}}],usageMetadata:{totalTokenCount:200}});
+  if (!b.generationConfig.responseMimeType) {
+    assert.match(b.systemInstruction.parts[0].text,/300~450자/);
+    assert.match(b.systemInstruction.parts[0].text,/주장과 근거를 비판/);
+  }
+  return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:b.generationConfig.responseMimeType?JSON.stringify({openai:'찬성 측 핵심 주장',gemini:'반대 측 핵심 주장'}):'측'.repeat(350)}]}}],usageMetadata:{totalTokenCount:200}});
 }; }
 test('password is required on server and invalid starts never call paid APIs',async t=>{
  const e=fixture(t);let calls=0;const deps={now:Date.now(),fetch:()=>{calls++;throw Error('no');}};
@@ -39,7 +44,7 @@ test('six alternating turns plus one Gemini summary persist as a publicly readab
  assert.equal((await handle(req(`/debates/${session.id}/turn`,{token:'wrong',expectedTurn:0}),e,deps)).status,401);
  for(let n=0;n<6;n++){
   const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps);assert.equal(r.status,200);
-  const d=await r.json();assert.equal(d.turn.speaker,n%2?'gemini':'openai');assert.equal(d.turn.text.length,450);
+  const d=await r.json();assert.equal(d.turn.speaker,n%2?'gemini':'openai');assert.equal(d.turn.text.length,350);
  }
  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:6}),e,deps);
  assert.equal((await r.json()).summaryReady,true);
@@ -68,9 +73,18 @@ test('invalid length pauses without retries or losing previous turns',async t=>{
  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,{fetch:fake(log,true)});
  assert.equal(r.status,502);assert.equal(log.length,1);
  const list=await (await handle(req('/debates'),e)).json();assert.equal(list.debates.length,0);
- assert.throws(()=>validateTurn('가'.repeat(399)));assert.throws(()=>validateTurn('가'.repeat(601)));
- assert.equal(validateTurn('가'.repeat(400)).length,400);
- assert.equal(validateTurn('가'.repeat(600)).length,600);
+ assert.throws(()=>validateTurn('가'.repeat(299)));assert.throws(()=>validateTurn('가'.repeat(451)));
+ assert.equal(validateTurn('가'.repeat(300)).length,300);
+ assert.equal(validateTurn('가'.repeat(450)).length,450);
+});
+test('shorter replies gain paragraph breaks without changing their argument',()=>{
+ const sentences=['관측 비용이 줄어든다는 주장은 타당합니다.','하지만 비용만으로 우선순위를 정하는 것은 지나친 단순화입니다.','현장 연구자가 예외 상황에 대응할 수 있다는 점을 함께 비교해야 합니다.','저렴한 탐사가 곧 충분한 탐사라는 결론은 근거가 빠진 낙관입니다.'];
+ const text=sentences.flatMap(s=>[s,s,s]).join(' ');
+ const formatted=validateTurn(text);
+ assert.ok(formatted.includes('\n\n'));
+ assert.equal(formatted.replace(/\s+/g,' '),text);
+ assert.ok(Array.from(formatted).length>=300 && Array.from(formatted).length<=450);
+ assert.match(debatePrompt({topic:'topic',openai_position:'pro',gemini_position:'con'},[],'openai'),/300~450자/);
 });
 test('twelve-turn option produces six turns per side and only one summary',async t=>{
  const e=fixture(t),log=[],deps={fetch:fake(log)};
