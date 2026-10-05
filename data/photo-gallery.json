@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA25163",
+    "slot": "photos-82927",
+    "nasaId": "PIA25163",
+    "title": "Andromeda Galaxy Imaged by Herschel, Planck, IRAS, COBE",
+    "url": "https://images-assets.nasa.gov/image/PIA25163/PIA25163~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-05",
+    "credit": "ESA/NASA/JPL-Caltech/GBT/WSRT/IRAM/C. Clark (STScI)",
+    "sourceUrl": "https://images.nasa.gov/details/PIA25163",
+    "publishedAt": "2026-10-05T10:49:09.347Z"
+  },
+  {
     "id": "nasa-PIA04234",
     "slot": "photos-82925",
     "nasaId": "PIA04234",
