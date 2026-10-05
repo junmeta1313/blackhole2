@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124390-31d5e13b-85ef-469a-b5bf-0e02f3595447",
+    "slot": "creative-124390",
+    "title": "청록 고리의 비대칭한 숨결",
+    "category": "A17",
+    "sceneKey": "A17-B2-C3-D2-E3-F3",
+    "generationSelection": {
+      "A": 17,
+      "B": 2,
+      "C": 3,
+      "D": 2,
+      "E": 3,
+      "F": 3
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA17. 희귀한 플라즈마 고리\n- 중심이 빈 가스/플라즈마 구조\n- 행성 고리와 명확히 다른 독립적 플라즈마 구조\n- 완벽한 원이 아닌 불규칙하고 자연적인 형태\n- 인공 구조물처럼 보이지 않음\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF3. 지나치게 균일한 얇은 고리형 구조\n- 자연 현상으로 보이지만 비정상적으로 균일\n- 인공적인 완벽한 원은 금지\n\n고리형 이상은 기존 플라즈마 고리 안에 표현하고 별도의 고리를 추가하지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 771,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 771
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 942
+    },
+    "generationCost": {
+      "usd": 0.008985,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124390-31d5e13b-85ef-469a-b5bf-0e02f3595447.webp",
+    "author": "AI 창작",
+    "date": "2026-10-05",
+    "publishedAt": "2026-10-05T10:49:42.079Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "희귀한 플라즈마 고리",
+    "description": "남쪽 하늘의 희미한 별자리 경계에서 발견된 성운형 천체 NGCX-4721은 지구로부터 약 6,400광년 떨어져 있다. 청록색 고리처럼 보이는 구조는 사진에서 지름 약 18광년에 걸쳐 펼쳐지며, 검푸른 배경 위로 가는 가스 필라멘트가 얽혀 있다. 고리의 윗부분과 왼쪽 아래에는 밝은 매듭이 모여 있고, 그 사이의 안쪽은 두드러지게 어둡다. 중심에 별 하나가 놓인 모습은 보이지 않는다. 이 비어 있는 중심과 불균일한 테두리가 이 천체의 첫 번째 단서다.\n\n가상의 관측 장비 ‘해연 적외선 간섭계’가 후속 분광 자료를 분석하자, 고리의 서로 마주 보는 두 구간에서 이온화 산소선이 11개월 간격으로 번갈아 약 3퍼센트씩 밝아지는 기록이 나타났다. 주변 가스의 밀도와 온도만으로는 이 동기화된 변화를 재현하기 어려웠다. 연구진은 이를 ‘청록 교대광 현상(Teal Alternating Sheen)’이라 이름 붙였다. 그러나 한 장의 영상은 움직임을 보여주지 않으며, 이 수치는 뒤이은 관측에서 얻은 것이다. 밝기 변화가 고리 전체를 따라 전파되는지, 아니면 서로 떨어진 영역이 같은 조건에 반응하는지는 아직 판별되지 않았다.\n\n우리가 보는 빛은 약 6,400년 전 이곳을 떠났다. 그동안 고리는 팽창했을 수도, 희미해졌을 수도 있지만, 현재의 모습은 아직 우리에게 도착하지 않았다. 관측은 교대하는 방출의 존재만 확인했을 뿐 그 원인을 밝혀내지 못했다. 어둠 한가운데 남은 청록의 테두리를 다시 바라보면, 설명되지 않은 것은 고리의 안쪽만이 아니라 우리가 우주를 이해하는 방식의 경계일지도 모른다.",
+    "visibleFeatures": [
+      "검푸른 별빛 배경 한가운데 청록색 가스가 크고 거의 타원형인 고리를 이루며 둘러싸여 있다.",
+      "고리의 가장자리는 매끈하지 않고 가는 실오라기 같은 성운 구조와 밝은 매듭들이 이어져 있으며, 특히 위쪽과 왼쪽 아래가 더 밝다.",
+      "고리 내부는 바깥보다 어둡고 비교적 비어 보이며, 주변에는 밝기가 다양한 작은 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 612,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2917
+    },
+    "descriptionCost": {
+      "usd": 0.0005940499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-05T10:49:51.203Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124388-09a45161-a854-4218-812c-c09e14eda19a",
     "slot": "creative-124388",
     "title": "암흑 성운의 푸른 맥박",
