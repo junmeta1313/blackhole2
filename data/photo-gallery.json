@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA11393",
+    "slot": "photos-82928",
+    "nasaId": "PIA11393",
+    "title": "Ghost of Mirach Rears its Spooky Head",
+    "url": "https://images-assets.nasa.gov/image/PIA11393/PIA11393~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-06",
+    "credit": "NASA/JPL-Caltech/DSS",
+    "sourceUrl": "https://images.nasa.gov/details/PIA11393",
+    "publishedAt": "2026-10-05T15:31:46.524Z"
+  },
+  {
     "id": "nasa-PIA25163",
     "slot": "photos-82927",
     "nasaId": "PIA25163",
