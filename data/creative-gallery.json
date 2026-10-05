@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124388-09a45161-a854-4218-812c-c09e14eda19a",
+    "slot": "creative-124388",
+    "title": "암흑 성운의 푸른 맥박",
+    "category": "A9",
+    "sceneKey": "A9-B1-C3-D2-E2-F10",
+    "generationSelection": {
+      "A": 9,
+      "B": 1,
+      "C": 3,
+      "D": 2,
+      "E": 2,
+      "F": 10
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA9. 암흑 성운 내부의 작은 발광 핵\n- 대부분은 불투명한 암흑 먼지\n- 한 곳에서만 희미한 발광\n- 발광 영역은 작고 국소적\n- 전체 화면을 화려한 성운으로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB1. 저채도 청회색\n- 거의 단색\n- 차갑고 절제된 관측 이미지\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE2. 근접 관측\n- 메인 대상이 약 60~80% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF10. 비정상적인 국소 발광점\n- 주변 가스와 다른 색온도 또는 광도를 가진 작은 영역\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 718,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 718
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 889
+    },
+    "generationCost": {
+      "usd": 0.00872,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124388-09a45161-a854-4218-812c-c09e14eda19a.webp",
+    "author": "AI 창작",
+    "date": "2026-10-05",
+    "publishedAt": "2026-10-05T02:22:03.596Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "암흑 성운 내부의 작은 발광 핵",
+    "description": "뱀주인자리 남쪽, 은하수의 별빛이 짙은 먼지에 가려지는 방향에서 성운 KQ-731 ‘회색 해류’가 확인되었다. 거리는 약 1,900광년으로 추정된다. 이 영상에는 푸른 회색의 가스와 먼지가 화면을 가득 채우고, 그 한가운데를 비스듬히 가로지르는 거대한 암흑대가 보인다. 먼지 구름은 배경 별빛을 차단해 검은 물길처럼 보이지만, 가장자리는 흐릿한 가스층으로 풀려나 주변 성간운과 이어진다. 영상의 각도와 후속 분광 관측을 바탕으로 추정한 구조의 폭은 약 11광년이다. 한 장의 사진만으로는 그 깊이나 실제 운동을 측정할 수 없다.\n\n암흑대의 틈 가까이에는 푸른빛을 내는 작은 별 형성 영역이 있다. 빛은 먼지에 산란되어 가느다란 광채를 이루지만, 별의 질량과 나이는 아직 정밀하게 정해지지 않았다. 놀라운 점은 이 밝은 영역 주변에서 관측된 미세한 광도 결손이다. 가상의 관측 장비 ‘이리데스 적외선 간섭계’가 14개월간 기록한 자료에서는 2.8마이크론 대역의 복사가 37일 간격으로 약 1.6퍼센트씩 약해졌다가 회복했다. 먼지의 불투명도 변화로는 설명하기 어려운 규칙성이었고, 연구진은 이를 ‘청류 광도 공백’이라 명명했다. 다만 다른 파장에서는 같은 주기가 뚜렷하지 않아, 원인은 아직 특정되지 않았다.\n\n우리가 보는 이 성운의 빛은 약 1,900년 전 그곳을 떠났다. 지금 그 별과 먼지의 모습은 이미 달라졌을 수 있지만, 우리에게 도달한 기록은 여전히 한 장의 고요한 풍경으로 남아 있다. 관측은 공백의 반복을 확인했을 뿐, 무엇이 그 리듬을 만들었는지는 밝혀내지 못했다. 어둠은 비어 있는 것이 아니라, 아직 읽히지 않은 우주의 구조일지도 모른다.",
+    "visibleFeatures": [
+      "화면 대부분을 푸른빛과 회색빛의 성간 먼지 구름이 채우며, 불규칙한 암흑 영역이 중앙에서 오른쪽 아래까지 넓게 드리워져 있다.",
+      "중앙보다 약간 오른쪽에 작고 강렬한 푸른빛 발광점이 있고, 그 주변의 가스와 먼지가 희미하게 빛난다.",
+      "배경은 어둡고 별은 드문드문 보이며, 성운의 가장자리는 뚜렷한 경계 없이 옅은 안개처럼 퍼져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 683,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2988
+    },
+    "descriptionCost": {
+      "usd": 0.00062955,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-05T02:22:12.053Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124387-5aa41b18-5887-4061-ac3e-253024bd38c4",
     "slot": "creative-124387",
     "title": "청백색 필라멘트의 고요한 맥박",
