@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA04234",
+    "slot": "photos-82925",
+    "nasaId": "PIA04234",
+    "title": "Artist Concept of Galaxy Evolution Explorer",
+    "url": "https://images-assets.nasa.gov/image/PIA04234/PIA04234~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-05",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA04234",
+    "publishedAt": "2026-10-05T00:08:01.575Z"
+  },
+  {
     "id": "nasa-PIA23646",
     "slot": "photos-82924",
     "nasaId": "PIA23646",
