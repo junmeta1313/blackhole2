@@ -33,6 +33,7 @@ window.addBriefingQuestion = function (article, item) {
   button.type = 'button';
   button.className = 'text-xs text-purple-200 mt-4 hover:text-white';
   button.textContent = '[질문하기]';
+  button.title = '이 브리핑과 원문·웹 자료를 참고하는 AI에게 질문하세요.';
   article.append(button);
   const panel = document.createElement('section');
   panel.hidden = true;
