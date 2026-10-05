@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA12000",
+    "slot": "photos-82929",
+    "nasaId": "PIA12000",
+    "title": "NASA Galaxy Mission Celebrates Sixth Anniversary",
+    "url": "https://images-assets.nasa.gov/image/PIA12000/PIA12000~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-06",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA12000",
+    "publishedAt": "2026-10-05T22:09:47.565Z"
+  },
+  {
     "id": "nasa-PIA11393",
     "slot": "photos-82928",
     "nasaId": "PIA11393",
