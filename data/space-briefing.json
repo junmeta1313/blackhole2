@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791178939246-1",
+    "title": "안테나은하의 분자 기체와 자기장 다중 규모 분석",
+    "originalTitle": "A multi-scale view of molecular gas and magnetic fields in the Antennae galaxies",
+    "summary": "이 연구는 병합 중인 안테나은하의 차가운 성간매질에서 분자 기체와 자기장의 관계를 조사한다.\nAPEX·ALMA의 CO 자료와 SOFIA의 먼지 편광 자료를 함께 분석했다.\n킬로파섹 규모에서 CO 세기와 속도분산은 편광과 반상관을 보여 기하학적 탈편광을 시사했다.\n겹침 영역의 일부 운동 구조는 관측된 자기장 방향과 뚜렷하게 정렬됐다.\n약 50파섹 규모의 기체 구조가 약 2킬로파섹 규모 편광 분율에 영향을 줄 가능성을 보였으며, arXiv 프리프린트로 동료심사 여부는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.03346",
+    "publishedAt": "2026-10-02",
+    "date": "2026-10-05 14:42",
+    "createdAt": "2026-10-05T05:42:19.246312+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791178939246-2",
+    "title": "NASA의 달 귀환 준비에서 데이터 공백을 찾는 리처드 스폴지노",
+    "originalTitle": "Mapping the Gaps in NASA’s Return to the Moon, featuring Richard Spolzino",
+    "summary": "NASA 랭글리의 항공우주 엔지니어 리처드 스폴지노는 달·화성 임무의 지식 공백을 파악하는 일을 한다.\n그의 팀은 무엇을 모르는지, 왜 중요한지, 어떤 측정 목표가 필요한지 문서화한다.\n달 토양의 지반 특성 같은 정보는 로버 주행과 거주지 기초 설계에 영향을 준다.\n공개된 데이터 공백 목록은 지난해 약 25건에서 올해 말 60건으로 늘어날 전망이다.\n그는 통신 용량이 제한된 착륙선 임무에서 귀환 데이터의 우선순위를 정하는 사례도 소개했으며, 글은 개인 경력과 업무를 다루고 성과의 독립 검증은 제시하지 않는다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/general/mapping-the-gaps-in-nasas-return-to-the-moon-featuring-richard-spolzino",
+    "publishedAt": "2026-10-04",
+    "date": "2026-10-05 14:42",
+    "createdAt": "2026-10-05T05:42:19.246312+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791098876708-1",
     "title": "DESI DR1 전력 스펙트럼·비스펙트럼 공동 우주론 분석",
     "originalTitle": "Cosmological inference from a joint DESI DR1 full-shape power spectrum and bispectrum analysis",
