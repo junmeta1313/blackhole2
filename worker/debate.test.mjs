@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { handle } from './index.mjs';
-import { validateTurn, debatePrompt, generateTurn } from './debate.mjs';
+import { formatTurn, debatePrompt, generateTurn } from './debate.mjs';
 function fixture(t, legacy = false) {
   const sqlite = new DatabaseSync(':memory:');
   const schema = fs.readFileSync(new URL('./debate-schema.sql',import.meta.url),'utf8');
@@ -85,19 +85,22 @@ test('independent starts are allowed while concurrent requests for one turn cann
  release();assert.equal((await first).status,200);assert.equal(calls,1);
  const synced=await (await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps)).json();assert.equal(synced.synced,true);assert.equal(calls,1);
 });
-test('invalid length pauses without retries or losing previous turns',async t=>{
- const e=fixture(t);const session=await (await handle(req('/debates/start',start),e)).json();const log=[];
+test('OpenAI replies outside the requested range are saved without retry; empty output is rejected',async t=>{
+ const e=fixture(t),session=await(await handle(req('/debates/start',start),e)).json(),log=[];
  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,{fetch:fake(log,true)});
- assert.equal(r.status,502);assert.equal(log.length,1);
- const list=await (await handle(req('/debates'),e)).json();assert.equal(list.debates.length,0);
- assert.throws(()=>validateTurn('가'.repeat(399)));assert.throws(()=>validateTurn('가'.repeat(501)));
- assert.equal(validateTurn('가'.repeat(400)).length,400);
- assert.equal(validateTurn('가'.repeat(500)).length,500);
+ assert.equal(r.status,200);assert.equal(log.length,1);assert.equal((await r.json()).turn.text,'짧음');
+ const row=await e.DB.prepare('SELECT * FROM debates WHERE id = ?').bind(session.id).first();
+ assert.equal(row.turn_count,1);assert.equal(JSON.parse(row.turns_json)[0].text,'짧음');
+ assert.equal(formatTurn('가'.repeat(399)).length,399);
+ assert.equal(formatTurn('가'.repeat(501)).length,501);
+ assert.equal(formatTurn('가'.repeat(400)).length,400);
+ assert.equal(formatTurn('가'.repeat(500)).length,500);
+ assert.throws(()=>formatTurn(' \n '),/empty/);
 });
 test('shorter replies gain paragraph breaks without changing their argument',()=>{
  const sentences=['관측 비용이 줄어든다는 주장은 타당합니다.','하지만 비용만으로 우선순위를 정하는 것은 지나친 단순화입니다.','현장 연구자가 예외 상황에 대응할 수 있다는 점을 함께 비교해야 합니다.','저렴한 탐사가 곧 충분한 탐사라는 결론은 근거가 빠진 낙관입니다.'];
  const text=sentences.flatMap(s=>[s,s,s]).join(' ')+' 상대의 낙관을 검증하려면 연구 결과의 깊이와 대응 능력도 함께 봐야 합니다.';
- const formatted=validateTurn(text);
+ const formatted=formatTurn(text);
  assert.ok(formatted.includes('\n\n'));
  assert.equal(formatted.replace(/\s+/g,' '),text);
  assert.ok(Array.from(formatted).length>=400 && Array.from(formatted).length<=500);
@@ -223,22 +226,22 @@ test('Gemini precondition failures distinguish region and billing without exposi
  assert.equal(synced.debate.turns.length,1);assert.equal(synced.debate.turns[0].speaker,'openai');
 });
 
-test('Gemini structured paragraphs exclude JSON and thought text from the length count',async()=>{
+test('Gemini structured paragraphs display only normalized reply text',async()=>{
  const record={topic:'우주',openai_position:'찬성',gemini_position:'반대'};
  const result=await generateTurn(record,[{speaker:'openai',text:'이전 발언'}],{},async()=>Response.json({candidates:[{finishReason:'STOP',content:{parts:[{thought:true,text:'생각'.repeat(500)},{text:JSON.stringify({paragraphs:Array(3).fill('가'.repeat(150))})}]}}]}));
  assert.equal(result.text,Array(3).fill('가'.repeat(150)).join('\n\n'));
  assert.equal(Array.from(result.text).length,454);
  await assert.rejects(generateTurn(record,[{speaker:'openai',text:'이전'}],{},async()=>Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({paragraphs:['한 문단']})}]}}]})),/format/);
 });
-test('Gemini out-of-range output reports actual count and preserves earlier turns without retry',async t=>{
- const e=fixture(t),session=await(await handle(req('/debates/start',start),e)).json();
- await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,{fetch:fake([])});
+test('Gemini short and long replies both advance the debate without retry or losing history',async t=>{
  for (const paragraphLength of [120,180]) {
+  const e=fixture(t),session=await(await handle(req('/debates/start',start),e)).json();
+  await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,{fetch:fake([])});
   let calls=0;
   const response=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:1}),e,{fetch:async()=>{calls++;return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({paragraphs:Array(3).fill('측'.repeat(paragraphLength))})}]}}]});}});
-  assert.equal(response.status,502);assert.equal(calls,1);
-  assert.match((await response.json()).error,new RegExp(`Gemini 발언이 ${paragraphLength*3+4}자로`));
+  assert.equal(response.status,200);assert.equal(calls,1);
+  assert.equal((await response.json()).turn.text,Array(3).fill('측'.repeat(paragraphLength)).join('\n\n'));
   const row=await e.DB.prepare('SELECT * FROM debates WHERE id = ?').bind(session.id).first();
-  assert.equal(row.turn_count,1);assert.equal(JSON.parse(row.turns_json)[0].text,'관'.repeat(450));assert.equal(row.lease_until,0);assert.equal(row.summary_json,null);
+  assert.equal(row.turn_count,2);assert.equal(JSON.parse(row.turns_json)[0].text,'관'.repeat(450));assert.equal(row.lease_until,0);assert.equal(row.summary_json,null);
  }
 });

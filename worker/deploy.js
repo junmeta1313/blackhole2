@@ -27,8 +27,9 @@ function geminiFailureReason(message) {
 export function debatePrompt(record, turns, speaker) {
   return JSON.stringify({ topic: record.topic, yourPosition: speaker === 'openai' ? record.openai_position : record.gemini_position, opponentPosition: speaker === 'openai' ? record.gemini_position : record.openai_position, speaker: speaker === 'openai' ? 'ChatGPT' : 'Gemini', dialogue: turns.map(t => ({ speaker: t.speaker, text: t.text })), request: `현재 당신 차례입니다. 위 입장에서 상대 핵심 주장을 반박하세요. 반드시 공백 포함 ${replyRange}, 목표 ${replyTarget}. ${paragraphRules}` });
 }
-export function validateTurn(text) {
+export function formatTurn(text) {
   let clean = text.normalize('NFC').replace(/\r\n?/g, '\n').trim();
+  if (!clean) throw new Error('empty');
   if (!clean.includes('\n')) {
     const sentences = clean.split(/(?<=[.!?。])\s+/u);
     if (sentences.length >= 2) {
@@ -42,14 +43,8 @@ export function validateTurn(text) {
       }
       if (paragraph) parts.push(paragraph);
       const formatted = parts.join('\n\n');
-      if (Array.from(formatted).length <= DEBATE_REPLY_LENGTH.max) clean = formatted;
+      clean = formatted;
     }
-  }
-  const length = Array.from(clean).length;
-  if (length < DEBATE_REPLY_LENGTH.min || length > DEBATE_REPLY_LENGTH.max) {
-    const error = new Error('length');
-    error.actualLength = length;
-    throw error;
   }
   return clean;
 }
@@ -101,12 +96,7 @@ export async function generateTurn(record, turns, env, request = fetch) {
     if (!Array.isArray(paragraphs) || paragraphs.length !== 3 || paragraphs.some(p => typeof p !== 'string' || !p.trim())) throw new Error('format');
     result.text = paragraphs.map(p => p.trim().replace(/\s*\n\s*/g, ' ')).join('\n\n');
   }
-  try {
-    return { speaker, text: validateTurn(result.text), model: speaker === 'openai' ? DEBATE_OPENAI_MODEL : DEBATE_GEMINI_MODEL, usage: result.usage };
-  } catch (error) {
-    error.speaker = speaker === 'openai' ? 'ChatGPT' : 'Gemini';
-    throw error;
-  }
+  return { speaker, text: formatTurn(result.text), model: speaker === 'openai' ? DEBATE_OPENAI_MODEL : DEBATE_GEMINI_MODEL, usage: result.usage };
 }
 export async function summarizeDebate(record, turns, env, request = fetch) {
   const result = await gemini(env, {
@@ -224,7 +214,7 @@ export async function debateRoutes(request, env, json, deps = {}) {
           : 'API 키·모델 사용 권한·할당량을 확인해주세요.');
         return json({ error: `${error.message}. ${hint}`, ...(error.geminiReason ? { reason: error.geminiReason } : {}) }, 502);
       }
-      return json({ error: error.message === 'length' ? `${error.speaker} 발언이 ${error.actualLength}자로 생성되어 ${replyRange} 조건을 충족하지 못했습니다. 자동 재호출 없이 일시정지했습니다.` : 'AI 응답 생성에 실패했습니다. 모델 권한·API 사용 한도를 확인하세요. 기존 발언은 보존됩니다.' }, 502);
+      return json({ error: 'AI 응답 생성에 실패했습니다. 모델 권한·API 사용 한도를 확인하세요. 기존 발언은 보존됩니다.' }, 502);
     }
   } catch (error) {
     return json({ error: error instanceof SyntaxError ? '입력 형식이 올바르지 않습니다.' : '토론 서버 설정 또는 저장 처리에 문제가 있습니다.' }, error instanceof SyntaxError ? 400 : 503);
