@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791267747318-1",
+    "title": "은하단 운동학으로 굴절중력 검증",
+    "originalTitle": "Testing Refracted Gravity with the kinematics of stacked galaxy clusters",
+    "summary": "이 논문은 암흑물질 효과를 모사하는 굴절중력 모형을 은하단에서 시험합니다.\n연구진은 은하단 74곳의 구성 은하를 속도분산별 세 집단으로 나눠 분석했습니다.\n모형 추정에서 진공 유전율 매개변수는 기체 성분 모형에 따라 0.04~0.37이었습니다.\n세 집단의 결과는 오차 범위에서 서로 양립했고, 기존 은하단 규모 추정치와도 겹쳤습니다.\n덜 교란된 은하단을 고르면 뜨거운 기체 모형에 대한 민감도가 낮아졌습니다.\n결과는 기체 모형과 표본 선택에 따라 제약이 달라짐을 보여줍니다.\n이 자료는 동료심사 여부가 확인되지 않은 arXiv 사전공개 논문입니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.06841",
+    "publishedAt": "2026-10-05",
+    "date": "2026-10-06 15:22",
+    "createdAt": "2026-10-06T06:22:27.318663+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791267747318-2",
+    "title": "허블 자료에서 2세대 행성 후보 단서 발견",
+    "originalTitle": "Suspected Second-generation Planet Solves NASA Hubble Cold Case",
+    "summary": "연구진은 백색왜성 HS 0209+0832의 허블 자료에서 니오븀의 흔적을 찾아냈습니다.\n니오븀 등 무거운 원소의 존재는 별이 죽으며 내놓은 물질을 가리킨다고 설명합니다.\n연구진은 이 물질 일부가 뭉쳐 2세대 행성을 형성했을 가능성을 제시했습니다.\nFUSE 자료에서도 니오븀 신호가 확인됐고, TESS는 주기적인 밝기 변화를 관측했습니다.\n밝기 변화는 행성 후보가 백색왜성을 약 600만 km 거리에서 공전함을 시사합니다.\n행성은 아직 후보이며, 제공된 발췌문은 크기 추정 내용을 끝까지 제시하지 않습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/missions/hubble/suspected-second-generation-planet-solves-nasa-hubble-cold-case",
+    "publishedAt": "2026-10-05",
+    "date": "2026-10-06 15:22",
+    "createdAt": "2026-10-06T06:22:27.318663+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791178939246-1",
     "title": "안테나은하의 분자 기체와 F자기장 다중 규모 분석",
     "originalTitle": "A multi-scale view of molecular gas and magnetic fields in the Antennae galaxies",
