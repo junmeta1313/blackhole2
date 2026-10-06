@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124396-f600c87d-acfd-4c7a-a74a-e3242a09569e",
+    "slot": "creative-124396",
+    "title": "황금 띠를 따라 흐르는 침묵",
+    "category": "A3",
+    "sceneKey": "A3-B4-C3-D2-E3-F7",
+    "generationSelection": {
+      "A": 3,
+      "B": 4,
+      "C": 3,
+      "D": 2,
+      "E": 3,
+      "F": 7
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA3. 폭풍이 뒤덮인 가스행성\n- 행성 대기의 띠, 소용돌이, 폭풍 구조가 핵심\n- 고리 없음\n- 근거리 또는 중거리 관측\n- 대기의 미세한 흐름과 층 구조 강조\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF7. 준규칙적 반복 발광 구조\n- 일정해 보이지만 완벽하지 않은 반복 구조\n- 자연적 불규칙성을 반드시 유지\n\n미세한 자연적 불규칙성이 있는 반복 구조 단위가 최소 2~3개 보이게 한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 755,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 755
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 926
+    },
+    "generationCost": {
+      "usd": 0.008905,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124396-f600c87d-acfd-4c7a-a74a-e3242a09569e.webp",
+    "author": "AI 창작",
+    "date": "2026-10-06",
+    "publishedAt": "2026-10-06T10:45:30.391Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "폭풍이 뒤덮인 가스행성",
+    "description": "남쪽물고기자리 외곽의 희미한 별무리 사이에서 발견된 거대 가스행성 KX-71b는 지구로부터 약 86광년 떨어져 있다. 오르벨라 관측소의 적외선 합성 영상에는 행성의 둥근 윤곽과 함께 붉은 구름띠가 위도마다 다른 밝기로 이어지고, 그 위를 황금빛 타원 무늬들이 비스듬한 한 줄로 가로지른다. 실제 영상에서 확인되는 것은 구름 꼭대기의 밝기와 형태다. 구름층의 깊이나 바람의 속도는 별도의 분광 관측으로 추정해야 한다.\n\n가장 두드러진 구조는 오른쪽 아래의 거대한 타원형 폭풍이다. 연구진은 이를 ‘세라핀 회랑’이라 이름 붙였다. 여러 겹의 밝은 고리가 어두운 중심을 둘러싼 모습은 강한 대류와 회전하는 대기 흐름을 암시한다. 영상의 각도와 모형 대기 자료를 결합한 추정으로, 이 폭풍의 긴 축은 약 2만 8천 km에 이른다. 이는 한 장의 사진에서 직접 잰 값이 아니라 행성의 크기와 구름 고도에 대한 후속 분석에 따른 수치다.\n\n그러나 더 설명하기 어려운 것은 북쪽 구름띠의 황금빛 점들이다. Lumen-4 분광계가 41일간 얻은 관측에서 점들의 적외선 밝기는 약 9.6시간 간격으로 함께 변했지만, 각 점의 개별 밝기 변화는 서로 달랐다. 대기 모형은 이런 동시 변화를 예측하지 못했다. 연구진은 이 현상을 ‘세라핀 동조 편차’라 부르며 기록했으나, 구름의 파동인지 아직 모르는 대기 과정인지는 판단을 보류했다.\n\nKX-71b에서 출발한 빛은 86년을 건너 이 관측기에 도착했다. 지금 우리가 보는 구름은 이미 변했을 수도 있고, 그 폭풍의 오늘은 아직 지구에 닿지 않았다. 관측은 동조 편차의 존재까지만 확인했다. 오래된 빛이 남긴 이 작은 불일치 앞에서, 행성의 현재와 그 원인은 여전히 우리의 시야 바깥에 있다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 주황빛과 붉은빛을 띤 거대한 구형 행성이 떠 있으며, 표면에는 밝고 어두운 수평 구름띠가 감겨 있다.",
+      "행성 위쪽에는 여러 개의 작은 황금빛 타원형 발광 무늬가 띠를 이루고, 그 아래에도 고립된 밝은 타원형 무늬들이 보인다.",
+      "오른쪽 아래쪽에는 뚜렷한 눈 모양 중심과 여러 겹의 소용돌이 구조를 가진 큰 폭풍이 있고, 주변의 구름띠는 그 주위를 휘감듯 이어진다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 714,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3019
+    },
+    "descriptionCost": {
+      "usd": 0.00064505,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-06T10:45:38.939Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124395-f1f30e2c-67e7-4162-956e-06c73b943f1b",
     "slot": "creative-124395",
     "title": "은하수의 검은 강, 묵음 경계의 기록",
