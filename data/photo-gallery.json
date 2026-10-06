@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA21467",
+    "slot": "photos-82932",
+    "nasaId": "PIA21467",
+    "title": "Massive Star Goes Out With a Whimper Instead of a Bang",
+    "url": "https://images-assets.nasa.gov/image/PIA21467/PIA21467~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-07",
+    "credit": "NASA/ESA/C. Kochanek (OSU)",
+    "sourceUrl": "https://images.nasa.gov/details/PIA21467",
+    "publishedAt": "2026-10-06T20:31:47.234Z"
+  },
+  {
     "id": "nasa-0200206",
     "slot": "photos-82931",
     "nasaId": "0200206",
