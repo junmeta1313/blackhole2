@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Horizon | 블랙홀 사진 갤러리</title>
+    <link rel="stylesheet" href="./assets/game/station-defense/game.css">
     <!-- Tailwind CSS 로드 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 구글 폰트 (명조체 계열) 로드 -->
@@ -43,7 +44,7 @@
         .home-board-tags,.board-tags {display:flex;flex-wrap:wrap;gap:7px;}
         .home-board-tags span,.board-tags span {border:1px solid #655178;border-radius:99px;padding:4px 9px;font-size:11px;line-height:1.5;color:#dcc5ee;background:#24182f;}
         .home-board-action {margin-top:auto;font-size:12px;line-height:1.8;color:#bf9ddd;}
-        .home-board-card:last-child {grid-column:1/-1;}
+        .home-board-card:last-child:nth-child(3n+1) {grid-column:1/-1;}
         .home-update-note {font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:12px;line-height:1.8;color:#aaa0b6;margin-top:20px;letter-spacing:0;}
         .board-intro {font-family:'Noto Sans KR','Malgun Gothic',sans-serif;letter-spacing:0;padding:22px;border:1px solid #634181;border-radius:14px;background:rgba(18,12,25,.85);margin-bottom:28px;}
         .board-intro-head {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;}
@@ -266,6 +267,12 @@
                     <span class="home-board-tags"><span>Open Library 자료</span><span>검색할 때 불러오기</span></span>
                     <span class="home-board-action">추천 책 → 검색 · 검색 결과 제목 → 도서 정보 →</span>
                 </button>
+                <button type="button" class="home-board-card" onclick="goToGallery('game')">
+                    <span class="home-board-title">게임하기</span>
+                    <span class="home-board-description">EVENT HORIZON: STATION DEFENSE<br>몰려오는 함대를 저지하고 우주 정거장을 방어하세요.</span>
+                    <span class="home-board-tags"><span>2D ACTION</span><span>PC ONLY · KEYBOARD</span></span>
+                    <span class="home-board-action">게임 시작 → 전체화면 전투 · 게임 설정 → 플레이 방식 선택 →</span>
+                </button>
                 <button type="button" class="home-board-card" onclick="goToGallery('dog')">
                     <span class="home-board-title">Dog · 잠깐 쉬기</span>
                     <span class="home-board-description">우주 여행 중 잠깐 쉬어가는 강아지 사진 공간입니다.</span>
@@ -307,6 +314,7 @@
                 </button>
                 <button id="tab-btn-book" onclick="switchHubTab('book')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">Book</button>
                 <button id="tab-btn-debate" onclick="switchHubTab('debate')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">AI 토론</button>
+                <button id="tab-btn-game" onclick="switchHubTab('game')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">게임하기</button>
                 <button id="tab-btn-dog" onclick="switchHubTab('dog')" class="px-5 py-2 rounded text-sm font-bold text-gray-400 hover:text-white">Dog</button>
             </div>
         </header>
@@ -455,6 +463,21 @@
             <button id="dog-random" class="mt-5 px-6 py-3 border border-amber-300/60 text-amber-200 rounded hover:bg-amber-900/30 disabled:opacity-40">랜덤 강아지</button>
             <p class="text-xs text-gray-500 mt-4"><a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">사진 제공 · Dog CEO</a></p>
         </div>
+        <div id="tab-content-game" class="hidden">
+            <article class="sd-hero" aria-labelledby="sd-title">
+                <p class="sd-kicker">PC ONLY · KEYBOARD ACTION · STATION DEFENSE</p>
+                <h3 id="sd-title">EVENT HORIZON<span>STATION DEFENSE</span></h3>
+                <p class="sd-lead">함대를 막고 정거장을 지켜내십시오.<br>공허에서 다가오는 적, 선택으로 달라지는 무장.<br>다섯 번째 웨이브마다 거대한 신호가 나타납니다.</p>
+                <div class="sd-controls" aria-label="게임 조작 방법">
+                    <div><kbd>↑ ↓ ← →</kbd>이동 · 마지막 이동 방향으로 조준</div><div><kbd>SPACE</kbd>플라즈마 연속 사격</div><div><kbd>SHIFT</kbd>대시 · 짧은 무적</div><div><kbd>1 · MISSILE</kbd>적을 추적하는 유도탄</div><div><kbd>2 · EMP</kbd>정거장 주변 충격파</div><div><kbd>3 · REPAIR</kbd>정거장 수리 드론</div>
+                </div>
+                <div class="sd-actions"><button id="sd-start" class="sd-button sd-primary" type="button">게임 시작하기 →</button><button id="sd-settings-open" class="sd-button" type="button">게임 설정</button></div>
+                <p class="sd-best">BEST SCORE <strong id="sd-best-score">0</strong>BEST WAVE <strong id="sd-best-wave">0</strong></p>
+                <p class="sd-note">PC 키보드 전용 · 플레이 중 P 또는 ESC로 일시정지 · API 호출 및 이용료 없음</p>
+            </article>
+            <details class="sd-details"><summary>게임 안내 · 기록과 설정</summary><p>정거장 Hull 또는 플레이어 HP가 0이 되면 방어가 종료됩니다. 보호막은 일정 시간 피격되지 않으면 회복되고 Hull은 수리 드론으로 복구합니다. 최대 Hull 상태에서는 수리 스킬을 낭비하지 않습니다.</p><p>웨이브를 막으면 휴식 후 3개의 업그레이드 중 하나를 선택합니다. 클릭 또는 숫자 1·2·3으로 선택하세요. 보스는 부채꼴 탄막, 함선 소환, 정거장 집중 광선 공격을 사용합니다. 광선 경고가 보이면 경로에서 벗어나세요.</p><p>난이도·자동 사격·조준 보조·효과음·화면 효과는 [게임 설정]에서 바꿀 수 있습니다. 최고 점수·최고 웨이브·설정은 현재 브라우저에만 저장됩니다. 다른 방문자와 공유되는 순위표는 아닙니다.</p></details>
+        </div>
+
         <div id="tab-content-debate" class="hidden w-full max-w-4xl mx-auto">
             <section class="board-intro" aria-labelledby="guide-title-debate">
                 <div class="board-intro-head"><h3 id="guide-title-debate">AI 토론</h3><div class="board-tags"><span>주제 직접 입력</span><span>총 4~8회 선택</span></div></div>
@@ -487,6 +510,37 @@
             <div id="debate-posts"></div>
         </div>
     </section>
+
+    <section id="sd-shell" class="sd-shell" hidden aria-label="Event Horizon 정거장 방어 게임">
+        <div id="sd-canvas-wrap" class="sd-canvas-wrap"></div>
+        <div class="sd-top-buttons"><button id="sd-pause" type="button" class="sd-button">일시정지 · P</button><button id="sd-settings-live" type="button" class="sd-button">설정</button><button id="sd-sound" type="button" class="sd-button">SOUND ON</button><button id="sd-exit" type="button" class="sd-button">게임 종료</button></div>
+        <div id="sd-hud" class="sd-hud" hidden>
+            <div class="sd-scoreboard"><div class="sd-stat"><label>SCORE</label><strong id="sd-score">00000</strong></div><div class="sd-stat"><label>WAVE</label><strong id="sd-wave">01</strong></div><div class="sd-stat"><label>KILLS</label><strong id="sd-kills">00</strong></div></div>
+            <div class="sd-health"><label>PLAYER HP <span id="sd-player-value">100 / 100</span></label><div class="sd-track"><span id="sd-player-bar"></span></div><label>STATION SHIELD <span id="sd-shield-value">160 / 160</span></label><div class="sd-track sd-shield"><span id="sd-shield-bar"></span></div><label>STATION HULL <span id="sd-hull-value">500 / 500</span></label><div class="sd-track sd-hull"><span id="sd-hull-bar"></span></div></div>
+            <div id="sd-boss" class="sd-boss" hidden><strong>VOID DREADNOUGHT</strong><div class="sd-track"><span id="sd-boss-bar"></span></div><small id="sd-boss-value"></small></div>
+            <div class="sd-skills">
+                <button id="sd-missile" class="sd-skill" type="button" aria-label="미사일 스킬 1"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l5 15-5 6-5-6zM11 18l-5 6 7-2m8-4l5 6-7-2M14 26v4m4-4v4"/></svg><b>[1] MISSILE</b><small>READY</small></button>
+                <button id="sd-emp" class="sd-skill" type="button" aria-label="EMP 스킬 2"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7"/><circle cx="16" cy="16" r="2"/></svg><b>[2] EMP</b><small>READY</small></button>
+                <button id="sd-repair" class="sd-skill" type="button" aria-label="수리 드론 스킬 3"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 12V3M12 18L4 23m16-5l8 5M12 12l4-2 4 2v6l-4 2-4-2z"/><circle cx="16" cy="3" r="2"/><circle cx="4" cy="23" r="2"/><circle cx="28" cy="23" r="2"/></svg><b>[3] REPAIR</b><small>READY</small></button>
+            </div>
+            <div class="sd-dash">SHIFT · DASH<span id="sd-dash-value">READY</span><div class="sd-track"><span id="sd-dash-bar"></span></div></div>
+        </div>
+        <div id="sd-banner" class="sd-banner" hidden></div><div id="sd-hint" class="sd-hint"></div>
+        <div id="sd-overlay" class="sd-overlay"><div id="sd-panel" class="sd-panel"></div></div>
+        <dialog id="sd-settings" class="sd-dialog" aria-labelledby="sd-settings-title">
+            <form id="sd-settings-form">
+                <h3 id="sd-settings-title">게임 설정</h3>
+                <label class="sd-setting">난이도<select name="difficulty"><option value="cadet">탐사 대원 · 쉬움</option><option value="pilot">정거장 조종사 · 보통</option><option value="veteran">공허의 수호자 · 어려움</option></select></label>
+                <label class="sd-setting">자동 사격<input type="checkbox" name="autoFire"></label><label class="sd-setting">약한 조준 보조<input type="checkbox" name="aimAssist"></label>
+                <label class="sd-setting">효과음<input type="checkbox" name="sound"></label><label class="sd-setting">음량<input type="range" name="volume" min="0" max="100" step="5"></label>
+                <label class="sd-setting">화면 흔들림<input type="checkbox" name="screenShake"></label><label class="sd-setting">화면 효과<select name="effects"><option value="high">풍부하게</option><option value="low">절제 · 성능 우선</option></select></label>
+                <label class="sd-setting">조작 힌트 표시<input type="checkbox" name="tutorial"></label>
+                <p class="sd-setting-help" id="sd-settings-help">설정은 이 브라우저에 저장됩니다. 조준 보조는 마지막 이동 방향 근처의 적에만 작동합니다.</p>
+                <div class="sd-actions"><button type="submit" class="sd-button sd-primary">설정 저장</button><button id="sd-settings-cancel" type="button" class="sd-button">취소</button></div>
+            </form>
+        </dialog>
+    </section>
+    <dialog id="sd-pc-only" class="sd-dialog" aria-labelledby="sd-pc-only-title"><h3 id="sd-pc-only-title">PC 전용 게임입니다</h3><p>EVENT HORIZON: STATION DEFENSE는 방향키와 키보드를 사용하는 PC 전용 게임입니다.</p><p>데스크톱 또는 노트북에서 이용해 주세요.</p><form method="dialog"><button class="sd-button sd-primary">확인</button></form></dialog>
 
     <!-- 모달 1: 이미지 확대 라이트박스 -->
     <div id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" class="custom-modal fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onclick="closeLightbox(event)">
@@ -1236,9 +1290,16 @@
 
         function switchHubTab(tabName) {
             state.currentTab = tabName;
-            for (const name of ['photos', 'forum', 'briefing', 'creative', 'book', 'dog', 'debate']) {
+            for (const name of ['photos', 'forum', 'briefing', 'creative', 'book', 'dog', 'debate', 'game']) {
                 document.getElementById(`tab-btn-${name}`).className = 'px-5 py-2 rounded text-sm font-bold transition-all text-gray-400 hover:text-white';
                 document.getElementById(`tab-content-${name}`).classList.add('hidden');
+            }
+            if (tabName === 'game') {
+                document.getElementById('tab-btn-game').className = 'px-5 py-2 rounded text-sm font-bold bg-neonpurple text-white';
+                document.getElementById('tab-content-game').classList.remove('hidden');
+                document.getElementById('hub-title').textContent = '게임하기';
+                document.getElementById('hub-desc').textContent = 'EVENT HORIZON: STATION DEFENSE · PC 키보드 전용';
+                return;
             }
             if (tabName === 'debate') {
                 document.getElementById('tab-btn-debate').className = 'px-5 py-2 rounded text-sm font-bold bg-neonpurple text-white';
@@ -1316,5 +1377,6 @@
     <script src="./assets/community.js"></script>
     <script type="module" src="./assets/site-ai.js"></script>
     <script src="./assets/debate.js"></script>
+    <script type="module" src="./assets/game/station-defense/main.js"></script>
 </body>
 </html>
