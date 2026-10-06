@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { Game } from './engine.js';
 import { STATES, BALANCE as B, WORLD, ENEMIES, UPGRADES, normalizeSettings } from './config.js';
-import { isTouchOnly } from './input.js';
+import { isTouchOnly, InputManager } from './input.js';
 const step=(g,seconds,input={})=>{for(let i=0;i<Math.ceil(seconds*60);i++)g.update(1/60,input);};
 const combat=()=>{const g=new Game({},()=>.3);g.state=STATES.PLAYING;g.wave=1;g.queue=['scout'];g.spawnTimer=100;return g;};
 test('startup and spawn warnings allow preparation before enemies enter',()=>{const g=new Game({},()=>.3);assert.equal(g.state,STATES.READY);step(g,B.startup+.1);assert.equal(g.state,STATES.PLAYING);assert.equal(g.enemies.length,0);step(g,.6);assert.ok(g.warnings.length);assert.equal(g.enemies.length,0);step(g,B.wave.warning);assert.ok(g.enemies.length);});
@@ -21,3 +21,18 @@ test('pause freezes combat, cooldowns and survival time; reset clears prior run'
 test('fixed world and effects/config settings remain valid for malformed stored data',()=>{assert.deepEqual(WORLD,{width:1920,height:1080});assert.equal(normalizeSettings({difficulty:'bad',volume:10,autoFire:'true'}).difficulty,'pilot');assert.equal(normalizeSettings({volume:10}).volume,1);assert.equal(normalizeSettings({autoFire:'true'}).autoFire,false);assert.equal(normalizeSettings({difficulty:'toString'}).difficulty,'pilot');assert.equal(normalizeSettings(null).difficulty,'pilot');});
 test('phones/touch-only tablets are blocked while hybrid laptops with fine pointers are allowed',()=>{assert.equal(isTouchOnly({userAgent:'iPhone',maxTouchPoints:5},()=>true),true);assert.equal(isTouchOnly({userAgent:'Android Tablet',maxTouchPoints:10},q=>q.includes('coarse')),true);assert.equal(isTouchOnly({userAgent:'Windows NT',maxTouchPoints:10},q=>q.includes('fine')),false);assert.equal(isTouchOnly({userAgent:'Macintosh',maxTouchPoints:0},q=>q.includes('fine')),false);});
 test('busy boss simulation remains bounded over thousands of updates',()=>{const g=combat();g.wave=20;g.spawn('boss',{x:960,y:180});g.station.maxHp=g.station.hp=1e9;g.player.maxHp=g.player.hp=1e9;g.settings.autoFire=true;step(g,60,{right:true,fire:true,emp:true,missile:true});assert.ok(g.enemies.length<=B.wave.maximumEnemies);assert.ok(g.bullets.length<=B.limits.bullets);assert.ok(g.events.length<=B.limits.events);});
+
+test('quick skill/fire taps survive keyup until a physics update; clear discards stale presses',()=>{
+ const previous=globalThis.window,listeners=new Map();
+ globalThis.window={addEventListener:(name,callback)=>listeners.set(name,callback),removeEventListener:name=>listeners.delete(name)};
+ try{
+  const input=new InputManager(()=>false,()=>true);
+  for(const [code,action] of [['Digit1','missile'],['Digit2','emp'],['Digit3','repair'],['ShiftLeft','dash'],['Space','fire']]){
+   listeners.get('keydown')({code,target:{tagName:'CANVAS'},preventDefault(){},repeat:false});
+   listeners.get('keyup')({code});
+   assert.equal(input.snapshot()[action],true);assert.equal(input.snapshot()[action],undefined);
+  }
+  listeners.get('keydown')({code:'Digit1',target:{tagName:'CANVAS'},preventDefault(){},repeat:false});
+  input.clear();assert.deepEqual(input.snapshot(),{});input.destroy();assert.equal(listeners.size,0);
+ }finally{if(previous===undefined)delete globalThis.window;else globalThis.window=previous;}
+});

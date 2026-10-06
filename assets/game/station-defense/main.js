@@ -45,7 +45,7 @@ function syncHud(){
 function loop(now){
   if(!active||!game)return;
   const dt=lastTime?Math.min((now-lastTime)/1000,.1):0;lastTime=now;accumulator+=dt;
-  const controls=input.snapshot();let steps=0;
+  const controls=accumulator>=1/60?input.snapshot():{};let steps=0;
   while(accumulator>=1/60&&steps++<6){game.update(1/60,controls);accumulator-=1/60;}
   for(const event of game.drainEvents()){renderer.event(event);audio.play(event.type);if(event.type==='wave')banner(`WAVE ${event.wave}`,'공허의 함대를 저지하십시오.',1700);}
   renderer.effects(game.state===STATES.PAUSED?0:dt);renderer.render(game);syncState();hudTime+=dt;if(hudTime>.1){syncHud();hudTime=0;}

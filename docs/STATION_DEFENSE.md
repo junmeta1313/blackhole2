@@ -104,8 +104,8 @@ node --test assets/game/station-defense/engine.test.mjs worker/*.test.mjs
 python -m http.server 8765
 ```
 
-자동화한 엔진 테스트 16개, 기존 Worker 테스트 22개, 갤러리·생성 테스트 16개 등
-Node.js 테스트 총 54개를 실행했습니다.
+자동화한 엔진·입력 테스트 17개, 기존 Worker 테스트 22개, 갤러리·생성 테스트 16개 등
+Node.js 테스트 총 55개를 실행했습니다.
 실제 Chromium에서 게임 진입, Space/방향키/Shift/1·2·3, 고해상도 Canvas, 전체화면
 해제 후 pause/resume, focus loss, 업그레이드 숫자키, 게임오버와 재시작, 반복 종료·재진입,
 기존 7개 게시판 이동, 모바일 실행 차단, 전체화면 거절 fallback, resize, 설정 저장을 확인했습니다.
