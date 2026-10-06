@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { handle } from './index.mjs';
-import { validateTurn, debatePrompt } from './debate.mjs';
+import { validateTurn, debatePrompt, generateTurn } from './debate.mjs';
 function fixture(t, legacy = false) {
   const sqlite = new DatabaseSync(':memory:');
   const schema = fs.readFileSync(new URL('./debate-schema.sql',import.meta.url),'utf8');
@@ -36,11 +36,15 @@ function fake(log,short=false) { return async (url,init)=>{
   assert.equal(init.headers['x-goog-api-key'],'test-google');
   assert.equal(b.generationConfig.thinkingConfig.thinkingLevel,'LOW');
   assert.equal(b.generationConfig.thinkingConfig.thinkingBudget,undefined);
-  if (!b.generationConfig.responseMimeType) {
+  const isTurn = !!b.generationConfig.responseSchema.properties.paragraphs;
+  if (isTurn) {
     assert.match(b.systemInstruction.parts[0].text,/400~500자/);
     assert.match(b.systemInstruction.parts[0].text,/주장과 근거를 비판/);
+    assert.match(b.systemInstruction.parts[0].text,/142~155자/);
+    assert.equal(b.generationConfig.responseSchema.properties.paragraphs.minItems,3);
+    assert.equal(b.generationConfig.responseSchema.properties.paragraphs.maxItems,3);
   }
-  return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:b.generationConfig.responseMimeType?JSON.stringify({openai:'찬성 측 핵심 주장',gemini:'반대 측 핵심 주장'}):'측'.repeat(450)}]}}],usageMetadata:{totalTokenCount:200}});
+  return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(isTurn?{paragraphs:Array(3).fill('측'.repeat(150))}:{openai:'찬성 측 핵심 주장',gemini:'반대 측 핵심 주장'})}]}}],usageMetadata:{totalTokenCount:200}});
 }; }
 test('password is required on server and invalid starts never call paid APIs',async t=>{
  const e=fixture(t);let calls=0;const deps={now:Date.now(),fetch:()=>{calls++;throw Error('no');}};
@@ -56,7 +60,7 @@ test('six alternating turns plus one Gemini summary persist as a publicly readab
  assert.equal((await handle(req(`/debates/${session.id}/turn`,{token:'wrong',expectedTurn:0}),e,deps)).status,401);
  for(let n=0;n<6;n++){
   const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:n}),e,deps);assert.equal(r.status,200);
-  const d=await r.json();assert.equal(d.turn.speaker,n%2?'gemini':'openai');assert.equal(d.turn.text.length,450);
+  const d=await r.json();assert.equal(d.turn.speaker,n%2?'gemini':'openai');assert.equal(d.turn.text.length,n%2?454:450);
  }
  const r=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:6}),e,deps);
  assert.equal((await r.json()).summaryReady,true);
@@ -217,4 +221,24 @@ test('Gemini precondition failures distinguish region and billing without exposi
  assert.equal(calls,cases.length);
  const synced=await(await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,deps)).json();
  assert.equal(synced.debate.turns.length,1);assert.equal(synced.debate.turns[0].speaker,'openai');
+});
+
+test('Gemini structured paragraphs exclude JSON and thought text from the length count',async()=>{
+ const record={topic:'우주',openai_position:'찬성',gemini_position:'반대'};
+ const result=await generateTurn(record,[{speaker:'openai',text:'이전 발언'}],{},async()=>Response.json({candidates:[{finishReason:'STOP',content:{parts:[{thought:true,text:'생각'.repeat(500)},{text:JSON.stringify({paragraphs:Array(3).fill('가'.repeat(150))})}]}}]}));
+ assert.equal(result.text,Array(3).fill('가'.repeat(150)).join('\n\n'));
+ assert.equal(Array.from(result.text).length,454);
+ await assert.rejects(generateTurn(record,[{speaker:'openai',text:'이전'}],{},async()=>Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({paragraphs:['한 문단']})}]}}]})),/format/);
+});
+test('Gemini out-of-range output reports actual count and preserves earlier turns without retry',async t=>{
+ const e=fixture(t),session=await(await handle(req('/debates/start',start),e)).json();
+ await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:0}),e,{fetch:fake([])});
+ for (const paragraphLength of [120,180]) {
+  let calls=0;
+  const response=await handle(req(`/debates/${session.id}/turn`,{token:session.token,expectedTurn:1}),e,{fetch:async()=>{calls++;return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({paragraphs:Array(3).fill('측'.repeat(paragraphLength))})}]}}]});}});
+  assert.equal(response.status,502);assert.equal(calls,1);
+  assert.match((await response.json()).error,new RegExp(`Gemini 발언이 ${paragraphLength*3+4}자로`));
+  const row=await e.DB.prepare('SELECT * FROM debates WHERE id = ?').bind(session.id).first();
+  assert.equal(row.turn_count,1);assert.equal(JSON.parse(row.turns_json)[0].text,'관'.repeat(450));assert.equal(row.lease_until,0);assert.equal(row.summary_json,null);
+ }
 });
