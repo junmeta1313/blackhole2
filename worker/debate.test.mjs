@@ -25,11 +25,24 @@ function fixture(t, legacy = false) {
 }
 const req=(path,body,ip='1.2.3.4')=>new Request('https://worker.test'+path,body?{method:'POST',headers:{Origin:'https://junmeta1313.github.io','CF-Connecting-IP':ip,'Content-Type':'application/json'},body:JSON.stringify(body)}:{});
 const start={password:'test-password',topic:'우주 개발',openaiPosition:'찬성',geminiPosition:'반대',totalTurns:6};
+function assertTurnPhase(instructions, prompt) {
+  const opening = !prompt.dialogue.some(turn => turn.speaker === (prompt.speaker === 'ChatGPT' ? 'openai' : 'gemini'));
+  assert.equal(prompt.phase, opening ? 'opening' : 'rebuttal');
+  if (opening) {
+    assert.match(instructions,/본인의 첫 입장 발표/);
+    assert.match(instructions,/아직 반박을 시작하지 않는다/);
+    assert.doesNotMatch(instructions,/상호 반박한다|핵심적인 주장 하나를 골라 반박/);
+    assert.match(instructions,/추가 관점/);
+  } else {
+    assert.match(instructions,/이번 차례부터 상호 반박/);
+    assert.match(instructions,/가벼운 비꼼/);
+  }
+}
 function fake(log,short=false) { return async (url,init)=>{
   const b=JSON.parse(init.body);log.push({url,b});
   if(String(url).includes('openai')) {
     assert.equal(b.model,'gpt-6-luna');assert.equal(b.store,false);assert.equal(b.tools,undefined);
-    assert.match(b.instructions,/400~500자/);assert.match(b.instructions,/빈 줄/);assert.match(b.instructions,/가벼운 비꼼/);
+    assert.match(b.instructions,/400~500자/);assert.match(b.instructions,/빈 줄/);assertTurnPhase(b.instructions,JSON.parse(b.input));
     return Response.json({status:'completed',output_text:short?'짧음':'관'.repeat(450),usage:{input_tokens:100,output_tokens:200}});
   }
   assert.ok(String(url).includes('gemini-3.5-flash-lite:generateContent'));
@@ -39,7 +52,7 @@ function fake(log,short=false) { return async (url,init)=>{
   const isTurn = !!b.generationConfig.responseSchema.properties.paragraphs;
   if (isTurn) {
     assert.match(b.systemInstruction.parts[0].text,/400~500자/);
-    assert.match(b.systemInstruction.parts[0].text,/주장과 근거를 비판/);
+    assertTurnPhase(b.systemInstruction.parts[0].text,JSON.parse(b.contents[0].parts[0].text));
     assert.match(b.systemInstruction.parts[0].text,/142~155자/);
     assert.equal(b.generationConfig.responseSchema.properties.paragraphs.minItems,3);
     assert.equal(b.generationConfig.responseSchema.properties.paragraphs.maxItems,3);

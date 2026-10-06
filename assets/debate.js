@@ -103,7 +103,8 @@
       while (active) {
         const summarizing = active.turns.length >= active.totalTurns;
         const speaker = active.turns.length % 2 === 0 ? 'ChatGPT' : 'Gemini';
-        setStatus(summarizing ? 'Gemini가 양측 주장 요약을 정리하고 있습니다…' : `${speaker} · 반박 준비중입니다... (${active.turns.length + 1}/${active.totalTurns})`, true);
+        const preparing = active.turns.length < 2 ? '입장 발표 준비중입니다...' : '반박 준비중입니다...';
+        setStatus(summarizing ? 'Gemini가 양측 주장 요약을 정리하고 있습니다…' : `${speaker} · ${preparing} (${active.turns.length + 1}/${active.totalTurns})`, true);
         if (!summarizing) showTyping(speaker);
         else hideTyping();
         // Start the API call immediately; hold each completed reply until seven
