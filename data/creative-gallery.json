@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124397-a6d86ad7-336c-45c9-a330-6365cef4ebc3",
+    "slot": "creative-124397",
+    "title": "두 푸른 구체를 잇는 고요한 물질의 길",
+    "category": "A12",
+    "sceneKey": "A12-B2-C4-D2-E3-F9",
+    "generationSelection": {
+      "A": 12,
+      "B": 2,
+      "C": 4,
+      "D": 2,
+      "E": 3,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA12. 쌍성계 물질 이동\n- 두 별이 하나의 쌍성 시스템을 형성\n- 두 별 사이 물질 이동 또는 강착 흐름\n- 주변 공간은 비교적 단순하게\n- 두 별 외의 대형 천체 금지\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 811,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 811
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 982
+    },
+    "generationCost": {
+      "usd": 0.009185,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124397-a6d86ad7-336c-45c9-a330-6365cef4ebc3.webp",
+    "author": "AI 창작",
+    "date": "2026-10-06",
+    "publishedAt": "2026-10-06T14:35:12.899Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "쌍성계 물질 이동",
+    "description": "남쪽 하늘의 희미한 별자리 경계에서 포착된 천체쌍, KX-7319 ‘청류 연결계’는 지구로부터 약 2만 4천 광년 떨어진 성간 구름으로 등록되었다. 사진에는 청록색으로 빛나는 두 개의 둥근 영역이 대각선으로 놓여 있고, 큰 구체에서 작은 구체 쪽으로 가는 푸른 가스 띠가 물결처럼 이어진다. 작은 구체에 닿는 지점은 유난히 밝으며, 바깥쪽에는 옅은 헤일로가 번진다. 배경의 별들은 이 구조를 둘러싼 넓은 암흑을 더 깊게 드러낸다.\n\n저온 성간 가스의 분광선과 모형을 결합한 후속 분석은 구조 전체의 길이를 약 11광년으로 추정했다. 큰 구체는 중심부가 얼룩진 밝은 성운성 응축체이고, 작은 쪽은 외곽이 흐릿한 구름핵처럼 보인다. 이미지 자체만으로 둘의 물리적 연결이나 실제 크기를 확정할 수는 없다. 다만 가상 관측기 ‘누리온 적외선 분광기’의 세 차례 추적 기록에서, 연결부의 특정 수소 방출선이 주변 가스보다 평균 17킬로미터/초 느리게 이동하는 값이 반복 검출됐다. 밀도와 온도를 고려한 계산만으로는 그 속도 차가 안정적으로 유지되는 까닭을 설명하지 못했다.\n\n연구진은 이 하나의 미해결 현상에 ‘청류 속도 잠금(Blueflow Velocity Lock)’이라는 이름을 붙였다. 관측은 느린 흐름의 존재까지만 확인했으며, 무엇이 그 흐름을 붙들고 있는지는 밝혀내지 못했다. 이 빛은 약 2만 4천 년을 건너 지금 우리에게 도착했다. 그러므로 사진 속 구름은 이미 변했을지 모르지만, 그 현재를 우리는 아직 볼 수 없다. 화면의 푸른 길은 설명의 끝이 아니라, 물리학이 아직 따라잡지 못한 시간을 가리키는 가느다란 흔적이다.",
+    "visibleFeatures": [
+      "검푸른 별 배경 위에 큰 청록색 구체와 그보다 작은 구체가 대각선으로 떨어져 빛난다.",
+      "두 구체 사이로 푸른빛의 길고 가는 가스 구조가 굽이치며 이어지고, 작은 구체 쪽 연결부가 특히 밝다.",
+      "두 구체 가장자리는 희미한 푸른 헤일로에 둘러싸여 있으며, 주변에는 넓은 어두운 공간과 흩어진 별들이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 654,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2959
+    },
+    "descriptionCost": {
+      "usd": 0.0006150499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-06T14:35:22.887Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124396-f600c87d-acfd-4c7a-a74a-e3242a09569e",
     "slot": "creative-124396",
     "title": "황금 띠를 따라 흐르는 침묵",
