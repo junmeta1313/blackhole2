@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-0102000",
+    "slot": "photos-82933",
+    "nasaId": "0102000",
+    "title": "Skylab",
+    "url": "https://images-assets.nasa.gov/image/0102000/0102000~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-07",
+    "credit": "MSFC",
+    "sourceUrl": "https://images.nasa.gov/details/0102000",
+    "publishedAt": "2026-10-07T00:59:57.477Z"
+  },
+  {
     "id": "nasa-PIA21467",
     "slot": "photos-82932",
     "nasaId": "PIA21467",
