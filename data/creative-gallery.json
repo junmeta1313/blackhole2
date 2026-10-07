@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124404-a14e2dc3-6069-4244-aa33-be433788fb15",
+    "slot": "creative-124404",
+    "title": "고리의 침묵, 잔광의 흐름",
+    "category": "A6",
+    "sceneKey": "A6-B5-C4-D5-E4-F7",
+    "generationSelection": {
+      "A": 6,
+      "B": 5,
+      "C": 4,
+      "D": 5,
+      "E": 4,
+      "F": 7
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA6. 필라멘트형 초신성 잔해\n- 얇고 복잡한 가스 필라멘트\n- 거미줄 또는 찢어진 충격파 같은 형태\n- 중심부는 상대적으로 비어 있음\n- 둥근 뭉게구름 성운처럼 표현하지 않음\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD5. 과학적 경계선의 미지 현상\n- 완전히 불가능해 보이지 않음\n- 상당히 낯설고 설명하기 어려움\n- 판타지로 넘어가지는 않음\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF7. 준규칙적 반복 발광 구조\n- 일정해 보이지만 완벽하지 않은 반복 구조\n- 자연적 불규칙성을 반드시 유지\n\n미세한 자연적 불규칙성이 있는 반복 구조 단위가 최소 2~3개 보이게 한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 775,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 775
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 946
+    },
+    "generationCost": {
+      "usd": 0.009005,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124404-a14e2dc3-6069-4244-aa33-be433788fb15.webp",
+    "author": "AI 창작",
+    "date": "2026-10-08",
+    "publishedAt": "2026-10-07T17:57:18.843Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "필라멘트형 초신성 잔해",
+    "description": "남쪽 하늘의 희미한 고물자리 경계에서 확인된 초신성 잔해 SNR J0719−4632는 지구로부터 약 5,600광년 떨어져 있다. 이 합성 관측상에서 청록색 필라멘트는 충격파에 의해 이온화된 산소와 수소의 가느다란 실처럼 퍼지고, 황금빛 매듭은 상대적으로 밝은 방출 영역을 따라 불규칙하게 이어진다. 가장 넓은 고리의 지름은 거리 보정과 팽창 모형을 적용할 때 약 78광년으로 추정된다. 이는 사진의 각도만으로 잰 값이 아니라, 후속 분광 관측과 거리 추정에 기대는 규모다.\n\n고리 오른쪽 가장자리는 밝고 복잡하지만 안쪽은 별빛이 드문 어두운 공간으로 남아 있다. 아래쪽에는 고리와 닿는 듯한 긴 가스 띠가 비스듬히 뻗으며, 작은 별들이 그 앞뒤에 흩어져 깊이의 단서를 보탠다. 그런데 가상 장비 ‘미라벨 적외선 분광기’로 11년간 기록한 자료에서, 고리의 세 황금빛 매듭은 서로 떨어져 있는데도 밝기가 17.6일 주기로 함께 약 4퍼센트 변했다. 주변 가스의 온도와 밀도 변화만으로는 이 동시성을 설명하기 어려웠다. 연구진은 이 기록을 ‘삼중 매듭 동조 현상(Trifold Knot Synchrony)’이라 이름 붙였지만, 동기화의 원인이 잔해 내부의 자기장인지, 아직 모르는 다른 과정인지는 판별하지 못했다.\n\n이곳에서 출발한 빛은 약 5,600년을 건너 지금 우리 망원경에 닿았다. 그러므로 이 고리는 현재의 모습이 아니라, 먼 과거에 남겨진 한 순간이다. 관측은 동조 현상의 존재를 확인했을 뿐, 그 기원을 밝히지 못했다. 검은 틈과 빛나는 실을 다시 바라볼 때마다, 우주는 설명의 경계 바깥에도 오래도록 조용히 기록을 남기고 있음을 일깨운다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 청록색과 황금빛의 가느다란 필라멘트가 넓게 퍼져 있다.",
+      "오른쪽 중앙에는 불완전한 원형 고리처럼 휘어진 밝은 가스 구조와 어두운 내부가 보인다.",
+      "고리 아래로 길게 이어진 희미한 필라멘트와 주변의 작은 별빛들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 632,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2937
+    },
+    "descriptionCost": {
+      "usd": 0.00060405,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-07T17:57:28.878Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124402-71890316-a2bd-405e-9b35-fbf7bb340851",
     "slot": "creative-124402",
     "title": "검은 원반의 빛 가장자리",
