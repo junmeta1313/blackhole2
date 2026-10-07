@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124402-71890316-a2bd-405e-9b35-fbf7bb340851",
+    "slot": "creative-124402",
+    "title": "검은 원반의 빛 가장자리",
+    "category": "A5",
+    "sceneKey": "A5-B4-C10-D4-E6-F6",
+    "generationSelection": {
+      "A": 5,
+      "B": 4,
+      "C": 10,
+      "D": 4,
+      "E": 6,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA5. 블랙홀 이벤트 호라이즌 극단 클로즈업\n- 블랙홀 전체가 아니라 경계 일부만 관측\n- 강착원반 일부가 프레임 밖으로 이어짐\n- 극단적 근접 관측\n- 강한 명암 대비\n- 넓은 배경 구도 금지\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC10. 타이트 클로즈업형\n- 피사체 또는 구조가 화면 대부분을 차지\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE6. 국소 구조 확대\n- 천체 전체가 아니라 특정 세부 구조에 초점\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n선택된 근접/부분 구조 프레이밍을 유지하고 넓은 배경으로 바꾸지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 748,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 748
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 919
+    },
+    "generationCost": {
+      "usd": 0.00887,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124402-71890316-a2bd-405e-9b35-fbf7bb340851.webp",
+    "author": "AI 창작",
+    "date": "2026-10-07",
+    "publishedAt": "2026-10-07T10:33:25.897Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀 이벤트 호라이즌 극단 클로즈업",
+    "description": "남쪽 하늘의 고물자리 방향에서 발견된 천체 GJ-4821은 지구로부터 약 1만 8천 광년 떨어진 곳에 있다. 적외선 관측기 ‘누마르(Numar)’가 포착한 영상에서, 화면을 가로지르는 것은 별빛을 가린 검은 원반과 그 둘레를 감싸는 뜨거운 가스의 흐름이다. 실제 사진에는 거리 눈금이 없지만, 후속 분광 관측을 바탕으로 연구진은 밝은 구조의 폭을 약 6광년으로 추정했다. 주황빛의 가느다란 테두리는 검은 영역의 경계처럼 보이고, 황백색 띠는 그 왼편에서 휘어져 아래쪽으로 번진다. 주변의 붉은 필라멘트는 고르게 퍼지지 않고, 어두운 배경 속에서 서로 다른 방향으로 갈라진다.\n\n중심의 어둠이 무엇인지 이 이미지 하나만으로 단정할 수는 없다. 다만 누마르의 후속 분광 기록에서, 원반 가장자리를 스치는 가스의 방출선은 41일 간격으로 약 0.7퍼센트씩 밝아졌다가 다시 약해지는 변화를 보였다. 같은 주기의 흔적은 영상 속 밝은 띠의 여러 지점에서 거의 동시에 나타났다. 빛나는 구조가 이어져 있다는 점과 달리, 이 동시 변화의 범위는 단순한 가스 흐름만으로 설명하기 어려웠다. 연구진은 이를 ‘카이론 동조 변광(Chiron Coherence)’이라 이름 붙였지만, 그 명칭은 현상을 기록할 뿐 원인을 가리키지는 않는다.\n\n이곳에서 출발한 빛은 우리에게 닿기까지 약 1만 8천 년을 여행했다. 그러므로 지금 보는 테두리와 불꽃은 오래전 그 천체의 모습이며, 그곳에서 현재 무슨 일이 일어나는지는 알 수 없다. 관측은 동조 변광의 존재를 확인했지만, 왜 그렇게 넓은 가스 구조가 한 박자에 반응하는지는 밝혀내지 못했다. 검은 원반의 가장자리에서 빛은 여전히 흐르고, 그 오래된 신호는 우리가 모르는 우주의 질서를 조용히 비춘다.",
+    "visibleFeatures": [
+      "화면 위쪽과 오른쪽을 크게 차지하는 거의 완전한 원형의 검은 영역이 보이며, 가장자리를 따라 가느다란 주황빛 테두리가 둘러져 있다.",
+      "밝은 황백색과 주황색의 가스 띠가 원반의 왼쪽 아래를 스치며 휘어져 흐르고, 가장자리 가까이에서 특히 강하게 빛난다.",
+      "배경에는 붉고 어두운 구름 같은 구조와 가느다란 불꽃 모양 필라멘트가 퍼져 있으며, 별은 뚜렷하게 보이지 않는다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 687,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2992
+    },
+    "descriptionCost": {
+      "usd": 0.0006315499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-07T10:33:34.889Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124400-b9b5f16d-e8b8-4fdd-a3a4-fbb569904e80",
     "slot": "creative-124400",
     "title": "검은 먼지의 틈에서 타오르는 별",
