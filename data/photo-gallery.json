@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-webb_first_deep_field",
+    "slot": "photos-82936",
+    "nasaId": "webb_first_deep_field",
+    "title": "Webb_first_deep_field_SMACS_0723",
+    "url": "https://images-assets.nasa.gov/image/webb_first_deep_field/webb_first_deep_field~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-08",
+    "credit": "NASA ESA CSA STScI",
+    "sourceUrl": "https://images.nasa.gov/details/webb_first_deep_field",
+    "publishedAt": "2026-10-07T20:45:41.709Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e000256",
     "slot": "photos-82935",
     "nasaId": "GSFC_20171208_Archive_e000256",
