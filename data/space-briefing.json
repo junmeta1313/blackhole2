@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791352919876-1",
+    "title": "JWST 시대 초기 은하·AGN의 헤일로 질량함수 제약",
+    "originalTitle": "Halo Mass Function Constraints on Early Galaxy and AGN Populations in the JWST Era",
+    "summary": "이 연구는 우주 물질 분포에서 암흑물질 헤일로와 관측되는 은하·AGN의 관계를 분석하는 틀을 제시합니다.\n셰스-터먼 질량함수를 기준으로 삼고, 시뮬레이션 보정 방식이 예측에 미치는 영향을 비교합니다.\n세 가지 검증은 거대 은하의 물질 저장고, 밝은 AGN을 수용할 헤일로 수, 은하의 자외선 광도함수입니다.\n희귀한 고질량 헤일로에서는 호스트 질량과 물질 전환 효율 등의 작은 변화도 예측 개체 수를 크게 바꿀 수 있습니다.\nJWST 관측과의 비교는 개별 천체의 특성뿐 아니라 이를 수용할 헤일로가 충분히 존재하는지도 따져야 함을 보여줍니다.\n이 논문은 arXiv 프리프린트이며, 동료심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.08731",
+    "publishedAt": "2026-10-06",
+    "date": "2026-10-07 15:01",
+    "createdAt": "2026-10-07T06:01:59.876209+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791352919876-2",
+    "title": "Pa 30 초신성 잔해",
+    "originalTitle": "APOD: 2026 October 7 – Supernova Remnant Pa 30",
+    "summary": "NASA 천문 사진 설명은 하와이 제미니 노스 망원경으로 관측한 성운 Pa 30을 소개합니다.\n이 성운은 1181년에 여러 지역 천문가가 기록한 신성한 별의 초신성 잔해일 가능성이 있습니다.\n폭발은 특이한 Iax형 초신성으로 분류되며, 백색왜성 두 개의 병합으로 일어났다는 가설이 있습니다.\n중심별은 매우 뜨겁고 강한 항성풍을 내며, 이 바람이 방사형 필라멘트를 만들었을 가능성이 있습니다.\n필라멘트의 구슬 모양 매듭은 지름이 4광일이며, 잔해 형성 과정은 아직 밝혀지지 않은 수수께끼입니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/image-article/apod-2026-october-7-supernova-remnant-pa-30",
+    "publishedAt": "2026-10-07",
+    "date": "2026-10-07 15:01",
+    "createdAt": "2026-10-07T06:01:59.876209+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791267747318-1",
     "title": "은하단 운동학으로 굴절중력 검증",
     "originalTitle": "Testing Refracted Gravity with the kinematics of stacked galaxy clusters",
