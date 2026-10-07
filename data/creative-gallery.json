@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124406-6ad3e08f-13a5-4f84-8f32-0075037fa571",
+    "slot": "creative-124406",
+    "title": "불타는 고리의 정지된 틈",
+    "category": "A4",
+    "sceneKey": "A4-B4-C4-D3-E3-F1",
+    "generationSelection": {
+      "A": 4,
+      "B": 4,
+      "C": 4,
+      "D": 3,
+      "E": 3,
+      "F": 1
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA4. 블랙홀과 얇은 강착원반\n- 하나의 블랙홀 시스템\n- 얇고 비대칭적인 강착원반\n- 약한 중력렌즈 왜곡\n- 대부분의 화면은 어둡게\n- 독립적인 행성이나 성운 금지\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF1. 비정상적으로 휘어진 빛\n- 자연스러운 중력렌즈처럼 보이지만 미묘하게 비정상적인 곡률\n\n빛의 휨을 드러낼 최소한의 희미한 주변 빛만 둔다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 754,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 754
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 925
+    },
+    "generationCost": {
+      "usd": 0.0089,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124406-6ad3e08f-13a5-4f84-8f32-0075037fa571.webp",
+    "author": "AI 창작",
+    "date": "2026-10-08",
+    "publishedAt": "2026-10-07T23:47:21.455Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀과 얇은 강착원반",
+    "description": "남쪽 하늘의 조각자리 경계에서 발견된 천체 RQ-7319는 지구로부터 약 4억 8천만 광년 떨어진 은하핵 후보로 등록됐다. 아르카디아 심부우주 관측소가 촬영한 이 영상에는 검은 타원형 중심을 비껴 감싸는 주황빛 고리와, 오른쪽 위로 길게 번지는 밝은 가스 흐름이 드러난다. 바깥쪽 붉은 필라멘트는 희미한 소용돌이처럼 공간을 가로지르고, 그 사이의 검은 바탕에는 작은 별빛 몇 점만 떠 있다. 영상에서 직접 읽히는 것은 이 비대칭적인 발광 구조와 중심의 어두운 윤곽이다. 후속 분광 관측을 바탕으로 연구진은 고리의 지름을 약 2만 6천 광년으로 추정했다. 은하의 규모에 견주면 좁지만, 그 안에 눌어붙은 빛은 중심부의 강한 에너지원을 암시한다.\n\n특이한 것은 고리의 가장 밝은 매듭이다. 근적외선 관측기 ‘누리안’은 18개월 동안 네 차례 측정에서 그 지점의 밝기가 거의 변하지 않는 반면, 인접한 가스는 같은 파장에서 약 7퍼센트 어두워지는 변화를 기록했다. 먼지의 흡수나 통상적인 가스 운동만으로는 이처럼 밝은 매듭이 주변 변화와 분리되어 유지되는 이유를 설명하기 어렵다. 연구팀은 이를 ‘고정 매듭 편차(Anchored Knot Deviation)’라 이름 붙였지만, 이름은 현상의 윤곽을 표시할 뿐 원인을 뜻하지 않는다.\n\n이곳에서 출발한 빛은 4억 8천만 년을 건너 지금의 검출기에 닿았다. 그러므로 우리는 이 은하의 과거를 보고 있을 뿐, 그 중심이 현재 어떤 모습인지는 알 수 없다. 관측은 고정된 밝은 지점과 주변 가스의 변화를 확인했지만, 그 사이를 잇는 물리는 아직 설명되지 않았다. 검은 윤곽을 따라 다시 시선을 옮기면, 우주는 답보다 오래된 질문을 먼저 보내왔다는 사실이 조용히 떠오른다.",
+    "visibleFeatures": [
+      "검은 타원형 중심을 따라 주황빛의 가느다란 고리가 비스듬히 감겨 있으며, 오른쪽 위에서 유난히 밝게 빛난다.",
+      "고리 바깥으로 붉고 가는 가스 필라멘트가 길게 뻗어 흐릿한 소용돌이 구조를 이룬다.",
+      "주변은 거의 검은 공간이며, 작은 붉은 점 형태의 별들이 드문드문 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 665,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2970
+    },
+    "descriptionCost": {
+      "usd": 0.00062055,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-07T23:47:29.934Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124404-a14e2dc3-6069-4244-aa33-be433788fb15",
     "slot": "creative-124404",
     "title": "고리의 침묵, 잔광의 흐름",
