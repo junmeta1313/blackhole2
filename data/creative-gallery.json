@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124410-46afeab8-bd8c-49e4-ae72-04840c640058",
+    "slot": "creative-124410",
+    "title": "고요한 고리의 빛, 세라핀 잔해",
+    "category": "A17",
+    "sceneKey": "A17-B5-C3-D1-E2-F3",
+    "generationSelection": {
+      "A": 17,
+      "B": 5,
+      "C": 3,
+      "D": 1,
+      "E": 2,
+      "F": 3
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA17. 희귀한 플라즈마 고리\n- 중심이 빈 가스/플라즈마 구조\n- 행성 고리와 명확히 다른 독립적 플라즈마 구조\n- 완벽한 원이 아닌 불규칙하고 자연적인 형태\n- 인공 구조물처럼 보이지 않음\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD1. 실제 현재 천문 관측 수준\n- 과장 최소화\n- 매우 현실적인 구조와 색\n\n관측 거리 / 화면 점유율:\nE2. 근접 관측\n- 메인 대상이 약 60~80% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF3. 지나치게 균일한 얇은 고리형 구조\n- 자연 현상으로 보이지만 비정상적으로 균일\n- 인공적인 완벽한 원은 금지\n\n고리형 이상은 기존 플라즈마 고리 안에 표현하고 별도의 고리를 추가하지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 759,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 759
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 930
+    },
+    "generationCost": {
+      "usd": 0.008925,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124410-46afeab8-bd8c-49e4-ae72-04840c640058.webp",
+    "author": "AI 창작",
+    "date": "2026-10-09",
+    "publishedAt": "2026-10-08T17:59:02.382Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "희귀한 플라즈마 고리",
+    "description": "남쪽 고물자리 방향에서 포착된 천체 SNR-47 Lyren은 초신성 잔해 후보로 분류되었다. 사진에는 청록빛 가스와 황금빛 발광 필라멘트가 비스듬한 타원 고리를 이루며, 안쪽은 넓고 어둡다. 이 색은 여러 파장 관측을 시각화한 것으로, 눈에 보이는 색 자체가 가스의 실제 색을 뜻하지는 않는다. 가상의 후속 거리 측정은 약 7,800광년을 가리킨다. 이 거리가 맞다면 고리의 긴 축은 약 68광년에 이른다. 거대한 충격파가 성간 물질을 밀어내며 남긴 경계일 수 있지만, 한 장의 영상만으로 팽창 속도나 폭발의 역사를 확정할 수는 없다.\n\n특히 고리 북동쪽의 황금빛 매듭은 주변 필라멘트보다 유난히 밝고, 안쪽의 어두운 공간에는 별빛이 드물다. 연구진은 가상의 관측 장비 ‘누리온 적외선 어레이’와 ‘세라프 X선 분광기’의 후속 기록을 비교해, 밝은 매듭에서 예상보다 약한 X선이 나온다는 점을 확인했다. 14개월 간격으로 얻은 세 차례 분광 자료에서 고온 플라스마의 X선 세기는 충격파 모델의 예측보다 31퍼센트 낮았다. 이를 연구진은 ‘황금 매듭 X선 결손’이라 이름 붙였다. 먼지의 흡수나 가스 밀도의 불균일성이 관여했을 가능성은 남아 있지만, 관측만으로 어느 설명도 선택할 수 없다.\n\n우리가 보는 고리는 약 7,800년 전 떠난 빛으로 그려져 있다. 지금 그 잔해가 어떻게 변했는지는 아직 알 수 없으며, 기록된 것은 설명되지 않는 밝기 차이의 존재뿐이다. 빛의 테두리를 따라가다 보면, 우주는 오래된 소식을 전하면서도 가장 중요한 대답은 우리에게 남겨 둔다. 그 어둠 속에서 고리는 여전히 팽창하는 중일까, 아니면 우리의 이해만 그 가장자리에 멈춰 있는 것일까.",
+    "visibleFeatures": [
+      "사진 중앙을 둘러싸듯 청록색과 황금빛 가스가 불규칙한 타원형 고리를 이룬다.",
+      "고리 안쪽은 어둡고 성긴 별빛만 보여, 밝은 테두리와 뚜렷한 대비를 이룬다.",
+      "테두리에는 가는 실가닥 같은 구조와 매듭처럼 밝은 부분이 이어지고, 주변에는 드문 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 654,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2959
+    },
+    "descriptionCost": {
+      "usd": 0.0006150499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-08T17:59:10.743Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124408-3bd13fe0-be63-4f1d-bbfa-ac5b755e5bc5",
     "slot": "creative-124408",
     "title": "불꽃 성운의 어긋난 맥박",
