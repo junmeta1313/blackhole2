@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA08732",
+    "slot": "photos-82940",
+    "nasaId": "PIA08732",
+    "title": "Saturn Silhouetted Clouds",
+    "url": "https://images-assets.nasa.gov/image/PIA08732/PIA08732~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-09",
+    "credit": "NASA/JPL/University of Arizona",
+    "sourceUrl": "https://images.nasa.gov/details/PIA08732",
+    "publishedAt": "2026-10-08T20:47:48.952Z"
+  },
+  {
     "id": "nasa-PIA09755",
     "slot": "photos-82939",
     "nasaId": "PIA09755",
