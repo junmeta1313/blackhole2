@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124408-3bd13fe0-be63-4f1d-bbfa-ac5b755e5bc5",
+    "slot": "creative-124408",
+    "title": "불꽃 성운의 어긋난 맥박",
+    "category": "A11",
+    "sceneKey": "A11-B7-C1-D4-E3-F10",
+    "generationSelection": {
+      "A": 11,
+      "B": 7,
+      "C": 1,
+      "D": 4,
+      "E": 3,
+      "F": 10
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA11. 항성 탄생 영역\n- 하나의 분자운 내부 항성 형성 영역\n- 여러 젊은 별의 국소적 발광\n- 먼지와 가스가 복잡하게 얽힘\n- 지나치게 균일한 성운 금지\n\n색상 톤 / 관측 후처리:\nB7. 암적색 + 구리빛\n- 무겁고 오래된 우주 구조 느낌\n\n내부 프레이밍 / 구도:\nC1. 중심 균형형\n- 주된 시스템이 중심 부근\n- 비교적 안정적\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF10. 비정상적인 국소 발광점\n- 주변 가스와 다른 색온도 또는 광도를 가진 작은 영역\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 718,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 718
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 889
+    },
+    "generationCost": {
+      "usd": 0.00872,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124408-3bd13fe0-be63-4f1d-bbfa-ac5b755e5bc5.webp",
+    "author": "AI 창작",
+    "date": "2026-10-08",
+    "publishedAt": "2026-10-08T10:54:42.076Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성 탄생 영역",
+    "description": "궁수자리 방향의 성운 복합체 SNR-6142는 지구에서 약 5,800광년 떨어진 곳에 자리한다. 루멘 적외선 배열망원경이 촬영한 이 장면에서는 붉고 주황색인 가스가 넓게 펼쳐지고, 그 사이로 검은 먼지 띠가 갈라진 강처럼 파고든다. 화면 중앙의 밝은 매듭에서 가스의 주름이 바깥으로 번져 나가며, 오른쪽 위로 솟은 굽은 가장자리와 아래쪽의 어두운 기둥이 거대한 불꽃의 윤곽을 만든다. 투영된 폭은 약 38광년으로 추정된다. 한 장의 영상만으로 깊이와 실제 운동을 단정할 수는 없지만, 중심의 눈부신 영역은 주변 가스를 데우고 이온화하는 젊은 별들의 집단으로 보인다. 그 오른쪽에 푸르게 빛나는 별 하나가 홀로 또렷하고, 주변의 어두운 먼지 틈은 그 빛을 비껴가듯 둘러싼다.\n\n후속 분광 관측에서 연구진은 중심부의 이온화된 산소선이 11.6일 간격으로 약 3퍼센트씩 밝아졌다 어두워지는 기록을 얻었다. 하지만 같은 주기가 먼지 가장자리에서는 나타나지 않았고, 예상되는 별풍의 변화만으로는 이 차이를 설명하지 못했다. 연구팀은 이 국소적인 밝기 불일치를 ‘갈라진 불꽃 변조(Fissure-Flare Modulation)’라 이름 붙였다. 이름은 현상을 가리킬 뿐 원인을 밝히지는 않는다. 관측은 변조가 실제로 반복된다는 데까지만 도달했다.\n\n우리가 보는 것은 5,800년 전 성운을 떠난 빛이다. 지금 그곳의 가스가 어떤 모양으로 흘러가는지, 그 맥박이 계속되는지는 아직 알 수 없다. 검은 틈과 불타는 가장자리를 바라볼수록, 기록된 빛과 현재 사이에 놓인 거리가 새삼 선명해진다. 자연은 흔적을 남겼지만, 그 흔적이 말하는 법은 아직 우리에게 열리지 않았다.",
+    "visibleFeatures": [
+      "화면 대부분을 붉은빛과 주황빛의 성운이 채우며, 밝고 복잡한 가스 구조가 중심부를 감싼다.",
+      "성운 곳곳에 검은 암흑 띠와 갈라진 틈이 길게 뻗어 밝은 가스 구름을 여러 갈래로 나눈다.",
+      "중심에서 약간 오른쪽에 푸른빛을 띤 점광원이 있고, 그 아래쪽과 위쪽에도 작은 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 657,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2962
+    },
+    "descriptionCost": {
+      "usd": 0.00061655,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-08T10:54:52.160Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124406-6ad3e08f-13a5-4f84-8f32-0075037fa571",
     "slot": "creative-124406",
     "title": "불타는 고리의 정지된 틈",
