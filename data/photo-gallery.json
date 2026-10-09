@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA21088",
+    "slot": "photos-82944",
+    "nasaId": "PIA21088",
+    "title": "Supernova SN 2014C Optical and X-Ray",
+    "url": "https://images-assets.nasa.gov/image/PIA21088/PIA21088~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-10",
+    "credit": "X-ray images: NASA/CXC/CIERA/R.Margutti et al; Optical image: SDSS",
+    "sourceUrl": "https://images.nasa.gov/details/PIA21088",
+    "publishedAt": "2026-10-09T20:18:23.334Z"
+  },
+  {
     "id": "nasa-PIA14871",
     "slot": "photos-82943",
     "nasaId": "PIA14871",
