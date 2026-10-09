@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791526231747-1",
+    "title": "제임스 웹 우주망원경으로 여는 초신성 연구의 새 시대",
+    "originalTitle": "A New Era for Supernova Science with the James Webb Space Telescope",
+    "summary": "이 논문은 우주 역사에 걸친 초신성 관측이 은하의 물리·화학적 환경과 우주론을 살피는 데 유용하다고 설명한다.\n제임스 웹 우주망원경의 파장 범위와 감도, 해상도는 초신성 물리와 먼지 생성 연구에 새 관측 기회를 제공한다.\n저자들은 근거리 초신성의 상세 관측, 고적색편이 초신성의 첫 분광 표본, 중력렌즈 초신성 관측을 소개한다.\n이 관측은 우주론 추론과 높은 신호대잡음비의 분광 연구에도 활용될 수 있다고 평가한다.\n이는 동료 심사 여부가 확인되지 않은 arXiv 사전공개 논문이며, 로먼 우주망원경과 웹의 역할은 상호보완적일 전망이다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.12100",
+    "publishedAt": "2026-10-08",
+    "date": "2026-10-09 15:10",
+    "createdAt": "2026-10-09T06:10:31.747376+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791526231747-2",
+    "title": "웹, 가장 먼 고속전파폭발의 거리를 측정하고 기원을 시사",
+    "originalTitle": "Webb Measures Distance to Farthest Fast Radio Burst, Suggesting Origin",
+    "summary": "웹 우주망원경은 FRB 20240304B의 숙주 은하를 찾아 거리 측정을 확인했다.\n분광 관측으로 적색편이 2.148을 측정했으며, 은하는 빅뱅 후 약 30억 년 시점에 존재했다.\n숙주 은하는 활발히 별을 만들지만, 예상보다 질량이 약 1,000분의 1인 작은 왜소은하였다.\n이 젊고 별 형성이 활발한 환경은 젊은 고자기장 중성자별인 마그네타 기원설과 부합할 수 있다.\n연구진은 중성자별 병합 기원이 이 폭발의 원인일 가능성이 낮다고 보지만, FRB의 기원은 확정되지 않았다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/missions/webb/webb-measures-distance-to-farthest-fast-radio-burst-suggesting-origin",
+    "publishedAt": "2026-10-08",
+    "date": "2026-10-09 15:10",
+    "createdAt": "2026-10-09T06:10:31.747376+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791352919876-1",
     "title": "JWST 시대 초기 은하·AGN의 헤일로 질량함수 제약",
     "originalTitle": "Halo Mass Function Constraints on Early Galaxy and AGN Populations in the JWST Era",
