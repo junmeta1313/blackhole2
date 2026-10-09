@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124418-476f3d40-36d9-4dbf-8fb2-2f4021972bd9",
+    "slot": "creative-124418",
+    "title": "푸른 고리 사이, 거꾸로 흐르는 빛",
+    "category": "A12",
+    "sceneKey": "A12-B2-C4-D3-E3-F10",
+    "generationSelection": {
+      "A": 12,
+      "B": 2,
+      "C": 4,
+      "D": 3,
+      "E": 3,
+      "F": 10
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA12. 쌍성계 물질 이동\n- 두 별이 하나의 쌍성 시스템을 형성\n- 두 별 사이 물질 이동 또는 강착 흐름\n- 주변 공간은 비교적 단순하게\n- 두 별 외의 대형 천체 금지\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF10. 비정상적인 국소 발광점\n- 주변 가스와 다른 색온도 또는 광도를 가진 작은 영역\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 717,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 717
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 888
+    },
+    "generationCost": {
+      "usd": 0.008715,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124418-476f3d40-36d9-4dbf-8fb2-2f4021972bd9.webp",
+    "author": "AI 창작",
+    "date": "2026-10-10",
+    "publishedAt": "2026-10-09T23:27:46.516Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "쌍성계 물질 이동",
+    "description": "남쪽 고물자리와 나침반자리 경계의 희미한 성운대에서 발견된 천체는 관측 목록에 **QX-7316**으로 등록됐다. 사진에는 청록색 별밭을 가로지르는 두 발광 영역이 담겨 있다. 왼쪽 위의 거대한 푸른 고리는 얼룩진 중심을 감싸고, 그 아래쪽 가장자리에서 가느다란 빛의 흐름이 오른쪽 아래의 작은 백색 천체까지 이어진다. 고리와 연결부가 함께 이루는 구조는 약 14광년으로 추정된다. 이 거리는 후속 분광 관측의 거리 모형에 따른 값이며, 사진 한 장만으로 잰 크기는 아니다.\n\n가장 큰 고리의 안쪽에는 불규칙한 밝고 어두운 무늬가 겹쳐 있고, 반대편 끝의 천체 주변에는 청록색 고리가 여러 겹 감돈다. 마치 한쪽에서 흘러나온 기체가 다른 쪽에서 되감기는 듯 보이지만, 영상만으로 물질의 실제 운동 방향을 단정할 수는 없다. 가상 관측 장비 **Nacre 분광망원경**으로 11개월간 얻은 기록에서는 연결부의 청색 방출선이 예상 모형보다 초당 37킬로미터 느리게 이동했다. 이를 **역류선 지연 현상**이라 부르기 시작했으나, 속도 차가 고리 전체에 걸친 중력장 탓인지, 성간 기체의 복잡한 흐름 탓인지는 밝혀지지 않았다.\n\n분광선의 적색편이를 적용한 거리 모형은 약 2만 8천 광년이다. 그러므로 지금 망원경에 도착한 빛은 그만큼의 세월을 건너온 기록이지, 천체의 현재 모습은 아니다. 우리는 이 낯선 연결 구조와 어긋난 속도값이 존재한다는 데까지 확인했을 뿐이다. 사진 속 푸른 실이 아직 이어져 있는지, 이미 끊어졌는지는 알 수 없다. 우주가 남긴 오래된 한 장면 앞에서, 설명되지 않은 것은 어둠이 아니라 우리의 시간이다.",
+    "visibleFeatures": [
+      "어두운 청록색 별밭 위쪽에 푸른빛을 내는 거대한 둥근 고리와 얼룩진 중심부가 보인다.",
+      "고리의 오른쪽 아래에서 가느다란 청백색 가스 구조가 길게 뻗어 작은 발광 천체와 이어진다.",
+      "오른쪽 아래 천체는 밝은 흰빛 중심과 겹겹의 청록색 고리 모양을 이루며, 주변에는 작은 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 646,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2951
+    },
+    "descriptionCost": {
+      "usd": 0.0006110499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-09T23:27:55.538Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124416-b21698b7-ba29-4851-ab23-aac085d5d50b",
     "slot": "creative-124416",
     "title": "붉은 성운의 고요한 결손",
