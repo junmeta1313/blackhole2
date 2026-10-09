@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA14871",
+    "slot": "photos-82943",
+    "nasaId": "PIA14871",
+    "title": "All That Remains of Exploded Star",
+    "url": "https://images-assets.nasa.gov/image/PIA14871/PIA14871~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-09",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA14871",
+    "publishedAt": "2026-10-09T10:52:42.286Z"
+  },
+  {
     "id": "nasa-PIA13449",
     "slot": "photos-82941",
     "nasaId": "PIA13449",
