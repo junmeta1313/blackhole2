@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA18164",
+    "slot": "photos-82945",
+    "nasaId": "PIA18164",
+    "title": "Iridescent Glory of Nearby Helix Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA18164/PIA18164~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-10",
+    "credit": "NASA/STScI",
+    "sourceUrl": "https://images.nasa.gov/details/PIA18164",
+    "publishedAt": "2026-10-10T01:12:15.494Z"
+  },
+  {
     "id": "nasa-PIA21088",
     "slot": "photos-82944",
     "nasaId": "PIA21088",
