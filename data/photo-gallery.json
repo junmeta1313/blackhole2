@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA14417",
+    "slot": "photos-82947",
+    "nasaId": "PIA14417",
+    "title": "Weighing in on the Dumbbell Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA14417/PIA14417~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-10",
+    "credit": "NASA/JPL-Caltech/Harvard-Smithsonian CfA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA14417",
+    "publishedAt": "2026-10-10T10:06:22.111Z"
+  },
+  {
     "id": "nasa-PIA18164",
     "slot": "photos-82945",
     "nasaId": "PIA18164",
