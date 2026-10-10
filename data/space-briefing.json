@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791611652577-1",
+    "title": "우주 거울의 집",
+    "originalTitle": "Cosmic House of Mirrors",
+    "summary": "NASA가 2026년 9월 29일 공개한 제임스 웹 우주망원경 이미지다.\n황금빛 은하들은 MACS J0454.1-0300 은하단의 일부다.\n한쪽에 모인 주황색 은하들은 실제로 이 은하단에 속하지 않는다.\n더 멀리 있는 은하들의 빛이 앞쪽 은하단의 중력에 휘어지고 확대돼 보인다.\n이 현상을 중력 렌즈 효과라고 설명한다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/image-article/cosmic-house-of-mirrors",
+    "publishedAt": "2026-10-09",
+    "date": "2026-10-10 14:54",
+    "createdAt": "2026-10-10T05:54:12.577654+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791611652577-2",
+    "title": "유입이 이끄는 은하 진화 II: 별 형성 은하의 스케일 관계 위계",
+    "originalTitle": "Inflow-driven galaxy evolution - II: A hierarchy in the scaling relations of star-forming galaxies",
+    "summary": "이 논문은 별 형성 은하의 세 주요 스케일 관계가 어떻게 나타나는지 가스 흐름 모형으로 연구한다.\n연구진은 이상적 모형과 우주론적 가스 흐름 모형을 사용해 관계들 사이의 위계를 제시한다.\n별 형성 주계열은 주로 은하를 품은 헤일로의 형성 시기에 좌우된다고 설명한다.\n가스 대 항성 질량 관계는 비별형성률과 별 형성 효율의 비율에서 비롯되며, 두 요인의 산포를 물려받는다.\n질량-금속도 관계는 가스 대 항성 질량 관계와 질량 유출률의 영향을 받으며, 기여도는 진화 상태에 따라 달라진다.\n이 틀은 별 형성률·금속도·은하 크기와 관련된 추가 상관관계도 설명하며, 관측값을 바리온 순환과 연결한다.\narXiv 논문이며, 동료 심사를 거쳤는지는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.12394",
+    "publishedAt": "2026-10-08",
+    "date": "2026-10-10 14:54",
+    "createdAt": "2026-10-10T05:54:12.577654+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791526231747-1",
     "title": "제임스 웹 우주망원경으로 여는 초신성 연구의 새 시대",
     "originalTitle": "A New Era for Supernova Science with the James Webb Space Telescope",
