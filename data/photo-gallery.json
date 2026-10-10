@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA09178",
+    "slot": "photos-82948",
+    "nasaId": "PIA09178",
+    "title": "Comets Kick up Dust in Helix Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA09178/PIA09178~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-11",
+    "credit": "NASA/JPL-Caltech/Univ.of Ariz.",
+    "sourceUrl": "https://images.nasa.gov/details/PIA09178",
+    "publishedAt": "2026-10-10T19:29:16.326Z"
+  },
+  {
     "id": "nasa-PIA14417",
     "slot": "photos-82947",
     "nasaId": "PIA14417",
