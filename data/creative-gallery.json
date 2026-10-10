@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124422-7b970f8e-b8d6-4dce-92d1-f573e102f869",
+    "slot": "creative-124422",
+    "title": "붉은 구름바다의 역행하는 소용돌이",
+    "category": "A3",
+    "sceneKey": "A3-B4-C10-D3-E6-F6",
+    "generationSelection": {
+      "A": 3,
+      "B": 4,
+      "C": 10,
+      "D": 3,
+      "E": 6,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA3. 폭풍이 뒤덮인 가스행성\n- 행성 대기의 띠, 소용돌이, 폭풍 구조가 핵심\n- 고리 없음\n- 근거리 또는 중거리 관측\n- 대기의 미세한 흐름과 층 구조 강조\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC10. 타이트 클로즈업형\n- 피사체 또는 구조가 화면 대부분을 차지\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE6. 국소 구조 확대\n- 천체 전체가 아니라 특정 세부 구조에 초점\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n선택된 근접/부분 구조 프레이밍을 유지하고 넓은 배경으로 바꾸지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 735,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 735
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 906
+    },
+    "generationCost": {
+      "usd": 0.008805,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124422-7b970f8e-b8d6-4dce-92d1-f573e102f869.webp",
+    "author": "AI 창작",
+    "date": "2026-10-11",
+    "publishedAt": "2026-10-10T16:22:11.158Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "폭풍이 뒤덮인 가스행성",
+    "description": "가상의 관측 목록에서 이 천체는 외뿔자리 방향의 가스행성 후보 ‘KX-731 아르덴’으로 등록되어 있다. 리아트라 적외선 간섭계의 후속 거리 측정은 약 4억 8천만 km를 제시했으며, 이는 태양계 안쪽 행성권에 놓인 규모다. 여기 보이는 것은 행성 표면이 아니라, 구름 꼭대기에서 반사·방출된 빛을 강조해 재구성한 대기 지도다.\n\n가장 눈에 띄는 구조는 오른쪽 아래의 거대한 타원형 소용돌이다. 밝은 주황색 테두리가 어두운 중심을 감싸고, 그 안쪽에는 여러 겹의 타원형 흐름이 촘촘히 감긴다. 폭은 약 1만 8천 km로 추정된다. 그 위로 굽이치는 밝은 구름띠가 화면을 가로지르고, 왼쪽 아래의 작은 나선과 중앙 왼편의 둥근 흐름은 이 대기가 단일한 폭풍이 아니라 서로 얽힌 순환계임을 보여준다. 어두운 틈은 구름이 낮아지거나 빛을 덜 반사하는 영역일 수 있지만, 한 장의 영상만으로 그 깊이를 단정할 수는 없다.\n\n그런데 후속 관측에서 연구진은 큰 소용돌이 주변의 얇은 밝은 띠가 예상과 반대로 움직이는 듯한 흔적을 기록했다. 11일 간격의 적외선 영상 27장을 추적하자, 띠의 무늬는 주변 구름보다 초당 약 6m 느리게 서쪽으로 이동했다. 구름의 높이와 바람을 보정한 뒤에도 남은 이 차이를 연구진은 ‘아르덴 역류 경계(Arden Counterflow Boundary)’라 불렀다. 원인이 깊은 대기층의 흐름인지, 아직 모르는 파동의 전달 방식인지는 밝혀지지 않았다.\n\n이 빛은 약 27분 전에 출발해 지금 우리의 검출기에 닿았다. 그러므로 지도 속 대기는 이미 그 순간의 모습이 아니며, 다음 관측이 도착할 때면 폭풍의 경계는 또 다른 자리에 있을 것이다. 기록은 역류의 흔적만 확인했을 뿐, 그 바람을 움직이는 원리를 설명하지 못한다. 우리는 붉은 소용돌이를 들여다보면서도 그 아래의 깊이를 알지 못한 채, 빛이 건너온 짧은 시간조차 완전히 붙잡지 못한다.",
+    "visibleFeatures": [
+      "화면 전체를 주황색과 붉은색의 층진 구름띠가 가로지르며, 밝고 어두운 영역이 굽이치는 경계를 이룬다.",
+      "오른쪽 아래에는 밝은 고리와 어두운 중심을 가진 거대한 타원형 소용돌이가 있고, 내부에 여러 겹의 나선 무늬가 보인다.",
+      "왼쪽 아래와 중앙 왼쪽에도 작은 소용돌이들이 흩어져 있으며, 그중 일부는 주변의 긴 구름띠와 맞닿아 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 757,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3062
+    },
+    "descriptionCost": {
+      "usd": 0.0006665499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-10T16:22:19.570Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124420-e915636a-0a81-4104-b3c9-7d5e2f1df45a",
     "slot": "creative-124420",
     "title": "검은 원반의 빛, 되돌아오는 시간",
