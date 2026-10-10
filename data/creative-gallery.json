@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124423-6c455de9-2dea-4957-8879-91c195adf953",
+    "slot": "creative-124423",
+    "title": "빈 중심을 둘러싼 은빛 망",
+    "category": "A6",
+    "sceneKey": "A6-B1-C3-D3-E3-F6",
+    "generationSelection": {
+      "A": 6,
+      "B": 1,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA6. 필라멘트형 초신성 잔해\n- 얇고 복잡한 가스 필라멘트\n- 거미줄 또는 찢어진 충격파 같은 형태\n- 중심부는 상대적으로 비어 있음\n- 둥근 뭉게구름 성운처럼 표현하지 않음\n\n색상 톤 / 관측 후처리:\nB1. 저채도 청회색\n- 거의 단색\n- 차갑고 절제된 관측 이미지\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 723,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 723
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 894
+    },
+    "generationCost": {
+      "usd": 0.008745,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124423-6c455de9-2dea-4957-8879-91c195adf953.webp",
+    "author": "AI 창작",
+    "date": "2026-10-11",
+    "publishedAt": "2026-10-10T22:54:50.065Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "필라멘트형 초신성 잔해",
+    "description": "백조자리와 거문고자리 사이의 어두운 은하수 영역에서 발견된 고리형 성운 후보체는 관측 목록에 **QNR-2716**으로 등록되었다. 추정 거리는 약 7,400광년이다. 화면에는 별들이 흩어진 검푸른 배경 위로, 가운데의 넓은 암흑 공간을 둘러싼 은백색 필라멘트가 불완전한 고리처럼 떠 있다. 오른쪽 가장자리의 밝은 매듭들은 실타래처럼 겹치며, 희미한 가스 가닥은 위와 아래로 흩어져 고리의 윤곽을 흐린다. 이 구조를 연구진은 **유리해류 망(Glass-Tide Web)**이라 불렀다. 영상에서 보이는 폭을 거리 추정치에 맞추면 전체 구조는 약 18광년에 이른다. 이는 한 장의 영상에서 직접 잰 물리적 크기가 아니라, 후속 분광 관측으로 얻은 거리와 각지름을 결합한 추산이다.\n\n가장 뜻밖의 기록은 고리의 밝은 매듭들이 남긴 약한 전파 신호다. 가상의 관측 장비 **Nacre Array**가 1.42GHz 대역을 11개월간 추적했을 때, 필라멘트의 네 지점에서 신호가 차례로 약해졌지만 각 지점의 변화는 47일 간격으로 거의 되풀이되었다. 예상되는 가스의 팽창이나 별빛의 가림만으로는 이 동시성을 설명하기 어려웠다. 연구팀은 이를 **고리 위상 동조 현상(Ring-Phase Lock)**이라 명명했으나, 관측은 반복되는 밝기 변화의 존재까지만 확인했다. 빛은 약 7,400년을 건너 지금 이 망을 보여준다. 그러므로 우리가 기록한 고리가 오늘도 같은 모양인지, 그 답은 아직 이곳에 도착하지 않았다. 검은 중심은 텅 빈 듯 보이지만, 그 둘레의 가느다란 선들은 측정값을 넘어선 질서를 암시한다. 그 질서가 어디서 비롯되었는지는 밝혀지지 않았다. 별빛 아래 놓인 이 오래된 망을 다시 바라볼 때, 설명의 경계 또한 우주의 일부임을 깨닫게 된다.",
+    "visibleFeatures": [
+      "검푸른 별밭 한가운데에 넓고 어두운 원형 공간이 비어 있다.",
+      "그 둘레를 희미한 은백색 필라멘트들이 불규칙한 고리처럼 감싸며, 여러 갈래로 얽히고 끊겨 있다.",
+      "오른쪽 가장자리에는 실 같은 구조와 밝은 매듭이 특히 조밀하게 모이고, 바깥쪽에는 작은 별들이 고르게 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 664,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2969
+    },
+    "descriptionCost": {
+      "usd": 0.0006200499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-10T22:54:58.940Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124422-7b970f8e-b8d6-4dce-92d1-f573e102f869",
     "slot": "creative-124422",
     "title": "붉은 구름바다의 역행하는 소용돌이",
