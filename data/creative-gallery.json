@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124424-781e33db-5c54-4315-808d-bdfa2f808216",
+    "slot": "creative-124424",
+    "title": "검은 성운의 정지된 파문",
+    "category": "A8",
+    "sceneKey": "A8-B5-C6-D3-E3-F5",
+    "generationSelection": {
+      "A": 8,
+      "B": 5,
+      "C": 6,
+      "D": 3,
+      "E": 3,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA8. 완전히 어두운 암흑 성운\n- 빛나는 성운이 아닌 검은 분자운/먼지가 주인공\n- 뒤쪽 별빛 일부가 가려짐\n- 밝은 영역은 극도로 제한\n- 넓고 불규칙한 암흑 구조\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n암흑 구조가 주제이며 발광점이 선택되어도 극도로 희미하고 작은 국소점만 허용한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 790,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 790
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 961
+    },
+    "generationCost": {
+      "usd": 0.00908,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124424-781e33db-5c54-4315-808d-bdfa2f808216.webp",
+    "author": "AI 창작",
+    "date": "2026-10-11",
+    "publishedAt": "2026-10-11T02:09:44.268Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "완전히 어두운 암흑 성운",
+    "description": "궁수자리 방향, 지구에서 약 6,200광년 떨어진 분자운 GJ-4172를 관측망원경 아르덴-4가 촬영했다. 한 장의 영상에서 가장 먼저 드러나는 것은 화면을 비스듬히 가로지르는 거대한 암흑 구조다. 차가운 먼지와 분자 기체가 배경의 별빛을 가려 불규칙한 능선과 돌출부를 만들고, 그 둘레에는 청록빛 가스가 번진다. 동남쪽 가장자리의 황금빛 발광부는 밀도가 높은 가스가 주변 별빛을 받아 밝아진 영역으로 보인다. 거리 추정에 따르면 이 어두운 능선은 약 38광년에 걸쳐 펼쳐져 있다. 별들은 그 앞뒤로 흩어져 있지만, 검은 중심부만큼은 빛이 통과하지 못하는 깊은 골처럼 남아 있다.\n\n후속 적외선 분광 관측에서 연구진은 능선의 세 곳을 14개월 간격으로 비교했다. 먼지 자체의 이동으로 설명하기 어려운 미세한 좌표 변동이 0.018각초씩 같은 방향으로 나타났고, 주변 별들의 고유운동으로 보정한 뒤에도 값은 남았다. 연구진은 이 현상에 ‘청록 경계 동조(Teal-Rim Coherence)’라는 이름을 붙였다. 세 지점의 가스가 실제로 함께 움직이는지, 아니면 복잡한 빛의 경로가 그렇게 보이게 하는지는 아직 구분되지 않았다. 이 사진의 빛은 약 6,200년 전 이곳을 떠났다. 우리가 보는 성운은 그 먼 과거의 모습이며, 지금 그곳의 능선이 어떤 형태인지 이 영상만으로는 알 수 없다. 관측은 설명되지 않는 동조의 존재까지만 확인했다. 검은 윤곽은 별빛을 삼킨 자리가 아니라, 아직 읽히지 않은 우주의 문장처럼 남아 있다.",
+    "visibleFeatures": [
+      "화면 중앙을 대각선으로 가로지르는 짙은 암흑색 먼지 구조가 불규칙하고 갈라진 실루엣을 이룬다.",
+      "암흑 구조의 가장자리와 뒤편에는 청록색 발광 가스와 군데군데 금빛으로 밝은 영역이 보인다.",
+      "배경에는 청색과 황금색을 띤 별들이 넓게 흩어져 있으며, 성운의 어두운 부분에는 별빛이 드물다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 590,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2895
+    },
+    "descriptionCost": {
+      "usd": 0.00058305,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-11T02:09:53.097Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124423-6c455de9-2dea-4957-8879-91c195adf953",
     "slot": "creative-124423",
     "title": "빈 중심을 둘러싼 은빛 망",
