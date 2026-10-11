@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791697710401-1",
+    "title": "너무 많거나 너무 밝은가? z>10 자외선 광도함수 연구 현황과 전망",
+    "originalTitle": "Too many or too bright? Status and perspectives in the study of the UV Luminosity Function at z>10",
+    "summary": "이 리뷰는 z>9 초기 은하의 탐색과 특성 분석, 특히 자외선 광도함수의 진화를 살핍니다.\nJWST 관측을 종합해 여러 탐사의 결과를 평균한 광도함수의 전반적 진화를 제시합니다.\n관측된 은하 수와 밝기가 예상보다 크다는 결과는 z=14.44까지의 표본을 바탕으로 합니다.\n저자들은 관측에 맞추려는 이론 모델과 그 안의 여러 물리적 기제를 비교합니다.\nz>15 은하 후보 확인 결과는 엇갈리며, 이를 돌파할 후속 탐사 요건도 논의합니다.\n이 글은 arXiv 프리프린트이며 동료심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.12121",
+    "publishedAt": "2026-10-08",
+    "date": "2026-10-11 14:48",
+    "createdAt": "2026-10-11T05:48:30.401648+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791697710401-2",
+    "title": "NASA, 차세대 열차폐 기술 시험",
+    "originalTitle": "NASA Demonstrates Next-Generation Heat Shield Technologies",
+    "summary": "NASA와 협력 기관들은 귀환 화물선에 실은 캡슐 12개로 열차폐 소재를 시험합니다.\nKREPE-3는 폐기될 화물선의 대기권 재진입을 활용해 저비용으로 비행 자료를 모읍니다.\n캡슐 센서는 재진입 중 온도와 압력, 움직임, 자기장, 빛을 측정하고 자료를 위성 신호로 보냅니다.\n시험 소재에는 셔틀 타일, 3D 프린트 차폐재, 탄소·페놀 섬유를 꿰맨 MERINO 등이 포함됩니다.\n일부 설계는 화성 착륙이나 토성 위성 타이탄 탐사에 활용할 가능성을 시험합니다.\n발표문은 시험 계획과 소재의 잠재력을 설명하지만, 실제 성능 결과는 제시하지 않습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies",
+    "publishedAt": "2026-10-09",
+    "date": "2026-10-11 14:48",
+    "createdAt": "2026-10-11T05:48:30.401648+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791611652577-1",
     "title": "우주 거울의 집",
     "originalTitle": "Cosmic House of Mirrors",
