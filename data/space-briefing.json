@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791784800639-1",
+    "title": "힐스 메커니즘으로 형성되는 EMRI의 이심률 분포",
+    "originalTitle": "Extreme mass ratio inspirals from the Hills mechanism, The eccentricity distribution of Hills EMRIs in LISA",
+    "summary": "이 논문은 쌍성 블랙홀이 거대 블랙홀에 포획돼 형성되는 EMRI 경로를 모델링합니다.\n은하핵 성단부터 최종 낙하까지 여러 계산 기법을 결합해 진화를 추적했습니다.\n대표 조건에서 힐스 EMRI의 평균 이심률은 LISA 관측 대역 진입 시 약 0.097, 낙하 시 약 0.034였습니다.\n이는 두 체 완화로 생기는 고전적 EMRI의 약 0.478과 0.228보다 낮습니다.\n초기 쌍성의 약 0.4%가 EMRI가 되며, 포획된 블랙홀의 약 60%가 EMRI로 진화합니다.\n은하당 연간 발생률은 약 1.6×10⁻⁸건으로 고전적 EMRI 발생률의 약 12%입니다.\n결과는 성단 내 쌍성 질량 비율에 민감하며, arXiv 프리프린트로 동료 심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.13294",
+    "publishedAt": "2026-10-09",
+    "date": "2026-10-12 15:00",
+    "createdAt": "2026-10-12T06:00:00.639420+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791784800639-2",
+    "title": "목성과 달들",
+    "originalTitle": "APOD: 2026 October 12 – Jupiter and the Moons",
+    "summary": "NASA의 오늘의 천문 사진은 지구의 달이 목성 앞을 지나는 장면을 소개합니다.\n미국 뉴욕주 웨스트체스터에서 정렬 순간을 여러 차례 노출해 촬영했습니다.\n사진에는 지구의 달과 목성의 위성 가니메데, 이오, 칼리스토, 유로파가 담겼습니다.\n달의 밝은 초승달 부분은 과노출됐고, 밤 쪽은 지구조로 희미하게 보입니다.\n사진 설명에 따르면 칼리스토, 가니메데, 이오는 지구의 달보다 크고 유로파는 약간 작습니다.\n이 사진은 목성과 위성의 크기를 직접 비교하는 정량 측정 결과를 제시하지 않습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/image-article/apod-2026-october-12-jupiter-and-the-moons",
+    "publishedAt": "2026-10-12",
+    "date": "2026-10-12 15:00",
+    "createdAt": "2026-10-12T06:00:00.639420+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791697710401-1",
     "title": "너무 많거나 너무 밝은가? z>10 자외선 광도함수 연구 현황과 전망",
     "originalTitle": "Too many or too bright? Status and perspectives in the study of the UV Luminosity Function at z>10",
