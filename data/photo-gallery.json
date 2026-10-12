@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA19822",
+    "slot": "photos-82953",
+    "nasaId": "PIA19822",
+    "title": "Magnetic Black Hole Waves",
+    "url": "https://images-assets.nasa.gov/image/PIA19822/PIA19822~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-12",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA19822",
+    "publishedAt": "2026-10-12T00:42:50.525Z"
+  },
+  {
     "id": "nasa-PIA20063",
     "slot": "photos-82952",
     "nasaId": "PIA20063",
