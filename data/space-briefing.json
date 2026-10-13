@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791874080889-1",
+    "title": "강입자 중성자별의 단열 진화",
+    "originalTitle": "Adiabatic evolution of hadronic neutron stars",
+    "summary": "이 연구는 강입자 중성자별과 원시중성자별의 장기 진화를 살펴봅니다.\n유한 온도 상태방정식에 초유체가 아닌 하이퍼온과 중성미자 포획 성분을 반영했습니다.\n정적·회전 상태와 강체·차등 회전을 고려해 별의 구조 특성을 계산했습니다.\n모형은 관측된 중성자별 질량 및 GW170817의 조석 변형도와 부합한다고 보고합니다.\n열 효과는 조성과 회전 상태에 따라 달라지며, 이 논문은 동료심사 여부가 확인되지 않은 arXiv 프리프린트입니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.13926",
+    "publishedAt": "2026-10-09",
+    "date": "2026-10-13 15:48",
+    "createdAt": "2026-10-13T06:48:00.889212+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791874080889-2",
+    "title": "APOD: 2026년 10월 13일 — 사막의 천국으로 향하는 계단",
+    "originalTitle": "APOD: 2026 October 13 – Desert Stairway to Heaven",
+    "summary": "NASA의 오늘의 천문학 사진은 칠레 아타카마 사막의 ‘사막 계단’ 조형물을 담았습니다.\n2025년 7월 촬영한 광각 합성 사진으로, 조형물 뒤에 솟은 은하수 띠가 중심에 있습니다.\n사진에는 황도광, 지평선 위의 녹색·붉은 대기광, 황도광 띠의 스피카가 보입니다.\n오른쪽 위에는 소마젤란은하가 있으며, 지평선에서는 안데스산맥과 리칸카부르 화산, 산페드로데아타카마의 불빛을 찾을 수 있습니다.\nNASA 설명은 사진의 천체와 지형을 소개하며, 사진의 촬영 시점과 크레디트를 함께 제공합니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/image-article/apod-2026-october-13-desert-stairway-to-heaven",
+    "publishedAt": "2026-10-13",
+    "date": "2026-10-13 15:48",
+    "createdAt": "2026-10-13T06:48:00.889212+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791784800639-1",
     "title": "힐스 메커니즘으로 형성되는 EMRI의 이심률 분포",
     "originalTitle": "Extreme mass ratio inspirals from the Hills mechanism, The eccentricity distribution of Hills EMRIs in LISA",
