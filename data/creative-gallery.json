@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124440-5423fb9b-ccc8-4fcf-9aa1-194dcb7d4702",
+    "slot": "creative-124440",
+    "title": "별바다에 걸린 푸른 초승달",
+    "category": "A2",
+    "sceneKey": "A2-B2-C6-D1-E4-F5",
+    "generationSelection": {
+      "A": 2,
+      "B": 2,
+      "C": 6,
+      "D": 1,
+      "E": 4,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA2. 아주 멀리 있는 작은 외로운 행성\n- 행성은 화면의 약 5~15%만 차지\n- 고리 없음\n- 대부분은 깊은 심우주 여백\n- 성운은 주된 구조로 등장하지 않음\n- 극단적인 거리감과 고독감\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD1. 실제 현재 천문 관측 수준\n- 과장 최소화\n- 매우 현실적인 구조와 색\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n원거리 대상은 반드시 작게 유지한다. E의 일반적인 점유율보다 A의 5~15% 점유율과 85~95% 심우주 여백 조건을 우선한다.\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 796,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 796
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 967
+    },
+    "generationCost": {
+      "usd": 0.00911,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124440-5423fb9b-ccc8-4fcf-9aa1-194dcb7d4702.webp",
+    "author": "AI 창작",
+    "date": "2026-10-14",
+    "publishedAt": "2026-10-13T15:15:25.649Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "아주 멀리 있는 작은 외로운 행성",
+    "description": "남쪽 물고기자리 경계에서 포착된 천체군 ‘루미아-47(LUM-47)’은 지구로부터 약 126광년 떨어져 있다. 이미지에는 청록빛이 감도는 어두운 하늘을 수많은 별이 고르게 채우고, 오른쪽 위에는 한쪽 가장자리만 밝은 둥근 천체가 떠 있다. 왼쪽 아래의 황금빛 별은 차가운 배경 속에서 유난히 따뜻하게 빛난다. 사진만으로는 이 천체의 성질이나 별들과의 거리를 판별할 수 없지만, 후속 분광 관측에서는 근처 항성 ‘세린’ 주위를 도는 얼음 위성 후보로 기록됐다.\n\n가상의 관측 장비 아르덴 적외선 분광계가 추정한 세린계의 거리는 126광년, 위성 후보의 지름은 약 2,900킬로미터다. 반사광이 암시하는 밝은 가장자리는 낮과 밤의 경계를 따라 이어지며, 표면에는 희박한 얼음 입자층이 있을 가능성이 제기됐다. 그러나 연구진이 주목한 것은 그 경계의 미세한 밝기 변화였다. 14개월 동안 얻은 23회의 관측에서 밝은 호의 일부가 31.6시간 간격으로 약 0.7퍼센트씩 어두워졌다가 되돌아왔다. 위성의 자전이나 관측 오차만으로는 그 주기와 방향을 함께 설명하기 어려웠다.\n\n연구진은 이 불규칙한 변조에 ‘경계광 되울림(Borderlight Echo)’이라는 이름을 붙였다. 빛이 126년을 건너 지금 우리 망원경에 닿았다면, 사진 속 모습은 이미 오래전 그곳의 기록이다. 세린계가 오늘 어떤 상태인지 우리는 알지 못한다. 관측은 되울림이 반복된다는 사실까지만 확인했으며, 그 원인은 아직 물리학의 설명 밖에 남아 있다. 별빛 사이의 작은 초승달을 다시 바라보면, 우리가 보는 것은 먼 곳의 풍경인 동시에 지나간 시간의 얇은 단면임을 깨닫게 된다.",
+    "visibleFeatures": [
+      "짙은 청록빛을 띤 어두운 우주 배경에 크고 작은 별들이 촘촘하고 고르게 흩어져 있다.",
+      "화면 오른쪽 위쪽에 둥근 천체가 떠 있으며, 표면의 일부만 차갑고 옅은 빛을 받아 초승달처럼 밝다.",
+      "왼쪽 아래에는 주변보다 따뜻한 황금빛 별 하나가 보이고, 그 부근에 희미한 별빛이 모여 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 637,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2942
+    },
+    "descriptionCost": {
+      "usd": 0.00060655,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-13T15:15:34.822Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124437-d722304d-1ed9-4d2b-aa5a-44ff4eea1171",
     "slot": "creative-124437",
     "title": "고리의 침묵, 남겨진 빛",
