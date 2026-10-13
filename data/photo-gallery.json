@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA13843",
+    "slot": "photos-82960",
+    "nasaId": "PIA13843",
+    "title": "The Case of the Disappearing Continent",
+    "url": "https://images-assets.nasa.gov/image/PIA13843/PIA13843~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-14",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA13843",
+    "publishedAt": "2026-10-13T20:48:15.999Z"
+  },
+  {
     "id": "nasa-PIA10227",
     "slot": "photos-82959",
     "nasaId": "PIA10227",
