@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124441-c84c5e7f-cea8-4ced-b48d-99ee257baaa6",
+    "slot": "creative-124441",
+    "title": "빛의 가장자리에 남은 정지선",
+    "category": "A5",
+    "sceneKey": "A5-B10-C10-D4-E7-F9",
+    "generationSelection": {
+      "A": 5,
+      "B": 10,
+      "C": 10,
+      "D": 4,
+      "E": 7,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA5. 블랙홀 이벤트 호라이즌 극단 클로즈업\n- 블랙홀 전체가 아니라 경계 일부만 관측\n- 강착원반 일부가 프레임 밖으로 이어짐\n- 극단적 근접 관측\n- 강한 명암 대비\n- 넓은 배경 구도 금지\n\n색상 톤 / 관측 후처리:\nB10. 자연색에 가까운 현실 관측\n- false-color 최소화\n- 가장 자연스러운 색 보정\n\n내부 프레이밍 / 구도:\nC10. 타이트 클로즈업형\n- 피사체 또는 구조가 화면 대부분을 차지\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE7. 프레임 외부 연장\n- 구조가 화면 밖까지 이어져 전체 형태가 보이지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n선택된 근접/부분 구조 프레이밍을 유지하고 넓은 배경으로 바꾸지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 846,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 846
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 1017
+    },
+    "generationCost": {
+      "usd": 0.00936,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124441-c84c5e7f-cea8-4ced-b48d-99ee257baaa6.webp",
+    "author": "AI 창작",
+    "date": "2026-10-14",
+    "publishedAt": "2026-10-13T20:48:53.318Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀 이벤트 호라이즌 극단 클로즈업",
+    "description": "남쪽 하늘의 희미한 은하군 뒤편에서 발견된 천체, 관측번호 KX-7316은 지구로부터 약 6,200만 광년 떨어져 있다. 오르벨라(Orbella)라고 이름 붙인 이 원반의 중심에는 화면 오른쪽을 채운 둥근 암흑 영역이 있고, 그 가장자리를 가느다란 흰빛이 감싼다. 주황빛과 금빛 가스는 아래쪽을 휘돌아 왼편 어둠으로 길게 번지며, 밝은 안쪽 층과 흐릿한 바깥 결 사이에 작은 별빛들이 박혀 있다. 이 정지 화면만으로 실제 크기를 잴 수는 없지만, 분광 관측으로 추정한 원반 지름은 약 0.8광년이다.\n\n중심의 검은 윤곽은 빛이 빠져나오지 못하는 경계와 닮았으나, 사진의 모양만으로 그 성질을 확정할 수는 없다. 연구진이 후속 관측에서 주목한 것은 그 경계를 따라 이어지는 밝은 띠였다. 가상의 궤도분광기 ‘누마(Numa)’가 14개월간 기록한 자료에서, 가장자리의 특정 구간은 6.2시간 간격으로 밝기가 되풀이해 흔들렸다. 가스의 회전과 중력렌즈 효과를 넣은 모형은 변동 폭을 관측값보다 약 11퍼센트 낮게 예측했다. 이 어긋남에 연구진은 ‘정지 경계선 현상(Stillrim Anomaly)’이라는 이름을 붙였다. 띠의 온도나 밀도 변화만으로는 주기의 안정성을 설명하지 못했지만, 원인을 가리킬 단서는 아직 부족하다.\n\n우리가 보는 오르벨라의 빛은 6,200만 년 전 출발했다. 그사이 원반이 어떻게 변했는지, 지금도 같은 경계가 존재하는지는 이 관측으로 알 수 없다. 확인된 것은 오래된 빛 속에 설명되지 않은 리듬이 남아 있다는 사실뿐이다. 검은 원을 둘러싼 빛은 단지 밝은 가장자리일까, 아니면 우리가 아직 해독하지 못한 우주의 움직임일까.",
+    "visibleFeatures": [
+      "화면 오른쪽을 차지한 거대한 원형의 검은 영역 가장자리에 가느다란 흰빛 테두리가 둘러져 있다.",
+      "주황색과 금빛 가스 띠가 검은 영역의 아래쪽을 가로지르며, 안쪽은 눈부시게 밝고 바깥으로 갈수록 어두워진다.",
+      "가스 띠는 휘어진 층과 소용돌이치는 듯한 결을 이루며 왼쪽 어둠 속으로 퍼지고, 그 사이사이에 작은 점광원들이 드문드문 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 676,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2981
+    },
+    "descriptionCost": {
+      "usd": 0.00062605,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-13T20:49:01.984Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124440-5423fb9b-ccc8-4fcf-9aa1-194dcb7d4702",
     "slot": "creative-124440",
     "title": "별바다에 걸린 푸른 초승달",
