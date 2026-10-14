@@ -1,5 +1,31 @@
 [
   {
+    "id": "1791953716396-1",
+    "title": "EDGE-INFERNO: 은하 조립 역사의 화학적 흔적",
+    "originalTitle": "EDGE-INFERNO: The chemical signatures of assembly history in reionization fossils",
+    "summary": "이 논문은 저질량 왜소은하의 별들이 겪은 조립 역사가 현재의 화학적 특성에 미치는 영향을 살핀다.\n현재 헤일로 질량을 같게 맞춘 우주론적 줌인 시뮬레이션에서 은하의 성장 이력을 체계적으로 바꿨다.\n단일 선조에서 일찍 형성된 은하는 원소비 공간에서 이어진 경향을 보였고, 여러 선조가 합쳐진 은하는 구별되는 별 집단을 보였다.\n별 50~100개 이상의 금속도 분포는 조립 이력의 초기 단서를 주며, 여러 원소의 분석은 집단 구분을 개선했다.\n확실한 복원에는 더 큰 표본이 필요하고, 내부 형성과 유입 별을 완전히 구분하려면 운동학 정보가 유용할 수 있다.\narXiv 프리프린트이며 동료심사 여부는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.18473",
+    "publishedAt": "2026-10-13",
+    "date": "2026-10-14 13:55",
+    "createdAt": "2026-10-14T04:55:16.396563+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1791953716396-2",
+    "title": "Transporter-18 소형위성 탑재체 봉입",
+    "originalTitle": "Transporter-18 SmallSats Encapsulation",
+    "summary": "NASA가 지원하는 소형 우주선 3기와 상업 탑재체들이 발사 전 팰컨 9 페어링에 봉입될 준비를 하는 모습이다.\n이 우주선들은 2026년 10월 1일 발사를 앞두고 있다.\nASCENT Propulsion Dual Mode CubeSat은 새로운 추진 기술을 시연할 예정이다.\nSPRITE CubeSat은 은하를 통과하는 은하 먼지와 고에너지 복사를 연구한다.\nSSPICY 임무는 작동하지 않는 위성을 점검하는 역량을 발전시키려 한다.\n발표 내용은 임무 목표를 설명하며, 실제 성과나 결과는 제시하지 않는다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/image-article/transporter-18-smallsats-encapsulation",
+    "publishedAt": "2026-10-13",
+    "date": "2026-10-14 13:55",
+    "createdAt": "2026-10-14T04:55:16.396563+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791874080889-1",
     "title": "강입자 중성자별의 단열 진화",
     "originalTitle": "Adiabatic evolution of hadronic neutron stars",
