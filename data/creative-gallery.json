@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124446-7ee6e70e-0217-4e24-86d0-0b7ac9ef1dc7",
+    "slot": "creative-124446",
+    "title": "보랏빛 경계의 정적",
+    "category": "A10",
+    "sceneKey": "A10-B3-C8-D3-E7-F5",
+    "generationSelection": {
+      "A": 10,
+      "B": 3,
+      "C": 8,
+      "D": 3,
+      "E": 7,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA10. 거대한 먼지 기둥\n- 길게 뻗은 분자운/먼지 구조\n- 표면 질감과 가장자리의 희미한 발광\n- 세로 또는 대각선 형태에 적합\n- 구조 전체 또는 일부 확대 가능\n\n색상 톤 / 관측 후처리:\nB3. 보라 + 자주\n- 신비로운 느낌\n- 과도한 마젠타/네온 금지\n\n내부 프레이밍 / 구도:\nC8. 세로 와이드형\n- 위아래로 길게 이어지는 구조\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE7. 프레임 외부 연장\n- 구조가 화면 밖까지 이어져 전체 형태가 보이지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 754,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 754
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 925
+    },
+    "generationCost": {
+      "usd": 0.0089,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124446-7ee6e70e-0217-4e24-86d0-0b7ac9ef1dc7.webp",
+    "author": "AI 창작",
+    "date": "2026-10-15",
+    "publishedAt": "2026-10-14T15:57:19.886Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "거대한 먼지 기둥",
+    "description": "궁수자리 방향의 성운 복합체, 가상 식별번호 NGCX J1826−0419는 지구에서 약 6,200광년 떨어져 있다. 루멘-7 적외선 관측기의 영상에는 별이 흩뿌려진 배경 한가운데, 먼지와 차가운 분자 기체가 뭉친 거대한 기둥이 비스듬히 솟아 있다. 화면을 가르는 짙은 구조의 투영 길이는 약 11광년으로 추정된다. 이는 사진에서 직접 보이는 윤곽을 거리와 결합해 얻은 값이며, 실제 깊이 방향의 크기는 아직 제한적으로만 알려져 있다.\n\n기둥의 중심은 별빛을 거의 통과시키지 않을 만큼 어둡고, 가장자리에는 자외선에 들뜬 기체가 분홍빛과 보라빛 테두리를 이룬다. 특히 오른쪽 경계의 가는 발광선은 주변의 부드러운 성운 빛과 달리 날카롭게 이어져, 기체가 외부 복사에 깎이고 데워지는 모습을 암시한다. 관측 영상만으로 내부 별의 존재나 기둥의 운동을 단정할 수는 없다.\n\n그러나 후속 분광 관측에서 한 가지 설명하기 어려운 값이 남았다. 오르비타-IR 분광기의 2.1마이크로미터 자료를 세 차례 비교하자, 기둥 오른쪽 경계의 수소 방출선이 주변 가스보다 초속 7.4킬로미터 느리게 나타났다. 분포가 매끄러운 경계라면 예상되는 속도 변화와 맞지 않았고, 14개월 뒤 관측에서도 같은 구간에 재현됐다. 연구진은 이 국소적인 불일치를 ‘자색 경계 지연(Purple Edge Lag)’이라 기록했다. 그것이 기체의 복잡한 흐름인지, 아직 분해되지 않은 구조의 겹침인지는 밝혀지지 않았다.\n\n이 성운에서 출발한 빛은 약 6,200년을 건너 지금 우리의 검출기에 닿았다. 우리는 먼 과거의 기둥을 보고 있을 뿐, 그곳의 현재를 확인할 수 없다. 관측은 지연의 존재까지만 붙잡았고 원인은 여전히 남아 있다. 보라색 가장자리의 고요함을 다시 바라보면, 우주는 설명보다 먼저 도착한 빛으로 우리에게 질문을 건넨다.",
+    "visibleFeatures": [
+      "화면 중앙을 비스듬히 가로지르는 길고 울퉁불퉁한 암흑 먼지 기둥이 위쪽으로 솟아 있다.",
+      "기둥의 가장자리를 따라 분홍빛과 보라빛 성운의 가느다란 발광 테두리가 드러난다.",
+      "주변에는 작은 별들이 넓게 흩어져 있고, 왼쪽과 오른쪽 바탕에는 어두운 성운 영역이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 698,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3003
+    },
+    "descriptionCost": {
+      "usd": 0.00063705,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-14T15:57:32.246Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124444-c615bbd7-d678-48f2-883d-3844013a7d46",
     "slot": "creative-124444",
     "title": "은하수 한가운데 멈춘 검은 물결",
