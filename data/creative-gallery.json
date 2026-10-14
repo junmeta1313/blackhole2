@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124447-0ca4e727-74ab-4c8c-a561-d3c52a3aa876",
+    "slot": "creative-124447",
+    "title": "청록빛 성운의 고요한 경계",
+    "category": "A2",
+    "sceneKey": "A2-B2-C4-D3-E8-F6",
+    "generationSelection": {
+      "A": 2,
+      "B": 2,
+      "C": 4,
+      "D": 3,
+      "E": 8,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA2. 아주 멀리 있는 작은 외로운 행성\n- 행성은 화면의 약 5~15%만 차지\n- 고리 없음\n- 대부분은 깊은 심우주 여백\n- 성운은 주된 구조로 등장하지 않음\n- 극단적인 거리감과 고독감\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE8. 넓은 공간 속 고립\n- 피사체 주위 대부분이 빈 심우주\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n원거리 대상은 반드시 작게 유지한다. E의 일반적인 점유율보다 A의 5~15% 점유율과 85~95% 심우주 여백 조건을 우선한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 762,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 762
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 933
+    },
+    "generationCost": {
+      "usd": 0.00894,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124447-0ca4e727-74ab-4c8c-a561-d3c52a3aa876.webp",
+    "author": "AI 창작",
+    "date": "2026-10-15",
+    "publishedAt": "2026-10-14T22:35:51.632Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "아주 멀리 있는 작은 외로운 행성",
+    "description": "남쪽물고기자리 바깥의 희미한 성운대에서 발견된 행성계 후보체 NQ-7316은 지구에서 약 1,180광년 떨어져 있다. 가상 관측기 ‘윤슬 심우주망원경’의 합성 영상에서 가장 먼저 눈에 들어오는 것은 화면 오른쪽을 따라 비스듬히 번지는 청록색 가스 띠다. 별빛이 드문 어두운 배경 위로 옅은 빛의 결이 이어지고, 그 안팎에는 푸른 점광원들이 흩어져 있다. 띠의 투영 길이는 약 14광년으로 추정되며, 이미지에서 확인되는 것은 그 넓은 발광 구조와 대비되는 어두운 우주뿐이다.\n\n오른쪽 위의 작은 행성은 반쯤 그늘에 잠긴 듯 보이고, 가장자리의 푸른빛은 얇은 대기층을 스치는 산란광처럼 드러난다. 분광 자료를 상상한 후속 기록은 행성의 정확한 성질을 확정하지 않지만, 성운 안쪽 별들의 위치를 여러 차례 대조했을 때 흥미로운 차이가 나타났다. 31개월 동안 가스 띠의 세 밝은 지점은 서로의 간격을 유지하면서도, 배경 별에 대해 예측보다 초당 0.7킬로미터 느린 고유 운동을 보였다. 측정 오차만으로 설명하기 어려운 이 집단의 지연은 ‘청록 매듭 동행 편이(Teal Knot Co-motion Offset)’라는 이름을 얻었다.\n\n그러나 이 한 장의 영상은 속도도, 원인도 보여주지 않는다. 그것들은 후속 관측에서 덧붙은 기록일 뿐이며, 띠의 형상만으로 그 안의 물질이 어떻게 움직이는지 단정할 수 없다. 약 1,180년을 건너온 빛은 이곳의 오래된 순간을 전할 뿐, 지금 그 행성과 성운이 어떤 모습인지는 말해주지 않는다. 관측은 이상한 지연이 반복된다는 사실까지만 확인했다. 그 차이가 물질의 숨은 운동인지, 아직 읽지 못한 빛의 경로인지 우리는 모른다. 어두운 틈과 청록의 결을 다시 바라보면, 설명되지 않은 값 하나가 우주의 크기만큼 조용히 남아 있다.",
+    "visibleFeatures": [
+      "짙은 남청색 우주 배경에 푸른빛과 청록빛 별들이 드문드문 흩어져 있다.",
+      "화면 오른쪽 위에 푸른 대기가 가장자리를 밝히는 작은 행성이 보이며, 표면의 밝은 부분과 어두운 부분이 나뉜다.",
+      "오른쪽 가장자리에서 중앙 아래쪽으로 청록색 성운 또는 가스 띠가 비스듬히 흐르고, 그 안에 밝은 별들이 점처럼 박혀 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 691,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2996
+    },
+    "descriptionCost": {
+      "usd": 0.00063355,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-14T22:35:59.553Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124446-7ee6e70e-0217-4e24-86d0-0b7ac9ef1dc7",
     "slot": "creative-124446",
     "title": "보랏빛 경계의 정적",
