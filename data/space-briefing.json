@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792039258895-1",
+    "title": "쌍성 블랙홀의 중력렌즈로 별빛 증폭과 궤도 추적",
+    "originalTitle": "Binary-lens amplification of starlight: from magnification flares to quasi-periodic tracking of orbital evolution",
+    "summary": "이 연구는 활동하지 않는 은하핵의 초대질량 블랙홀 쌍성을 별빛의 중력렌즈 효과로 찾는 방법을 확장한다.\n쌍성의 중력렌즈 caustic을 별이 빠르게 통과하면 단일 또는 이중 봉우리의 강한 섬광이 생길 수 있다.\n별의 상대 운동이 거의 없으면 궤도 진화에 맞춰 반복되는 준주기적 렌즈 별빛이 나타날 수 있다.\n연구진은 여러 운동·궤도 조건에서 예상 증폭도와 봉우리 지속시간을 계산하고 밝기 곡선과 푸리에 변환을 분석했다.\n이 결과는 전자기 시간영역 관측에서 탐색 절차를 만드는 데 도움을 줄 수 있지만, 실제 관측 검증은 제시되지 않았다.\n이 논문은 arXiv 프리프린트이며 동료심사 여부는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.20557",
+    "publishedAt": "2026-10-14",
+    "date": "2026-10-15 13:40",
+    "createdAt": "2026-10-15T04:40:58.895318+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792039258895-2",
+    "title": "찬드라 관측으로 ‘트레블 클레프’ 은하단 충돌 원인 분석",
+    "originalTitle": "NASA’s Chandra Breaks Down ‘Treble Clef’s’ Galaxy Cluster Collision",
+    "summary": "NASA 찬드라와 eROSITA의 X선 자료는 ‘트레블 클레프’ 구조가 뜨거운 가스를 품은 은하단에 있음을 보여줬다.\n연구진은 해당 은하단이 서로 합쳐지는 두 은하단으로 이뤄졌다고 판단했다.\n이 구조는 중심 초대질량 블랙홀의 과거 분출 뒤 은하단 충돌이 전파 방출 구름을 압축하거나 다시 활성화해 생긴 것으로 보인다.\n전파 관측은 독특한 모양을 드러냈고, X선 잔차 분석은 충돌이 이미지의 좌우 방향으로 일어났을 가능성을 시사했다.\n충돌은 수억 년 전에 일어났을 것으로 추정되며, 충격파가 구름을 재활성화했는지는 가능성으로 제시됐다.\n‘트레블 클레프’라는 닮은꼴은 과학적 연관이 없는 파레이돌리아이며, 구조의 원인은 관측 자료에 근거한 해석이다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-breaks-down-treble-clefs-galaxy-cluster-collision",
+    "publishedAt": "2026-10-14",
+    "date": "2026-10-15 13:40",
+    "createdAt": "2026-10-15T04:40:58.895318+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1791953716396-1",
     "title": "EDGE-INFERNO: 은하 조립 역사의 화학적 흔적",
     "originalTitle": "EDGE-INFERNO: The chemical signatures of assembly history in reionization fossils",
