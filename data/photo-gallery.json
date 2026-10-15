@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-0200010",
+    "slot": "photos-82969",
+    "nasaId": "0200010",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/0200010/0200010~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-16",
+    "credit": "MSFC",
+    "sourceUrl": "https://images.nasa.gov/details/0200010",
+    "publishedAt": "2026-10-15T23:48:35.007Z"
+  },
+  {
     "id": "nasa-PIA22564",
     "slot": "photos-82968",
     "nasaId": "PIA22564",
