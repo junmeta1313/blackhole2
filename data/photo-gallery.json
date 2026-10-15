@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA14884",
+    "slot": "photos-82966",
+    "nasaId": "PIA14884",
+    "title": "Ancient Supernova Revealed",
+    "url": "https://images-assets.nasa.gov/image/PIA14884/PIA14884~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-15",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA14884",
+    "publishedAt": "2026-10-15T08:34:03.679Z"
+  },
+  {
     "id": "nasa-0301839",
     "slot": "photos-82965",
     "nasaId": "0301839",
