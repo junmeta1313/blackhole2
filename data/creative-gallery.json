@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124453-55b001a4-89ce-482e-9292-5216cb60cfa0",
+    "slot": "creative-124453",
+    "title": "기울어진 원반의 고요한 어긋남",
+    "category": "A4",
+    "sceneKey": "A4-B10-C4-D2-E9-F6",
+    "generationSelection": {
+      "A": 4,
+      "B": 10,
+      "C": 4,
+      "D": 2,
+      "E": 9,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA4. 블랙홀과 얇은 강착원반\n- 하나의 블랙홀 시스템\n- 얇고 비대칭적인 강착원반\n- 약한 중력렌즈 왜곡\n- 대부분의 화면은 어둡게\n- 독립적인 행성이나 성운 금지\n\n색상 톤 / 관측 후처리:\nB10. 자연색에 가까운 현실 관측\n- false-color 최소화\n- 가장 자연스러운 색 보정\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE9. 심우주 배경 포함\n- 주제 뒤로 희미한 배경별 또는 먼 천체 존재\n- 배경은 주제를 압도하지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 737,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 737
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 908
+    },
+    "generationCost": {
+      "usd": 0.008815,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124453-55b001a4-89ce-482e-9292-5216cb60cfa0.webp",
+    "author": "AI 창작",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-15T22:39:40.054Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀과 얇은 강착원반",
+    "description": "남쪽 하늘의 조각자리 방향에서 확인된 은하 KX-417은 지구로부터 약 4억 8천만 광년 떨어져 있다. 이 영상은 은하를 거의 옆에서 바라본 모습이다. 길게 기울어진 원반은 희미한 갈색 먼지 띠와 성긴 나선 구조를 드러내고, 그 한가운데에는 빛이 빠져나오지 못하는 듯한 검은 원이 자리한다. 주변의 주황빛은 중심으로 말려드는 뜨거운 가스의 복사로 해석된다. 영상만으로는 검은 영역의 경계나 실제 크기를 직접 잴 수 없지만, 후속 분광 관측은 중심부의 급격한 운동이 수 광일 규모의 영역에 집중됨을 시사했다.\n\n가장 눈에 띄는 구조는 중심을 감싸며 한쪽으로 치우친 밝은 고리다. 관측팀은 이를 ‘유리등뼈 원반’이라 불렀다. 가스와 먼지가 수천 광년 길이의 은하 원반을 이루는 동안, 안쪽 수 광년에서는 물질이 훨씬 빠르게 회전하며 빛을 낸다. 그런데 가상 관측 기록에서 이상한 점이 드러났다. 별빛을 빼고 계산한 뜨거운 가스의 X선 세기가, 같은 회전 속도의 원반 모델이 예측한 값보다 31퍼센트 낮았다. 세 차례의 후속 관측에서도 결손은 중심의 한쪽 밝은 띠에만 남았다. 연구진은 이 불일치를 ‘편향 광도 결손’이라 명명했지만, 흡수하는 먼지의 양으로도 아직 충분히 설명되지 않는다.\n\n이 빛은 약 4억 8천만 년을 건너 지금 우리 망원경에 닿았다. 우리는 오래전 은하의 한 순간을 정밀하게 보고 있을 뿐, 그곳의 현재를 알고 있지는 않다. 어둠의 가장자리에서 무엇이 빛을 덜어냈는지는 아직 밝혀지지 않았다. 수치로 남은 결손은 작아 보여도, 그 앞에 선 인간의 이해는 은하 원반만큼이나 가늘다.",
+    "visibleFeatures": [
+      "검은 우주 배경 한가운데, 가늘고 기울어진 나선은하 원반이 길게 뻗어 있다.",
+      "은하 중심에는 둥근 검은 영역이 있고, 그 둘레의 원반 안쪽은 흰빛과 주황빛으로 강하게 빛난다.",
+      "중심부를 감싼 밝은 가스 띠가 원반의 양쪽으로 비대칭적으로 퍼지며, 주변에는 희미한 점상 천체들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 651,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2956
+    },
+    "descriptionCost": {
+      "usd": 0.0006135499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-15T22:39:49.000Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124452-71549e1e-baac-43c8-a1f6-acec491fdf55",
     "slot": "creative-124452",
     "title": "청록 제트의 멈춘 간격",
