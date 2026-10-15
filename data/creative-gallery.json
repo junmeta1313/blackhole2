@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124448-b1237e93-dda7-46ce-a5fa-a4bedfd40563",
+    "slot": "creative-124448",
+    "title": "불완전한 고리, 남겨진 섬광",
+    "category": "A7",
+    "sceneKey": "A7-B4-C4-D2-E9-F4",
+    "generationSelection": {
+      "A": 7,
+      "B": 4,
+      "C": 4,
+      "D": 2,
+      "E": 9,
+      "F": 4
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA7. 거대한 초신성 충격파 껍질\n- 불완전한 원형 또는 타원형 충격파\n- 가장자리만 얇게 발광\n- 내부는 상대적으로 어두움\n- 전체적인 구조가 보이는 중거리~원거리 관측\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE9. 심우주 배경 포함\n- 주제 뒤로 희미한 배경별 또는 먼 천체 존재\n- 배경은 주제를 압도하지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF4. 주변 흐름과 반대로 휘어진 필라멘트\n- 일부 가스 구조만 전체 흐름과 반대 방향\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 738,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 738
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 909
+    },
+    "generationCost": {
+      "usd": 0.00882,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124448-b1237e93-dda7-46ce-a5fa-a4bedfd40563.webp",
+    "author": "AI 창작",
+    "date": "2026-10-15",
+    "publishedAt": "2026-10-15T01:48:11.469Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "거대한 초신성 충격파 껍질",
+    "description": "남쪽 하늘의 희미한 별자리 경계에서 발견된 초신성 잔해 KQ-7316은 지구로부터 약 18,400광년 떨어져 있다. 오르딘 심우주 관측망의 적외선 합성 영상에는 불꽃 같은 주황색 필라멘트가 거의 원형의 껍질을 이루고, 그 왼쪽 아래에서 가느다란 물결 구조가 바깥으로 흘러나온다. 고리의 지름은 약 74광년으로 추정된다. 이 사진에서 고리 안쪽은 별빛이 드문 어두운 공간처럼 보이지만, 희미한 붉은 가스의 얼룩과 배경 별들이 그 안에도 겹쳐 있다. 껍질의 밝기는 가장자리마다 달라, 폭발의 충격파가 성간물질과 부딪히며 남긴 흔적을 드러낸다.\n\n특이한 것은 고리의 남서쪽 필라멘트가 밝게 꺾이는 지점이다. 후속 관측에서 연구진은 14개월 간격으로 얻은 영상들을 비교했고, 그 매듭의 적외선 밝기가 주변 껍질의 변화와 맞물리지 않은 채 3.2퍼센트 낮아졌다가 회복하는 양상을 두 차례 기록했다. 분광 자료에서는 그 구간의 이온화된 산소선도 예측보다 약하게 나타났다. 측정 오차만으로 설명하기에는 반복성이 있지만, 한 장의 영상만으로는 이 변화를 확인할 수 없다. 연구진은 이 현상을 ‘아르켄 매듭 결손(Arken Knot Deficit)’이라 부른다. 이름은 관측의 좌표를 가리킬 뿐, 원인을 설명하지는 못한다.\n\n이 고리에서 출발한 빛은 약 1만 8천 년 동안 은하의 어둠을 건너 지금 우리 망원경에 닿았다. 우리가 보는 것은 폭발의 현재가 아니라, 인간의 역사보다 훨씬 오래된 한 순간이다. 그 매듭이 지금도 밝기를 바꾸는지, 이미 다른 모습으로 사라졌는지는 알 수 없다. 껍질의 빛은 분명히 도착했지만, 그 안에 남은 물리학의 질문은 아직 우리 쪽으로 오는 중이다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 주황빛과 붉은빛의 밝은 필라멘트가 거의 원형의 큰 고리를 이룬다.",
+      "고리의 윤곽은 울퉁불퉁하고 밝기가 고르지 않으며, 왼쪽 아래로 길고 가느다란 물결 모양 구조가 뻗어 있다.",
+      "고리 안쪽은 어둡고 희미한 붉은 얼룩이 드문드문 보이며, 주변에는 색과 밝기가 다양한 작은 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 689,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2994
+    },
+    "descriptionCost": {
+      "usd": 0.00063255,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-15T01:48:22.371Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124447-0ca4e727-74ab-4c8c-a561-d3c52a3aa876",
     "slot": "creative-124447",
     "title": "청록빛 성운의 고요한 경계",
