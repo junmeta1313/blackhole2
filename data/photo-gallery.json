@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA22564",
+    "slot": "photos-82968",
+    "nasaId": "PIA22564",
+    "title": "Spitzer Spies Supernova Remnant HBH 3",
+    "url": "https://images-assets.nasa.gov/image/PIA22564/PIA22564~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-16",
+    "credit": "NASA/JPL-Caltech/IPAC",
+    "sourceUrl": "https://images.nasa.gov/details/PIA22564",
+    "publishedAt": "2026-10-15T19:21:31.411Z"
+  },
+  {
     "id": "nasa-PIA21466",
     "slot": "photos-82967",
     "nasaId": "PIA21466",
