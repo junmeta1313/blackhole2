@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124450-73e6c559-0bdb-4f16-8a07-c333b494be3e",
+    "slot": "creative-124450",
+    "title": "푸른 별무리의 고요한 불일치",
+    "category": "A18",
+    "sceneKey": "A18-B2-C3-D2-E4-F9",
+    "generationSelection": {
+      "A": 18,
+      "B": 2,
+      "C": 3,
+      "D": 2,
+      "E": 4,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA18. 조밀한 구상성단\n- 하나의 구상성단 시스템\n- 수많은 별이 중심부에 조밀하게 집중\n- 외곽으로 갈수록 별 밀도 감소\n- 성운은 주요 요소가 아님\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 798,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 798
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 969
+    },
+    "generationCost": {
+      "usd": 0.00912,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124450-73e6c559-0bdb-4f16-8a07-c333b494be3e.webp",
+    "author": "AI 창작",
+    "date": "2026-10-15",
+    "publishedAt": "2026-10-15T08:34:36.434Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "조밀한 구상성단",
+    "description": "남쪽 하늘의 조각가자리 방향에서 발견된 구상성단 NGC-LS 418은 지구에서 약 6만 8천 광년 떨어져 있다. 이 이미지에는 검푸른 배경을 촘촘한 별빛이 채우고, 중앙의 둥글고 밝은 별무리는 바깥으로 갈수록 성기게 풀려난다. 주변에는 성단과 무관한 먼 은하들이 가느다란 빛의 얼룩으로 드문드문 놓여 있다. 사진만으로 별 하나하나의 거리를 가를 수는 없지만, 중심부의 밀도와 바깥으로 번지는 분포는 오래된 구상성단의 전형적인 윤곽을 보여준다.\n\n가상 관측 장비 ‘청람 시선계(Cerulean Array)’의 후속 분광 기록은 이 조밀한 중심에서 뜻밖의 불일치를 드러냈다. 밝은 별들의 운동으로 계산한 중심 질량은 별빛이 예측하는 값보다 약 7퍼센트 컸지만, 그 차이는 반경 3광년 안에만 집중되어 있었다. 여러 관측 시기와 파장에서 같은 편차가 되풀이되어 단순한 측정 오차로 치부하기 어려웠다. 연구진은 이 제한된 중심부의 불일치에 ‘청람 중심질량 편차(Cerulean Core Offset)’라는 이름을 붙였다. 보이지 않는 질량의 집중인지, 별들의 운동을 읽는 모형의 한계인지는 아직 가려지지 않았다.\n\n성단의 빛은 약 6만 8천 년 동안 우주를 건너 지금의 망원경에 닿았다. 우리가 기록한 것은 그 먼 과거의 모습이며, 성단이 지금 어떤 상태인지는 이 한 장의 이미지가 말해주지 않는다. 관측은 편차가 존재한다는 사실까지만 확인했을 뿐, 그 원인을 밝히지는 못했다. 수많은 별이 한데 모인 고요한 빛 속에서, 설명되지 않은 7퍼센트는 여전히 측정과 이해 사이에 남아 있다.",
+    "visibleFeatures": [
+      "검푸른 우주 배경에 수많은 희미한 별이 촘촘히 흩어져 있다.",
+      "화면 중앙에는 푸른빛과 흰빛의 별들이 둥글고 조밀한 성단을 이루며, 중심부가 특히 밝다.",
+      "성단 바깥쪽에는 희미한 별들이 넓게 퍼져 있고, 주변 배경에는 가늘고 길게 보이는 은하들이 드문드문 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 612,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2917
+    },
+    "descriptionCost": {
+      "usd": 0.0005940499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-15T08:34:47.118Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124448-b1237e93-dda7-46ce-a5fa-a4bedfd40563",
     "slot": "creative-124448",
     "title": "불완전한 고리, 남겨진 섬광",
