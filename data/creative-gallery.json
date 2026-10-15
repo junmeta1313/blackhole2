@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124452-71549e1e-baac-43c8-a1f6-acec491fdf55",
+    "slot": "creative-124452",
+    "title": "청록 제트의 멈춘 간격",
+    "category": "A14",
+    "sceneKey": "A14-B5-C8-D3-E10-F1",
+    "generationSelection": {
+      "A": 14,
+      "B": 5,
+      "C": 8,
+      "D": 3,
+      "E": 10,
+      "F": 1
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA14. 활동은하핵의 좁은 플라즈마 제트\n- 은하 전체를 보여주는 장면 금지\n- 활동은하핵 일부와 좁은 제트가 주제\n- 제트가 프레임 밖까지 이어져도 됨\n- 흔한 나선은하 이미지로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC8. 세로 와이드형\n- 위아래로 길게 이어지는 구조\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE10. 방향성 흐름 강조\n- 제트, 필라멘트, 충격파 등 방향성을 가진 구조에 사용\n\n시각적으로 암시되는 미스터리 요소:\nF1. 비정상적으로 휘어진 빛\n- 자연스러운 중력렌즈처럼 보이지만 미묘하게 비정상적인 곡률\n\n빛의 휨을 드러낼 최소한의 희미한 주변 빛만 둔다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 762,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 762
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 933
+    },
+    "generationCost": {
+      "usd": 0.00894,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124452-71549e1e-baac-43c8-a1f6-acec491fdf55.webp",
+    "author": "AI 창작",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-15T15:43:07.820Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "활동은하핵의 좁은 플라즈마 제트",
+    "description": "남쪽 하늘의 작은 별자리 경계에서 발견된 전파은하 NGCX J0418−2716은 지구로부터 약 7억 2천만 광년 떨어져 있다. 이 거리라면 지금 망원경에 닿은 빛은 은하가 오늘날의 모습에 이르기 훨씬 전, 먼 과거에 출발한 것이다. 가상의 관측 장비 ‘해류(海流) 심우주 배열’이 촬영한 이 장면에서 가장 먼저 눈에 들어오는 것은 중심의 황금빛 핵을 관통해 위아래로 뻗은 청록색 제트다. 영상상 제트의 양끝은 중심에서 약 31만 광년 떨어져 있으며, 이는 한 장의 사진에서 직접 잰 각크기를 거리에 대입한 추정치다. 가스와 먼지가 소용돌이치듯 모인 중심부 바깥에는 희미한 곡선형 고리도 드러난다.\n\n제트는 매끈한 선이 아니라 황금빛 매듭들이 불규칙한 간격으로 박힌 빛의 기둥처럼 보인다. 특히 북쪽 제트의 세 매듭은 서로 비슷한 간격을 이루지만, 그 사이의 청록색 방출은 유난히 약하다. 후속 관측에서 연구진은 전파망원경 ‘누리 배열’로 18개월 동안 이 구간을 추적했다. 세 매듭의 위치는 연속적으로 변했으나, 매듭 사이 약 4,600광년 길이의 희미한 구간은 관측한 11회 모두 거의 같은 밝기를 유지했다. 다른 제트 구간의 밝기는 평균 9퍼센트 흔들렸다. 한 장의 영상만으로는 알 수 없던 이 정적 구간을 연구팀은 ‘고요한 마디(Stillpoint Knot)’라 불렀다. 왜 그곳만 흐름의 변화를 기록하지 않는지는 아직 설명되지 않았다.\n\n제트의 정렬은 중심부의 강한 자기장과 고에너지 입자 흐름을 시사하지만, 고요한 마디의 원인까지 밝혀주지는 않는다. 우리가 보는 것은 7억 년도 더 전에 떠난 빛이며, 은하가 지금 어떤 모습인지는 알 수 없다. 그 긴 시간의 끝에서 빛은 도착했지만, 그 안에 남은 한 구간의 침묵은 아직 물리학의 문장으로 번역되지 않았다. 사진을 다시 보면, 그 침묵마저 먼 은하의 일부로 빛나고 있다.",
+    "visibleFeatures": [
+      "밝은 황금빛 중심부에서 위아래로 길게 뻗는 청록색 제트가 보인다.",
+      "제트에는 여러 황금색 매듭 같은 밝은 지점이 이어져 있고, 중심 주변에는 흐릿한 황금빛 가스와 먼지가 모여 있다.",
+      "배경은 어두운 별들로 드문드문 채워져 있으며, 중심부 바깥으로 희미한 곡선형 고리 구조가 감돈다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 715,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3020
+    },
+    "descriptionCost": {
+      "usd": 0.0006455499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-15T15:43:16.578Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124450-73e6c559-0bdb-4f16-8a07-c333b494be3e",
     "slot": "creative-124450",
     "title": "푸른 별무리의 고요한 불일치",
