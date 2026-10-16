@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124454-434bda74-6c19-4446-9d5c-800df8a5c9b8",
+    "slot": "creative-124454",
+    "title": "빈 고리의 맥박, 세라핀 필라멘트",
+    "category": "A6",
+    "sceneKey": "A6-B1-C4-D2-E3-F8",
+    "generationSelection": {
+      "A": 6,
+      "B": 1,
+      "C": 4,
+      "D": 2,
+      "E": 3,
+      "F": 8
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA6. 필라멘트형 초신성 잔해\n- 얇고 복잡한 가스 필라멘트\n- 거미줄 또는 찢어진 충격파 같은 형태\n- 중심부는 상대적으로 비어 있음\n- 둥근 뭉게구름 성운처럼 표현하지 않음\n\n색상 톤 / 관측 후처리:\nB1. 저채도 청회색\n- 거의 단색\n- 차갑고 절제된 관측 이미지\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF8. 갑작스러운 구조 단절\n- 연속되어야 할 가스/빛 구조가 한 부분에서 갑자기 사라짐\n\n단절 전후의 구조를 모두 프레임 안에 보여준다. 구조가 화면 밖으로 이어져도 단절 자체는 잘리지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 768,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 768
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 939
+    },
+    "generationCost": {
+      "usd": 0.00897,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124454-434bda74-6c19-4446-9d5c-800df8a5c9b8.webp",
+    "author": "AI 창작",
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T01:38:02.486Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "필라멘트형 초신성 잔해",
+    "description": "남쪽 고물자리의 희미한 별밭에서 발견된 초신성 잔해 SRN J0718−2631, 별칭 세라핀 필라멘트는 지구에서 약 7,400광년 떨어져 있다. 가상 관측선 루멘-4가 얻은 영상에는 은백색 가스의 가는 실들이 거대한 불완전 고리를 그린다. 가장 넓은 부분은 약 110광년에 이르며, 위쪽과 왼편에는 밝고 촘촘한 매듭이 얽혀 있고 아래쪽으로는 길게 늘어진 필라멘트가 이어진다. 중앙은 별빛이 드문 어두운 공간으로 남아, 고리의 윤곽을 더욱 또렷하게 드러낸다.\n\n가장자리의 섬유들은 폭발파가 성간 물질을 밀어내며 압축한 흔적으로 보인다. 하지만 중앙의 빈 곳을 둘러싼 남동쪽 필라멘트는 주변보다 두드러지게 밝으면서도, 가장자리에서 예상되는 X선 방출이 유난히 약하다. 후속 분광 관측에서 루멘-4와 전파 배열기 노크턴은 0.3~2킬로전자볼트 대역의 X선 세기가 충격파 모형의 예측보다 38퍼센트 낮음을 확인했다. 이 한 가지 어긋남에 연구진은 ‘세라핀 경계 결손’이라는 이름을 붙였다. 영상 한 장이 그 원인을 말해주지는 않는다. 후속 기록에서도 결손은 검출됐지만, 충격파의 밀도와 자기장 가운데 무엇이 이 균형을 바꾸는지는 가려지지 않았다.\n\n우리가 보는 빛은 약 7,400년 동안 우주를 건너온 것이므로, 이 장면은 잔해의 오래된 한 순간이지 오늘의 모습이 아니다. 지금 그곳에서 필라멘트가 더 풀렸는지, 어두운 중심이 달라졌는지는 알 수 없다. 관측은 빛의 고리와 X선의 부족을 함께 기록했을 뿐이다. 설명되지 않은 차이는 별들 사이의 검은 배경에 남아, 오래된 폭발의 잔광이 아직 우리에게 묻고 있는 것처럼 보인다.",
+    "visibleFeatures": [
+      "검푸른 별밭 위로 희미한 은백색의 가느다란 가스 실타래가 넓게 퍼져 있다.",
+      "실타래는 불규칙하게 얽힌 거대한 고리 모양을 이루며, 중앙에는 별이 드문 어두운 빈 공간이 보인다.",
+      "고리의 위쪽과 왼쪽은 밝고 촘촘한 매듭이 두드러지며, 아래쪽으로는 긴 섬유 구조가 이어진다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 661,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2966
+    },
+    "descriptionCost": {
+      "usd": 0.0006185499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-16T01:38:12.517Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124453-55b001a4-89ce-482e-9292-5216cb60cfa0",
     "slot": "creative-124453",
     "title": "기울어진 원반의 고요한 어긋남",
