@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA09267",
+    "slot": "photos-82970",
+    "nasaId": "PIA09267",
+    "title": "Every Rose has a Thorn",
+    "url": "https://images-assets.nasa.gov/image/PIA09267/PIA09267~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-16",
+    "credit": "NASA/JPL-Caltech/Univ. of Ariz.",
+    "sourceUrl": "https://images.nasa.gov/details/PIA09267",
+    "publishedAt": "2026-10-16T08:28:27.086Z"
+  },
+  {
     "id": "nasa-0200010",
     "slot": "photos-82969",
     "nasaId": "0200010",
