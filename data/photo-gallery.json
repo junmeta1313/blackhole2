@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA07225",
+    "slot": "photos-82971",
+    "nasaId": "PIA07225",
+    "title": "New Views of a Familiar Beauty",
+    "url": "https://images-assets.nasa.gov/image/PIA07225/PIA07225~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-16",
+    "credit": "NASA/JPL-Caltech/NOAO",
+    "sourceUrl": "https://images.nasa.gov/details/PIA07225",
+    "publishedAt": "2026-10-16T14:11:42.059Z"
+  },
+  {
     "id": "nasa-PIA09267",
     "slot": "photos-82970",
     "nasaId": "PIA09267",
