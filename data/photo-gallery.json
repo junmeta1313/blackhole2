@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA04249",
+    "slot": "photos-82973",
+    "nasaId": "PIA04249",
+    "title": "Close-up of M27, the Dumbbell Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA04249/PIA04249~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-17",
+    "credit": "NASA/JPL/STScI",
+    "sourceUrl": "https://images.nasa.gov/details/PIA04249",
+    "publishedAt": "2026-10-16T23:50:33.561Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e001518",
     "slot": "photos-82972",
     "nasaId": "GSFC_20171208_Archive_e001518",
