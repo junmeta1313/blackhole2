@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792125206768-1",
+    "title": "항성 흐름으로 살펴보는 은하 암흑물질",
+    "originalTitle": "Dark Matter in the Galaxy: Insights from the Dynamics of Stellar Streams",
+    "summary": "이 리뷰는 은하수의 중력장과 암흑물질 분포를 항성 흐름으로 연구하는 방법을 다룹니다.\n항성 흐름의 형태와 운동, 틈·돌출부·교란은 암흑물질 헤일로의 구조와 하위 구조를 추적하는 단서입니다.\n궁수자리, GD-1, 팔로마 5, 오르판-첸аб, 세투스 폴라리스 등 다섯 흐름을 살펴봅니다.\n모형 추론에는 매개변수 중복성, 관측 불완전성, 기원 천체의 불확실성, 시간에 따른 교란이 한계로 작용합니다.\n이 자료는 동료심사 여부가 확인되지 않은 arXiv 프리프린트이며, 향후 관측과 개선된 모형이 암흑물질 모형 구분에 도움을 줄 수 있다고 제안합니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.22202",
+    "publishedAt": "2026-10-15",
+    "date": "2026-10-16 13:33",
+    "createdAt": "2026-10-16T04:33:26.768175+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792125206768-2",
+    "title": "NASA, 미래 인력 육성 연구·기술에 1,200만 달러 지원",
+    "originalTitle": "NASA Awards Enable Research, Technology to Build Future Workforce",
+    "summary": "NASA는 달·화성·심우주 탐사 우선순위에 맞춰 미국 12개 기관에 총 1,200만 달러를 지원합니다.\nM-STAR 사업에서 기관별 최대 100만 달러를 제공해 연구 역량과 항공우주 분야 교수·학생 참여를 키웁니다.\n선정 과제는 로봇 협업, 열·유체 시뮬레이션, 방사선 계측, 달 탐사 장비와 극한 환경 전력 기술 등을 다룹니다.\n사업은 장기 달 운용과 향후 화성 임무의 기술 격차를 줄이고, 기관들이 후속 연구 지원을 확보하도록 돕는 것이 목적입니다.\n발표문은 수상 기관과 과제를 열거하지만, 연구 성과나 기술의 실현 여부는 제시하지 않습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/learning-resources/nasa-awards-enable-research-technology-to-build-future-workforce",
+    "publishedAt": "2026-10-15",
+    "date": "2026-10-16 13:33",
+    "createdAt": "2026-10-16T04:33:26.768175+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792039258895-1",
     "title": "쌍성 블랙홀의 중력렌즈로 별빛 증폭과 궤도 추적",
     "originalTitle": "Binary-lens amplification of starlight: from magnification flares to quasi-periodic tracking of orbital evolution",
