@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-GSFC_20171208_Archive_e001518",
+    "slot": "photos-82972",
+    "nasaId": "GSFC_20171208_Archive_e001518",
+    "title": "Horsehead Nebula",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001518/GSFC_20171208_Archive_e001518~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-17",
+    "credit": "GSFC",
+    "sourceUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001518",
+    "publishedAt": "2026-10-16T18:58:59.415Z"
+  },
+  {
     "id": "nasa-PIA07225",
     "slot": "photos-82971",
     "nasaId": "PIA07225",
