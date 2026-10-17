@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA04635",
+    "slot": "photos-82977",
+    "nasaId": "PIA04635",
+    "title": "Galaxy NGC5962",
+    "url": "https://images-assets.nasa.gov/image/PIA04635/PIA04635~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-18",
+    "credit": "NASA/JPL/Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA04635",
+    "publishedAt": "2026-10-17T23:22:04.257Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e000022",
     "slot": "photos-82976",
     "nasaId": "GSFC_20171208_Archive_e000022",
