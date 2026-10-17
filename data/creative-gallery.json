@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124460-8975b464-87a5-4121-85b6-c29651d9f92a",
+    "slot": "creative-124460",
+    "title": "보라빛 성간 물결의 정지점",
+    "category": "A13",
+    "sceneKey": "A13-B3-C3-D3-E3-F6",
+    "generationSelection": {
+      "A": 13,
+      "B": 3,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA13. 항성풍 충돌 Bow Shock\n- 하나의 빠르게 이동하는 별 또는 항성계\n- 전방에 거대한 활 모양 충격파\n- 별 자체보다 충격파가 시각적으로 중요\n- 비대칭 구조\n\n색상 톤 / 관측 후처리:\nB3. 보라 + 자주\n- 신비로운 느낌\n- 과도한 마젠타/네온 금지\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 710,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 710
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 881
+    },
+    "generationCost": {
+      "usd": 0.00868,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124460-8975b464-87a5-4121-85b6-c29651d9f92a.webp",
+    "author": "AI 창작",
+    "date": "2026-10-17",
+    "publishedAt": "2026-10-17T01:30:54.262Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성풍 충돌 Bow Shock",
+    "description": "남쪽 왕관자리 방향의 성간 구름 가장자리에서, 조사 목록번호 **CRV-2186**이 처음 확인됐다. 지구에서 약 4,700광년 떨어진 이 천체는 화면 왼편에서 오른편으로 길게 흐르는 보랏빛 가스와 먼지의 띠를 이룬다. 영상에서 가장 두드러지는 것은 끝부분이 둥글게 휘어 별 하나를 감싼 구조다. 연구진은 그 호를 ‘라일락 활(Lilac Bow)’이라 불렀다. 자외선에 들뜬 수소와 산란된 별빛이 가느다란 필라멘트를 드러내며, 그 뒤편의 어두운 성간 먼지는 빛을 가늘게 끊어 놓는다. 이 한 장의 영상만으로 구조의 깊이나 실제 운동을 정할 수는 없다.\n\n그러나 후속 관측에서 활의 중심 가까이에 있는 별빛은 예상 밖의 기록을 남겼다. 가상 관측 장비 **Mirae-IR 분광기**가 14개월 동안 측정한 자료에서, 2.1마이크로미터 대역의 발광선이 37일 간격으로 약 0.6퍼센트씩 약해졌다가 되돌아왔다. 그 변화는 주변 가스의 밝기와 동기화되지 않았고, 별의 스펙트럼에서도 같은 주기의 흔들림은 검출되지 않았다. 연구진은 이 반복적인 차이를 ‘활끝 광도 되튐(Bowtip Flux Echo)’이라 명명했다. 성간 먼지의 불균일한 차폐나 미세한 충격파로 설명할 가능성은 남아 있지만, 현재 자료는 어느 쪽도 지지하지 않는다.\n\n우리가 보는 빛은 약 4,700년 동안 우주를 건너온 기록이다. 지금 그곳에서 활이 더 크게 휘었는지, 별이 같은 자리에 있는지는 이 사진으로 알 수 없다. 확인된 것은 빛의 모양과 되풀이된 어긋남뿐이다. 보라색 필라멘트 사이에 남은 그 작은 불일치는, 우주가 아직 우리의 설명보다 넓다는 사실을 조용히 비춘다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 보라색과 분홍빛으로 빛나는 넓고 가느다란 가스 구조가 왼쪽에서 오른쪽으로 뻗어 있다.",
+      "구조의 오른쪽 끝은 밝은 보라색 별을 감싸듯 둥글게 휘어, 혜성의 머리와 꼬리를 연상시키는 곡선을 이룬다.",
+      "주변에는 크기와 밝기가 다른 별들이 흩어져 있고, 성운 안쪽에는 가는 실 모양의 밝고 어두운 결이 얽혀 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 662,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2967
+    },
+    "descriptionCost": {
+      "usd": 0.00061905,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-17T01:31:02.769Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124459-15ba8bd2-2369-4195-b345-9eb9f4dbc5aa",
     "slot": "creative-124459",
     "title": "암흑 성운의 고요한 결손",
