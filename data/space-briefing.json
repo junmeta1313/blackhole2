@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792211304861-1",
+    "title": "허블, 나선은하 NGC 1827의 옆면 포착",
+    "originalTitle": "NASA’s Hubble Spies Spiral’s Edge",
+    "summary": "허블 우주망원경이 약 3,700만 광년 떨어진 나선은하 NGC 1827을 촬영했다.\n은하 원반을 가로지르는 먼지띠와 푸른 영역이 사진에 드러난다.\n푸른 영역에는 새 별이 형성되고 있을 가능성이 있다고 NASA는 설명한다.\n이 관측은 우리은하와 비슷한 은하 22개의 위성은하 260개를 조사하는 프로그램의 일부다.\n저질량 은하 관측 자료는 작은 규모에서 우주론 모형을 검증하고 개선하는 데 쓰일 예정이다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-spies-spirals-edge",
+    "publishedAt": "2026-10-16",
+    "date": "2026-10-17 13:28",
+    "createdAt": "2026-10-17T04:28:24.861629+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792211304861-2",
+    "title": "화성 위성 포보스 샘플 귀환선, 10월 19일 발사 예정",
+    "originalTitle": "Mars moon lander set to launch on 19 October",
+    "summary": "일본 JAXA가 주도하는 MMX 임무는 2026년 10월 19일 발사될 예정이다.\n임무 목표는 포보스를 조사하고 표본을 채취해 지구로 가져오는 것이다.\n포보스의 기원은 포획된 소행성인지 화성 충돌 잔해인지 아직 밝혀지지 않았다.\n궤도선은 로버 이데픽스를 투입하고, 2030년 포보스에 착륙해 표본을 채취할 계획이다.\n표본 귀환은 2031년 예정이며, 일정과 임무 성과는 아직 미래 계획이다.",
+    "source": "ESA",
+    "type": "공식발표",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_moon_lander_set_to_launch_on_19_October",
+    "publishedAt": "2026-10-13",
+    "date": "2026-10-17 13:28",
+    "createdAt": "2026-10-17T04:28:24.861629+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792125206768-1",
     "title": "항성 흐름으로 살펴보는 은하 암흑물질",
     "originalTitle": "Dark Matter in the Galaxy: Insights from the Dynamics of Stellar Streams",
