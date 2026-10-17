@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124462-bbacd97c-c495-4e3a-aa81-b5414e849da4",
+    "slot": "creative-124462",
+    "title": "청색 고리의 멈춘 숨",
+    "category": "A7",
+    "sceneKey": "A7-B2-C1-D3-E3-F4",
+    "generationSelection": {
+      "A": 7,
+      "B": 2,
+      "C": 1,
+      "D": 3,
+      "E": 3,
+      "F": 4
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA7. 거대한 초신성 충격파 껍질\n- 불완전한 원형 또는 타원형 충격파\n- 가장자리만 얇게 발광\n- 내부는 상대적으로 어두움\n- 전체적인 구조가 보이는 중거리~원거리 관측\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC1. 중심 균형형\n- 주된 시스템이 중심 부근\n- 비교적 안정적\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF4. 주변 흐름과 반대로 휘어진 필라멘트\n- 일부 가스 구조만 전체 흐름과 반대 방향\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 723,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 723
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 894
+    },
+    "generationCost": {
+      "usd": 0.008745,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124462-bbacd97c-c495-4e3a-aa81-b5414e849da4.webp",
+    "author": "AI 창작",
+    "date": "2026-10-17",
+    "publishedAt": "2026-10-17T08:01:29.322Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "거대한 초신성 충격파 껍질",
+    "description": "남쪽 하늘의 고물자리 경계에서 발견된 초신성 잔해 NGC 6842-L은 지구로부터 약 7,600광년 떨어져 있다. 청색 가스 고리가 별이 드문 검은 배경을 가르며 떠 있고, 영상에서 보이는 둥근 윤곽의 지름은 약 38광년으로 추정된다. 이는 한 장의 합성 영상에서 읽은 각크기와 후속 거리 측정을 결합한 값이다. 푸른 가장자리는 충격파에 의해 가열된 이온화 가스의 빛으로 해석되며, 고리 왼쪽의 둥근 돌출부와 곳곳에 매듭처럼 맺힌 필라멘트가 폭발의 균일하지 않은 흔적을 드러낸다. 중심부는 테두리보다 훨씬 어둡고, 내부에는 희미한 실타래 같은 구조만 남아 있다.\n\n가상의 관측 장비 Asterion 분광계로 14개월간 추적한 기록에서, 고리의 북동쪽 필라멘트는 산소 이온 방출선이 강해지는 시점에도 영상상 위치가 거의 변하지 않았다. 선폭으로 계산한 가스 속도는 초당 약 1,900킬로미터였지만, 주변 충격파 모델은 그 지점이 연간 0.006각초가량 이동할 것으로 예측했다. 세 차례 관측의 위치 차이는 측정 오차 안에 머물렀다. 연구진은 이 불일치를 ‘정지 매듭 효과, Stillknot Anomaly’라 부른다. 밝은 가스가 실제로 멈춘 것인지, 움직이는 빛의 경계가 그렇게 보이게 하는지는 아직 가려지지 않았다.\n\n이곳에서 출발한 빛은 약 7,600년을 건너 지금 우리의 망원경에 닿았다. 그러므로 우리가 보는 고리는 먼 과거의 단면이며, 잔해의 현재 모습은 이 관측만으로 알 수 없다. 수치들은 현상의 존재를 가리키지만 원인을 확정하지 못한다. 별빛 사이에 놓인 그 푸른 원을 다시 보면, 우주의 오래된 시간이 잠시 윤곽을 얻었을 뿐이라는 사실이 선명해진다.",
+    "visibleFeatures": [
+      "검푸른 별밭 한가운데, 둥글지만 가장자리가 울퉁불퉁한 청록색·푸른색 발광 고리가 크게 펼쳐져 있다.",
+      "고리의 내부는 바깥 테두리보다 어둡고 성긴 희미한 가스 결만 보여, 중앙에 넓은 암흑 영역을 이룬다.",
+      "왼쪽 가장자리에는 둥근 돌출부가 겹쳐 있으며, 고리 둘레 곳곳에 가느다란 밝은 필라멘트와 매듭 같은 구조가 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 681,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2986
+    },
+    "descriptionCost": {
+      "usd": 0.00062855,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-17T08:01:37.122Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124460-8975b464-87a5-4121-85b6-c29651d9f92a",
     "slot": "creative-124460",
     "title": "보라빛 성간 물결의 정지점",
