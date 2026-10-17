@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA07906",
+    "slot": "photos-82974",
+    "nasaId": "PIA07906",
+    "title": "Virgo Galaxy Cluster",
+    "url": "https://images-assets.nasa.gov/image/PIA07906/PIA07906~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-17",
+    "credit": "NASA/JPL-Caltech/SSC",
+    "sourceUrl": "https://images.nasa.gov/details/PIA07906",
+    "publishedAt": "2026-10-17T08:00:58.118Z"
+  },
+  {
     "id": "nasa-PIA04249",
     "slot": "photos-82973",
     "nasaId": "PIA04249",
