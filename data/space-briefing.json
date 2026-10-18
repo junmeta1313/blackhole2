@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792298152420-1",
+    "title": "은하별 별 형성의 물리 법칙을 밝힐 관측 구상",
+    "originalTitle": "From Scaling Relations to Physical Laws: Constraining the Physics of Star Formation Across Local Galaxies",
+    "summary": "분자선으로 추적하는 차갑고 조밀한 기체가 별로 바뀌는 과정은 은하 진화의 미해결 문제다.\n중력, 난류, 별의 피드백은 서로 다른 설명을 제시하지만 비슷한 규모 관계를 재현한다.\n제안된 ALMA2040 간섭계는 가까운 은하에서 분자 기체를 구름 규모로 다중 선 관측하는 것을 목표로 한다.\n넓은 환경에서 기체의 온도와 밀도, 화학적 상태를 측정해 별 형성 조절 과정을 구분하려는 구상이다.\n이는 arXiv 프리프린트이며 동료 심사 여부는 확인되지 않았고, 미래 시설의 성능과 계획을 제안한다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.21891",
+    "publishedAt": "2026-10-15",
+    "date": "2026-10-18 13:35",
+    "createdAt": "2026-10-18T04:35:52.420882+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792298152420-2",
+    "title": "NASA, 화성 위성 탐사 MMX 임무 지원",
+    "originalTitle": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
+    "summary": "JAXA의 MMX 임무는 포보스와 데이모스의 특성을 조사하고 포보스 시료를 지구로 가져오는 것이 목적이다.\nNASA는 감마선·중성자 분광기 MEGANE, 공압식 채취기 기술, 통신·항법 지원을 제공한다.\nMEGANE은 포보스 표면의 원소 조성을 측정하고, 채취기는 고압 질소로 표면 물질을 모을 계획이다.\n임무 자료와 시료는 위성의 기원이 충돌 잔해인지 포획된 소행성인지 밝히는 데 도움을 줄 수 있다.\n발사는 10월 19일을 목표로 하며, 화성 도착은 2027년 8월, 시료 귀환은 2031년으로 예정돼 있다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission",
+    "publishedAt": "2026-10-15",
+    "date": "2026-10-18 13:35",
+    "createdAt": "2026-10-18T04:35:52.420882+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792211304861-1",
     "title": "허블, 나선은하 NGC 1827의 옆면 포착",
     "originalTitle": "NASA’s Hubble Spies Spiral’s Edge",
