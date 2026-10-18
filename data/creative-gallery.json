@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124470-58a4c634-5793-436a-85b8-0f58b6de4458",
+    "slot": "creative-124470",
+    "title": "고리의 푸른 침묵",
+    "category": "A1",
+    "sceneKey": "A1-B2-C3-D4-E2-F6",
+    "generationSelection": {
+      "A": 1,
+      "B": 2,
+      "C": 3,
+      "D": 4,
+      "E": 2,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA1. 거대한 고리 행성 초근접\n- 하나의 고리 행성이 화면 대부분을 차지\n- 행성 일부가 프레임 밖으로 이어져도 됨\n- 여러 층으로 이루어진 자연스러운 행성 고리\n- 대기층과 고리 입자 구조가 관측됨\n- 배경은 매우 단순한 심우주\n- 독립적인 성운, 블랙홀, 은하 금지\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE2. 근접 관측\n- 메인 대상이 약 60~80% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 747,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 747
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 918
+    },
+    "generationCost": {
+      "usd": 0.008865,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124470-58a4c634-5793-436a-85b8-0f58b6de4458.webp",
+    "author": "AI 창작",
+    "date": "2026-10-19",
+    "publishedAt": "2026-10-18T18:16:05.269Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "거대한 고리 행성 초근접",
+    "description": "남쪽 물고기자리 방향에서 발견된 가스 행성 Ceryn-41은 지구에서 약 74광년 떨어져 있다. 가상의 관측 기록에 따르면 이 거리는 빛이 약 74년 동안 여행해야 하는 길이와 같다. 청록색 행성 표면에는 위도와 나란한 구름 띠가 흐르고, 그 앞을 거대한 고리계가 비스듬히 가로지른다. 이미지에서 가장 두드러지는 구조는 밝고 가는 고리의 겹무늬다. 외곽 고리의 지름은 후속 궤도 계산에서 약 210만 km로 추정되며, 얼음과 먼지 알갱이들이 가느다란 띠마다 서로 다른 밝기로 빛난다. 고리의 일부는 행성 원반 앞을 지나며 푸른 구름을 희미하게 가려, 행성과 고리가 한 평면에 놓인 것이 아니라는 인상을 준다. 중심부의 어두운 곡선은 고리 사이의 빈 간격으로 보이지만, 그 가장자리에는 가느다란 빛의 선이 이어진다. 연구진은 그 선을 더 자세히 살피기 위해 가상의 궤도 관측기 ‘Mirael 분광계’로 18개월간 근적외선 자료를 모았다. 그 결과, 이 간격을 지나는 밝은 띠의 위치가 계산된 공전 궤도보다 매달 약 11km씩 안쪽으로 어긋나는 현상이 확인됐다. 오차 범위를 넘어선 이 불일치는 고리의 폭과 밝기만으로는 설명되지 않았다. 연구진은 이를 ‘세린 고리 경계 편이(Ceryn Boundary Offset)’라 이름 붙였으나, 고리 입자의 충돌이나 행성의 중력장 어느 쪽도 관측값을 온전히 재현하지 못했다. 지금 우리가 보는 장면은 74년 전 떠난 빛의 초상이다. 그 사이 행성의 고리가 변했는지, 이 어긋남이 지금도 이어지는지는 알 수 없다. 관측은 현상의 존재를 확인했을 뿐, 원인을 밝혀내지 못했다. 화면을 다시 바라보면, 푸른 행성은 고요해 보이지만 그 고요함의 경계에는 아직 이름만 붙은 물리가 놓여 있다.",
+    "visibleFeatures": [
+      "화면 대부분을 차지하는 푸른빛 행성의 구름층에 옅고 긴 띠무늬가 감겨 있다.",
+      "행성 앞을 가로지르는 넓은 고리는 여러 겹의 가느다란 청록색 띠와 밝은 얼음 알갱이로 이루어져 있다.",
+      "오른쪽의 고리 뒤편에는 어두운 우주와 드문드문 흩어진 작은 별빛이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 661,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2966
+    },
+    "descriptionCost": {
+      "usd": 0.0006185499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-18T18:16:14.284Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124469-c1b527ce-27a5-4af7-a962-06bcb024079c",
     "slot": "creative-124469",
     "title": "어둠을 가로지르는 청록빛 망",
