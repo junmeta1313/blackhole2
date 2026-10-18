@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124466-474bf1f1-a660-493a-bb30-83de1b2d3aff",
+    "slot": "creative-124466",
+    "title": "빛의 가장자리에서 멈춘 기둥",
+    "category": "A10",
+    "sceneKey": "A10-B6-C8-D2-E10-F5",
+    "generationSelection": {
+      "A": 10,
+      "B": 6,
+      "C": 8,
+      "D": 2,
+      "E": 10,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA10. 거대한 먼지 기둥\n- 길게 뻗은 분자운/먼지 구조\n- 표면 질감과 가장자리의 희미한 발광\n- 세로 또는 대각선 형태에 적합\n- 구조 전체 또는 일부 확대 가능\n\n색상 톤 / 관측 후처리:\nB6. 청백색 + 은회색\n- 차가운 고에너지 또는 항성 관측 느낌\n\n내부 프레이밍 / 구도:\nC8. 세로 와이드형\n- 위아래로 길게 이어지는 구조\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE10. 방향성 흐름 강조\n- 제트, 필라멘트, 충격파 등 방향성을 가진 구조에 사용\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 758,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 758
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 929
+    },
+    "generationCost": {
+      "usd": 0.00892,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124466-474bf1f1-a660-493a-bb30-83de1b2d3aff.webp",
+    "author": "AI 창작",
+    "date": "2026-10-18",
+    "publishedAt": "2026-10-18T01:30:17.613Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "거대한 먼지 기둥",
+    "description": "궁수자리 남쪽 경계, 은하수 원반의 먼지 띠 너머에서 발견된 성운 기둥을 관측번호 KRC 2716으로 기록했다. 거리 추정은 약 5,400광년이다. 화면 아래에서 솟아 위쪽으로 기울어진 암흑 기둥은 주변의 푸른 발광 가스를 배경 삼아 선명하게 드러난다. 가상의 우주망원경 ‘아르덴-7’의 근적외선·가시광 합성 영상에서, 기둥은 약 11광년 길이로 뻗고 폭은 가장 넓은 곳에서도 2광년가량이다. 이는 한 장의 사진으로 잰 값이 아니라, 후속 거리 보정 관측을 결합한 추정치다. 먼지의 가장자리는 희미한 은빛 실처럼 갈라지고, 꼭대기에는 작은 봉우리들이 겹쳐 있다. 별빛은 이곳에서 길을 잃은 듯 검은 매듭을 피해 퍼져 나간다.\n\n연구진은 기둥의 동쪽 가장자리를 ‘회색 문턱’이라 불렀다. 분광기 ‘루멘 분할기’로 14개월 동안 추적하자, 그 경계의 이온화된 수소선은 예상보다 좁은 영역에서만 변했다. 밝은 배경 가스가 기둥을 깎아내는 보통의 광증발 모델이라면 경계가 더 넓게 흔들려야 하지만, 측정된 폭은 0.03광년 안팎에 머물렀다. 이 불일치에 붙인 이름은 ‘문턱 정지선 현상’이다. 이름은 관측값을 가리킬 뿐, 그 원인을 설명하지 않는다.\n\n우리가 보는 빛은 5,400년을 건너온 기록이다. 지금 그곳의 기둥이 더 무너졌는지, 아니면 여전히 별빛을 막고 있는지는 이 영상만으로 알 수 없다. 관측은 좁은 경계와 그 주변의 빛을 확인했지만, 그 고요한 제한을 만든 과정은 아직 밝혀지지 않았다. 먼 별들 사이에 걸린 이 어둠은, 우주가 보여 준 것보다 훨씬 오래 침묵할 수 있음을 일깨운다.",
+    "visibleFeatures": [
+      "짙은 암흑 성운이 화면 아래에서 위쪽으로 길게 솟아오르며, 가운데가 좁아졌다가 여러 덩이로 불룩해지는 기둥 형태를 이룬다.",
+      "기둥의 양쪽 가장자리를 푸른빛과 희미한 백색광의 성운이 감싸고 있으며, 특히 위쪽 끝에서 밝은 후광이 두드러진다.",
+      "주변의 어두운 공간에는 크기가 다른 별들이 흩어져 있고, 기둥 안팎으로 가는 연무와 작은 검은 매듭들이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 699,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3004
+    },
+    "descriptionCost": {
+      "usd": 0.00063755,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-18T01:30:25.114Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124465-12c9dbae-efea-4b66-b886-a378ed0166e1",
     "slot": "creative-124465",
     "title": "청록 성운의 끊긴 박동",
