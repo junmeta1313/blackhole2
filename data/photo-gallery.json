@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA12966",
+    "slot": "photos-82978",
+    "nasaId": "PIA12966",
+    "title": "Prehistoric Black Hole Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA12966/PIA12966~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-18",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA12966",
+    "publishedAt": "2026-10-18T08:18:40.224Z"
+  },
+  {
     "id": "nasa-PIA04635",
     "slot": "photos-82977",
     "nasaId": "PIA04635",
