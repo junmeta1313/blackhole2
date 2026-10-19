@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA13335",
+    "slot": "photos-82983",
+    "nasaId": "PIA13335",
+    "title": "Ancient Galaxy Cluster Still Producing Stars",
+    "url": "https://images-assets.nasa.gov/image/PIA13335/PIA13335~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-19",
+    "credit": "NASA/JPL-Caltech/Texas A&M",
+    "sourceUrl": "https://images.nasa.gov/details/PIA13335",
+    "publishedAt": "2026-10-19T09:16:19.674Z"
+  },
+  {
     "id": "nasa-KSC-2011-7034",
     "slot": "photos-82981",
     "nasaId": "KSC-2011-7034",
