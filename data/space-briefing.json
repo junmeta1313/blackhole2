@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792384950005-1",
+    "title": "MIGHTEE와 CMB 렌즈로 측정한 전파 은하의 편향",
+    "originalTitle": "Galaxy bias of radio AGN and star-forming galaxies from MIGHTEE and CMB lensing",
+    "summary": "이 arXiv 논문은 전파은하와 별 형성 은하가 놓인 환경을 은하 편향으로 조사한 프리프린트이며, 동료 심사는 확인되지 않았습니다.\n연구진은 MIGHTEE 전파원과 아타카마 우주론 망원경의 CMB 렌즈 신호를 교차 분석해 약 4시그마로 검출했습니다.\n두 편향 진화 모형이 모두 자료에 잘 맞았지만, 현재 측정만으로 어느 모형이 맞는지 가릴 수 없었습니다.\n개별 천체를 분류하지 않고 광도함수로 추정한 최적 모형에서 AGN 편향은 별 형성 은하보다 높았습니다.\n별 형성 은하의 기존 측정값을 사전 정보로 넣으면 두 집단의 편향 추정 제약이 더 강해졌습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.23567",
+    "publishedAt": "2026-10-16",
+    "date": "2026-10-19 13:42",
+    "createdAt": "2026-10-19T04:42:30.005497+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792384950005-2",
+    "title": "트레블 클레프: 특이한 X선 고온 전파원",
+    "originalTitle": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source",
+    "summary": "NASA 천문사진 오늘의 그림은 트레블 클레프라 불리는 전파 구조를 소개합니다.\n이 구조는 200만 광년 넘게 뻗어 있으며, 우리은하에 가려 가시광선으로는 보이지 않습니다.\n찬드라와 eROSITA의 최근 관측을 바탕으로, 중심의 하전 입자 구름은 은하 중심 초대질량 블랙홀이 내보냈다는 가설이 제시됐습니다.\n입자에서 나오는 전파가 희미해진 뒤 은하단 충돌의 충격파가 이를 다시 활성화했을 가능성이 있습니다.\n이 설명은 확정된 결론이 아니라 가설이며, 합성 영상은 전파를 빨간색, 새로 발견된 X선을 파란색으로 표시합니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source",
+    "publishedAt": "2026-10-19",
+    "date": "2026-10-19 13:42",
+    "createdAt": "2026-10-19T04:42:30.005497+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792298152420-1",
     "title": "은하별 별 형성의 물리 법칙을 밝힐 관측 구상",
     "originalTitle": "From Scaling Relations to Physical Laws: Constraining the Physics of Star Formation Across Local Galaxies",
