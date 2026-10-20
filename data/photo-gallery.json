@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA01377",
+    "slot": "photos-82988",
+    "nasaId": "PIA01377",
+    "title": "Photographic Mosaic of Saturn",
+    "url": "https://images-assets.nasa.gov/image/PIA01377/PIA01377~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-21",
+    "credit": "NASA/JPL",
+    "sourceUrl": "https://images.nasa.gov/details/PIA01377",
+    "publishedAt": "2026-10-20T19:33:22.533Z"
+  },
+  {
     "id": "nasa-PIA02230",
     "slot": "photos-82987",
     "nasaId": "PIA02230",
