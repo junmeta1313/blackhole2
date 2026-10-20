@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792471972359-1",
+    "title": "비최소 중력 결합을 고려한 차가운 액시온 암흑물질의 중력 불안정성",
+    "originalTitle": "Gravitational Instability of Cold Axion Dark Matter Beyond Minimal Coupling",
+    "summary": "이 연구는 중력과 비최소적으로 결합하는 차가운 액시온 암흑물질 모형을 제시합니다.\n연구진은 유체역학적 한계에서 이 모형의 중력 불안정성을 평가했습니다.\n계산 결과 불안정성이 비최소 결합 매개변수에 따라 달라지는 것으로 나타났습니다.\n저자들은 이 틀이 JWST의 고적색편이 관측과 모형을 비교하는 데 도움을 줄 수 있다고 봅니다.\n이 논문은 arXiv 프리프린트이며 동료 심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.25984",
+    "publishedAt": "2026-10-19",
+    "date": "2026-10-20 13:52",
+    "createdAt": "2026-10-20T04:52:52.359643+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792471972359-2",
+    "title": "큐리오시티 블로그: 구름이 지나가는 모습을 관찰하다",
+    "originalTitle": "Curiosity Blog, Sols 5036-5042: Watching the Clouds Go By",
+    "summary": "큐리오시티 팀은 화성일 5036~5042 동안의 관측과 탐사 계획을 소개했습니다.\n10월 7일 촬영한 천정 영상에서 게일 분화구 상공의 높고 희미한 구름이 포착됐습니다.\n화성의 가을이 시작되며 황혼 구름이 돌아왔고, 이번 계절 첫 구름이 영상에 나타났습니다.\n로버는 바스크 레이크스의 시추 작업을 마무리하며 추가 GCMS 실험과 암석 잔해 분석을 진행합니다.\n이후 치우 치우 지역의 결정 형태를 향해 이동할 계획이며, 글은 해당 주의 관측을 다룹니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/blog/curiosity-blog-sols-5036-5042-watching-the-clouds-go-by",
+    "publishedAt": "2026-10-20",
+    "date": "2026-10-20 13:52",
+    "createdAt": "2026-10-20T04:52:52.359643+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792384950005-1",
     "title": "MIGHTEE와 CMB 렌즈로 측정한 전파 은하의 편향",
     "originalTitle": "Galaxy bias of radio AGN and star-forming galaxies from MIGHTEE and CMB lensing",
