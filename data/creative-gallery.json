@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124480-98865c3c-dbfa-4327-89eb-4402c1c2468b",
+    "slot": "creative-124480",
+    "title": "검은 중심을 가로지르는 빛의 지연",
+    "category": "A4",
+    "sceneKey": "A4-B9-C6-D4-E3-F1",
+    "generationSelection": {
+      "A": 4,
+      "B": 9,
+      "C": 6,
+      "D": 4,
+      "E": 3,
+      "F": 1
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA4. 블랙홀과 얇은 강착원반\n- 하나의 블랙홀 시스템\n- 얇고 비대칭적인 강착원반\n- 약한 중력렌즈 왜곡\n- 대부분의 화면은 어둡게\n- 독립적인 행성이나 성운 금지\n\n색상 톤 / 관측 후처리:\nB9. 화려한 다중파장 합성\n- 2~4개의 주요 색 사용\n- 높은 시각적 존재감\n- 무지개, 네온, 사이키델릭 표현 금지\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF1. 비정상적으로 휘어진 빛\n- 자연스러운 중력렌즈처럼 보이지만 미묘하게 비정상적인 곡률\n\n빛의 휨을 드러낼 최소한의 희미한 주변 빛만 둔다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 774,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 774
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 945
+    },
+    "generationCost": {
+      "usd": 0.009,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124480-98865c3c-dbfa-4327-89eb-4402c1c2468b.webp",
+    "author": "AI 창작",
+    "date": "2026-10-20",
+    "publishedAt": "2026-10-20T08:51:43.582Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀과 얇은 강착원반",
+    "description": "남쪽 하늘의 조각자리 방향, 지구에서 약 2억 8천만 광년 떨어진 천체 KQ-7316은 관측 목록에서 ‘세라핀의 고리’라는 이름으로 불린다. 이 영상에서 검은 중심은 주변 빛을 가리는 원형 영역으로 보이고, 그 둘레에는 흰색과 주황색이 겹친 얇은 고리가 감겨 있다. 푸른빛과 금빛의 물질 띠는 중심을 비스듬히 가로질러 양쪽으로 길게 뻗으며, 바깥쪽에는 희미한 푸른 호가 고리와 느슨하게 이어진다. 드문 별빛만 남은 검은 배경이 그 구조의 규모를 더욱 두드러지게 한다.\n\n가상의 궤도망원경 ‘루멘-7’과 전파 관측기 ‘아르카디아 배열’의 후속 자료를 결합한 설정에서, 밝은 띠의 길이는 약 1.6광년으로 추정되었다. 중심의 어두운 원과 비대칭 고리는 강한 중력장 주변의 가스 원반과 빛의 휘어짐으로 해석할 여지가 있다. 그러나 연구진은 고리 바깥 푸른 호의 위치가 파장에 따라 달라지는 현상에 주목했다. 9개월간의 분광 기록에서 수소 방출선으로 잰 호의 중심은 적외선 기준보다 평균 0.018초각 안쪽에 나타났고, 측정 오차를 넘어서는 차이가 네 차례 반복되었다. 이 파장별 좌표 편이를 ‘세라핀 오프셋’이라 명명했지만, 굴절하는 가스의 분포만으로는 그 방향과 크기를 충분히 설명하지 못했다.\n\n이 거리는 빛이 우리에게 오기까지 약 2억 8천만 년을 건너왔다는 뜻이다. 지금 화면에 담긴 모습은 그 먼 과거의 기록이지, 천체의 현재 모습은 아니다. 관측은 편이가 존재한다는 사실까지만 확인했으며 원인은 아직 밝혀지지 않았다. 검은 중심 둘레에서 빛이 휘어지는 동안, 설명은 여전히 그 빛보다 한 걸음 늦게 도착한다.",
+    "visibleFeatures": [
+      "검은 원형 중심부를 둘러싸고 흰빛과 주황빛이 겹쳐진 밝은 고리가 보인다.",
+      "고리 양옆으로 푸른빛과 황금빛의 가늘고 길게 늘어진 물질 구조가 뻗어 있다.",
+      "주변에는 희미한 푸른 호 모양의 빛과 드문드문 흩어진 별들이 어두운 배경에 놓여 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 650,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2955
+    },
+    "descriptionCost": {
+      "usd": 0.00061305,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-20T08:51:53.465Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124478-b53414a5-5459-4cca-ac8a-2489b2fbe71f",
     "slot": "creative-124478",
     "title": "푸른 고리의 침묵, 세라프 잔해의 시간",
