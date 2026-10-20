@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124483-a74cd407-1753-4ebe-ad30-69fd4632e2dc",
+    "slot": "creative-124483",
+    "title": "빛의 고리가 남긴 어긋남",
+    "category": "A16",
+    "sceneKey": "A16-B1-C9-D3-E4-F9",
+    "generationSelection": {
+      "A": 16,
+      "B": 1,
+      "C": 9,
+      "D": 3,
+      "E": 4,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA16. 보이지 않는 질량체에 의한 공간 왜곡\n- 중심부에 직접 보이는 거대 천체 없음\n- 주변 배경별/배경빛의 왜곡으로 존재를 암시\n- 화면 대부분은 희박한 심우주\n\n색상 톤 / 관측 후처리:\nB1. 저채도 청회색\n- 거의 단색\n- 차갑고 절제된 관측 이미지\n\n내부 프레이밍 / 구도:\nC9. 극단적 여백형\n- 작은 피사체와 매우 넓은 빈 공간\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 796,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 796
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 967
+    },
+    "generationCost": {
+      "usd": 0.00911,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124483-a74cd407-1753-4ebe-ad30-69fd4632e2dc.webp",
+    "author": "AI 창작",
+    "date": "2026-10-21",
+    "publishedAt": "2026-10-20T22:37:38.454Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "보이지 않는 질량체에 의한 공간 왜곡",
+    "description": "남쪽 하늘의 작은 별자리 경계에서 발견된 은하계 군집 NGCX-7316은 약 48억 광년 떨어져 있다. 아래 수치는 단일 사진에서 잰 값이 아니라 후속 분광 관측으로 설정한 거리다. 이 영상에서 먼저 시선을 붙드는 것은 중심을 둘러싼 희미한 푸른 빛의 고리다. 실제로는 하나의 매끈한 원이 아니라, 여러 은하의 길쭉한 빛 조각이 끊어져 이어진 모습이다. 연구진은 그 지름을 약 31만 광년으로 추정하고 구조에 ‘유리해류 고리(Glass Current Arc)’라는 이름을 붙였다. 배경의 수많은 별과 작은 은하들은 고리의 규모를 가늠하게 하면서도, 그 주변의 어둠을 더욱 깊게 만든다.\n\n중심부에는 희미한 빛점들이 겹쳐 있고, 밝은 호들은 서로 다른 방향으로 휘어져 있다. 중력렌즈라면 앞쪽 은하단의 질량이 배경 은하의 빛을 굴절시켜 이런 호를 만들 수 있다. 그러나 가상 장비 미라벨 심층분광기의 후속 측정에서는 호마다 추정한 질량 중심이 2.4초각씩 어긋났고, 그 차이는 세 차례 관측에서 오차 범위를 넘어 반복됐다. 이를 연구팀은 ‘유리해류 질량 편이’라 불렀다. 보이지 않는 질량 분포가 고르지 않은 것인지, 빛의 경로를 이해하는 모형이 불완전한 것인지는 아직 가려지지 않았다.\n\n우리가 보는 빛은 약 48억 년을 건너온 기록이다. 그동안 이 은하군이 어떻게 변했는지, 지금도 같은 고리를 이루는지는 이 한 장의 영상으로 알 수 없다. 관측은 어긋남의 존재까지만 확인했을 뿐, 원인을 설명하지 못했다. 화면의 푸른 호는 먼 과거의 천체를 비추면서, 아직 완성되지 않은 우리의 우주 지도를 조용히 드러낸다.",
+    "visibleFeatures": [
+      "검푸른 우주 배경에 밝기가 서로 다른 별과 희미한 은하들이 넓게 흩어져 있다.",
+      "이미지 중앙에는 푸른빛을 띤 은하 조각들이 불완전한 원형 고리처럼 둘러져 있다.",
+      "고리 안쪽과 주변에 작은 빛점과 짧은 곡선상 빛무리가 보이며, 완전한 대칭은 이루지 않는다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 616,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2921
+    },
+    "descriptionCost": {
+      "usd": 0.00059605,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-20T22:37:46.384Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124482-6468f51e-a840-4cca-9694-883cabb3883c",
     "slot": "creative-124482",
     "title": "고리의 빈 궤도, 청색 거인의 침묵",
