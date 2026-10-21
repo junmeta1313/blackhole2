@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792558192709-1",
+    "title": "JADES 자료로 본 은하의 덩어리형 비율과 생성 경로",
+    "originalTitle": "The clumpy fraction of galaxies at $z=1-9$ with JADES: evidence for a mass-dependent transition in clump origin",
+    "summary": "이 논문은 JWST/NIRCam의 JADES 관측으로 적색편이 1~9 은하의 덩어리형 비율을 측정합니다.\n덩어리는 은하 중심에서 벗어난 수백 파섹 크기의 밝은 구조로 정의하고, 탐지 완전성을 모의실험으로 평가했습니다.\n청색·광학 영상의 비율은 적색편이 1~2에서 약 55%지만 8~9에서는 5% 미만이며, 자외선에서는 약 12%입니다.\n적색편이 1~2에서 비율은 항성 질량에 따라 약 35%에서 85%까지 높아졌고, 큰 질량 은하에는 병합 외 생성 경로도 필요하다고 봅니다.\n초기·저질량 은하에서는 병합, 더 무거운 은하에서는 원반 불안정성 등 내부 생성이 더 기여할 수 있다는 해석입니다.\n이 결과는 동료심사 여부가 확인되지 않은 arXiv 사전 공개 논문이며, 탐지 완전성 및 생성 경로 비교에 한계가 있습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.28515",
+    "publishedAt": "2026-10-20",
+    "date": "2026-10-21 13:49",
+    "createdAt": "2026-10-21T04:49:52.709774+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792558192709-2",
+    "title": "웹 망원경이 포착한 별의 제트",
+    "originalTitle": "Webb Captures Stellar Jets",
+    "summary": "NASA는 제임스 웹 우주망원경이 별 탄생 영역 NGC 7129의 별과 원시별을 관측했다고 발표했습니다.\n이 영역은 지구에서 약 3,300광년 떨어져 있으며, 먼지구름에 가려졌던 별들이 드러났습니다.\n이미지에서 황금색은 뜨거운 원자 수소 기체, 붉은색은 원시별에 충격을 받은 더 차가운 분자 수소 기체를 나타냅니다.\n발표문은 2026년 10월 6일 공개된 이미지와 대화형 체험을 소개합니다.\n제공된 자료에는 관측 방법이나 정량적 분석 결과가 포함되어 있지 않습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/image-article/webb-captures-stellar-jets",
+    "publishedAt": "2026-10-20",
+    "date": "2026-10-21 13:49",
+    "createdAt": "2026-10-21T04:49:52.709774+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792471972359-1",
     "title": "비최소 중력 결합을 고려한 차가운 액시온 암흑물질의 중력 불안정성",
     "originalTitle": "Gravitational Instability of Cold Axion Dark Matter Beyond Minimal Coupling",
