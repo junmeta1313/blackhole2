@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA22353",
+    "slot": "photos-82989",
+    "nasaId": "PIA22353",
+    "title": "Kepler Beyond Planets: Finding Exploding Stars (Type Ia Supernova from a White Dwarf Merger)",
+    "url": "https://images-assets.nasa.gov/image/PIA22353/PIA22353~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-21",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA22353",
+    "publishedAt": "2026-10-21T00:05:55.064Z"
+  },
+  {
     "id": "nasa-PIA01377",
     "slot": "photos-82988",
     "nasaId": "PIA01377",
