@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA03519",
+    "slot": "photos-82992",
+    "nasaId": "PIA03519",
+    "title": "Cassiopeia A: Death Becomes Her",
+    "url": "https://images-assets.nasa.gov/image/PIA03519/PIA03519~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-22",
+    "credit": "NASA/JPL-Caltech/STScI/CXC/SAO<br /> Animation: NASA/JPL-Caltech/Univ. of Ariz./STScI/CXC/SAO ",
+    "sourceUrl": "https://images.nasa.gov/details/PIA03519",
+    "publishedAt": "2026-10-21T19:32:53.701Z"
+  },
+  {
     "id": "nasa-0400391",
     "slot": "photos-82991",
     "nasaId": "0400391",
