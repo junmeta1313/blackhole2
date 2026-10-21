@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA17842",
+    "slot": "photos-82990",
+    "nasaId": "PIA17842",
+    "title": "The Case of Missing Iron in Cassiopeia A",
+    "url": "https://images-assets.nasa.gov/image/PIA17842/PIA17842~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-21",
+    "credit": "NASA/JPL-Caltech/CXC/SAO",
+    "sourceUrl": "https://images.nasa.gov/details/PIA17842",
+    "publishedAt": "2026-10-21T08:51:11.543Z"
+  },
+  {
     "id": "nasa-PIA22353",
     "slot": "photos-82989",
     "nasaId": "PIA22353",
