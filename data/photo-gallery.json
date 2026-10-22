@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA05062",
+    "slot": "photos-82993",
+    "nasaId": "PIA05062",
+    "title": "The Tarantula Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA05062/PIA05062~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-22",
+    "credit": "NASA/JPL-Caltech/Cornell University and University of Leiden",
+    "sourceUrl": "https://images.nasa.gov/details/PIA05062",
+    "publishedAt": "2026-10-22T00:09:30.584Z"
+  },
+  {
     "id": "nasa-PIA03519",
     "slot": "photos-82992",
     "nasaId": "PIA03519",
