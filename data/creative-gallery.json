@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124495-29e0876a-0dca-4ffd-a0ad-ac55b92fdcbd",
+    "slot": "creative-124495",
+    "title": "암흑 가장자리의 빛 고리",
+    "category": "A5",
+    "sceneKey": "A5-B9-C5-D1-E1-F6",
+    "generationSelection": {
+      "A": 5,
+      "B": 9,
+      "C": 5,
+      "D": 1,
+      "E": 1,
+      "F": 6
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA5. 블랙홀 이벤트 호라이즌 극단 클로즈업\n- 블랙홀 전체가 아니라 경계 일부만 관측\n- 강착원반 일부가 프레임 밖으로 이어짐\n- 극단적 근접 관측\n- 강한 명암 대비\n- 넓은 배경 구도 금지\n\n색상 톤 / 관측 후처리:\nB9. 화려한 다중파장 합성\n- 2~4개의 주요 색 사용\n- 높은 시각적 존재감\n- 무지개, 네온, 사이키델릭 표현 금지\n\n내부 프레이밍 / 구도:\nC5. 세로 근접형\n- 위아래 방향으로 구조 일부를 확대\n\n현실성 강도:\nD1. 실제 현재 천문 관측 수준\n- 과장 최소화\n- 매우 현실적인 구조와 색\n\n관측 거리 / 화면 점유율:\nE1. 극단적 초근접\n- 대상 또는 구조 일부가 화면의 90% 이상\n- 전체 형태는 보이지 않을 수 있음\n\n시각적으로 암시되는 미스터리 요소:\nF6. 비대칭 광도 분포\n- 구조의 한쪽이 예상보다 강하거나 약하게 발광\n\n선택된 근접/부분 구조 프레이밍을 유지하고 넓은 배경으로 바꾸지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 770,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 770
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 941
+    },
+    "generationCost": {
+      "usd": 0.00898,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124495-29e0876a-0dca-4ffd-a0ad-ac55b92fdcbd.webp",
+    "author": "AI 창작",
+    "date": "2026-10-23",
+    "publishedAt": "2026-10-22T22:44:01.106Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀 이벤트 호라이즌 극단 클로즈업",
+    "description": "남쪽 하늘의 조밀한 별밭 뒤편, 은하수 원반에서 약 2만 6천 광년 떨어진 곳에 관측 식별번호 QN-7316이 기록되어 있다. 화면 오른쪽의 둥근 암흑 영역은 주변을 압도하고, 그 가장자리에는 가느다란 주황빛 윤곽이 걸려 있다. 흰색과 황금색의 뜨거운 가스 띠는 검은 경계를 따라 휘어 아래쪽으로 이어지며, 그 바깥에는 푸른빛과 적갈색의 얼룩진 흐름이 겹친다. 이 영상에서 직접 확인되는 것은 빛나는 물질과 가려진 중심부의 대비다. 고리의 실제 지름과 가스의 속도는 한 장의 사진만으로 재지 않았다. 다만 후속 관측으로 연구진은 중심부를 둘러싼 가스 구조에 ‘유리안개 고리’라는 이름을 붙였다. 눈에 보이는 검은 원은 빛조차 빠져나오지 못하는 천체의 그림자일 가능성을 시사하지만, 모양만으로 그 성질을 확정할 수는 없다.\n\n가상 관측 장비 ‘해오름 적외선 간섭계’와 세이렌 X선 배열이 14개월간 모은 기록에서, 고리의 남쪽 밝은 호는 9.6시간 간격으로 미세하게 어두워졌다가 돌아왔다. 변화 폭은 평균 광도의 2.3퍼센트였고, 북쪽 호에서는 같은 주기가 검출되지 않았다. 연구진은 이 비대칭 변동을 ‘유리안개 위상 잔차’라 명명했다. 가스의 회전이나 자기장 구조가 빛을 달리 가릴 가능성은 검토됐지만, 관측된 리듬을 모두 설명하지 못했다. 이 수치는 후속 기록에서 얻은 것이며, 이미지 한 장에 담긴 시간 변화는 아니다.\n\n우리가 보는 빛은 약 2만 6천 년 전 그곳을 떠났다. 지금 그 가장자리가 어떤 모습인지, 고리는 여전히 같은 리듬을 품고 있는지 우리는 알지 못한다. 관측은 낯선 변동의 존재까지만 확인했을 뿐, 원인은 아직 남아 있다. 빛이 다다른 뒤에도 설명은 도착하지 않았다.",
+    "visibleFeatures": [
+      "화면 오른쪽을 크게 차지하는 둥근 검은 영역이 있으며, 가장자리에 가느다란 주황빛 윤곽이 둘러져 있다.",
+      "검은 영역의 왼쪽과 아래쪽을 따라 흰빛과 황금빛의 밝은 가스 띠가 휘어 흐르며, 아래쪽에서 고리처럼 이어진다.",
+      "배경에는 푸른빛과 적갈색의 얼룩진 가스 구조가 넓게 퍼져 있고, 밝은 흐름과 어두운 무늬가 뒤섞여 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 693,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2998
+    },
+    "descriptionCost": {
+      "usd": 0.00063455,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-22T22:44:10.595Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124494-cfa69e21-9b49-4ada-88fc-723303adc799",
     "slot": "creative-124494",
     "title": "중력의 호, 빛의 매듭",
