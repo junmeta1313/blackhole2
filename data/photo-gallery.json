@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-0302062",
+    "slot": "photos-82996",
+    "nasaId": "0302062",
+    "title": "History of Hubble Space Telescope (HST)",
+    "url": "https://images-assets.nasa.gov/image/0302062/0302062~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-23",
+    "credit": "MSFC",
+    "sourceUrl": "https://images.nasa.gov/details/0302062",
+    "publishedAt": "2026-10-22T19:25:56.084Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e000148",
     "slot": "photos-82995",
     "nasaId": "GSFC_20171208_Archive_e000148",
