@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124492-e290da3d-5bb9-4b55-9144-9e0ce1deab5b",
+    "slot": "creative-124492",
+    "title": "검은 바다의 두 갈래 빛",
+    "category": "A19",
+    "sceneKey": "A19-B8-C6-D3-E9-F9",
+    "generationSelection": {
+      "A": 19,
+      "B": 8,
+      "C": 6,
+      "D": 3,
+      "E": 9,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA19. 심우주 속 작은 미지의 천체\n- 화면의 약 85~95%가 심우주 여백\n- 작은 불규칙 천체 하나만 멀리 존재\n- 무엇인지 명확히 식별하기 어려움\n- 독립적인 대형 성운이나 은하 금지\n\n색상 톤 / 관측 후처리:\nB8. 거의 흑백\n- 구조와 명암 자체를 강조\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE9. 심우주 배경 포함\n- 주제 뒤로 희미한 배경별 또는 먼 천체 존재\n- 배경은 주제를 압도하지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n원거리 대상은 반드시 작게 유지한다. E의 일반적인 점유율보다 A의 5~15% 점유율과 85~95% 심우주 여백 조건을 우선한다.\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 857,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 857
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 1028
+    },
+    "generationCost": {
+      "usd": 0.009415,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124492-e290da3d-5bb9-4b55-9144-9e0ce1deab5b.webp",
+    "author": "AI 창작",
+    "date": "2026-10-22",
+    "publishedAt": "2026-10-22T08:54:30.960Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "심우주 속 작은 미지의 천체",
+    "description": "남쪽 하늘의 조각자리 방향, 지구에서 약 6억 8천만 광년 떨어진 은하 ICX 2714를 추적 관측하던 중 이 장면이 기록되었다. 화면 중앙의 작은 구조는 검은 배경에 놓인 두 개의 밝은 매듭처럼 보인다. 주변에는 별과 희미한 은하들이 넓게 흩어져 있지만, 이 중심부만 유난히 응축되어 있어 먼 우주의 고요 속에 놓인 하나의 접촉 흔적처럼 두드러진다. 영상만으로 크기를 확정할 수는 없으나, 후속 거리 자료를 적용하면 밝은 핵과 그 주위의 흐린 가스 구조는 약 4만 광년 규모로 추정된다.\n\n가상 관측 장비 ‘누리안 적외선 배열’의 분광 기록에서 연구진은 두 핵 사이의 가스가 예상보다 느리게 이동하는 현상을 확인했다. 수소 방출선의 속도 지도는 조석 상호작용 모형보다 평균 초속 38킬로미터 낮았고, 이 차이는 11개월 간격의 세 차례 관측에서 되풀이되었다. 연구진은 이 어긋남에 ‘쌍핵 정체 편이’, Twin-Nucleus Lag라고 이름 붙였다. 약한 신호라서 측정 오차를 완전히 배제할 수 없지만, 서로 가까운 가스 덩어리들이 한동안 같은 속도 차이를 유지한다는 점은 설명을 기다리고 있다.\n\n우리가 보는 빛은 6억 8천만 년 전에 이 은하를 떠났다. 그러므로 이 사진은 그곳의 현재가 아니라, 우주의 긴 시간 속 한 순간을 건너온 기록이다. 관측은 정체 편이가 존재할 가능성까지만 보여 주었고, 그 원인은 밝혀지지 않았다. 중앙의 두 빛은 아직도 서로를 향해 움직이고 있을까, 아니면 이미 전혀 다른 모습으로 흩어졌을까. 우리는 그 답보다 오래된 빛을 받고 있다.",
+    "visibleFeatures": [
+      "거의 검은 단색 배경에 수많은 작은 별빛과 희미한 은하들이 넓게 흩어져 있다.",
+      "화면 중앙 부근에 두 개의 밝은 덩어리가 맞닿은 듯한 작은 은하 구조가 보인다.",
+      "중앙 구조 주변은 넓고 어둡게 비어 있으며, 멀리 떨어진 곳에는 길쭉한 은하와 밝은 점광원이 드문드문 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 598,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2903
+    },
+    "descriptionCost": {
+      "usd": 0.00058705,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-22T08:54:40.138Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124490-ec294020-782c-48e0-b6d3-3f7d2c3a7f79",
     "slot": "creative-124490",
     "title": "두 별 사이, 빛의 실이 남긴 불일치",
