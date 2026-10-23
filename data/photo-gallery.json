@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA04623",
+    "slot": "photos-82999",
+    "nasaId": "PIA04623",
+    "title": "Galaxy UGC10445",
+    "url": "https://images-assets.nasa.gov/image/PIA04623/PIA04623~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-23",
+    "credit": "NASA/JPL/Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA04623",
+    "publishedAt": "2026-10-23T14:23:40.580Z"
+  },
+  {
     "id": "nasa-PIA04209",
     "slot": "photos-82998",
     "nasaId": "PIA04209",
