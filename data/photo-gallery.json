@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA07911",
+    "slot": "photos-82997",
+    "nasaId": "PIA07911",
+    "title": "Irregular Dwarf Galaxy IC 1613",
+    "url": "https://images-assets.nasa.gov/image/PIA07911/PIA07911~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-23",
+    "credit": "NASA/JPL-Caltech/SSC",
+    "sourceUrl": "https://images.nasa.gov/details/PIA07911",
+    "publishedAt": "2026-10-23T00:07:50.550Z"
+  },
+  {
     "id": "nasa-0302062",
     "slot": "photos-82996",
     "nasaId": "0302062",
