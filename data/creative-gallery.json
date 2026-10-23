@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124500-93adb283-7c57-42e9-a294-c49e624c0d15",
+    "slot": "creative-124500",
+    "title": "검은 틈을 둘러싼 청금빛 필라멘트",
+    "category": "A6",
+    "sceneKey": "A6-B5-C4-D4-E3-F8",
+    "generationSelection": {
+      "A": 6,
+      "B": 5,
+      "C": 4,
+      "D": 4,
+      "E": 3,
+      "F": 8
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA6. 필라멘트형 초신성 잔해\n- 얇고 복잡한 가스 필라멘트\n- 거미줄 또는 찢어진 충격파 같은 형태\n- 중심부는 상대적으로 비어 있음\n- 둥근 뭉게구름 성운처럼 표현하지 않음\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF8. 갑작스러운 구조 단절\n- 연속되어야 할 가스/빛 구조가 한 부분에서 갑자기 사라짐\n\n단절 전후의 구조를 모두 프레임 안에 보여준다. 구조가 화면 밖으로 이어져도 단절 자체는 잘리지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 768,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 768
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 939
+    },
+    "generationCost": {
+      "usd": 0.00897,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124500-93adb283-7c57-42e9-a294-c49e624c0d15.webp",
+    "author": "AI 창작",
+    "date": "2026-10-24",
+    "publishedAt": "2026-10-23T15:54:10.864Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "필라멘트형 초신성 잔해",
+    "description": "남쪽 하늘의 고물자리 경계에서 발견된 성운 복합체 NGC 7316-R은 지구에서 약 4,800광년 떨어져 있다. Lumen-Scope 적외선 관측기에 포착된 모습에서 청록빛 가스와 황금색 먼지 필라멘트가 거대한 불완전한 껍질을 이루고, 그 안쪽에는 별과 발광 물질이 드문 검은 공간이 길게 열려 있다. 영상만으로 실제 깊이나 운동을 단정할 수는 없지만, 후속 시차 관측으로 추정한 껍질의 폭은 약 110광년이다. 희미한 별들이 그 너머에 흩어져 있어, 이 어둠은 빈 배경이라기보다 빛을 가리거나 밀어낸 경계처럼 보인다.\n\n중심부에서 특히 눈길을 끄는 것은 왼쪽 위에서 내려오는 황금빛 매듭과 오른쪽 아래로 이어지는 가는 청록색 실이다. 분광 분석은 이 가스에서 이온화된 산소와 수소의 방출을 확인했지만, 필라멘트가 왜 껍질의 안쪽 경계를 따라 유난히 고르게 끊기는지는 설명하지 못했다. 6년간의 후속 관측에서 그 경계의 가시광 밝기는 평균적으로 거의 변하지 않았으나, 일부 구간은 적외선에서만 약 4퍼센트 어두워졌다. 연구진은 이 파장별 불일치를 ‘청록 경계 결손(Teal Rim Deficit)’이라 이름 붙였다. 먼지의 분포로도, 단순한 온도 변화로도 아직 충분히 재현되지 않는 현상이다.\n\n이 빛은 약 4,800년 전 성운을 떠나 긴 은하의 밤을 건너 우리에게 도착했다. 그러므로 사진은 지금 그곳의 모습이 아니라, 오래전 한 순간에 남겨진 기록이다. 껍질은 왜 검은 공간 앞에서만 매듭처럼 이어지는가. 관측은 그 경계의 존재와 밝기 차이만 확인했을 뿐, 원인을 밝히지 못했다. 우리가 알고 있는 물리학의 선 바깥에도 아직 측정 가능한 침묵이 남아 있다.",
+    "visibleFeatures": [
+      "청록색과 황금빛의 가느다란 가스 필라멘트가 넓은 고리 또는 불완전한 껍질처럼 화면을 감싼다.",
+      "중앙에는 별빛과 가스가 드문 넓은 어두운 영역이 있고, 가장자리의 밝은 실타래 구조가 그 경계를 이룬다.",
+      "어두운 배경에는 청록색의 희미한 성운 결이 퍼져 있으며, 작은 별들이 밝기와 색을 달리해 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 668,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2973
+    },
+    "descriptionCost": {
+      "usd": 0.00062205,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-23T15:54:20.727Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124498-4206cc26-1b4f-4eeb-8f82-e6b74debf096",
     "slot": "creative-124498",
     "title": "먼지 장벽에 남은 보랏빛 고리",
