@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124498-4206cc26-1b4f-4eeb-8f82-e6b74debf096",
+    "slot": "creative-124498",
+    "title": "먼지 장벽에 남은 보랏빛 고리",
+    "category": "A9",
+    "sceneKey": "A9-B3-C4-D2-E2-F5",
+    "generationSelection": {
+      "A": 9,
+      "B": 3,
+      "C": 4,
+      "D": 2,
+      "E": 2,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA9. 암흑 성운 내부의 작은 발광 핵\n- 대부분은 불투명한 암흑 먼지\n- 한 곳에서만 희미한 발광\n- 발광 영역은 작고 국소적\n- 전체 화면을 화려한 성운으로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB3. 보라 + 자주\n- 신비로운 느낌\n- 과도한 마젠타/네온 금지\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE2. 근접 관측\n- 메인 대상이 약 60~80% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 761,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 761
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 932
+    },
+    "generationCost": {
+      "usd": 0.008935,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124498-4206cc26-1b4f-4eeb-8f82-e6b74debf096.webp",
+    "author": "AI 창작",
+    "date": "2026-10-23",
+    "publishedAt": "2026-10-23T08:49:29.980Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "암흑 성운 내부의 작은 발광 핵",
+    "description": "남쪽 하늘의 백조자리와 독수리자리 사이, 성간 먼지 띠가 짙게 겹치는 방향에서 관측된 천체가 있다. 가상 목록 번호는 KRN-2941, 별칭은 ‘유리해협 성운’이다. 분광 거리 추정으로 약 4,600광년 떨어진 곳에 놓인 이 영역은, 사진에서처럼 검은 먼지 구름이 보랏빛 가스의 배경을 대각선으로 가로지르며 별빛을 가린다. 화면 중앙의 거대한 암흑 구조는 성간 먼지와 분자 가스로 이루어진 장벽으로, 추정 길이는 약 18광년이다. 가장자리에는 솟구친 듯한 굴곡과 작은 돌기들이 이어지고, 오른쪽 위의 밝은 틈에는 분홍빛 중심부를 둘러싼 희미한 둥근 발광 고리가 드러난다. 주변의 별들은 고요히 흩어져 있지만, 이 작은 빛의 매듭은 어둠의 경계에 걸린 표식처럼 보인다.\n\n가상의 적외선 관측기 ‘나린 분광망원경’으로 후속 관측을 이어가자, 고리의 수소 방출선이 먼지 장벽의 가장자리보다 약 11킬로미터/초 느린 속도로 움직이는 것으로 측정됐다. 더구나 14개월 간격의 세 관측에서 고리의 밝은 부분은 같은 자리에 머물렀지만, 고리의 지름은 측정 오차를 넘어 약 0.6퍼센트 줄었다. 연구진은 이 불일치를 ‘해협 고리 정지편이’라 이름 붙였다. 가스가 수축하는지, 빛이 먼지의 복잡한 틈을 지나며 그렇게 보이는지는 아직 판별되지 않았다.\n\n우리가 보는 것은 약 4,600년 전 이곳을 떠난 빛이다. 지금 그 성운이 어떤 모습인지, 고리의 변화가 계속되는지 우리는 알지 못한다. 관측은 낯선 움직임의 흔적만 확인했을 뿐, 그 원인을 밝혀내지 못했다. 오래된 빛은 검은 경계에 닿아 멈춘 듯 보이고, 그 너머의 답은 아직 우리에게 도착하지 않았다.",
+    "visibleFeatures": [
+      "화면 중앙을 가로지르는 거대한 검은 먼지 구름이 들쭉날쭉한 가장자리와 함께 밝은 성운을 가린다.",
+      "먼지 틈의 오른쪽 위쪽에 작은 분홍빛·보랏빛 발광 영역이 있으며, 그 주위로 희미한 둥근 고리 모양의 빛이 번진다.",
+      "배경에는 보라색으로 퍼진 가스와 여러 밝기의 별들이 흩어져 있고, 특히 오른쪽 위에 별이 더 촘촘하게 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 683,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2988
+    },
+    "descriptionCost": {
+      "usd": 0.00062955,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-23T08:49:39.309Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124496-ade2fa0f-28d6-47f6-a1d1-79f5b806742c",
     "slot": "creative-124496",
     "title": "먼지 절벽의 정적, 루멘 필라멘트",
