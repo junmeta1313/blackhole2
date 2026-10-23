@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124496-ade2fa0f-28d6-47f6-a1d1-79f5b806742c",
+    "slot": "creative-124496",
+    "title": "먼지 절벽의 정적, 루멘 필라멘트",
+    "category": "A11",
+    "sceneKey": "A11-B1-C6-D2-E9-F7",
+    "generationSelection": {
+      "A": 11,
+      "B": 1,
+      "C": 6,
+      "D": 2,
+      "E": 9,
+      "F": 7
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA11. 항성 탄생 영역\n- 하나의 분자운 내부 항성 형성 영역\n- 여러 젊은 별의 국소적 발광\n- 먼지와 가스가 복잡하게 얽힘\n- 지나치게 균일한 성운 금지\n\n색상 톤 / 관측 후처리:\nB1. 저채도 청회색\n- 거의 단색\n- 차갑고 절제된 관측 이미지\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE9. 심우주 배경 포함\n- 주제 뒤로 희미한 배경별 또는 먼 천체 존재\n- 배경은 주제를 압도하지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF7. 준규칙적 반복 발광 구조\n- 일정해 보이지만 완벽하지 않은 반복 구조\n- 자연적 불규칙성을 반드시 유지\n\n미세한 자연적 불규칙성이 있는 반복 구조 단위가 최소 2~3개 보이게 한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 761,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 761
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 932
+    },
+    "generationCost": {
+      "usd": 0.008935,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124496-ade2fa0f-28d6-47f6-a1d1-79f5b806742c.webp",
+    "author": "AI 창작",
+    "date": "2026-10-23",
+    "publishedAt": "2026-10-23T01:54:03.165Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성 탄생 영역",
+    "description": "남쪽 하늘의 돛자리 방향에서 확인된 성운 복합체 Velae-73은 지구로부터 약 5,200광년 떨어져 있다. 사진에는 푸른 회색의 가스와 먼지가 대각선으로 펼쳐지고, 그 사이사이 검은 먼지 기둥이 빛을 가로막는다. 성운의 밝은 띠는 약 40광년에 걸쳐 이어지는 것으로 추정되며, 왼쪽 아래의 두 봉우리와 중앙 오른쪽의 넓은 암흑 영역이 특히 선명하다. 별빛은 가스 가장자리를 은빛으로 드러내지만, 먼지 속 깊은 곳은 끝내 보이지 않는다.\n\n중심부의 별 무리는 흩어진 작은 불씨처럼 빛난다. 그 오른편에는 불규칙한 검은 틈이 성운의 밝은 흐름을 끊고, 가장자리의 가스는 그 틈을 피해 휘어진 듯 보인다. 사진만으로는 그 형상이 실제 운동인지, 먼지와 발광 가스가 겹쳐 생긴 투영인지 판별할 수 없다. 다만 후속 관측에서 특이한 기록이 남았다. 가상 관측기 ‘청람 분광계’가 18개월 동안 수소 알파선의 위치를 추적하자, 암흑 영역 양쪽의 가스 속도 차이가 모형 예측보다 초속 3.6킬로미터 작게 측정됐다. 오차 범위를 넘는 차이는 네 차례 관측에서 같은 방향으로 반복됐다.\n\n연구진은 이 불일치를 ‘루멘 필라멘트 정지 편차’라 이름 붙였다. 이는 먼지 기둥이 주변 가스의 흐름을 바꾸는 방식만으로는 아직 설명되지 않는다. 5,200광년을 건너온 빛은 성운이 지금보다 5,200년 젊었을 때의 모습을 보여준다. 그곳에서 오늘 어떤 변화가 일어났는지는 이 이미지에 도달하지 못했다. 관측은 편차가 존재한다는 사실까지만 확인했을 뿐, 원인은 밝혀내지 못했다. 검은 틈은 아무것도 없는 자리가 아니라, 우리가 아직 읽지 못한 우주의 문장일지도 모른다.",
+    "visibleFeatures": [
+      "짙은 청회색 성운이 화면 중앙을 대각선으로 가로지르며, 가장자리에는 옅은 은빛 발광 가스가 번져 있다.",
+      "중앙 오른쪽에는 불규칙한 검은 먼지 영역이 성운의 빛을 가리고, 그 주변으로 밝은 별들이 모여 있다.",
+      "왼쪽 아래에는 뾰족한 먼지 기둥 두 개가 솟아 있고, 배경에는 크고 작은 별들이 촘촘히 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 664,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2969
+    },
+    "descriptionCost": {
+      "usd": 0.0006200499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-23T01:54:15.247Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124495-29e0876a-0dca-4ffd-a0ad-ac55b92fdcbd",
     "slot": "creative-124495",
     "title": "암흑 가장자리의 빛 고리",
