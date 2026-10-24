@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA16695",
+    "slot": "photos-83003",
+    "nasaId": "PIA16695",
+    "title": "Black Holes: Monsters in Space Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA16695/PIA16695~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-24",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA16695",
+    "publishedAt": "2026-10-24T13:33:56.702Z"
+  },
+  {
     "id": "nasa-PIA22356",
     "slot": "photos-83002",
     "nasaId": "PIA22356",
