@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124506-9fd447dc-9202-4b2a-a604-273a82600111",
+    "slot": "creative-124506",
+    "title": "먼지의 협곡에 남은 푸른 불빛",
+    "category": "A11",
+    "sceneKey": "A11-B10-C6-D4-E3-F7",
+    "generationSelection": {
+      "A": 11,
+      "B": 10,
+      "C": 6,
+      "D": 4,
+      "E": 3,
+      "F": 7
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA11. 항성 탄생 영역\n- 하나의 분자운 내부 항성 형성 영역\n- 여러 젊은 별의 국소적 발광\n- 먼지와 가스가 복잡하게 얽힘\n- 지나치게 균일한 성운 금지\n\n색상 톤 / 관측 후처리:\nB10. 자연색에 가까운 현실 관측\n- false-color 최소화\n- 가장 자연스러운 색 보정\n\n내부 프레이밍 / 구도:\nC6. 와이드 공간형\n- 좌우 여백과 공간감을 크게 사용\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF7. 준규칙적 반복 발광 구조\n- 일정해 보이지만 완벽하지 않은 반복 구조\n- 자연적 불규칙성을 반드시 유지\n\n미세한 자연적 불규칙성이 있는 반복 구조 단위가 최소 2~3개 보이게 한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 750,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 750
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 921
+    },
+    "generationCost": {
+      "usd": 0.00888,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124506-9fd447dc-9202-4b2a-a604-273a82600111.webp",
+    "author": "AI 창작",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-24T18:20:41.529Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성 탄생 영역",
+    "description": "궁수자리 방향, 태양계에서 약 5,200광년 떨어진 별 형성 영역을 관측한 기록이다. 가상의 식별번호 LDN-7314는 성운과 먼지 띠가 교차하는 이 복합 구역에 부여되었다. 오리온자리 성운처럼 밝은 단일 구름이라기보다, 어두운 먼지의 골짜기를 따라 푸른 회백색 가스가 비스듬히 퍼지고 주황빛 매듭들이 곳곳에서 점화된 듯한 풍경이다. 이미지에 보이는 구조의 전체 폭은 약 18광년으로 추정된다. 가스와 먼지가 별빛을 산란·흡수해 만든 명암은, 성간 물질이 얼마나 복잡한 경계를 이루는지 보여준다. 성운 밖에는 검은 공간과 드문 별들이 이어져, 이 빛나는 영역이 더 깊은 은하의 일부임을 드러낸다.\n\n가장 밝은 중심부는 별 하나의 점광원이라기보다, 여러 밝은 별과 가스가 겹쳐 보이는 복합 영역이다. 여기서 남동쪽으로 이어지는 먼지 틈에는 작은 주황색 매듭들이 줄지어 있고, 그중 한 곳은 주변보다 유난히 선명하다. 후속 관측에서 가상 장비 ‘세린 적외선 분광기’는 이 매듭의 수소 방출선이 14개월 동안 0.6퍼센트 약해졌다가 회복하는 변화를 기록했다. 같은 기간 인접한 가스의 선세기는 거의 일정했다. 연구진은 이 선택적인 변화를 ‘틈새 발광 편차’, Gloam-Notch Anomaly라 불렀다. 분광 자료는 변화가 실제로 있었음을 보여주지만, 먼지의 이동인지 가스의 미세한 조건 변화인지는 아직 가리지 못한다.\n\n이곳에서 출발한 빛은 약 5,200년을 건너 우리에게 닿았다. 그러므로 사진 속 성운은 지금의 모습이 아니라, 인류의 기록이 시작되기 훨씬 전의 한 순간이다. 관측은 빛의 흔들림까지 확인했을 뿐, 그 원인과 오늘의 성운이 어떤 모습인지는 말해주지 않는다. 검은 틈과 희미한 매듭을 다시 바라보면, 우주는 답이 없는 것이 아니라 아직 도착하지 않은 질문으로 가득하다는 생각이 든다.",
+    "visibleFeatures": [
+      "화면 중앙을 비스듬히 가로지르는 푸른빛과 회백색의 성운이 어두운 갈색 먼지 구름과 맞닿아 있다.",
+      "성운 곳곳에 주황빛으로 빛나는 작은 매듭과 밝은 별들이 흩어져 있으며, 중심부에는 특히 강한 흰빛이 보인다.",
+      "성운 바깥은 짙은 검은 하늘로 이어지고, 그곳에는 크기가 다양한 별들이 드문드문 박혀 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 703,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3008
+    },
+    "descriptionCost": {
+      "usd": 0.0006395499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-24T18:20:51.173Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124505-3a04fde7-b02b-4b04-8544-b6a020feb778",
     "slot": "creative-124505",
     "title": "청색 호가 감싼 먼 은하의 결",
