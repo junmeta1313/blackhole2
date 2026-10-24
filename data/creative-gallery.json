@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124505-3a04fde7-b02b-4b04-8544-b6a020feb778",
+    "slot": "creative-124505",
+    "title": "청색 호가 감싼 먼 은하의 결",
+    "category": "A16",
+    "sceneKey": "A16-B6-C4-D2-E5-F9",
+    "generationSelection": {
+      "A": 16,
+      "B": 6,
+      "C": 4,
+      "D": 2,
+      "E": 5,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA16. 보이지 않는 질량체에 의한 공간 왜곡\n- 중심부에 직접 보이는 거대 천체 없음\n- 주변 배경별/배경빛의 왜곡으로 존재를 암시\n- 화면 대부분은 희박한 심우주\n\n색상 톤 / 관측 후처리:\nB6. 청백색 + 은회색\n- 차가운 고에너지 또는 항성 관측 느낌\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE5. 극단적 원거리\n- 메인 대상이 약 5~15% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 801,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 801
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 972
+    },
+    "generationCost": {
+      "usd": 0.009135,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124505-3a04fde7-b02b-4b04-8544-b6a020feb778.webp",
+    "author": "AI 창작",
+    "date": "2026-10-24",
+    "publishedAt": "2026-10-24T14:51:24.919Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "보이지 않는 질량체에 의한 공간 왜곡",
+    "description": "남쪽 하늘의 조각자리 방향, 지구에서 약 52억 광년 떨어진 은하단 LQG-731을 관측한 기록이다. 이 영상에서 별처럼 보이는 점들은 대부분 우리 은하의 항성이지만, 그 사이의 희미한 얼룩은 훨씬 멀리 놓인 은하들이다. 오른쪽 중앙에는 청백색 빛무리를 둘러싸듯 큰 호가 휘어 있고, 고리는 완전히 이어지지 않은 채 몇 갈래로 끊겨 보인다. 주변의 길쭉한 은하들도 같은 방향으로 늘어나 있어, 은하단의 중력이 배경 천체의 빛을 휘게 하는 중력렌즈 구조로 해석된다.\n\n연구진은 이 구조를 ‘서리빛 아치(Frostline Arc)’라 이름 붙였다. 호의 투영 길이는 약 31만 광년이며, 중심의 흐린 빛무리는 렌즈 역할을 하는 은하단의 밀집 영역으로 추정된다. 다만 청색 호의 밝기는 매끈한 곡선을 따라 변하지 않는다. 가상 관측 장비인 누리안 적외선 분광기와 세온 광도계의 후속 기록을 대조하자, 호의 한 구간은 예측된 렌즈 모형보다 4.6퍼센트 어둡게 측정됐고, 18개월 간격의 세 차례 관측에서도 그 결손이 같은 위치에 남았다. 연구진은 이 편향을 ‘고정 호광 결손’이라 부른다. 미세한 질량 분포의 차이인지, 배경 은하 자체의 성질인지는 아직 가려지지 않았다.\n\n이곳에서 출발한 빛은 약 52억 년을 지나 지금의 망원경에 닿았다. 그러므로 우리는 은하단의 현재가 아니라, 우주가 지금보다 젊었던 시절의 모습을 본다. 그 긴 여행 끝에 남은 호는 중력의 흔적이면서도, 아직 모형에 들어맞지 않는 작은 침묵을 품고 있다. 관측은 그 결손의 존재까지만 확인했다. 빛이 떠난 뒤 저곳에서 무엇이 달라졌는지는, 이 이미지가 말해주지 않는다.",
+    "visibleFeatures": [
+      "검푸른 우주 배경에 별과 작고 희미한 은하들이 촘촘히 흩어져 있다.",
+      "화면 오른쪽 중앙에 푸른빛의 큰 원호와 일부 끊긴 듯한 빛의 고리가 보인다.",
+      "원호 안쪽에는 흐릿한 청백색 빛무리가 있고, 주변에도 길쭉하게 늘어난 은하 형상이 드문드문 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 638,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2943
+    },
+    "descriptionCost": {
+      "usd": 0.0006070499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-24T14:51:33.594Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124504-6a035613-6018-475a-9736-0ffeaa93fb2b",
     "slot": "creative-124504",
     "title": "청록빛 성운의 멈춘 경계",
