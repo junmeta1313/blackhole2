@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124504-6a035613-6018-475a-9736-0ffeaa93fb2b",
+    "slot": "creative-124504",
+    "title": "청록빛 성운의 멈춘 경계",
+    "category": "A8",
+    "sceneKey": "A8-B5-C4-D1-E9-F8",
+    "generationSelection": {
+      "A": 8,
+      "B": 5,
+      "C": 4,
+      "D": 1,
+      "E": 9,
+      "F": 8
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA8. 완전히 어두운 암흑 성운\n- 빛나는 성운이 아닌 검은 분자운/먼지가 주인공\n- 뒤쪽 별빛 일부가 가려짐\n- 밝은 영역은 극도로 제한\n- 넓고 불규칙한 암흑 구조\n\n색상 톤 / 관측 후처리:\nB5. 청록 + 금빛\n- 약간 극적인 다중파장 합성\n- 고급스러운 대비\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD1. 실제 현재 천문 관측 수준\n- 과장 최소화\n- 매우 현실적인 구조와 색\n\n관측 거리 / 화면 점유율:\nE9. 심우주 배경 포함\n- 주제 뒤로 희미한 배경별 또는 먼 천체 존재\n- 배경은 주제를 압도하지 않음\n\n시각적으로 암시되는 미스터리 요소:\nF8. 갑작스러운 구조 단절\n- 연속되어야 할 가스/빛 구조가 한 부분에서 갑자기 사라짐\n\n단절 전후의 구조를 모두 프레임 안에 보여준다. 구조가 화면 밖으로 이어져도 단절 자체는 잘리지 않는다.\n암흑 구조가 주제이며 발광점이 선택되어도 극도로 희미하고 작은 국소점만 허용한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 797,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 797
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 968
+    },
+    "generationCost": {
+      "usd": 0.009115,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124504-6a035613-6018-475a-9736-0ffeaa93fb2b.webp",
+    "author": "AI 창작",
+    "date": "2026-10-24",
+    "publishedAt": "2026-10-24T08:23:06.713Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "완전히 어두운 암흑 성운",
+    "description": "궁수자리 방향의 성간 구름 GJ-7316은 지구에서 약 2,400광년 떨어진 곳에 놓여 있다. 관측 영상에는 청록빛으로 퍼진 배경 성운과 그 앞을 가로막는 거대한 암흑 먼지 구조가 선명하다. 오른쪽 위의 둥근 덩어리에서 아래로 길게 흐르는 기둥, 왼쪽으로 뻗은 가느다란 가지가 한데 이어져 있어, 빛나는 별밭 위에 드리운 거대한 그늘처럼 보인다. 가장 넓은 부분은 약 18광년에 걸친 것으로 후속 시차 관측에서 추정됐다. 이 사진의 황금빛 가장자리와 청록색 성운은 서로 다른 파장대의 영상을 합성한 결과다.\n\n중심의 짙은 영역은 배경 별빛을 흡수하는 차가운 분자운으로, 내부 구조는 가시광선만으로 드러나지 않는다. 그러나 적외선 관측 장비 ‘Lumen-4’가 6년 동안 추적한 결과, 구름 가장자리의 일산화탄소 선속은 주변보다 낮은데도 그 경계의 밀도는 분광 모형이 예측한 값보다 14% 높게 나타났다. 측정 오차를 넘어선 이 불일치는 여러 관측 시기에 반복됐으며, 연구진은 이를 ‘유리막 경계(Glass Veil Boundary)’라 이름 붙였다. 먼지와 가스의 배열만으로는 설명하기 어려운 국소적 정적 영역이지만, 그 원인이 새로운 물리 과정인지 아직 알려지지 않은 구름의 성질인지는 판별되지 않았다.\n\nGJ-7316의 빛은 약 2,400년을 건너 지금 우리 망원경에 닿았다. 우리가 바라보는 성운은 그 거리만큼 과거의 모습이며, 그 경계가 지금도 같은 형태인지는 알 수 없다. 관측은 ‘유리막 경계’의 존재를 기록했을 뿐, 무엇이 그곳의 물질을 그렇게 배열했는지는 밝혀내지 못했다. 별빛이 오래된 어둠을 비추는 동안, 설명되지 않은 수치는 지도 위에 조용히 남아 있다.",
+    "visibleFeatures": [
+      "별이 촘촘히 흩뿌려진 청록색 발광 성운 앞에, 짙고 불투명한 암흑 먼지 구름이 크게 드리워져 있다.",
+      "암흑 구름은 오른쪽 위의 둥근 덩어리에서 아래쪽으로 길게 이어지며, 왼쪽으로 가느다란 가지 모양의 구조를 뻗는다.",
+      "구름 가장자리 일부에는 희미한 황금빛 테두리가 보이고, 그 주변 성운에는 밝은 별들이 점처럼 분포한다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 666,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2971
+    },
+    "descriptionCost": {
+      "usd": 0.0006210499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-24T08:23:15.902Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124502-54163f55-fb30-4261-806a-4a334d56acb1",
     "slot": "creative-124502",
     "title": "어둠 속 반달의 지연광",
