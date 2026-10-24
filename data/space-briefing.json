@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792816696467-1",
+    "title": "나선은하 NGC 1827의 가장자리",
+    "originalTitle": "Spiral’s Edge",
+    "summary": "NASA가 2026년 10월 16일 허블우주망원경으로 촬영한 NGC 1827 이미지를 공개했다.\n이 중간형 나선은하는 지구에서 약 3,700만 광년 떨어진 비둘기자리 방향에 있다.\n이미지는 우리은하와 비슷한 22개 은하 주변의 위성은하 260개를 조사하는 관측의 일부다.\n저질량 은하 관측은 작은 규모에서 우주론 모형의 예측을 시험하는 데 활용된다.\n해당 모형은 작은 규모의 관측 결과를 설명하는 데 어려움이 있다고 소개됐다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/image-article/spirals-edge",
+    "publishedAt": "2026-10-22",
+    "date": "2026-10-24 13:38",
+    "createdAt": "2026-10-24T04:38:16.467844+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792816696467-2",
+    "title": "음향 지평선에 의존하지 않는 우주론 매개변수 예측",
+    "originalTitle": "Sound-Horizon-Agnostic Forecast for Constraints on $H_0$ and $Σm_ν$ from BAO, CMB Lensing, Supernovae and LSST-like Galaxy Lensing",
+    "summary": "이 arXiv 논문은 음향 지평선 길이의 표준 보정 없이 허블상수와 중성미자 질량합의 제약을 예측한다.\nBAO, CMB 렌즈, 초신성 및 LSST형 은하 약한 렌즈 자료를 결합하는 방법을 제시한다.\n음향 지평선 길이를 자유 매개변수로 두고 은하 렌즈의 여러 계통오차를 고려했다.\n중성미자 질량합을 고정하면 허블상수 오차는 사전조건에 따라 약 1.5, 1.3, 0.7 km/s/Mpc로 예측됐다.\n질량합을 변화시키면 허블상수 제약은 약해지지만 질량합의 95% 신뢰수준 상한은 약 0.4 eV였다.\n수정된 재결합 모형에서는 편향 없는 허블상수 제약을 회복했으나 초기 암흑에너지 모형에서는 그러지 못했다.\n이는 초기 우주 물리에 대한 가정에 한계가 있음을 보이며, 논문은 프리프린트로 동료심사 여부는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.31660",
+    "publishedAt": "2026-10-22",
+    "date": "2026-10-24 13:38",
+    "createdAt": "2026-10-24T04:38:16.467844+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792558192709-1",
     "title": "JADES 자료로 본 은하의 덩어리형 비율과 생성 경로",
     "originalTitle": "The clumpy fraction of galaxies at $z=1-9$ with JADES: evidence for a mass-dependent transition in clump origin",
