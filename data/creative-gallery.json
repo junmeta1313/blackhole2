@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124508-b65de79c-14a4-4cdd-b12e-c383de049594",
+    "slot": "creative-124508",
+    "title": "푸른 필라멘트의 정지된 매듭",
+    "category": "A14",
+    "sceneKey": "A14-B6-C3-D2-E4-F9",
+    "generationSelection": {
+      "A": 14,
+      "B": 6,
+      "C": 3,
+      "D": 2,
+      "E": 4,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA14. 활동은하핵의 좁은 플라즈마 제트\n- 은하 전체를 보여주는 장면 금지\n- 활동은하핵 일부와 좁은 제트가 주제\n- 제트가 프레임 밖까지 이어져도 됨\n- 흔한 나선은하 이미지로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB6. 청백색 + 은회색\n- 차가운 고에너지 또는 항성 관측 느낌\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 818,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 818
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 989
+    },
+    "generationCost": {
+      "usd": 0.00922,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124508-b65de79c-14a4-4cdd-b12e-c383de049594.webp",
+    "author": "AI 창작",
+    "date": "2026-10-25",
+    "publishedAt": "2026-10-25T01:35:45.953Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "활동은하핵의 좁은 플라즈마 제트",
+    "description": "관측 식별번호 QN-7316은 고래자리 방향의 은하들 사이에서 확인된 희미한 발광 구조다. 가상 관측 기록의 거리값은 약 2억 4천만 광년으로, 이 값은 이미지의 형태만으로 얻은 것이 아니라 후속 분광 관측에서 추정한 적색편이에 바탕을 둔다. 그 거리에서 빛은 지금보다 훨씬 젊은 우주를 떠나 이곳에 도착했다.\n\n화면 왼쪽의 은백색 핵은 푸른 회색의 안개 같은 빛에 둘러싸여 있고, 그곳에서 가느다란 필라멘트가 오른쪽으로 길게 뻗는다. 마디마다 밝기가 달라 잔물결처럼 보이지만, 이 한 장의 영상만으로 실제 깊이나 운동을 단정할 수는 없다. Helion 분광망원경의 후속 자료를 바탕으로 연구진은 구조 전체의 길이를 약 41만 광년으로 추정했으며, 이를 ‘청람의 실’이라 이름 붙였다.\n\n미스터리는 그 실의 밝은 마디들이 서로 너무 고르게 유지된다는 점이다. 6년간의 가상 다중파장 관측에서 가시광선 밝기는 약 3퍼센트 변했지만, 마디 사이 간격은 측정 오차 범위 안에서 거의 그대로였다. 유입 가스의 불규칙한 흐름이나 자기장에 의한 압축만으로는 그 정렬의 안정성을 쉽게 설명하기 어렵다. 연구진은 이를 ‘고정 마디 편차’라 부르고, 더 긴 관측으로 검증할 현상으로 남겨 두었다.\n\n우리가 보는 것은 그 은하의 현재가 아니다. 2억 4천만 년 동안 빛이 건너온 뒤에야, 이 희미한 선이 우리의 검출기에 닿았다. 지금 그곳의 필라멘트가 여전히 이어져 있는지는 알 수 없다. 관측은 마디의 존재와 그 간격의 안정성까지만 확인했다. 화면 속 어둠은 빈칸이 아니라 아직 도착하지 않은 답일지도 모른다.",
+    "visibleFeatures": [
+      "왼쪽 중앙의 밝은 은백색 핵 주위로 푸른빛과 옅은 회색의 확산광이 퍼져 있다.",
+      "핵에서 오른쪽으로 길고 가느다란 푸른 필라멘트가 뻗으며, 그 선을 따라 밝고 어두운 마디가 이어진다.",
+      "배경은 검은 우주 공간과 수많은 점상 별빛으로 채워져 있고, 오른쪽 아래쪽에는 희미한 은하처럼 보이는 빛무리들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 642,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2947
+    },
+    "descriptionCost": {
+      "usd": 0.00060905,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-25T01:35:54.828Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124507-f4d64c96-66b0-4e12-b9b7-728556d918dc",
     "slot": "creative-124507",
     "title": "불꽃 가장자리의 정적",
