@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792903371546-1",
+    "title": "국지 거리사다리의 우주론적 절편 긴장",
+    "originalTitle": "A cosmological intercept tension in local distance ladders",
+    "summary": "이 연구는 허블 긴장 문제와 관련해 국지 거리사다리의 내부 일관성을 점검합니다.\nPantheon+ 자료의 세페이드 변광성 은하 초신성과 허블 흐름 초신성을 순방향·역방향으로 비교했습니다.\n국지 고유속도 보정 후 허블상수 추정값이 CMB 입력값에 더 가까워졌습니다.\n절편 불일치의 유의도는 순방향에서 6.8σ에서 3.9σ로, 역방향에서 7.3σ에서 4.3σ로 낮아졌습니다.\n보정은 긴장을 일부 완화했지만 차이는 남았으며, 표본 선택과 보정 계통오차도 추가 검토해야 합니다.\n이 논문은 arXiv 프리프린트이며 동료심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.31181",
+    "publishedAt": "2026-10-22",
+    "date": "2026-10-25 13:42",
+    "createdAt": "2026-10-25T04:42:51.546619+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792903371546-2",
+    "title": "NASA, 아르테미스 III에서 미래 달 착륙선 운용 시험",
+    "originalTitle": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+    "summary": "NASA는 2027년 발사 예정인 아르테미스 III에서 유인 달 착륙 전 시험 임무를 수행할 계획입니다.\n오리온에 탑승한 NASA·ESA 우주비행사 4명이 저궤도에서 블루 오리진과 스페이스X의 착륙선 시험체를 시험합니다.\n계획된 14일 임무에서는 랑데부와 도킹, 거주 및 운용 절차를 연습합니다.\n블루 오리진의 블루 문 Mark 2 시험체와 오리온의 통합 운용을 확인하고, 승무원은 선내 환경과 생명유지 기능 등을 살핍니다.\nNASA는 시험으로 위험을 줄이고 장비를 검증해 2028년 달 남극 부근 유인 착륙을 준비한다고 밝혔습니다.\n발사 시점과 세부 임무 계획은 향후 실행에 달려 있으며, 제공된 자료에는 스페이스X 시험의 구체적 내용이 없습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations",
+    "publishedAt": "2026-10-23",
+    "date": "2026-10-25 13:42",
+    "createdAt": "2026-10-25T04:42:51.546619+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792816696467-1",
     "title": "나선은하 NGC 1827의 가장자리",
     "originalTitle": "Spiral’s Edge",
