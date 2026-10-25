@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA16438",
+    "slot": "photos-83006",
+    "nasaId": "PIA16438",
+    "title": "A Nearby Stellar Cradle",
+    "url": "https://images-assets.nasa.gov/image/PIA16438/PIA16438~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-25",
+    "credit": "X-ray: NASA/CXC/SAO/J.Drake et al., Optical: Univ. of Hertfordshire/INT/IPHAS, Infrared: NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA16438",
+    "publishedAt": "2026-10-25T08:41:50.162Z"
+  },
+  {
     "id": "nasa-PIA16697",
     "slot": "photos-83005",
     "nasaId": "PIA16697",
