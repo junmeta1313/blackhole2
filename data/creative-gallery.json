@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124513-f54d7da5-4331-4928-93d2-0670353a16b8",
+    "slot": "creative-124513",
+    "title": "회색 목성의 고요한 불일치",
+    "category": "A3",
+    "sceneKey": "A3-B1-C1-D2-E3-F7",
+    "generationSelection": {
+      "A": 3,
+      "B": 1,
+      "C": 1,
+      "D": 2,
+      "E": 3,
+      "F": 7
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA3. 폭풍이 뒤덮인 가스행성\n- 행성 대기의 띠, 소용돌이, 폭풍 구조가 핵심\n- 고리 없음\n- 근거리 또는 중거리 관측\n- 대기의 미세한 흐름과 층 구조 강조\n\n색상 톤 / 관측 후처리:\nB1. 저채도 청회색\n- 거의 단색\n- 차갑고 절제된 관측 이미지\n\n내부 프레이밍 / 구도:\nC1. 중심 균형형\n- 주된 시스템이 중심 부근\n- 비교적 안정적\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF7. 준규칙적 반복 발광 구조\n- 일정해 보이지만 완벽하지 않은 반복 구조\n- 자연적 불규칙성을 반드시 유지\n\n미세한 자연적 불규칙성이 있는 반복 구조 단위가 최소 2~3개 보이게 한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 757,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 757
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 928
+    },
+    "generationCost": {
+      "usd": 0.008915,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124513-f54d7da5-4331-4928-93d2-0670353a16b8.webp",
+    "author": "AI 창작",
+    "date": "2026-10-26",
+    "publishedAt": "2026-10-25T22:01:22.443Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "폭풍이 뒤덮인 가스행성",
+    "description": "목성형 행성 LQ-731 b는 남쪽 하늘의 물뱀자리 경계에서 확인된 가스 행성으로, 후속 시차 관측이 제시하는 거리는 약 46광년이다. 이 한 장의 영상에서 행성은 푸른빛이 거의 없는 은회색으로 나타나고, 폭이 다른 구름띠들이 구체를 감싸며 흐른다. 오른쪽 아래의 거대한 타원형 소용돌이는 주변의 작은 폭풍들을 거느린 듯 보이며, 띠 사이의 밝은 타원형 반점들은 일정한 간격 없이 흩어져 있다. 영상만으로 실제 색이나 대기 깊이를 단정할 수는 없지만, 구름의 층과 소용돌이 경계가 선명하게 대비된다.\n\n가상 관측 장비인 ‘세라핀 적외선 분광계’가 세 차례의 후속 관측에서 포착한 미스터리는 그 소용돌이의 바람이다. 분광선의 도플러 이동으로 추정한 가장자리 풍속은 시속 약 510킬로미터였지만, 서로 다른 회전 위상에서 측정한 값은 17시간마다 6킬로미터씩 오르내렸다. 행성의 전체 회전으로 설명하기엔 변화가 한 구역에만 집중됐고, 같은 기간 구름 무늬의 위치는 거의 달라지지 않았다. 연구진은 이 국소적인 속도 흔들림에 ‘은회색 경계 진동(Silver Rim Oscillation)’이라는 이름을 붙였다. 대기파의 간섭인지, 아직 모델에 없는 층간 순환인지는 판별되지 않았다.\n\nLQ-731 b에서 출발한 빛은 약 46년을 지나 지금 우리 망원경에 닿았다. 우리가 기록한 것은 그 먼 과거의 대기뿐이며, 행성이 현재 어떤 모습인지는 알 수 없다. 관측은 경계의 미세한 움직임을 확인했지만 그 원인은 밝혀내지 못했다. 은빛 구름을 다시 바라보면, 고요해 보이는 띠 아래에서 무엇이 리듬을 만들고 있는지보다 우리가 아직 읽지 못한 시간이 더 크게 느껴진다.",
+    "visibleFeatures": [
+      "검푸른 우주를 배경으로 거대한 구형 행성이 화면 대부분을 차지하며, 표면에는 회색과 은빛의 촘촘한 가로 구름띠가 둘러져 있다.",
+      "행성 오른쪽 아래쪽에 밝은 타원형 소용돌이가 두드러지고, 그 주변으로 작은 타원형 폭풍 무늬들이 이어진다.",
+      "중위도 부근에는 밝은 타원형 반점들이 띠를 따라 흩어져 있으며, 가장자리와 어두운 배경에는 드문드문 작은 별빛이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 662,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2967
+    },
+    "descriptionCost": {
+      "usd": 0.00061905,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-25T22:01:30.324Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124512-87830075-4f6f-489f-aaf9-368e4fa2e6fd",
     "slot": "creative-124512",
     "title": "두 갈래로 이어진 푸른 필라멘트",
