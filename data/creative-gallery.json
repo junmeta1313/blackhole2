@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124514-693d9671-eda5-422e-aa7d-b323053575e6",
+    "slot": "creative-124514",
+    "title": "불완전한 고리, 남겨진 빛",
+    "category": "A17",
+    "sceneKey": "A17-B4-C3-D5-E4-F7",
+    "generationSelection": {
+      "A": 17,
+      "B": 4,
+      "C": 3,
+      "D": 5,
+      "E": 4,
+      "F": 7
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA17. 희귀한 플라즈마 고리\n- 중심이 빈 가스/플라즈마 구조\n- 행성 고리와 명확히 다른 독립적 플라즈마 구조\n- 완벽한 원이 아닌 불규칙하고 자연적인 형태\n- 인공 구조물처럼 보이지 않음\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD5. 과학적 경계선의 미지 현상\n- 완전히 불가능해 보이지 않음\n- 상당히 낯설고 설명하기 어려움\n- 판타지로 넘어가지는 않음\n\n관측 거리 / 화면 점유율:\nE4. 원거리 관측\n- 메인 대상이 약 15~35% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF7. 준규칙적 반복 발광 구조\n- 일정해 보이지만 완벽하지 않은 반복 구조\n- 자연적 불규칙성을 반드시 유지\n\n미세한 자연적 불규칙성이 있는 반복 구조 단위가 최소 2~3개 보이게 한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 772,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 772
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 943
+    },
+    "generationCost": {
+      "usd": 0.00899,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124514-693d9671-eda5-422e-aa7d-b323053575e6.webp",
+    "author": "AI 창작",
+    "date": "2026-10-26",
+    "publishedAt": "2026-10-26T01:39:47.052Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "희귀한 플라즈마 고리",
+    "description": "남쪽 하늘의 조각가자리 방향에서 발견된 천체는 SCL J0042−2719로 등록되었다. 루멘-7 적외선 관측기의 영상에는 별들이 흩어진 검은 배경 한가운데, 주황빛 가스가 불규칙한 고리를 이루며 떠 있다. 고리는 매끈한 원이 아니다. 밝은 매듭과 가느다란 필라멘트가 들쑥날쑥 이어지고, 오른쪽 위의 한 지점은 금빛으로 유난히 뜨겁게 빛난다. 안쪽은 주변보다 어둡고 성긴 별빛만 남아 있어, 마치 불꽃이 빈 공간의 윤곽을 그려낸 듯하다.\n\n후속 거리 측정에서 이 구조는 약 1만 8천 광년 떨어진 은하수 안의 가스 껍질로 추정되었고, 고리의 지름은 약 38광년으로 계산되었다. 한 장의 영상만으로 운동이나 나이를 판정할 수는 없다. 그러나 6년 간격의 분광 관측에서는 고리 서쪽 필라멘트의 방출선 위치가 17km/s가량 흔들리는 동안, 고리 반대편의 속도 성분은 거의 변하지 않았다. 연구진은 이 비대칭적인 변화를 ‘고요한 되울림(Serein Echo)’이라 이름 붙였다. 보이지 않는 기체 흐름이나 자기장 구조가 관여할 가능성은 있지만, 현재 자료만으로는 어느 설명도 충분하지 않다.\n\n우리가 보는 고리는 지금의 모습이 아니라, 빛이 출발한 약 1만 8천 년 전의 기록이다. 그 사이 가스는 더 퍼졌거나 사라졌을지 모른다. 관측은 되울림의 존재를 확인했을 뿐, 그 원인을 밝혀내지 못했다. 어둠 속에 남은 이 불완전한 원을 다시 바라보면, 우주는 설명보다 먼저 오래된 질문을 보내온다는 사실이 느껴진다.",
+    "visibleFeatures": [
+      "검은 우주를 배경으로 주황빛과 황금빛의 불규칙한 고리형 가스 구조가 화면 중앙을 크게 둘러싼다.",
+      "고리의 가장자리는 매끈하지 않고 밝은 매듭과 가느다란 필라멘트가 이어져 있으며, 오른쪽 위쪽에 특히 강한 발광 매듭이 보인다.",
+      "고리 안쪽은 바깥보다 어둡고 비교적 비어 있으며, 주변에는 붉고 주황색인 희미한 성운 얼룩과 다양한 밝기의 별들이 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 626,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2931
+    },
+    "descriptionCost": {
+      "usd": 0.00060105,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-26T01:39:55.341Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124513-f54d7da5-4331-4928-93d2-0670353a16b8",
     "slot": "creative-124513",
     "title": "회색 목성의 고요한 불일치",
