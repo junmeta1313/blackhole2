@@ -1,5 +1,31 @@
 [
   {
+    "id": "1792990127307-1",
+    "title": "우주 새벽의 성단: 초기 성단 질량함수의 형성",
+    "originalTitle": "Star clusters at cosmic dawn I: the emergence of the initial cluster mass function",
+    "summary": "이 논문은 우주 초기 성단의 초기 질량함수가 형성되는 과정을 시뮬레이션으로 살폈습니다.\n복사와 초신성 피드백을 포함해 성단이 가스를 끌어모으며 성장하는 과정을 모델링했습니다.\n중심 은하의 질량함수 절단 질량은 약 태양 질량 600만 배로 추정됐지만 불확실성이 큽니다.\n항성 복사는 저질량 성단의 비율을 낮추고 질량함수 기울기를 완만하게 했으며, 해상도를 높이면 기울기가 다시 가팔라졌습니다.\n시뮬레이션에서 가장 밝은 성단은 관측된 중력렌즈 성단 후보와 비슷한 자외선 밝기에 도달했습니다.\n이 연구는 arXiv 프리프린트이며 동료 심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.32497",
+    "publishedAt": "2026-10-23",
+    "date": "2026-10-26 13:48",
+    "createdAt": "2026-10-26T04:48:47.307509+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1792990127307-2",
+    "title": "시뮬레이션 우주의 암흑물질",
+    "originalTitle": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
+    "summary": "NASA 천문 사진은 암흑물질 분포를 보여 주는 우주 시뮬레이션 이미지를 소개합니다.\n이미지에서 암흑물질은 거미줄처럼 이어진 검은 필라멘트로, 보통 물질은 드문 주황색 덩어리로 표현됩니다.\n암흑물질의 중력은 은하 회전과 은하단 내 운동, 중력렌즈, 가시 물질 분포를 설명하는 주요 근거로 제시됩니다.\n설명에 따르면 해당 시뮬레이션은 천문 관측과 통계적으로 잘 부합합니다.\n암흑에너지는 우주의 팽창을 지배하는 반발성 중력의 균일한 원천으로 소개됩니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe",
+    "publishedAt": "2026-10-25",
+    "date": "2026-10-26 13:48",
+    "createdAt": "2026-10-26T04:48:47.307509+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792903371546-1",
     "title": "국지 거리사다리의 우주론적 절편 긴장",
     "originalTitle": "A cosmological intercept tension in local distance ladders",
