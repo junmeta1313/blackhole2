@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124520-5bc8577d-dc02-4a8a-b6f9-0280cd57573b",
+    "slot": "creative-124520",
+    "title": "푸른 성운의 고요한 결손",
+    "category": "A11",
+    "sceneKey": "A11-B2-C1-D2-E2-F5",
+    "generationSelection": {
+      "A": 11,
+      "B": 2,
+      "C": 1,
+      "D": 2,
+      "E": 2,
+      "F": 5
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA11. 항성 탄생 영역\n- 하나의 분자운 내부 항성 형성 영역\n- 여러 젊은 별의 국소적 발광\n- 먼지와 가스가 복잡하게 얽힘\n- 지나치게 균일한 성운 금지\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC1. 중심 균형형\n- 주된 시스템이 중심 부근\n- 비교적 안정적\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE2. 근접 관측\n- 메인 대상이 약 60~80% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF5. 국소 별빛 감쇠\n- 일부 배경별이 특정 영역에서만 희미해 보임\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 756,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 756
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 927
+    },
+    "generationCost": {
+      "usd": 0.00891,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124520-5bc8577d-dc02-4a8a-b6f9-0280cd57573b.webp",
+    "author": "AI 창작",
+    "date": "2026-10-27",
+    "publishedAt": "2026-10-26T23:18:59.677Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성 탄생 영역",
+    "description": "남쪽 하늘의 용골자리 방향, 지구에서 약 5,600광년 떨어진 성운 복합체가 신규 목록 KX-7314로 등록됐다. 청록색 가스가 중심의 밝은 별무리를 감싸며 번지고, 그 앞을 검은 먼지 띠가 갈라놓는다. 위쪽의 뾰족한 기둥과 아래로 솟은 가스의 윤곽은 별빛을 받아 가장자리가 희미하게 빛난다. 이 영상에서 보이는 것은 먼지와 가스의 투영된 모습이며, 거리는 후속 분광 관측으로 추정한 값이다.\n\n구조의 중심에는 푸른 별들이 성긴 무리를 이루고, 몇몇 별은 주변 성운보다 훨씬 날카로운 점광원으로 드러난다. 그 별빛은 가까운 가스층을 이온화해 밝은 테두리를 만들지만, 성운 한가운데의 좁고 어두운 틈은 설명을 어렵게 한다. 가상 장비 Lumen-4가 18개월간 자외선과 가시광을 번갈아 관측한 결과, 틈 양쪽의 발광선 세기는 예측보다 11퍼센트가량 낮았고, 먼지의 흡수량으로도 그 결손을 모두 설명하지 못했다. 연구진은 이 현상을 ‘청록 경계의 광도 결손’(Cerulean Edge Deficit)이라 이름 붙였다. 영상 한 장만으로는 변화나 원인을 확인할 수 없으며, 해당 수치는 후속 관측 기록에 해당한다.\n\n이곳에서 출발한 빛은 약 5,600년을 건너 오늘의 검출기에 닿았다. 그러므로 우리는 지금 그 성운의 현재가 아니라, 인류 역사가 기록되기 전의 한 순간을 본다. 관측은 어두운 틈과 그 주변의 예상 밖 광도 차이를 확인했을 뿐, 무엇이 빛을 덜어냈는지는 밝혀내지 못했다. 화면 속 푸른 별들은 그 사이에도 오래전 빛을 보내고 있다. 설명되지 않은 결손은 어둠의 답이 아니라, 아직 도착하지 않은 질문처럼 남는다.",
+    "visibleFeatures": [
+      "청록색과 푸른빛의 성운 가스가 화면 중앙에서 밝게 빛나며 바깥쪽으로 희미하게 퍼진다.",
+      "중앙을 가로지르는 불규칙한 검은 먼지 띠가 빛나는 가스를 가리고, 위쪽에는 솟은 기둥 같은 어두운 구조가 보인다.",
+      "중심과 그 아래에 푸른 별들이 모여 있고, 주변 어두운 하늘에는 작은 별들이 드문드문 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 643,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2948
+    },
+    "descriptionCost": {
+      "usd": 0.0006095499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-26T23:19:09.146Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124518-de8c4967-a8a2-4e1f-8bc9-b8dae744f51c",
     "slot": "creative-124518",
     "title": "별빛을 가로지르는 검은 필라멘트",
