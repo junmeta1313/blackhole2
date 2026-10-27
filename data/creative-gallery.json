@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124522-46252792-0ae4-4b42-955b-5841a1b91dbb",
+    "slot": "creative-124522",
+    "title": "보랏빛 파동의 끝에서",
+    "category": "A13",
+    "sceneKey": "A13-B3-C3-D3-E3-F8",
+    "generationSelection": {
+      "A": 13,
+      "B": 3,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 8
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA13. 항성풍 충돌 Bow Shock\n- 하나의 빠르게 이동하는 별 또는 항성계\n- 전방에 거대한 활 모양 충격파\n- 별 자체보다 충격파가 시각적으로 중요\n- 비대칭 구조\n\n색상 톤 / 관측 후처리:\nB3. 보라 + 자주\n- 신비로운 느낌\n- 과도한 마젠타/네온 금지\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF8. 갑작스러운 구조 단절\n- 연속되어야 할 가스/빛 구조가 한 부분에서 갑자기 사라짐\n\n단절 전후의 구조를 모두 프레임 안에 보여준다. 구조가 화면 밖으로 이어져도 단절 자체는 잘리지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 749,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 749
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 920
+    },
+    "generationCost": {
+      "usd": 0.008875,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124522-46252792-0ae4-4b42-955b-5841a1b91dbb.webp",
+    "author": "AI 창작",
+    "date": "2026-10-27",
+    "publishedAt": "2026-10-27T09:19:24.514Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "항성풍 충돌 Bow Shock",
+    "description": "남쪽 용골자리 바깥쪽, 성간 먼지가 드문 하늘에서 발견된 천체 KX-7312는 지구로부터 약 4,600광년 떨어져 있다. 이 거리는 빛이 우리에게 오기까지 약 4,600년이 걸렸다는 뜻이다. 자주빛으로 물든 가스의 초승달형 전면은 중심의 밝은 점을 감싸며 지름 약 3광년에 걸쳐 펼쳐지고, 왼쪽으로는 가느다란 필라멘트들이 성긴 별밭 속으로 길게 흩어진다. 사진에서 직접 보이는 이 곡면은 충격파가 성간 물질을 밀어내며 만든 경계로 해석할 수 있지만, 중심의 점광원이 무엇인지는 아직 분광 자료만으로 단정할 수 없다.\n\n가장자리의 밝은 매듭은 특히 흥미롭다. 자외선과 협대역 수소선으로 추적한 후속 관측에서, 전면의 여러 지점은 예측된 팽창 속도와 달리 11년 동안 위치 변화가 측정 한계 아래에 머물렀다. 반면 가장자리에서 방출되는 산소선은 같은 기간 약 6퍼센트 밝아졌다. 움직임은 정지한 듯한데 가스의 여기 상태는 서서히 달라지는 셈이다. 연구진은 이 불일치에 ‘고정 전면 잔광 현상(Anchored Rim Afterglow)’이라는 이름을 붙였다. 관측 장비 오르벨라 분광계는 밝기 변화와 선폭을 기록했지만, 그 원인이 밀도 구조인지 아직 모르는 에너지 전달 과정인지는 가려내지 못했다.\n\n우리가 보는 보랏빛 껍질은 지금 그곳에 있는 모습이 아니라, 수천 년 전 출발한 빛이 도착한 기록이다. 천체의 현재는 이미 달라졌을 수 있고, 그 변화는 아직 우리에게 오지 않았다. 측정된 것은 움직이지 않는 경계와 변하는 빛뿐이다. 그 얇은 전면을 다시 바라볼 때, 우주는 설명되지 않은 채로도 정밀하게 관측될 수 있다는 사실을 조용히 일깨운다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 크고 작은 별들이 고르게 흩어져 있다.",
+      "화면 오른쪽의 밝은 점을 둘러싸듯 보랏빛과 분홍빛 가스가 둥근 충격파 전면을 이룬다.",
+      "가스 구조는 오른쪽에서 둥글게 닫히고 왼쪽으로 길고 희미한 필라멘트처럼 퍼져 나간다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 628,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2933
+    },
+    "descriptionCost": {
+      "usd": 0.0006020499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-27T09:19:34.706Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124520-5bc8577d-dc02-4a8a-b6f9-0280cd57573b",
     "slot": "creative-124520",
     "title": "푸른 성운의 고요한 결손",
