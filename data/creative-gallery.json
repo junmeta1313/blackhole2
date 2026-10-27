@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124524-6d12e016-2e3b-4f49-bd6e-6b9c7763fac3",
+    "slot": "creative-124524",
+    "title": "불타는 띠 아래의 고요한 점",
+    "category": "A3",
+    "sceneKey": "A3-B4-C3-D3-E3-F10",
+    "generationSelection": {
+      "A": 3,
+      "B": 4,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 10
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA3. 폭풍이 뒤덮인 가스행성\n- 행성 대기의 띠, 소용돌이, 폭풍 구조가 핵심\n- 고리 없음\n- 근거리 또는 중거리 관측\n- 대기의 미세한 흐름과 층 구조 강조\n\n색상 톤 / 관측 후처리:\nB4. 적색 + 주황\n- 고온 가스, 충격파, 적외선 관측 느낌\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF10. 비정상적인 국소 발광점\n- 주변 가스와 다른 색온도 또는 광도를 가진 작은 영역\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 718,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 718
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 889
+    },
+    "generationCost": {
+      "usd": 0.00872,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124524-6d12e016-2e3b-4f49-bd6e-6b9c7763fac3.webp",
+    "author": "AI 창작",
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-27T16:50:15.555Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "폭풍이 뒤덮인 가스행성",
+    "description": "남쪽 하늘의 희미한 적외선 성운 가장자리에서 발견된 가스 행성, KX-731 c는 지구로부터 약 186광년 떨어져 있다. 붉은 성운은 행성 뒤편으로 번지고, 그 앞에 놓인 거대한 구체는 한쪽 반구를 어둠에 잠근 채 주황빛 대기를 드러낸다. 이 거리라면 우리가 받는 빛은 약 186년 전 행성을 떠난 것이다. 지금 그곳의 모습은 아직 관측할 수 없다.\n\n이미지에서 가장 두드러지는 것은 행성 지름의 거의 5분의 1을 차지하는 밝은 타원형 소용돌이와, 그 위아래를 감싸는 층층의 붉은 구름 띠다. 가상 관측 장비 ‘Mirae 적외선 배열망’의 후속 분광 기록은 구름 꼭대기의 온도를 약 1,340켈빈으로 추정했지만, 이 수치는 사진에서 직접 잰 값이 아니다. 소용돌이 안쪽에는 더 밝은 고리와 어두운 중심부가 겹쳐 있고, 상층 대기 한 지점에는 작은 푸른빛이 박혀 있다.\n\n연구진은 이 점을 ‘청색 정박광(Blue Mooring)’이라 불렀다. 근적외선 관측을 41일간 이어가자, 주변 구름은 이동하는 동안에도 발광점의 좌표가 행성 표면에 대해 0.03도 이내로 유지됐다. 밝기 또한 2.7일 간격으로 약 6퍼센트씩 변했으나, 그 주기는 대기의 자전이나 알려진 구름파 모형과 맞지 않았다. 서로 다른 파장에서 같은 위치가 확인됐다는 사실만 남아 있다. 이름은 붙었지만, 무엇이 그 빛을 붙들어 두는지는 밝혀지지 않았다.\n\nKX-731 c의 소용돌이는 거대한 대기가 스스로 빚어낸 무늬처럼 보인다. 그러나 그 안의 작은 빛은, 멀고 오래된 풍경에 설명되지 않은 기준점을 남긴다. 관측은 현상의 존재까지만 확인했다. 186년 동안 우주를 건너온 광자는 도착했지만, 그 빛의 오늘을 우리에게 전해주지는 않는다.",
+    "visibleFeatures": [
+      "화면 오른쪽을 크게 차지한 둥근 행성의 낮은 쪽은 어둡고, 위쪽 가장자리에는 가느다란 주황빛 테두리가 비친다.",
+      "행성 표면에는 붉은색과 주황색의 구름 띠가 소용돌이치며 흐르고, 아래쪽 오른편에 커다란 타원형 소용돌이가 두드러진다.",
+      "구름 사이에는 작은 푸른빛 발광점 하나가 있고, 행성 바깥은 희미한 붉은 성운과 드문 별빛으로 둘러싸여 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 697,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3002
+    },
+    "descriptionCost": {
+      "usd": 0.0006365499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-27T16:50:23.578Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124522-46252792-0ae4-4b42-955b-5841a1b91dbb",
     "slot": "creative-124522",
     "title": "보랏빛 파동의 끝에서",
