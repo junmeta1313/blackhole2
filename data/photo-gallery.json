@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA24575",
+    "slot": "photos-83013",
+    "nasaId": "PIA24575",
+    "title": "Hidden Supernova Spotted by Spitzer",
+    "url": "https://images-assets.nasa.gov/image/PIA24575/PIA24575~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-27",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA24575",
+    "publishedAt": "2026-10-27T00:45:42.919Z"
+  },
+  {
     "id": "nasa-PIA05414",
     "slot": "photos-83012",
     "nasaId": "PIA05414",
