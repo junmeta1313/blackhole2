@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA17845",
+    "slot": "photos-83016",
+    "nasaId": "PIA17845",
+    "title": "Sloshing Star Goes Supernova",
+    "url": "https://images-assets.nasa.gov/image/PIA17845/PIA17845~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-28",
+    "credit": "Copyright: Christian Ott, Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA17845",
+    "publishedAt": "2026-10-27T15:31:20.962Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e001060",
     "slot": "photos-83015",
     "nasaId": "GSFC_20171208_Archive_e001060",
