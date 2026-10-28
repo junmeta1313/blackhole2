@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124530-43f6fc51-12f6-45b6-8e14-5bf41e2c6674",
+    "slot": "creative-124530",
+    "title": "별들 사이를 가로지르는 청동빛 필라멘트",
+    "category": "A20",
+    "sceneKey": "A20-B9-C3-D3-E3-F4",
+    "generationSelection": {
+      "A": 20,
+      "B": 9,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 4
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA20. 끊어진 가스 필라멘트 이상 현상\n- 길고 가느다란 가스 구조 하나가 핵심\n- 특정 영역에서 구조가 비정상적으로 단절\n- 뚜렷한 중심 천체 없음\n- 필라멘트 자체가 관측 대상\n\n색상 톤 / 관측 후처리:\nB9. 화려한 다중파장 합성\n- 2~4개의 주요 색 사용\n- 높은 시각적 존재감\n- 무지개, 네온, 사이키델릭 표현 금지\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF4. 주변 흐름과 반대로 휘어진 필라멘트\n- 일부 가스 구조만 전체 흐름과 반대 방향\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 745,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 745
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 916
+    },
+    "generationCost": {
+      "usd": 0.008855,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124530-43f6fc51-12f6-45b6-8e14-5bf41e2c6674.webp",
+    "author": "AI 창작",
+    "date": "2026-10-29",
+    "publishedAt": "2026-10-28T17:21:08.300Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "끊어진 가스 필라멘트 이상 현상",
+    "description": "남쪽 고물자리 경계에서 발견된 성운 필라멘트 NGCX-7314는 지구로부터 약 5,600광년 떨어져 있다. 아우렐 관측소의 심우주 영상에 포착된 모습은 검은 별밭을 왼쪽 위에서 오른쪽 아래로 가르는 길고 불규칙한 띠다. 푸른빛의 가는 가장자리와 주황빛 매듭이 서로 얽혀 있고, 구조는 중간에서 잠시 가늘어졌다가 끝자락에서 넓은 굽이로 돌아선다. 영상만으로는 깊이와 실제 운동을 알 수 없지만, 후속 분광 분석을 바탕으로 계산한 길이는 약 14광년이다. 그 안에 이어진 섬유 구조는 성간 가스가 충격파와 자기장에 의해 압축될 때 나타나는 필라멘트의 모습을 떠올리게 한다.\n\n연구진은 굽이의 안쪽 경계에 주목했다. 가시광 영상에서는 가스가 연속적으로 이어져 보이지만, 후속 적외선 관측에서는 그 경계를 따라 0.8광년가량의 구간에서 방출선이 유난히 약했다. 분광 자료를 여러 차례 비교한 결과, 수소와 이온화된 산소의 밝기 비율은 주변보다 평균 19퍼센트 낮았고, 11개월 간격의 두 관측에서도 그 차이는 오차 범위 안에서 유지됐다. 이 선택적 방출 결손에 연구진은 ‘청동 매듭 결손’, Bronzewisp Gap이라는 이름을 붙였다. 온도나 먼지 차폐만으로 설명하기에는 서로 다른 선들이 같은 경계에서 함께 약해지는 양상이 남아 있다. 그러나 이를 만든 원인은 확인되지 않았다.\n\n여기서 오는 빛은 약 5,600년 전 출발했다. 우리는 그때의 성운을 보고 있을 뿐, 지금 그 필라멘트가 어떤 모습인지 알 수 없다. 관측은 결손의 존재를 기록했지만 그 경계가 왜 빛을 덜 내는지는 아직 말해 주지 않는다. 별들 사이의 긴 실금은, 우주가 보이는 것만으로 다 설명되지는 않는다는 사실을 조용히 남긴다.",
+    "visibleFeatures": [
+      "검은 우주 배경을 대각선으로 길게 가로지르는 푸른빛·주황빛의 가느다란 성운 구조가 보인다.",
+      "성운은 얽힌 실처럼 불규칙한 가장자리를 이루며, 가운데 부근에서 잠시 가늘어졌다가 오른쪽 아래에서 넓은 굽이로 말린다.",
+      "성운 주변의 어두운 공간에는 푸른색과 황금색의 별들이 드문드문 흩어져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 662,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2967
+    },
+    "descriptionCost": {
+      "usd": 0.00061905,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-28T17:21:18.657Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124528-5b0f50d1-ffbf-4ac5-9d83-33bc137d0458",
     "slot": "creative-124528",
     "title": "검은 구름의 빛샘, 셀렌-42",
