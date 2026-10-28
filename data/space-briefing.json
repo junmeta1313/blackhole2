@@ -1,5 +1,31 @@
 [
   {
+    "id": "1793166256571-1",
+    "title": "M81 은하 원반의 최근 별 형성 역사 지도",
+    "originalTitle": "The Spatially-Resolved Recent Star Formation History of the M81 Disk",
+    "summary": "이 연구는 허블 자료로 M81 원반의 별 형성 역사를 공간별로 살폈습니다.\n색등급도 분석으로 지난 약 1억 8천만 년의 별 형성 기록을 복원했습니다.\n전체 별 형성은 대체로 안정적이었고, 동쪽에서 서쪽보다 약 50% 더 많은 별이 만들어졌습니다.\n중심부 방향으로 별 형성 밀도가 높아지다가 가장 안쪽 약 4킬로미터에서 감소했습니다.\n이 결과는 M81과 M82의 최근 근접 통과 시점을 약 10억 년 전으로 지지합니다.\narXiv 프리프린트이며 동료심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.37661",
+    "publishedAt": "2026-10-27",
+    "date": "2026-10-28 14:44",
+    "createdAt": "2026-10-28T05:44:16.571486+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1793166256571-2",
+    "title": "NASA, 1년 화성 모의 임무 종료 행사 안내",
+    "originalTitle": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
+    "summary": "NASA는 CHAPEA 임무 2 참가자 네 명의 격리 생활 종료 행사를 알렸습니다.\n참가자들은 존슨 우주센터 시설에서 378일간 화성 임무 환경을 모의했습니다.\n훈련에는 모의 우주유영, 운동, 시설 관리와 식물 재배가 포함됐습니다.\n통신 지연과 자원 제한, 고립 조건에서 수집한 자료는 심우주 임무 준비에 활용될 수 있습니다.\n자료는 식량 체계와 승무원 시간 관리, 의료 및 심리 지원 개선에도 도움이 될 수 있습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation",
+    "publishedAt": "2026-10-27",
+    "date": "2026-10-28 14:44",
+    "createdAt": "2026-10-28T05:44:16.571486+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1792990127307-1",
     "title": "우주 새벽의 성단: 초기 성단 질량함수의 형성",
     "originalTitle": "Star clusters at cosmic dawn I: the emergence of the initial cluster mass function",
