@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA14442",
+    "slot": "photos-83017",
+    "nasaId": "PIA14442",
+    "title": "Hubble Finds an Hourglass Nebula around a Dying Star",
+    "url": "https://images-assets.nasa.gov/image/PIA14442/PIA14442~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-28",
+    "credit": "NASA/JPL-Caltech/ESA, the Hubble Heritage Team STScI/AURA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA14442",
+    "publishedAt": "2026-10-28T00:42:28.561Z"
+  },
+  {
     "id": "nasa-PIA17845",
     "slot": "photos-83016",
     "nasaId": "PIA17845",
