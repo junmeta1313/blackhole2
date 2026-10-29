@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA25165",
+    "slot": "photos-83024",
+    "nasaId": "PIA25165",
+    "title": "Triangulum Galaxy Imaged by Herschel, Planck, IRAS, COBE",
+    "url": "https://images-assets.nasa.gov/image/PIA25165/PIA25165~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-30",
+    "credit": "ESA/NASA/JPL-Caltech/GBT/VLA/IRAM/C. Clark (STScI)",
+    "sourceUrl": "https://images.nasa.gov/details/PIA25165",
+    "publishedAt": "2026-10-29T20:31:25.297Z"
+  },
+  {
     "id": "nasa-PIA07905",
     "slot": "photos-83023",
     "nasaId": "PIA07905",
