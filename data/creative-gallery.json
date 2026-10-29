@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124538-f749854d-7ed4-4611-b3c7-da53a8fbcdfa",
+    "slot": "creative-124538",
+    "title": "두 별 사이에 걸린 빛의 다리",
+    "category": "A12",
+    "sceneKey": "A12-B10-C3-D2-E2-F9",
+    "generationSelection": {
+      "A": 12,
+      "B": 10,
+      "C": 3,
+      "D": 2,
+      "E": 2,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA12. 쌍성계 물질 이동\n- 두 별이 하나의 쌍성 시스템을 형성\n- 두 별 사이 물질 이동 또는 강착 흐름\n- 주변 공간은 비교적 단순하게\n- 두 별 외의 대형 천체 금지\n\n색상 톤 / 관측 후처리:\nB10. 자연색에 가까운 현실 관측\n- false-color 최소화\n- 가장 자연스러운 색 보정\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD2. 현실적 차세대 관측 수준\n- 실제 존재 가능성이 매우 높음\n- 조금 더 선명하고 정제된 데이터 처리\n\n관측 거리 / 화면 점유율:\nE2. 근접 관측\n- 메인 대상이 약 60~80% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 805,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 805
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 976
+    },
+    "generationCost": {
+      "usd": 0.009155,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124538-f749854d-7ed4-4611-b3c7-da53a8fbcdfa.webp",
+    "author": "AI 창작",
+    "date": "2026-10-30",
+    "publishedAt": "2026-10-29T23:33:37.688Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "쌍성계 물질 이동",
+    "description": "남쪽 고물자리 방향에서 포착된 쌍성계 NQ-7314는 지구로부터 약 2,800광년 떨어져 있다. 아르카디아 심우주망원경의 합성 영상에서 왼쪽의 황금빛 별과 오른쪽의 푸른 별은 서로를 향해 길게 늘어진 가스 다리로 이어진다. 두 별의 바깥층이 중력에 이끌려 이동하는 접촉쌍성의 모습으로 해석되며, 화면에 드러난 연결 구조의 길이는 약 0.6광년으로 추정된다. 별 주변의 미세한 얼룩과 푸른 천체를 감싼 희미한 고리는 뜨거운 플라스마와 흩어진 물질이 복잡하게 흐르고 있음을 보여준다.\n\n그런데 이 구조에는 설명하기 어려운 어긋남이 있다. 후속 분광 관측에서 가스 다리의 수소 방출선은 양 끝에서 서로 반대 방향으로 이동했지만, 가운데 구간은 14개월 동안 속도 변화가 거의 검출되지 않았다. 이동하는 물질이라면 보여야 할 도플러 변화가 중앙의 약 0.08광년 구간에서 유독 약한 것이다. 연구진은 이 현상을 ‘고요한 목의 잔류선’이라 이름 붙였다. 관측 자료는 정지한 영역의 존재를 가리키지만, 그곳에서 가스가 멈춘 이유나 다른 물질이 흐름을 상쇄하는지는 밝혀내지 못했다.\n\n우리가 보는 것은 2,800년 전 출발한 빛이다. 지금 두 별이 여전히 이 가느다란 다리로 이어져 있는지는 알 수 없다. 한 장의 영상과 몇 차례의 스펙트럼은 현상을 기록했을 뿐, 그 원인에 닿지 못했다. 어둠 속에 걸린 빛을 다시 바라보면, 우주는 멀리 있을 뿐 아니라 아직 이해되지 않은 시간 속에 있음을 느끼게 된다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 수많은 작은 별빛이 흩어져 있다.",
+      "왼쪽에는 울퉁불퉁한 표면 결이 드러난 크고 밝은 황금빛 천체가 보인다.",
+      "오른쪽의 푸른빛 천체와 왼쪽 천체 사이에 가느다란 빛나는 가스 흐름이 이어지고, 푸른 천체 둘레에는 희미한 고리 모양의 가스가 퍼져 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 602,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2907
+    },
+    "descriptionCost": {
+      "usd": 0.0005890499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-29T23:33:45.341Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124536-a7926b3d-a946-43c5-9a28-cc2c5a8cc6f9",
     "slot": "creative-124536",
     "title": "은하단을 가로지르는 푸른 고리의 지연",
