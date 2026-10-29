@@ -1,5 +1,31 @@
 [
   {
+    "id": "1793252968043-1",
+    "title": "웹, 난류가 일어나는 별 탄생 영역 관측",
+    "originalTitle": "Webb Sees Turbulent Star Nursery",
+    "summary": "웹이 2026년 10월 22일 공개한 이미지는 별 형성이 활발한 N159를 담았다.\nN159는 우리은하의 위성은하인 대마젤란은하에 있으며 지구에서 16만 광년 떨어져 있다.\n이미지에는 밀집한 가스 덩어리가 가득한 별 탄생 영역이 보인다.\nN159는 우리은하보다 금속 함량이 낮아 초기 우주의 환경을 연구하는 데 도움이 된다.\n발표 자료는 이미지와 위치·금속 함량을 소개하며, 별 형성 과정의 정량적 결과는 제시하지 않는다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/image-article/webb-sees-turbulent-star-nursery",
+    "publishedAt": "2026-10-28",
+    "date": "2026-10-29 14:49",
+    "createdAt": "2026-10-29T05:49:28.043250+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1793252968043-2",
+    "title": "JADES 은하의 자외선 밝기 상한을 좌우하는 요인",
+    "originalTitle": "What shapes the bright end of the UV luminosity function? Stellar mass, star-formation variability, and dust in JADES",
+    "summary": "이 연구는 높은 적색편이에서 관측된 자외선 밝은 은하가 모형 예측보다 많은 이유를 살폈다.\n연구진은 분광학적으로 확인된 JADES 은하 1,365개를 분석하고 별 형성 이력과 먼지를 모형화했다.\n고정된 별 질량에서 최근 별 형성률이 자외선 밝기를 가장 잘 예측했다.\n낮은 질량 은하는 별 형성 폭발로 유난히 밝아질 수 있지만, 밝은 은하 수에는 별 질량과 먼지가 주로 영향을 줬다.\n적색편이에 따른 별 형성 이력 변화는 채택한 사전분포와 구분되지 않았고, 일부 경향에는 주의가 필요하다.\n이 논문은 arXiv 프리프린트이며 동료 심사 여부는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.37643",
+    "publishedAt": "2026-10-27",
+    "date": "2026-10-29 14:49",
+    "createdAt": "2026-10-29T05:49:28.043250+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1793166256571-1",
     "title": "M81 은하 원반의 최근 별 형성 역사 지도",
     "originalTitle": "The Spatially-Resolved Recent Star Formation History of the M81 Disk",
