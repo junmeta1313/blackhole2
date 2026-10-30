@@ -1,5 +1,31 @@
 [
   {
+    "id": "1793339443786-1",
+    "title": "허블·웹이 포착한 용골자리 성운의 ‘고양이 머리’",
+    "originalTitle": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
+    "summary": "허블과 제임스 웹 우주망원경이 약 7,500광년 떨어진 용골자리 성운의 별 형성 영역을 관측했다.\n고양이 머리 성운은 고양이 뒷모습을 닮은 가스와 먼지 기둥이다.\n허블 가시광 영상은 어두운 먼지 기둥과 붉게 빛나는 눈을 보여준다.\n웹 적외선 영상은 가려진 별과 기둥의 세밀한 구조, 젊은 별의 분출 흔적일 수 있는 특징을 드러낸다.\n무거운 별의 자외선과 항성풍이 기둥을 깎아 모양을 만들었을 가능성이 있다.\n두 망원경의 관측은 별 형성의 복잡한 과정을 이해하는 데 도움을 주지만, 일부 구조의 물리적 연관성은 영상만으로 확정할 수 없다.",
+    "source": "ESA",
+    "type": "공식발표",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Ghostly_Cat_s_Head_Nebula_lurks_within_sight_of_Hubble_and_Webb",
+    "publishedAt": "2026-10-29",
+    "date": "2026-10-30 14:50",
+    "createdAt": "2026-10-30T05:50:43.786380+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1793339443786-2",
+    "title": "PRISMS GHZ8: z=10.23 은하의 젊은 별 폭발과 병합 가능성",
+    "originalTitle": "PRISMS GHZ8: Evidence for a Young Burst and Potential Merger Activity at z=10.23",
+    "summary": "이 논문은 초기 우주의 자외선 밝은 은하 GHZ8을 JWST로 관측해 별 형성의 원인을 조사했다.\n분광 관측에서 Hβ-[OIII] 복합선은 약 5시그마, Hα 선은 약 4시그마로 검출됐다.\n영상 분석 결과 GHZ8은 약 600파섹 떨어진 밝은 주성분과 희미한 남동쪽 덩어리로 나뉜다.\n두 성분의 푸른 자외선 기울기는 젊은 별 집단을 시사하며, 남동쪽 덩어리는 높은 이온화 광자 탈출률이 필요하다.\n주성분은 최근의 짧은 별 형성 폭발이 끝나가는 중이거나 5천만 년 미만의 지속적 형성을 겪었을 수 있다.\n저자들은 병합에 따른 별 형성을 가능성으로 제시하지만, 더 깊은 영상이나 공간 분해 운동학 자료가 필요하다.\n이 arXiv 논문은 동료 심사 여부가 확인되지 않은 사전 공개 논문이다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.40633",
+    "publishedAt": "2026-10-29",
+    "date": "2026-10-30 14:50",
+    "createdAt": "2026-10-30T05:50:43.786380+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1793252968043-1",
     "title": "웹, 난류가 일어나는 별 탄생 영역 관측",
     "originalTitle": "Webb Sees Turbulent Star Nursery",
