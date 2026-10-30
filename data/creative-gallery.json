@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124542-9ec2eb9b-641a-45cf-b5e4-9f32cb1f9ddb",
+    "slot": "creative-124542",
+    "title": "암흑 구름의 푸른 경계",
+    "category": "A9",
+    "sceneKey": "A9-B9-C1-D3-E3-F2",
+    "generationSelection": {
+      "A": 9,
+      "B": 9,
+      "C": 1,
+      "D": 3,
+      "E": 3,
+      "F": 2
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA9. 암흑 성운 내부의 작은 발광 핵\n- 대부분은 불투명한 암흑 먼지\n- 한 곳에서만 희미한 발광\n- 발광 영역은 작고 국소적\n- 전체 화면을 화려한 성운으로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB9. 화려한 다중파장 합성\n- 2~4개의 주요 색 사용\n- 높은 시각적 존재감\n- 무지개, 네온, 사이키델릭 표현 금지\n\n내부 프레이밍 / 구도:\nC1. 중심 균형형\n- 주된 시스템이 중심 부근\n- 비교적 안정적\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF2. 설명하기 어려운 암흑 영역\n- 주변과 연결되지 않는 국소적인 깊은 암흑 구조\n\n\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 742,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 742
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 913
+    },
+    "generationCost": {
+      "usd": 0.00884,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124542-9ec2eb9b-641a-45cf-b5e4-9f32cb1f9ddb.webp",
+    "author": "AI 창작",
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-30T17:09:19.061Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "암흑 성운 내부의 작은 발광 핵",
+    "description": "궁수자리 방향의 성간 구름 복합체 ‘루멘 협곡(Lumen Ravine)’은 지구에서 약 1,460광년 떨어진 곳에 있다. 가상의 관측 목록에는 이 영역이 SNR-27로 등록돼 있다. 그림에서 중앙의 주황빛 점을 둘러싼 푸른 발광과 붉은 먼지, 오른쪽 위로 솟은 거대한 암흑 구름의 윤곽이 먼저 눈에 들어온다. 가시광선만으로는 먼지 뒤의 구조를 모두 볼 수 없지만, 후속 적외선 지도는 구름의 가장 넓은 부분이 약 11광년에 걸쳐 이어진다고 추정한다. 이 크기는 한 장의 영상에서 직접 잰 값이 아니라, 별빛의 소광과 거리 자료를 결합한 결과다.\n\n중앙의 주황빛은 주변 가스와 먼지를 밝히는 젊은 항성 후보로 보이며, 푸른 영역은 그 복사에 의해 빛나는 기체의 경계로 해석된다. 검은 구름은 빈 공간이 아니라 배경 별빛을 가리는 차가운 먼지의 농밀한 부분이다. 그러나 연구진은 고해상도 분광 관측에서 뜻밖의 차이를 기록했다. 구름 가장자리의 일산화탄소 선은 14개월 동안 위치에 따라 최대 초속 0.8킬로미터의 속도 차를 보였지만, 같은 영역의 이온화 기체에서는 그 차이가 재현되지 않았다. 서로 맞닿은 두 층이 같은 힘을 받지 않는 듯한 이 불일치를 ‘청색 경계 미끄럼(Blue Rim Shear)’이라 이름 붙였다.\n\n가상의 망원경 오르델 적외선 배열과 라일라 분광기는 현상의 흔적을 확인했을 뿐, 원인을 특정하지 못했다. 이곳의 빛은 약 1,460년을 건너 지금 우리 망원경에 닿았다. 그러므로 화면 속 항성은 이미 다른 모습일 수도 있지만, 그 현재를 확인할 신호는 아직 도착하지 않았다. 암흑 구름은 설명을 거부하는 벽이 아니라, 측정이 아직 닿지 못한 깊이처럼 보인다. 우리는 그 경계의 움직임을 기록했을 뿐, 무엇이 기체와 먼지를 다르게 이끄는지는 알지 못한다.",
+    "visibleFeatures": [
+      "화면 중앙에 주황빛으로 강하게 빛나는 작은 영역이 있고, 그 주위를 푸른빛과 붉은빛의 성운이 둘러싼다.",
+      "중앙의 빛을 가로질러 불규칙한 암흑 먼지 띠가 뻗으며, 오른쪽 위에는 넓고 짙은 구름 덩어리가 자리한다.",
+      "배경에는 드문드문 푸른색·주황색 별들이 흩어져 있고, 중앙에서 멀어질수록 성운의 빛은 어둡고 희미해진다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 701,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3006
+    },
+    "descriptionCost": {
+      "usd": 0.00063855,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-10-30T17:09:29.566Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124540-2cb505cd-ea39-467f-a4da-76a5d7c6b575",
     "slot": "creative-124540",
     "title": "붉은 성운의 고요한 결손",
