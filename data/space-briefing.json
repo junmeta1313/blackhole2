@@ -1,5 +1,31 @@
 [
   {
+    "id": "1793425385713-1",
+    "title": "웹, ‘고양이 머리 성운’의 복잡한 구조 포착",
+    "originalTitle": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+    "summary": "NASA·ESA·CSA가 2026년 10월 29일 웹 우주망원경의 중적외선 이미지를 공개했습니다.\n이미지에는 고양이 머리 성운 내부의 복잡한 구조가 드러납니다.\n성운의 독특한 형태는 용골자리 성운의 무거운 별들이 내뿜는 자외선과 항성풍이 빚었을 가능성이 있습니다.\n별의 에너지가 주변 가스와 먼지를 깎아내지만, 기둥 안의 밀도 높은 물질은 현재까지 버티고 있습니다.\n제공된 설명에는 관측 방법이나 구조 형성에 대한 추가 검증 정보는 없습니다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head",
+    "publishedAt": "2026-10-30",
+    "date": "2026-10-31 14:43",
+    "createdAt": "2026-10-31T05:43:05.713472+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1793425385713-2",
+    "title": "초거대질량 블랙홀의 기본 평면, 고질량 영역은 여전히 미해결",
+    "originalTitle": "The unresolved high-mass frontier of the black hole Fundamental Plane",
+    "summary": "이 논문은 블랙홀 질량과 전파·엑스선 광도를 잇는 기본 평면이 초거대질량 영역에서도 달라지는지 살핍니다.\n직접 역학적으로 질량을 측정한 은하를 이용해 관계식을 재조정하고, 은하단 중심 은하 자료를 재검토했습니다.\n기존 대리 질량 자료만으로는 고질량 블랙홀의 전파 방출 증가를 확정하기 어렵다고 보고합니다.\n관측 자료의 예측 폭 때문에 현재 표본으로는 변화의 존재와 위치를 알아내기 어렵습니다.\n저자들은 고질량 영역의 별도 분지에 대한 설득력 있는 증거가 없다고 결론짓습니다.\n결론을 검증하려면 직접 질량 측정과 짝을 이룬 전파·엑스선 관측이 있는 더 크고 균일한 표본이 필요합니다.\n이 논문은 arXiv 프리프린트이며 동료 심사 여부는 확인되지 않았습니다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.40606",
+    "publishedAt": "2026-10-29",
+    "date": "2026-10-31 14:43",
+    "createdAt": "2026-10-31T05:43:05.713472+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1793339443786-1",
     "title": "허블·웹이 포착한 용골자리 성운의 ‘고양이 머리’",
     "originalTitle": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
