@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA24432",
+    "slot": "photos-83031",
+    "nasaId": "PIA24432",
+    "title": "Zodiacal Light",
+    "url": "https://images-assets.nasa.gov/image/PIA24432/PIA24432~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-10-31",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA24432",
+    "publishedAt": "2026-10-31T09:55:41.420Z"
+  },
+  {
     "id": "nasa-PIA13014",
     "slot": "photos-83029",
     "nasaId": "PIA13014",
