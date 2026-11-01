@@ -1,5 +1,31 @@
 [
   {
+    "id": "1793513222213-1",
+    "title": "보이저호와 빛 하루 거리",
+    "originalTitle": "November’s Night Sky Notes: Light-Day Away",
+    "summary": "NASA는 보이저 1·2호의 탐사와 현재 임무를 소개한다.\n두 탐사선은 1977년 발사돼 행성 정렬을 활용하고 목성·토성·천왕성·해왕성을 근접 관측했다.\n두 우주선에는 지구의 인사말과 음악, 사진 등을 담은 골든 레코드가 실려 있다.\n보이저 1·2호는 각각 2012년과 2018년에 태양권계면을 넘어 성간 공간에 진입했다.\n기사에 따르면 보이저 1호는 2026년 11월 18일 태양에서 1광일 거리인 약 161억 마일 지점에 도달할 예정이다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away",
+    "publishedAt": "2026-10-30",
+    "date": "2026-11-01 15:07",
+    "createdAt": "2026-11-01T06:07:02.213442+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1793513222213-2",
+    "title": "엔셀라두스 전역 열지도용 적외선 필터 설계",
+    "originalTitle": "Tailoring Infra-Red Filters for Global Mapping of Enceladus' Thermal Environment",
+    "summary": "이 연구는 토성의 위성 엔셀라두스 열환경 관측기 ETM의 초기 타당성과 설계를 검토한다.\nETM은 표면 온도 변화를 측정해 지하 바다와 남극 지형의 열 활동을 살피는 것을 목표로 한다.\n150km 고도에서 80m 해상도와 384×288 픽셀 센서로 연속적인 열지도를 제공하도록 설계됐다.\n필터 조립체의 디지털 모델을 개발해 열복사 측정용 필터를 최적화했다.\n이 설계는 전 지구 열손실과 거주 가능성 평가에 도움이 될 수 있으나, 초기 연구이며 실제 성능은 확인되지 않았다.\n이 논문은 arXiv 사전 공개 논문이며 동료심사 여부는 확인되지 않았다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.40456",
+    "publishedAt": "2026-10-29",
+    "date": "2026-11-01 15:07",
+    "createdAt": "2026-11-01T06:07:02.213442+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1793425385713-1",
     "title": "웹, ‘고양이 머리 성운’의 복잡한 구조 포착",
     "originalTitle": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
