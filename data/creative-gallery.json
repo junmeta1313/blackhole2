@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124554-2662a3ad-c586-49d2-9410-80736e83bf8b",
+    "slot": "creative-124554",
+    "title": "끊어진 고리의 빛, 렌즈 은하군의 미세한 어긋남",
+    "category": "A16",
+    "sceneKey": "A16-B8-C4-D4-E5-F9",
+    "generationSelection": {
+      "A": 16,
+      "B": 8,
+      "C": 4,
+      "D": 4,
+      "E": 5,
+      "F": 9
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA16. 보이지 않는 질량체에 의한 공간 왜곡\n- 중심부에 직접 보이는 거대 천체 없음\n- 주변 배경별/배경빛의 왜곡으로 존재를 암시\n- 화면 대부분은 희박한 심우주\n\n색상 톤 / 관측 후처리:\nB8. 거의 흑백\n- 구조와 명암 자체를 강조\n\n내부 프레이밍 / 구도:\nC4. 비대칭 오프센터\n- 주된 대상이 화면 중심에서 벗어남\n\n현실성 강도:\nD4. 충분히 존재할 법한 미발견 천체\n- 현실성 유지\n- 낯섦과 신비감 강화\n\n관측 거리 / 화면 점유율:\nE5. 극단적 원거리\n- 메인 대상이 약 5~15% 차지\n\n시각적으로 암시되는 미스터리 요소:\nF9. 배경별의 미세한 위치 왜곡\n- 소수의 배경별이 국소적으로 휘거나 위치가 어긋난 것처럼 보임\n- F9가 선택되면 원래 배경이 희박한 A라도\n  관측에 필요한 최소한의 희미한 배경별을 허용한다\n\n미스터리를 암시하는 데 필요한 최소한의 희미한 배경별을 허용한다. 배경별은 독립적인 주제가 아니며 심우주 여백을 유지한다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 791,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 791
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 962
+    },
+    "generationCost": {
+      "usd": 0.009085,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124554-2662a3ad-c586-49d2-9410-80736e83bf8b.webp",
+    "author": "AI 창작",
+    "date": "2026-11-02",
+    "publishedAt": "2026-11-01T17:13:57.039Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "보이지 않는 질량체에 의한 공간 왜곡",
+    "description": "관측 표적은 물뱀자리 방향의 은하군 NGCX J1042−2716이다. 적색편이로 추정한 거리는 약 48억 광년이며, 여기서 오는 빛은 우주가 지금보다 젊었던 시대를 출발했다. 흑백 영상에서 가장 먼저 눈에 들어오는 것은 화면 오른쪽에 걸린 끊어진 고리다. 밝은 호들이 거의 원을 이루지만 간격과 밝기는 고르지 않고, 안쪽에는 뚜렷한 중심 광원이 없다. 주변에는 희미한 은하와 점状의 별빛이 흩어져 있어, 고리의 거대한 윤곽이 정적 속에 떠 있는 듯 보인다.\n\nLumen Arc Survey 망원경의 후속 적외선 관측을 가정하면, 이 호들은 은하군의 질량이 더 먼 배경 은하의 빛을 휘게 한 중력렌즈 구조로 해석된다. 분광 거리와 렌즈 모형을 맞춘 결과, 고리의 지름은 약 31만 광년으로 추정된다. 다만 가장 밝은 세 호의 색은 서로 비슷한데도, 렌즈 모형이 예측하는 위치보다 각각 0.18초각 안팎 어긋나 있다. 세 차례 관측에서 그 어긋남은 재현됐고, 배경 은하의 자체 운동이나 영상 정렬 오차만으로는 설명되지 않았다.\n\n연구진은 이 불일치를 ‘세 갈래 초점 잔차(Trifold Focus Residual)’라 부른다. 보이지 않는 질량의 미세한 분포 때문인지, 아직 모형에 담기지 않은 빛의 경로 때문인지는 판별되지 않았다. 이 고리는 지금의 은하군이 아니라, 48억 년 전의 중력장을 보여준다. 우리가 바라보는 동안 그곳은 이미 달라졌겠지만, 얼마나 달라졌는지는 빛이 돌아오지 않는 한 알 수 없다. 사진 속 끊어진 호는 먼 과거의 기록이면서, 아직 완성되지 않은 물리학의 질문으로 남아 있다.",
+    "visibleFeatures": [
+      "검은 우주 배경에 밝기가 서로 다른 수많은 점상 별과 희미한 은하들이 흩어져 있다.",
+      "화면 오른쪽 위쪽에 여러 개의 밝은 은백색 호가 거의 원형으로 이어지지만, 고리는 끊겨 있고 불균일하다.",
+      "고리 안쪽은 주변보다 어둡고 뚜렷한 중심 발광체는 보이지 않으며, 왼쪽에는 가느다란 은하 형상들이 따로 놓여 있다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 636,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2941
+    },
+    "descriptionCost": {
+      "usd": 0.0006060499999999999,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-11-01T17:14:05.058Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124552-8903479d-0f7d-4eba-b22d-a4b03e75ebd1",
     "slot": "creative-124552",
     "title": "푸른 필라멘트와 고요한 고리",
