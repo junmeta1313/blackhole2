@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124556-280b85a8-87fa-4b94-bbe0-6949d6ff28b4",
+    "slot": "creative-124556",
+    "title": "어둠의 협곡에서 새어 나온 청록빛",
+    "category": "A9",
+    "sceneKey": "A9-B2-C1-D3-E3-F8",
+    "generationSelection": {
+      "A": 9,
+      "B": 2,
+      "C": 1,
+      "D": 3,
+      "E": 3,
+      "F": 8
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA9. 암흑 성운 내부의 작은 발광 핵\n- 대부분은 불투명한 암흑 먼지\n- 한 곳에서만 희미한 발광\n- 발광 영역은 작고 국소적\n- 전체 화면을 화려한 성운으로 만들지 않음\n\n색상 톤 / 관측 후처리:\nB2. 남색 + 청록\n- 깊은 심우주 분위기\n- 중간 이하 채도\n\n내부 프레이밍 / 구도:\nC1. 중심 균형형\n- 주된 시스템이 중심 부근\n- 비교적 안정적\n\n현실성 강도:\nD3. 현실 기반 + 시각적 극적 표현\n- 실제 가능성이 높지만 대비와 구조가 조금 더 강함\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF8. 갑작스러운 구조 단절\n- 연속되어야 할 가스/빛 구조가 한 부분에서 갑자기 사라짐\n\n단절 전후의 구조를 모두 프레임 안에 보여준다. 구조가 화면 밖으로 이어져도 단절 자체는 잘리지 않는다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 757,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 757
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 928
+    },
+    "generationCost": {
+      "usd": 0.008915,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124556-280b85a8-87fa-4b94-bbe0-6949d6ff28b4.webp",
+    "author": "AI 창작",
+    "date": "2026-11-02",
+    "publishedAt": "2026-11-01T23:02:03.674Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "암흑 성운 내부의 작은 발광 핵",
+    "description": "남쪽 하늘의 희미한 별자리 경계에서 발견된 성운 복합체 ‘루미나 협곡(Lumina Chasm)’, 관측 목록번호 LQ-7316은 지구에서 약 2,400광년 떨어져 있다. 이 거리는 빛이 우리에게 오기까지 약 2,400년을 건넜다는 뜻이다. Nacre 심우주망원경의 가시광·근적외선 합성 영상에는 푸른빛 가스가 넓게 펼쳐지고, 별들이 드문드문 박힌 배경을 거대한 검은 먼지 띠가 위아래에서 파고든다. 두 암흑 구름 사이의 좁은 틈에는 작은 청록색 발광점이 박혀 있으며, 주변 성운은 그곳을 향해 비스듬한 결을 드러낸다.\n\n영상만으로 크기를 직접 잴 수는 없지만, 후속 분광 관측에서 추정한 거리를 적용하면 성운의 밝은 가스 구조는 약 38광년에 걸친다. 중심의 빛은 주변 먼지에 가려진 어린 별 또는 복합 천체에서 비롯됐을 가능성이 있으나, 현재 자료만으로 정체를 확정할 수 없다. 연구진이 주목한 수수께끼는 그 빛의 색이 아니라, 빛을 둘러싼 먼지 틈의 ‘정적 경계’다. 11년간의 후속 관측에서 가스의 방출선은 조금씩 변했지만, 경계를 따라 놓인 세 개의 좁은 적외선 흡수대는 위치와 세기가 측정 오차 안에서 거의 바뀌지 않았다. 먼지와 가스가 흐르는 성운에서 그처럼 고정된 흡수 구조가 유지되는 이유는 아직 설명되지 않는다. 연구팀은 이를 ‘고요한 문턱 현상(Silent Threshold)’이라 이름 붙였다.\n\n그 이름은 답이라기보다, 관측된 모양을 오래 바라보기 위한 표식에 가깝다. 우리는 수천 년 전 출발한 빛으로 이 협곡을 보지만, 지금 그곳의 가스와 별이 어떤 모습인지는 알 수 없다. 기록된 것은 문턱의 존재와 그 변하지 않음뿐이다. 검은 틈은 빛을 막는 먼지일까, 아니면 아직 읽지 못한 구조의 윤곽일까. 성운은 침묵 속에 남고, 그 앞에서 우리의 현재는 먼 별빛만큼이나 늦게 도착한다.",
+    "visibleFeatures": [
+      "짙은 청록색 성운이 화면 대부분을 채우고, 그 안에 별들이 드문드문 박혀 있다.",
+      "중앙을 기준으로 위아래로 이어진 거대한 검은 먼지 구름이 밝은 성운을 가르며 좁아진다.",
+      "두 암흑 영역이 만나는 중심부에 작고 강렬한 청록색 빛이 있고, 주변 가스가 그 빛을 향해 비스듬히 퍼진다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 709,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3014
+    },
+    "descriptionCost": {
+      "usd": 0.00064255,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-11-01T23:02:11.158Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124554-2662a3ad-c586-49d2-9410-80736e83bf8b",
     "slot": "creative-124554",
     "title": "끊어진 고리의 빛, 렌즈 은하군의 미세한 어긋남",
