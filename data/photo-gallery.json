@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA20065",
+    "slot": "photos-83037",
+    "nasaId": "PIA20065",
+    "title": "Caught: A Supernova Shock Breakout Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA20065/PIA20065~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-02",
+    "credit": "NASA/Ames/STScI",
+    "sourceUrl": "https://images.nasa.gov/details/PIA20065",
+    "publishedAt": "2026-11-02T00:59:51.331Z"
+  },
+  {
     "id": "nasa-PIA06177",
     "slot": "photos-83036",
     "nasaId": "PIA06177",
