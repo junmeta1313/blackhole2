@@ -1,5 +1,31 @@
 [
   {
+    "id": "1793599572782-1",
+    "title": "별빛 흐름의 흔적은 암흑물질만의 신호가 아니다",
+    "originalTitle": "The multiple origins of spurs in stellar streams: a challenge for dark matter diagnostics",
+    "summary": "이 연구는 별빛 흐름에 생기는 돌기(spur)의 원인을 시뮬레이션으로 분석했다.\n검토한 교란 요인은 암흑물질 소은하, 은하 막대, 은하 병합이다.\n돌기는 은하 병합으로 더 자주 생겼지만, 세 원인의 모양은 서로 비슷했다.\n따라서 형태만으로 돌기의 원인을 판별하거나 암흑물질의 성질을 제약하기 어렵다.\n이 자료는 동료 심사가 확인되지 않은 arXiv 사전 공개 논문이다.",
+    "source": "arXiv",
+    "type": "논문",
+    "url": "https://arxiv.org/abs/2610.41842",
+    "publishedAt": "2026-10-30",
+    "date": "2026-11-02 15:06",
+    "createdAt": "2026-11-02T06:06:12.782968+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
+    "id": "1793599572782-2",
+    "title": "화성 아르시아산의 1,500km 구름 꼬리",
+    "originalTitle": "APOD: 2026 November 2 – A Long Cloud on Mars",
+    "summary": "APOD는 2026년 11월 2일 화성의 긴 구름을 소개했다.\n아르시아산 장구름은 1977년 바이킹 오비터 2호가 처음 기록했다.\n이 구름은 화성의 봄과 여름, 그리고 아침에만 형성되는 것으로 설명된다.\n물 얼음으로 이뤄졌으며, 생성 원인에는 먼지가 관여하지 않는다는 추측이 유력하다.\n아르시아산 부근에서 생긴 구름은 바람을 타고 이동해 1,500km 넘게 뻗을 수 있다.",
+    "source": "NASA",
+    "type": "공식발표",
+    "url": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars",
+    "publishedAt": "2026-11-02",
+    "date": "2026-11-02 15:06",
+    "createdAt": "2026-11-02T06:06:12.782968+00:00",
+    "briefingMode": "daily-feed"
+  },
+  {
     "id": "1793513222213-1",
     "title": "보이저호와 빛 하루 거리",
     "originalTitle": "November’s Night Sky Notes: Light-Day Away",
