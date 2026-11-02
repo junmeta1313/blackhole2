@@ -1,5 +1,76 @@
 [
   {
+    "id": "ai-creative-124559-ad55315a-de1c-49e1-ad77-9c60d70b0ce2",
+    "slot": "creative-124559",
+    "title": "검은 중심을 가로지르는 빛의 강",
+    "category": "A4",
+    "sceneKey": "A4-B7-C3-D5-E3-F1",
+    "generationSelection": {
+      "A": 4,
+      "B": 7,
+      "C": 3,
+      "D": 5,
+      "E": 3,
+      "F": 1
+    },
+    "generationPrompt": "실제로 존재할 법한 가상의 우주 관측 이미지를 생성해줘.\n\n주된 천문학적 대상 또는 시스템:\nA4. 블랙홀과 얇은 강착원반\n- 하나의 블랙홀 시스템\n- 얇고 비대칭적인 강착원반\n- 약한 중력렌즈 왜곡\n- 대부분의 화면은 어둡게\n- 독립적인 행성이나 성운 금지\n\n색상 톤 / 관측 후처리:\nB7. 암적색 + 구리빛\n- 무겁고 오래된 우주 구조 느낌\n\n내부 프레이밍 / 구도:\nC3. 가로 안정형\n- 좌우 공간을 활용한 일반적인 관측 구도\n\n현실성 강도:\nD5. 과학적 경계선의 미지 현상\n- 완전히 불가능해 보이지 않음\n- 상당히 낯설고 설명하기 어려움\n- 판타지로 넘어가지는 않음\n\n관측 거리 / 화면 점유율:\nE3. 중간 거리\n- 메인 대상이 약 35~60% 차지\n- 주변 환경 일부도 보임\n\n시각적으로 암시되는 미스터리 요소:\nF1. 비정상적으로 휘어진 빛\n- 자연스러운 중력렌즈처럼 보이지만 미묘하게 비정상적인 곡률\n\n빛의 휨을 드러낼 최소한의 희미한 주변 빛만 둔다.\n\n이 이미지에는 하나의 주된 천문학적 대상 또는 시스템만 존재해야 한다. 쌍성계의 두 별, 성단의 여러 별, 항성 탄생 영역, 잔해의 여러 필라멘트는 하나의 시스템이다. 선택된 A와 직접 관련되지 않은 다른 대형 천체 현상을 추가하지 마. 선택된 A 또는 F가 명시적으로 요구한 구조만 사용하고 다른 행성, 블랙홀, 고리, 은하, 성운을 주요 구조로 추가하지 마. 행성 고리, 블랙홀 강착원반, 독립적인 플라즈마 고리, 기존 구조 안의 고리형 이상은 서로 다른 구조다.\nF는 과학적 증명이나 시간 변화의 기록이 아니라 미묘한 시각적 단서로 표현한다. 주기, 속도 등의 데이터나 글자를 이미지에 표시하지 마. F3/F7의 준규칙성에는 자연적 난류와 불규칙성을 남기고 완벽한 원, 기계적 반복, 인공적 대칭을 피한다.\n실제 우주망원경이 촬영하고 천문학자가 후처리한 관측 이미지처럼 표현한다. 판타지 일러스트, 영화 콘셉트아트, 게임 배경, 인공 구조물처럼 만들지 마. 선택된 D에 맞춰 현실성과 낯섦을 조절하고 B의 색상 계열을 유지한다. 네온, 무지개, 사이키델릭 색감, 과도한 HDR, 불필요한 렌즈 플레어는 금지한다.\n출력은 816×816 정사각형이다. C는 내부 구도만 지시하며 실제 화면비 변경, 검은 레터박스, crop 또는 padding을 요구하지 않는다. 모호한 거리 조건은 A의 의미를 우선한다.\nDo not default to a spiral galaxy, an Andromeda-like scene or a generic colorful nebula. Keep one dominant astronomical subject or system. No text, captions or watermarks.",
+    "generationVersion": 1,
+    "generationUsage": {
+      "input_tokens": 770,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 770
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "image_tokens": 171,
+        "text_tokens": 0
+      },
+      "total_tokens": 941
+    },
+    "generationCost": {
+      "usd": 0.00898,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionSource": "vision-ai",
+    "url": "./assets/creative/cosmic-creative-124559-ad55315a-de1c-49e1-ad77-9c60d70b0ce2.webp",
+    "author": "AI 창작",
+    "date": "2026-11-02",
+    "publishedAt": "2026-11-02T11:39:26.298Z",
+    "model": "gpt-image-2.5-flare",
+    "quality": "low",
+    "originalTitle": "블랙홀과 얇은 강착원반",
+    "description": "남쪽 하늘의 조밀한 별밭에서 발견된 천체 QN-73 Lyrae는 지구로부터 약 2억 1천만 광년 떨어져 있다. 오르비스(Orbis) 우주망원경의 근적외선 영상에는 검은 원형 중심을 가로지르는 주황빛 가스 띠가 비스듬히 놓여 있고, 그 빛은 중심 가까이에서 급격히 밝아진다. 고리처럼 휘어진 광휘와 주변의 어두운 공간이 맞닿으며, 한 장의 정지 영상 속에서도 물질과 중력이 서로를 끌어당기는 규모가 드러난다.\n\n연구진은 이 긴 구조를 ‘앰버 리본(Amber Ribbon)’이라 부른다. 영상의 각도와 분광 자료를 결합한 후속 분석에서, 중심부의 강착 원반은 약 1.8광일 너비로 추정됐다. 검은 영역은 빛이 빠져나오기 어려운 중심 천체의 그림자로 해석되지만, 그 주변에 보이는 굽은 빛의 모양만으로 내부의 성질을 단정할 수는 없다. 특히 리본의 양쪽 밝기 차이는 회전에 따른 상대론적 효과로 설명될 수 있으나, 북쪽 가장자리의 가느다란 빛무리는 그 예측과 맞지 않았다.\n\n가상의 후속 관측 기록에서 이 가장자리는 41일 간격으로 밝기가 되풀이해 변했고, 변동 폭은 예상값보다 6퍼센트 작았다. 연구진은 이 미세한 불일치에 ‘리본 위상 잔차(Ribbon Phase Residual)’라는 이름을 붙였다. 현상은 여러 차례 확인됐지만 원인은 아직 밝혀지지 않았다. 이 영상의 빛은 2억 년 넘게 우주를 건너온 것이므로, 우리가 보는 중심부는 이미 오래전의 모습이다. 지금 그곳에서 무슨 일이 이어지는지는 이 한 장의 빛으로 알 수 없다. 다만 설명되지 않은 작은 차이가, 광대한 어둠 속에서 아직 닫히지 않은 질문처럼 남아 있다.",
+    "visibleFeatures": [
+      "화면 중앙에 거의 원형의 검은 영역이 있고, 그 둘레를 주황빛으로 밝게 빛나는 고리 같은 구조가 감싸고 있다.",
+      "밝은 가스 띠가 중심을 비스듬히 가로지르며 오른쪽 위로 길게 뻗고, 중심 가까이에서 특히 강하게 빛난다.",
+      "배경은 거의 검은색이며, 주변에 드문드문 작은 주황색 별빛 점과 희미한 가스 흔적이 보인다."
+    ],
+    "descriptionModel": "gpt-6-luna",
+    "descriptionUsage": {
+      "input_tokens": 2305,
+      "input_tokens_details": {
+        "cache_write_tokens": 2302,
+        "cached_tokens": 0
+      },
+      "output_tokens": 631,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2936
+    },
+    "descriptionCost": {
+      "usd": 0.00060355,
+      "estimated": true,
+      "pricingDate": "2026-10-05",
+      "source": "https://developers.openai.com/api/docs/pricing"
+    },
+    "descriptionCreatedAt": "2026-11-02T11:39:36.014Z",
+    "loreVersion": 3
+  },
+  {
     "id": "ai-creative-124556-280b85a8-87fa-4b94-bbe0-6949d6ff28b4",
     "slot": "creative-124556",
     "title": "어둠의 협곡에서 새어 나온 청록빛",
