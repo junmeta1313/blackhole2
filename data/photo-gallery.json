@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA05202",
+    "slot": "photos-83041",
+    "nasaId": "PIA05202",
+    "title": "Supernova Blast Bonanza in Nearby Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA05202/PIA05202~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-03",
+    "credit": "NASA/JPL/Hubble",
+    "sourceUrl": "https://images.nasa.gov/details/PIA05202",
+    "publishedAt": "2026-11-02T23:11:59.675Z"
+  },
+  {
     "id": "nasa-PIA09604",
     "slot": "photos-83039",
     "nasaId": "PIA09604",
