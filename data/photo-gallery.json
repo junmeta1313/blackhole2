@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA09604",
+    "slot": "photos-83039",
+    "nasaId": "PIA09604",
+    "title": "A Supernova Shockwaves",
+    "url": "https://images-assets.nasa.gov/image/PIA09604/PIA09604~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-02",
+    "credit": "NASA/JPL-Caltech/Harvard-Smithsonian CfA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA09604",
+    "publishedAt": "2026-11-02T11:38:22.531Z"
+  },
+  {
     "id": "nasa-PIA20065",
     "slot": "photos-83037",
     "nasaId": "PIA20065",
