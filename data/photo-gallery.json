@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA07904",
+    "slot": "photos-83047",
+    "nasaId": "PIA07904",
+    "title": "Large Face on Spiral Galaxy NGC 3344",
+    "url": "https://images-assets.nasa.gov/image/PIA07904/PIA07904~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-04",
+    "credit": "NASA/JPL-Caltech/SSC",
+    "sourceUrl": "https://images.nasa.gov/details/PIA07904",
+    "publishedAt": "2026-11-04T11:29:50.702Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e000273",
     "slot": "photos-83045",
     "nasaId": "GSFC_20171208_Archive_e000273",
