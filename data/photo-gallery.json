@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-KSC-2011-6954",
+    "slot": "photos-83053",
+    "nasaId": "KSC-2011-6954",
+    "title": "KSC-2011-6954",
+    "url": "https://images-assets.nasa.gov/image/KSC-2011-6954/KSC-2011-6954~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-06",
+    "credit": "KSC",
+    "sourceUrl": "https://images.nasa.gov/details/KSC-2011-6954",
+    "publishedAt": "2026-11-05T21:32:51.112Z"
+  },
+  {
     "id": "nasa-PIA08697",
     "slot": "photos-83051",
     "nasaId": "PIA08697",
