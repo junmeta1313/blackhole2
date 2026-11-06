@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA08260",
+    "slot": "photos-83055",
+    "nasaId": "PIA08260",
+    "title": "The Seven Sisters",
+    "url": "https://images-assets.nasa.gov/image/PIA08260/PIA08260~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-06",
+    "credit": "NASA/JPL/Space Science Institute",
+    "sourceUrl": "https://images.nasa.gov/details/PIA08260",
+    "publishedAt": "2026-11-06T11:26:18.006Z"
+  },
+  {
     "id": "nasa-KSC-2011-6954",
     "slot": "photos-83053",
     "nasaId": "KSC-2011-6954",
