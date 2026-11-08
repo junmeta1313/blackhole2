@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA18845",
+    "slot": "photos-83061",
+    "nasaId": "PIA18845",
+    "title": "Beacons of X-ray Light Animation",
+    "url": "https://images-assets.nasa.gov/image/PIA18845/PIA18845~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-08",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA18845",
+    "publishedAt": "2026-11-08T00:53:00.423Z"
+  },
+  {
     "id": "nasa-PIA01963",
     "slot": "photos-83060",
     "nasaId": "PIA01963",
