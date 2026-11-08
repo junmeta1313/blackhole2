@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA09119",
+    "slot": "photos-83064",
+    "nasaId": "PIA09119",
+    "title": "Luminous Blue Variable: Destined To Be a Supernova?",
+    "url": "https://images-assets.nasa.gov/image/PIA09119/PIA09119~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-09",
+    "credit": "NASA/JPL-Caltech/UC Berkeley",
+    "sourceUrl": "https://images.nasa.gov/details/PIA09119",
+    "publishedAt": "2026-11-08T19:55:38.323Z"
+  },
+  {
     "id": "nasa-PIA19335",
     "slot": "photos-83063",
     "nasaId": "PIA19335",
