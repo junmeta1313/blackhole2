@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA25433",
+    "slot": "photos-83069",
+    "nasaId": "PIA25433",
+    "title": "The Eagle Nebula Observed by WISE",
+    "url": "https://images-assets.nasa.gov/image/PIA25433/PIA25433~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-10",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA25433",
+    "publishedAt": "2026-11-09T23:50:32.591Z"
+  },
+  {
     "id": "nasa-PIA24577",
     "slot": "photos-83067",
     "nasaId": "PIA24577",
