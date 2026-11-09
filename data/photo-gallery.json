@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA24577",
+    "slot": "photos-83067",
+    "nasaId": "PIA24577",
+    "title": "Four Famous Nebulae",
+    "url": "https://images-assets.nasa.gov/image/PIA24577/PIA24577~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-09",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA24577",
+    "publishedAt": "2026-11-09T12:02:12.700Z"
+  },
+  {
     "id": "nasa-PIA15817",
     "slot": "photos-83065",
     "nasaId": "PIA15817",
