@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA10113",
+    "slot": "photos-83073",
+    "nasaId": "PIA10113",
+    "title": "NGC 300",
+    "url": "https://images-assets.nasa.gov/image/PIA10113/PIA10113~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-11",
+    "credit": "NASA/JPL-Caltech/Las Campanas",
+    "sourceUrl": "https://images.nasa.gov/details/PIA10113",
+    "publishedAt": "2026-11-10T21:24:18.317Z"
+  },
+  {
     "id": "nasa-PIA04219",
     "slot": "photos-83071",
     "nasaId": "PIA04219",
