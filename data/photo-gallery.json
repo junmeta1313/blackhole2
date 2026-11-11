@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA23588",
+    "slot": "photos-83075",
+    "nasaId": "PIA23588",
+    "title": "Millions of Giant Black Holes",
+    "url": "https://images-assets.nasa.gov/image/PIA23588/PIA23588~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-11",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA23588",
+    "publishedAt": "2026-11-11T11:24:39.525Z"
+  },
+  {
     "id": "nasa-PIA10113",
     "slot": "photos-83073",
     "nasaId": "PIA10113",
