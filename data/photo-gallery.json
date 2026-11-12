@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-iss006e40537",
+    "slot": "photos-83081",
+    "nasaId": "iss006e40537",
+    "title": "View of stars taken during Expedition Six",
+    "url": "https://images-assets.nasa.gov/image/iss006e40537/iss006e40537~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-13",
+    "credit": "JSC",
+    "sourceUrl": "https://images.nasa.gov/details/iss006e40537",
+    "publishedAt": "2026-11-12T21:54:13.475Z"
+  },
+  {
     "id": "nasa-PIA12788",
     "slot": "photos-83079",
     "nasaId": "PIA12788",
