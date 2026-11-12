@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA12788",
+    "slot": "photos-83079",
+    "nasaId": "PIA12788",
+    "title": "Catching a Cluster of Stars",
+    "url": "https://images-assets.nasa.gov/image/PIA12788/PIA12788~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-12",
+    "credit": "NASA/JPL/Space Science Institute",
+    "sourceUrl": "https://images.nasa.gov/details/PIA12788",
+    "publishedAt": "2026-11-12T11:46:02.822Z"
+  },
+  {
     "id": "nasa-KSC-2011-6953",
     "slot": "photos-83077",
     "nasaId": "KSC-2011-6953",
