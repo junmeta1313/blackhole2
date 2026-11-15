@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA13028",
+    "slot": "photos-83091",
+    "nasaId": "PIA13028",
+    "title": "Big Babies in the Rosette Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA13028/PIA13028~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-15",
+    "credit": "ESA and the PACS, SPIRE & HSC consortia, F. Motte AIM Saclay,CEA/IRFU - CNRS/INSU - U.ParisDidedrot for the HOBYS key programme",
+    "sourceUrl": "https://images.nasa.gov/details/PIA13028",
+    "publishedAt": "2026-11-15T11:26:18.021Z"
+  },
+  {
     "id": "nasa-PIA16871",
     "slot": "photos-83089",
     "nasaId": "PIA16871",
