@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA14092",
+    "slot": "photos-83092",
+    "nasaId": "PIA14092",
+    "title": "Nebulae: Not as Close as They Appear",
+    "url": "https://images-assets.nasa.gov/image/PIA14092/PIA14092~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-16",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA14092",
+    "publishedAt": "2026-11-15T20:31:53.415Z"
+  },
+  {
     "id": "nasa-PIA13028",
     "slot": "photos-83091",
     "nasaId": "PIA13028",
