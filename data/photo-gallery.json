@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA23127",
+    "slot": "photos-83103",
+    "nasaId": "PIA23127",
+    "title": "Cepheus C and Cepheus B Region by Spitzer (One-Instrument)",
+    "url": "https://images-assets.nasa.gov/image/PIA23127/PIA23127~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-18",
+    "credit": "NASA/JPL-Caltech",
+    "sourceUrl": "https://images.nasa.gov/details/PIA23127",
+    "publishedAt": "2026-11-18T12:10:34.000Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e001101",
     "slot": "photos-83101",
     "nasaId": "GSFC_20171208_Archive_e001101",
