@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA02272",
+    "slot": "photos-83109",
+    "nasaId": "PIA02272",
+    "title": "Saturn F-ring",
+    "url": "https://images-assets.nasa.gov/image/PIA02272/PIA02272~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-20",
+    "credit": "NASA/JPL",
+    "sourceUrl": "https://images.nasa.gov/details/PIA02272",
+    "publishedAt": "2026-11-19T22:44:44.932Z"
+  },
+  {
     "id": "nasa-PIA02226",
     "slot": "photos-83107",
     "nasaId": "PIA02226",
