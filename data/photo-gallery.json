@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA18929",
+    "slot": "photos-83113",
+    "nasaId": "PIA18929",
+    "title": "After the Explosion: Investigating Supernova Sites",
+    "url": "https://images-assets.nasa.gov/image/PIA18929/PIA18929~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-21",
+    "credit": "SDSS",
+    "sourceUrl": "https://images.nasa.gov/details/PIA18929",
+    "publishedAt": "2026-11-20T22:19:50.293Z"
+  },
+  {
     "id": "nasa-PIA11435",
     "slot": "photos-83111",
     "nasaId": "PIA11435",
