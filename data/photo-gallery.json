@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-ARC-2010-ACD10-0054-016",
+    "slot": "photos-83117",
+    "nasaId": "ARC-2010-ACD10-0054-016",
+    "title": "ARC-2010-ACD10-0054-016",
+    "url": "https://images-assets.nasa.gov/image/ARC-2010-ACD10-0054-016/ARC-2010-ACD10-0054-016~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-22",
+    "credit": "Dominic Hart",
+    "sourceUrl": "https://images.nasa.gov/details/ARC-2010-ACD10-0054-016",
+    "publishedAt": "2026-11-21T21:03:52.776Z"
+  },
+  {
     "id": "nasa-PIA04227",
     "slot": "photos-83115",
     "nasaId": "PIA04227",
