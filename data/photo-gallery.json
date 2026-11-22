@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA19837",
+    "slot": "photos-83119",
+    "nasaId": "PIA19837",
+    "title": "What Feeds the Beast in a Galaxy Cluster?",
+    "url": "https://images-assets.nasa.gov/image/PIA19837/PIA19837~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-22",
+    "credit": "NASA/STScI/ESA/JPL-Caltech/McGill",
+    "sourceUrl": "https://images.nasa.gov/details/PIA19837",
+    "publishedAt": "2026-11-22T11:55:57.832Z"
+  },
+  {
     "id": "nasa-ARC-2010-ACD10-0054-016",
     "slot": "photos-83117",
     "nasaId": "ARC-2010-ACD10-0054-016",
