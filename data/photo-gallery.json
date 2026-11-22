@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA20695",
+    "slot": "photos-83121",
+    "nasaId": "PIA20695",
+    "title": "Frankenstein Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA20695/PIA20695~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-23",
+    "credit": "NASA/JPL/Caltech/SDSS/NRAO",
+    "sourceUrl": "https://images.nasa.gov/details/PIA20695",
+    "publishedAt": "2026-11-22T21:13:03.650Z"
+  },
+  {
     "id": "nasa-PIA19837",
     "slot": "photos-83119",
     "nasaId": "PIA19837",
