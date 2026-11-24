@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA13123",
+    "slot": "photos-83125",
+    "nasaId": "PIA13123",
+    "title": "WISE Reveals a Hidden Star Cluster",
+    "url": "https://images-assets.nasa.gov/image/PIA13123/PIA13123~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-24",
+    "credit": "NASA/JPL-Caltech/UCLA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA13123",
+    "publishedAt": "2026-11-24T02:32:08.621Z"
+  },
+  {
     "id": "nasa-PIA14730",
     "slot": "photos-83123",
     "nasaId": "PIA14730",
