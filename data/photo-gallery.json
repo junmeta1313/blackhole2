@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA06347",
+    "slot": "photos-83129",
+    "nasaId": "PIA06347",
+    "title": "Entering Saturn Magnetosphere with a Boom",
+    "url": "https://images-assets.nasa.gov/image/PIA06347/PIA06347~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-25",
+    "credit": "NASA/JPL/University of Iowa",
+    "sourceUrl": "https://images.nasa.gov/details/PIA06347",
+    "publishedAt": "2026-11-25T00:04:02.648Z"
+  },
+  {
     "id": "nasa-GSFC_20171208_Archive_e000056",
     "slot": "photos-83127",
     "nasaId": "GSFC_20171208_Archive_e000056",
