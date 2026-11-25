@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA01275",
+    "slot": "photos-83133",
+    "nasaId": "PIA01275",
+    "title": "Saturn Rings Edge-on",
+    "url": "https://images-assets.nasa.gov/image/PIA01275/PIA01275~orig.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-26",
+    "credit": "NASA/JPL/STScI",
+    "sourceUrl": "https://images.nasa.gov/details/PIA01275",
+    "publishedAt": "2026-11-25T23:46:09.168Z"
+  },
+  {
     "id": "nasa-PIA03161",
     "slot": "photos-83131",
     "nasaId": "PIA03161",
