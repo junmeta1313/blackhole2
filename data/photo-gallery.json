@@ -1,5 +1,17 @@
 [
   {
+    "id": "nasa-PIA10373",
+    "slot": "photos-83143",
+    "nasaId": "PIA10373",
+    "title": "Beyond the Borders of a Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA10373/PIA10373~medium.jpg",
+    "author": "NASA 이미지 라이브러리",
+    "date": "2026-11-28",
+    "credit": "NASA/JPL-Caltech/VLA/MPIA",
+    "sourceUrl": "https://images.nasa.gov/details/PIA10373",
+    "publishedAt": "2026-11-28T12:16:01.621Z"
+  },
+  {
     "id": "nasa-0302064",
     "slot": "photos-83141",
     "nasaId": "0302064",
